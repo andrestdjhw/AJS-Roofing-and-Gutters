@@ -181,15 +181,13 @@ function NavbarExample() {
 		<header className="ajs-nav-wrap">
 			<div className="ajs-nav-shell">
 				<div className="ajs-nav-top">
-					<a className="ajs-nav-brand" href="/" aria-label="AJS Roofing and Gutters Home">
-						<span className="ajs-nav-brand-badge">AJS</span>
-
-						<div className="ajs-nav-brand-copy">
-							<strong>AJS Roofing & Gutters</strong>
-							<span>Bring Order Above.</span>
-						</div>
-					</a>
-
+<a className="ajs-nav-brand" href="/" aria-label="AJS Roofing and Gutters Home">
+	<img
+		src="/wp-content/uploads/2026/03/AJS_Imagotipo_horizontal-scaled.png"
+		alt="AJS Roofing & Gutters"
+		className="ajs-nav-brand-logo"
+	/>
+</a>
 					<nav
 						className="ajs-nav-desktop"
 						aria-label="Main navigation"
