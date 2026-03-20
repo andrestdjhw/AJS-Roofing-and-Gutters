@@ -124,14 +124,13 @@ function FooterExample() {
 			<div className="ajs-footer-top">
 				<div className="ajs-footer-grid">
 					<div className="ajs-footer-brand-col">
-						<a className="ajs-footer-brand" href="/" aria-label="AJS Roofing and Gutters Home">
-							<span className="ajs-footer-brand-badge">AJS</span>
-							<div className="ajs-footer-brand-copy">
-								<strong>AJS Roofing & Gutters</strong>
-								<span>Bring Order Above.</span>
-							</div>
-						</a>
-
+<a className="ajs-footer-brand" href="/" aria-label="AJS Roofing and Gutters Home">
+	<img
+		src="/wp-content/uploads/2026/03/AJS_Imagotipo_horizontal-scaled.png"
+		alt="AJS Roofing & Gutters"
+		className="ajs-footer-brand-logo"
+	/>
+</a>
 						<p className="ajs-footer-description">
 							AJS Roofing & Gutters brings order, clarity, and professional execution
 							to roofing and gutter projects across Albuquerque, Santa Fe, Rio Rancho,

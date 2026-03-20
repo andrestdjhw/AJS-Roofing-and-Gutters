@@ -228,21 +228,15 @@ function FooterExample() {
         className: "ajs-footer-grid",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
           className: "ajs-footer-brand-col",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("a", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
             className: "ajs-footer-brand",
             href: "/",
             "aria-label": "AJS Roofing and Gutters Home",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
-              className: "ajs-footer-brand-badge",
-              children: "AJS"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-              className: "ajs-footer-brand-copy",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("strong", {
-                children: "AJS Roofing & Gutters"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
-                children: "Bring Order Above."
-              })]
-            })]
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+              src: "/wp-content/uploads/2026/03/AJS_Imagotipo_horizontal-scaled.png",
+              alt: "AJS Roofing & Gutters",
+              className: "ajs-footer-brand-logo"
+            })
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
             className: "ajs-footer-description",
             children: "AJS Roofing & Gutters brings order, clarity, and professional execution to roofing and gutter projects across Albuquerque, Santa Fe, Rio Rancho, and surrounding New Mexico communities."
@@ -559,21 +553,15 @@ function NavbarExample() {
       className: "ajs-nav-shell",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
         className: "ajs-nav-top",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("a", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
           className: "ajs-nav-brand",
           href: "/",
           "aria-label": "AJS Roofing and Gutters Home",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
-            className: "ajs-nav-brand-badge",
-            children: "AJS"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-            className: "ajs-nav-brand-copy",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("strong", {
-              children: "AJS Roofing & Gutters"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
-              children: "Bring Order Above."
-            })]
-          })]
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+            src: "/wp-content/uploads/2026/03/AJS_Imagotipo_horizontal-scaled.png",
+            alt: "AJS Roofing & Gutters",
+            className: "ajs-nav-brand-logo"
+          })
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("nav", {
           className: "ajs-nav-desktop",
           "aria-label": "Main navigation",
