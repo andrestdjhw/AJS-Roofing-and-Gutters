@@ -6,4 +6,4 @@
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>>
-    <div id="ajs-navbar"></div>
+    <div id="render-react-navbar-here"></div>
