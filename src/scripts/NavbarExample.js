@@ -7,7 +7,7 @@ const SERVICES_MENU = [
 	{
 		title: "Core Services",
 		links: [
-			{ label: "Roof Replacement", href: "/service/roof-replacement" },
+			{ label: "Roof Replacement", href: "/service/service-roof-replacement/" },
 			{ label: "Metal Roofing", href: "/service/metal-roofing" },
 			{ label: "Seamless Gutters", href: "/service/gutters" }
 		]

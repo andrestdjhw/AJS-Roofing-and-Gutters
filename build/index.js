@@ -373,7 +373,7 @@ const SERVICES_MENU = [{
   title: "Core Services",
   links: [{
     label: "Roof Replacement",
-    href: "/service/roof-replacement"
+    href: "/service/service-roof-replacement/"
   }, {
     label: "Metal Roofing",
     href: "/service/metal-roofing"
