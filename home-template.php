@@ -280,7 +280,7 @@ get_header(); ?>
   </section>
 
   <!-- Process -->
-  <section class="bg-[#132d41] py-20 text-white">
+  <section id="process" class="bg-[#132d41] py-20 text-white">
     <div class="mx-auto max-w-7xl px-4">
       <p class="ajs-reveal mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#6eaace]">
         Our Process

@@ -21,13 +21,14 @@ const SERVICES_MENU = [
 		]
 	},
 	{
-		title: "Why AJS",
-		links: [
-			{ label: "Our 5-Step Process", href: "/about" },
-			{ label: "Projects Gallery", href: "/projects" },
-			{ label: "Get Your Free Inspection", href: "/estimate", isHighlight: true }
-		]
-	}
+	title: "Why AJS",
+	links: [
+		{ label: "Our 5-Step Process", href: "/#process" },
+		{ label: "Projects Gallery", href: "/projects" },
+		{ label: "Talk to an Expert", href: "/schedule-a-call" },
+		{ label: "Get Your Free Inspection", href: "/estimate", isHighlight: true }
+	]
+}
 ]
 
 const LOCATIONS_MENU = [
