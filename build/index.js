@@ -95,17 +95,26 @@ const SERVICES = [{
   href: "/service/roof-inspection"
 }];
 const LOCATIONS = [{
-  label: "Albuquerque",
-  href: "/locations/albuquerque"
+  label: "Albuquerque NE / High Desert",
+  href: "/locations/albuquerque-ne-high-desert-87122"
 }, {
-  label: "Santa Fe",
-  href: "/locations/santa-fe"
+  label: "Far NE Heights",
+  href: "/locations/far-ne-heights-87111"
+}, {
+  label: "Albuquerque West",
+  href: "/locations/albuquerque-west-87120"
+}, {
+  label: "NW ABQ / Rio Rancho Border",
+  href: "/locations/nw-abq-87114"
+}, {
+  label: "Santa Fe Historic Core",
+  href: "/locations/santa-fe-historic-core-87501"
+}, {
+  label: "Northern Santa Fe",
+  href: "/locations/northern-santa-fe-87506"
 }, {
   label: "Rio Rancho",
-  href: "/locations/rio-rancho"
-}, {
-  label: "Surrounding New Mexico Areas",
-  href: "/locations"
+  href: "/locations/rio-rancho-87124"
 }];
 function PhoneIcon({
   className = ""
@@ -405,17 +414,35 @@ const SERVICES_MENU = [{
   }]
 }];
 const LOCATIONS_MENU = [{
-  label: "Albuquerque",
-  href: "/locations/albuquerque"
+  tier: "Albuquerque",
+  links: [{
+    label: "Albuquerque NE / High Desert",
+    href: "/locations/albuquerque-ne-high-desert-87122"
+  }, {
+    label: "Far NE Heights",
+    href: "/locations/far-ne-heights-87111"
+  }, {
+    label: "Albuquerque West",
+    href: "/locations/albuquerque-west-87120"
+  }, {
+    label: "NW ABQ / Rio Rancho",
+    href: "/locations/nw-abq-87114"
+  }]
 }, {
-  label: "Santa Fe",
-  href: "/locations/santa-fe"
+  tier: "Santa Fe",
+  links: [{
+    label: "Santa Fe Historic Core",
+    href: "/locations/santa-fe-historic-core-87501"
+  }, {
+    label: "Northern Santa Fe",
+    href: "/locations/northern-santa-fe-87506"
+  }]
 }, {
-  label: "Rio Rancho",
-  href: "/locations/rio-rancho"
-}, {
-  label: "Surrounding New Mexico Areas",
-  href: "/locations"
+  tier: "Rio Rancho",
+  links: [{
+    label: "Rio Rancho",
+    href: "/locations/rio-rancho-87124"
+  }]
 }];
 const MAIN_NAV = [{
   label: "Home",
@@ -525,9 +552,7 @@ function NavbarExample() {
   const closeTimeoutRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
     return () => {
-      if (closeTimeoutRef.current) {
-        clearTimeout(closeTimeoutRef.current);
-      }
+      if (closeTimeoutRef.current) clearTimeout(closeTimeoutRef.current);
     };
   }, []);
   function openMenu(menuName) {
@@ -676,18 +701,35 @@ function NavbarExample() {
           })]
         })
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-        className: `ajs-nav-dropdown ajs-nav-locations ${activeMenu === "locations" ? "is-open" : ""}`,
+        className: `ajs-nav-dropdown ajs-nav-mega ${activeMenu === "locations" ? "is-open" : ""}`,
         onMouseEnter: () => openMenu("locations"),
         onMouseLeave: closeMenuWithDelay,
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
           className: "ajs-nav-dropdown-inner",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-            className: "ajs-nav-location-list",
-            children: LOCATIONS_MENU.map(location => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-              href: location.href,
-              children: location.label
-            }, location.label))
-          })
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+            className: "ajs-nav-mega-header",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+              className: "ajs-nav-eyebrow",
+              children: "Proudly Serving New Mexico"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h2", {
+              children: "Roofing and gutters across Albuquerque, Santa Fe & Rio Rancho."
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+            className: "ajs-nav-mega-grid",
+            children: LOCATIONS_MENU.map(group => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+              className: "ajs-nav-section",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h3", {
+                children: group.tier
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("ul", {
+                children: group.links.map(link => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+                    href: link.href,
+                    children: link.label
+                  })
+                }, link.label))
+              })]
+            }, group.tier))
+          })]
         })
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
         id: "ajs-mobile-menu",
@@ -746,14 +788,16 @@ function NavbarExample() {
             })]
           }), mobileLocationsOpen && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
             className: "ajs-mobile-group-panel",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+            children: LOCATIONS_MENU.map(group => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
               className: "ajs-mobile-section",
-              children: LOCATIONS_MENU.map(location => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-                href: location.href,
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h3", {
+                children: group.tier
+              }), group.links.map(link => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+                href: link.href,
                 onClick: closeEverything,
-                children: location.label
-              }, location.label))
-            })
+                children: link.label
+              }, link.label))]
+            }, group.tier))
           })]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
           href: "/contact",

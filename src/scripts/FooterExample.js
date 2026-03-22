@@ -22,10 +22,13 @@ const SERVICES = [
 ]
 
 const LOCATIONS = [
-	{ label: "Albuquerque", href: "/locations/albuquerque" },
-	{ label: "Santa Fe", href: "/locations/santa-fe" },
-	{ label: "Rio Rancho", href: "/locations/rio-rancho" },
-	{ label: "Surrounding New Mexico Areas", href: "/locations" }
+	{ label: "Albuquerque NE / High Desert", href: "/locations/albuquerque-ne-high-desert-87122" },
+	{ label: "Far NE Heights", href: "/locations/far-ne-heights-87111" },
+	{ label: "Albuquerque West", href: "/locations/albuquerque-west-87120" },
+	{ label: "NW ABQ / Rio Rancho Border", href: "/locations/nw-abq-87114" },
+	{ label: "Santa Fe Historic Core", href: "/locations/santa-fe-historic-core-87501" },
+	{ label: "Northern Santa Fe", href: "/locations/northern-santa-fe-87506" },
+	{ label: "Rio Rancho", href: "/locations/rio-rancho-87124" }
 ]
 
 function PhoneIcon({ className = "" }) {
