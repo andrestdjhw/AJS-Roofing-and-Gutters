@@ -21,7 +21,7 @@ get_header(); ?>
         </p>
 
         <h1 class="max-w-[12ch] text-4xl font-black leading-[0.95] tracking-[-0.04em] md:text-5xl lg:text-7xl">
-          Your Roof Shouldn’t Be a Question Mark.
+          Your Roof Shouldn't Be a Question Mark.
         </h1>
 
         <p class="mt-5 max-w-2xl text-base leading-8 text-white/85 md:text-lg">
@@ -54,7 +54,7 @@ get_header(); ?>
           Start with a clear inspection.
         </h2>
         <p class="mt-2 text-sm leading-7 text-[#42474b]/80">
-          Tell us what’s going on and we’ll help you take the next step with confidence.
+          Tell us what's going on and we'll help you take the next step with confidence.
         </p>
 
         <form class="mt-5 grid gap-3">
@@ -86,8 +86,8 @@ get_header(); ?>
                     class="w-full resize-y rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"></textarea>
 
           <label class="flex items-start gap-3 text-sm leading-6 text-[#42474b]/80">
-            <input type="checkbox" class="mt-1 h-4 w-4 rounded border-[#d3d8db]">
-            <span>I agree to be contacted about my inspection request.</span>
+            <input type="checkbox" class="mt-1 h-4 w-4 rounded border-[#d3d8db]" required>
+            <span>I agree to be contacted by AJS Roofing &amp; Gutters regarding my request.</span>
           </label>
 
           <button type="submit"
@@ -143,7 +143,7 @@ get_header(); ?>
       <div class="ajs-reveal-right space-y-5 text-base leading-8 text-[#42474b]">
         <p>
           AJS Roofing &amp; Gutters is a licensed roofing contractor serving Albuquerque,
-          Santa Fe, Rio Rancho, and surrounding New Mexico communities. We don’t just
+          Santa Fe, Rio Rancho, and surrounding New Mexico communities. We don't just
           install roofs — we restore peace of mind.
         </p>
 
@@ -186,7 +186,7 @@ get_header(); ?>
           ],
           [
             'title' => 'Metal Roofing',
-            'copy'  => 'Standing seam and metal panel systems built for New Mexico’s extreme UV, hail, and wind. 40–70 year lifespan. The last roof your home will need.',
+            'copy'  => 'Standing seam and metal panel systems built for New Mexico\'s extreme UV, hail, and wind. 40-70 year lifespan. The last roof your home will need.',
             'link'  => '/service/metal-roofing'
           ],
           [
@@ -196,17 +196,17 @@ get_header(); ?>
           ],
           [
             'title' => 'Storm Damage & Insurance',
-            'copy'  => 'Hail or wind damage? We inspect, document everything with photos, and work with your insurance to streamline the process. Here’s what we found — and here’s how we fix it.',
+            'copy'  => 'Hail or wind damage? We inspect, document everything with photos, and work with your insurance to streamline the process. Here\'s what we found — and here\'s how we fix it.',
             'link'  => '/service/storm-damage-insurance'
           ],
           [
             'title' => 'Roof Repair',
-            'copy'  => 'Targeted repairs for leaks, missing shingles, and weather wear. Honest assessment first — we’ll tell you if a repair is enough or if replacement makes more sense.',
+            'copy'  => 'Targeted repairs for leaks, missing shingles, and weather wear. Honest assessment first — we\'ll tell you if a repair is enough or if replacement makes more sense.',
             'link'  => '/service/roof-repair'
           ],
           [
             'title' => 'Roof Inspection & Maintenance',
-            'copy'  => 'Photo-documented inspections and annual maintenance plans. Catch small problems before they become expensive ones. You don’t need to understand roofing — that’s our job.',
+            'copy'  => 'Photo-documented inspections and annual maintenance plans. Catch small problems before they become expensive ones. You don\'t need to understand roofing — that\'s our job.',
             'link'  => '/service/roof-inspection'
           ],
         ];
@@ -244,7 +244,7 @@ get_header(); ?>
           <h3 class="text-xl font-black text-[#132d41]">Documented 5-Step Process</h3>
           <p class="mt-4 text-[15px] leading-8 text-[#42474b]">
             Every AJS project follows the same system: Inspect, Plan, Protect, Build, Verify.
-            No surprises. Every step photographed and communicated. You always know what’s happening.
+            No surprises. Every step photographed and communicated. You always know what's happening.
           </p>
         </article>
 
@@ -265,7 +265,7 @@ get_header(); ?>
         <article class="ajs-hover-lift ajs-reveal rounded-[24px] border border-[#d3d8db] bg-[linear-gradient(180deg,#ffffff_0%,#f5f9fc_100%)] p-6 shadow-[0_14px_32px_rgba(19,45,65,0.07)]">
           <h3 class="text-xl font-black text-[#132d41]">Photo-Documented Clarity</h3>
           <p class="mt-4 text-[15px] leading-8 text-[#42474b]">
-            You don’t have to guess what’s happening on your roof. We show you.
+            You don't have to guess what's happening on your roof. We show you.
           </p>
         </article>
 
@@ -297,7 +297,7 @@ get_header(); ?>
         $steps = [
           ['01', 'Inspect', 'We climb your roof and photograph every square foot. You get a detailed digital report with images, measurements, and our honest assessment. No pressure. Just facts.'],
           ['02', 'Plan', 'We walk you through options, timelines, and pricing. If insurance is involved, we prepare the documentation. Nothing starts until you approve.'],
-          ['03', 'Protect', 'Our crew arrives on schedule. Materials staged, safety protocols followed, your property protected. We treat your home like it’s ours.'],
+          ['03', 'Protect', 'Our crew arrives on schedule. Materials staged, safety protocols followed, your property protected. We treat your home like it\'s ours.'],
           ['04', 'Build', 'Installation follows manufacturer specs exactly. We photograph progress at key milestones and keep you updated. Precision overhead.'],
           ['05', 'Verify', 'Final walkthrough with you present. Every detail shown, every question answered, complete cleanup, warranty packet with documentation. Peace inside.'],
         ];
@@ -364,30 +364,53 @@ get_header(); ?>
       </h2>
 
       <div class="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+
         <article class="ajs-hover-lift ajs-reveal rounded-[24px] border border-[#d3d8db] bg-white p-6 shadow-[0_14px_32px_rgba(19,45,65,0.07)]">
-          <div class="text-base font-black tracking-[0.12em] text-[#d04418]">★★★★★</div>
+          <div class="flex items-center justify-between">
+            <div class="text-base font-black tracking-[0.12em] text-[#d04418]">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <img src="https://m.bbb.org/brand/logos/BBB_PrimaryLogo_Blue_RGB.svg" alt="BBB Accredited" class="h-5 opacity-50">
+          </div>
           <p class="mt-4 text-[15px] leading-8 text-[#42474b]">
-            “Clear communication, solid workmanship, and zero guessing. We always knew what was happening.”
+            "They not only replaced my roof, but also took the time to correct all the mistakes left behind by others. What really stood out was their communication — I was kept informed at every stage, which gave me total peace of mind throughout the project. They finished ahead of schedule."
           </p>
-          <strong class="mt-4 inline-block text-[#132d41]">— Maria, Albuquerque</strong>
+          <strong class="mt-4 inline-block text-[#132d41]">— Alberto R.</strong>
+          <p class="mt-1 text-xs text-[#42474b]/55">Verified BBB Review &middot; April 2025</p>
         </article>
 
         <article class="ajs-hover-lift ajs-reveal rounded-[24px] border border-[#d3d8db] bg-white p-6 shadow-[0_14px_32px_rgba(19,45,65,0.07)]">
-          <div class="text-base font-black tracking-[0.12em] text-[#d04418]">★★★★★</div>
+          <div class="flex items-center justify-between">
+            <div class="text-base font-black tracking-[0.12em] text-[#d04418]">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <img src="https://m.bbb.org/brand/logos/BBB_PrimaryLogo_Blue_RGB.svg" alt="BBB Accredited" class="h-5 opacity-50">
+          </div>
           <p class="mt-4 text-[15px] leading-8 text-[#42474b]">
-            “They explained the storm damage clearly and helped us understand what the roof actually needed.”
+            "When they came to look at the house, he took photographs of the roof, drew diagrams to explain, and showed me the issues. He found so many issues that none of the other contractors found. Through the whole process, I was educated about roofs and about my roof in particular. Solid people, solid work."
           </p>
-          <strong class="mt-4 inline-block text-[#132d41]">— James, Rio Rancho</strong>
+          <strong class="mt-4 inline-block text-[#132d41]">— Cyndi-Marie M.</strong>
+          <p class="mt-1 text-xs text-[#42474b]/55">Verified BBB Review &middot; August 2023</p>
         </article>
 
         <article class="ajs-hover-lift ajs-reveal rounded-[24px] border border-[#d3d8db] bg-white p-6 shadow-[0_14px_32px_rgba(19,45,65,0.07)]">
-          <div class="text-base font-black tracking-[0.12em] text-[#d04418]">★★★★★</div>
+          <div class="flex items-center justify-between">
+            <div class="text-base font-black tracking-[0.12em] text-[#d04418]">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <img src="https://m.bbb.org/brand/logos/BBB_PrimaryLogo_Blue_RGB.svg" alt="BBB Accredited" class="h-5 opacity-50">
+          </div>
           <p class="mt-4 text-[15px] leading-8 text-[#42474b]">
-            “Professional from start to finish. The process felt organized, and the result feels secure.”
+            "I highly recommend AJ's Professional Roofing. Their work is consistently high-quality, communication is clear and timely, and they are dependable from start to finish. It's rare to find a roofing company you can trust both personally and professionally."
           </p>
-          <strong class="mt-4 inline-block text-[#132d41]">— Elena, Santa Fe</strong>
+          <strong class="mt-4 inline-block text-[#132d41]">— Christine L.</strong>
+          <p class="mt-1 text-xs text-[#42474b]/55">Verified BBB Review &middot; January 2026</p>
         </article>
+
       </div>
+
+      <div class="ajs-reveal mt-8 text-center">
+        <a href="https://www.bbb.org/us/nm/veguita/profile/roofing-contractors/ajs-professional-contracting-llc-0806-99137264/customer-reviews"
+           target="_blank" rel="noopener"
+           class="ajs-btn-animate inline-flex items-center justify-center gap-2 rounded-full border border-[#132d41]/12 bg-[#132d41]/5 px-6 py-4 text-sm font-black text-[#132d41] transition hover:bg-[#132d41] hover:text-white">
+          Read All Reviews on BBB
+        </a>
+      </div>
+
     </div>
   </section>
 
@@ -433,7 +456,7 @@ get_header(); ?>
         $faqs = [
           [
             'q' => 'How do I know if I need a repair or a full roof replacement?',
-            'a' => 'We start with an inspection and show you exactly what we found. If a repair is enough, we’ll say so. If replacement makes more sense, we’ll explain why in clear language.'
+            'a' => 'We start with an inspection and show you exactly what we found. If a repair is enough, we\'ll say so. If replacement makes more sense, we\'ll explain why in clear language.'
           ],
           [
             'q' => 'Do you help with storm damage and insurance claims?',
@@ -479,8 +502,8 @@ get_header(); ?>
         </h2>
 
         <p class="mt-5 max-w-2xl text-base leading-8 text-white/82">
-          Schedule your free inspection. We’ll show you exactly what your roof needs —
-          and exactly what it doesn’t. No pressure. No surprises. Just a clear path
+          Schedule your free inspection. We'll show you exactly what your roof needs —
+          and exactly what it doesn't. No pressure. No surprises. Just a clear path
           from uncertainty to protection.
         </p>
 
@@ -527,6 +550,11 @@ get_header(); ?>
 
           <textarea rows="4" placeholder="Anything else we should know? (optional)"
                     class="w-full resize-y rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"></textarea>
+
+          <label class="flex items-start gap-3 text-sm leading-6 text-[#42474b]/80">
+            <input type="checkbox" class="mt-1 h-4 w-4 rounded border-[#d3d8db]" required>
+            <span>I agree to be contacted by AJS Roofing &amp; Gutters regarding my request.</span>
+          </label>
 
           <button type="submit"
                   class="ajs-btn-animate inline-flex items-center justify-center rounded-full bg-[linear-gradient(135deg,#d04418,#b63c15)] px-6 py-4 text-sm font-black text-white shadow-[0_16px_32px_rgba(208,68,24,0.28)] transition">
