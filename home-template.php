@@ -421,21 +421,51 @@ get_header(); ?>
         <p class="mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
           Proudly Serving New Mexico Communities
         </p>
-        <h2 class="max-w-[14ch] text-3xl font-black leading-tight tracking-[-0.03em] text-[#132d41] md:text-5xl">
-          Local service with clear communication and reliable execution.
+<h2 class="max-w-xl text-3xl font-black leading-[1.1] tracking-[-0.03em] text-[#132d41] md:text-5xl">          Local service with clear communication and reliable execution.
         </h2>
 
+        <p class="mt-5 max-w-xl text-base leading-8 text-[#42474b]">
+          We proudly serve homeowners across Albuquerque, Santa Fe, Rio Rancho,
+          and surrounding New Mexico areas with roofing and gutter solutions
+          built for long-term protection.
+        </p>
+
         <ul class="mt-6 grid gap-3 text-base font-bold text-[#42474b]">
-          <li>Albuquerque</li>
-          <li>Santa Fe</li>
-          <li>Rio Rancho</li>
-          <li>Surrounding New Mexico Areas</li>
+          <li class="flex items-center gap-3">
+            <span class="h-2.5 w-2.5 rounded-full bg-[#d04418]"></span>
+            Albuquerque
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="h-2.5 w-2.5 rounded-full bg-[#d04418]"></span>
+            Santa Fe
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="h-2.5 w-2.5 rounded-full bg-[#d04418]"></span>
+            Rio Rancho
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="h-2.5 w-2.5 rounded-full bg-[#d04418]"></span>
+            Surrounding New Mexico Areas
+          </li>
         </ul>
+
+        <a href="/locations"
+           class="mt-8 inline-flex font-black text-[#d04418] transition hover:translate-x-[2px]">
+          Explore all service areas
+        </a>
       </div>
 
-      <div class="ajs-hover-lift ajs-reveal-right rounded-[24px] border border-[#d3d8db] bg-[linear-gradient(180deg,#ffffff_0%,#f5f9fc_100%)] p-4 shadow-[0_14px_32px_rgba(19,45,65,0.07)]">
-        <div class="flex min-h-[280px] items-center justify-center rounded-[20px] border border-dashed border-[#6eaace]/40 bg-[#6eaace]/8 px-6 text-center text-[#42474b]/70">
-          Office address and embedded map go here
+      <div class="ajs-hover-lift ajs-reveal-right overflow-hidden rounded-[24px] border border-[#d3d8db] bg-[linear-gradient(180deg,#ffffff_0%,#f5f9fc_100%)] p-3 shadow-[0_14px_32px_rgba(19,45,65,0.07)]">
+        <div class="overflow-hidden rounded-[20px] border border-[#d3d8db]">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12267.925854957912!2d-106.49962583992456!3d35.14702501422682!2m3!1f0!2f0!3f0!2m3!1i1024!2i768!4f13.1!3m3!1m2!1s0x87189fa05f8517d9%3A0xa4f35cdf5e1c54a4!2sHigh Desert%2C Albuquerque%2C NM%2C USA!5e1!3m2!1sen!2shn!4v1774275830057!5m2!1sen!2shn"
+            width="100%"
+            height="320"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
         </div>
       </div>
     </div>

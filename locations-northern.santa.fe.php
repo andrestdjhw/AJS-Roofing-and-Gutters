@@ -160,6 +160,52 @@ get_header(); ?>
     </div>
   </section>
 
+  <!-- LOCAL LOCATION -->
+  <section class="py-16 md:py-20 bg-white">
+    <div class="mx-auto max-w-7xl px-4">
+      <div class="grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
+
+        <div class="ajs-reveal">
+          <p class="text-xs font-black uppercase tracking-[0.18em] text-[#b7841a] mb-3">
+            Location
+          </p>
+
+          <h2 class="text-3xl md:text-4xl font-black tracking-[-0.03em] text-[#102946]">
+            Northern Santa Fe · 87506
+          </h2>
+
+          <p class="mt-6 text-[#425066] text-lg leading-8">
+            AJS Roofing &amp; Gutters serves homeowners across Northern Santa Fe and the 87506 area with clear communication, documented processes, and reliable execution from start to finish.
+          </p>
+
+          <div class="mt-6 rounded-[18px] border border-[rgba(16,41,70,0.08)] bg-[#f8fafc] p-5">
+            <p class="text-sm font-black uppercase tracking-[0.14em] text-[#b7841a]">
+              Service Area
+            </p>
+            <p class="mt-2 text-base font-bold text-[#102946]">
+              Northern Santa Fe · Santa Fe, NM · 87506
+            </p>
+          </div>
+        </div>
+
+        <div class="ajs-reveal">
+          <div class="overflow-hidden rounded-[22px] border border-[rgba(16,41,70,0.08)] shadow-[0_14px_32px_rgba(16,41,70,0.08)]">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d48752.91015957736!2d-106.00441181833845!3d35.672306044891855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s87506%20%E2%80%94%20Northern%20Santa%20Fe!5e1!3m2!1sen!2shn!4v1774276200319!5m2!1sen!2shn"
+              width="100%"
+              height="340"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <!-- FAQ -->
   <section class="py-16 md:py-20">
     <div class="mx-auto max-w-4xl px-4">

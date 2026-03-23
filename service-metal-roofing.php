@@ -357,33 +357,36 @@ get_header(); ?>
           Office Location
         </p>
         <h2 class="max-w-[14ch] text-3xl font-black tracking-[-0.03em] text-[#132d41] md:text-5xl">
-          Local metal roofing service with clear communication and reliable execution.
+          Local roof replacement service with clear communication and reliable execution.
         </h2>
 
         <p class="mt-5 max-w-xl text-base leading-8 text-[#42474b]">
-          AJS Roofing &amp; Gutters serves Albuquerque, Santa Fe, Rio Rancho, and surrounding New Mexico communities. Replace this placeholder with the real office address and embedded map.
+          AJS Roofing &amp; Gutters serves homeowners across Albuquerque, Santa Fe,
+          Rio Rancho, and surrounding New Mexico communities with roof replacement
+          solutions built for long-term protection and peace of mind.
         </p>
 
         <div class="mt-6 rounded-[20px] border border-[#d3d8db] bg-white p-5 shadow-[0_10px_24px_rgba(19,45,65,0.04)]">
-          <p class="text-sm font-black uppercase tracking-[0.16em] text-[#d04418]">Office Address</p>
+          <p class="text-sm font-black uppercase tracking-[0.16em] text-[#d04418]">Service Area</p>
           <p class="mt-3 text-base leading-8 text-[#42474b]">
-            123 Example Street<br>
-            Albuquerque, NM 87101
+            High Desert<br>
+            Albuquerque, NM, USA
           </p>
           <p class="mt-3 text-sm text-[#42474b]/70">
-            Replace with real office address, hours, and local service-area details.
+            Proudly serving Albuquerque, Santa Fe, Rio Rancho, and surrounding New Mexico areas.
           </p>
         </div>
       </div>
 
       <div class="ajs-reveal-right">
         <div class="ajs-hover-lift rounded-[24px] border border-[#d3d8db] bg-[linear-gradient(180deg,#ffffff_0%,#f5f9fc_100%)] p-4 shadow-[0_14px_32px_rgba(19,45,65,0.07)]">
-          <div class="overflow-hidden rounded-[20px] border border-dashed border-[#6eaace]/40 bg-[#6eaace]/8">
+          <div class="overflow-hidden rounded-[20px] border border-[#d3d8db]">
             <iframe
-              src="https://maps.google.com/maps?q=Albuquerque&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12267.925854957912!2d-106.49962583992456!3d35.14702501422682!2m3!1f0!2f0!3f0!2m3!1i1024!2i768!4f13.1!3m3!1m2!1s0x87189fa05f8517d9%3A0xa4f35cdf5e1c54a4!2sHigh Desert%2C Albuquerque%2C NM%2C USA!5e1!3m2!1sen!2shn!4v1774275830057!5m2!1sen!2shn"
               width="100%"
               height="320"
               style="border:0;"
+              allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade">
             </iframe>
@@ -392,7 +395,7 @@ get_header(); ?>
       </div>
     </div>
   </section>
-
+  
   <!-- CLOSING CTA -->
   <section class="relative overflow-hidden bg-[linear-gradient(180deg,#132d41_0%,#1c425f_100%)] py-20 text-white">
     <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(110,170,206,0.16),transparent_30%)]"></div>
