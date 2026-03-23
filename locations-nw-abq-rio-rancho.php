@@ -47,38 +47,40 @@ get_header(); ?>
   </section>
 
   <!-- LOCAL HOUSING DATA -->
-  <section class="bg-[#f5f9fc] py-16 md:py-20">
-    <div class="mx-auto max-w-5xl px-4">
+<section class="bg-[#f5f9fc] py-16 md:py-20">
+  <div class="mx-auto max-w-5xl px-4 text-center">
 
-      <p class="ajs-reveal text-xs font-black uppercase tracking-[0.18em] text-[#b7841a] mb-3">
-        The 87114 Market
-      </p>
+    <p class="ajs-reveal text-xs font-black uppercase tracking-[0.18em] text-[#b7841a] mb-3">
+      The 87114 Market
+    </p>
 
-      <h2 class="ajs-reveal text-3xl font-black tracking-[-0.03em] text-[#102946]">
-        A Growing Area That Deserves a Process-Driven Roofer.
-      </h2>
+    <h2 class="ajs-reveal text-3xl font-black tracking-[-0.03em] text-[#102946]">
+      A Growing Area That Deserves a Process-Driven Roofer.
+    </h2>
 
-      <div class="mt-10 grid gap-6 md:grid-cols-3">
+    <!-- CENTRADO -->
+    <div class="mt-10 flex justify-center">
+      <div class="grid gap-6 md:grid-cols-2 max-w-2xl w-full">
 
-        <div class="ajs-stat-card ajs-reveal">
-          <span class="ajs-stat-number">Growing Area</span>
-          <span class="ajs-stat-label">Expanding NW ABQ / Rio Rancho market</span>
+        <div class="ajs-stat-card ajs-reveal text-center">
+          <span class="ajs-stat-number block">Growing Area</span>
+          <span class="ajs-stat-label block mt-2">
+            Expanding NW ABQ / Rio Rancho market
+          </span>
         </div>
 
-        <div class="ajs-stat-card ajs-reveal">
-          <span class="ajs-stat-number">Younger Homeowners</span>
-          <span class="ajs-stat-label">First-time roofing decisions</span>
-        </div>
-
-        <div class="ajs-stat-card ajs-reveal">
-          <span class="ajs-stat-number">NM Conditions</span>
-          <span class="ajs-stat-label">UV · Hail · Monsoon wear</span>
+        <div class="ajs-stat-card ajs-reveal text-center">
+          <span class="ajs-stat-number block">Younger Homeowners</span>
+          <span class="ajs-stat-label block mt-2">
+            First-time roofing decisions
+          </span>
         </div>
 
       </div>
-
     </div>
-  </section>
+
+  </div>
+</section>
 
   <!-- SERVICES -->
   <section class="py-16 md:py-20">

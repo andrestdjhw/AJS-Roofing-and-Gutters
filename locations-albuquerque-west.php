@@ -46,39 +46,41 @@ get_header(); ?>
     </div>
   </section>
 
-  <!-- LOCAL HOUSING DATA -->
-  <section class="bg-[#f5f9fc] py-16 md:py-20">
-    <div class="mx-auto max-w-5xl px-4">
+<!-- LOCAL HOUSING DATA -->
+<section class="bg-[#f5f9fc] py-16 md:py-20">
+  <div class="mx-auto max-w-5xl px-4 text-center">
 
-      <p class="ajs-reveal text-xs font-black uppercase tracking-[0.18em] text-[#b7841a] mb-3">
-        The 87120 Market
-      </p>
+    <p class="ajs-reveal text-xs font-black uppercase tracking-[0.18em] text-[#b7841a] mb-3">
+      The 87120 Market
+    </p>
 
-      <h2 class="ajs-reveal text-3xl font-black tracking-[-0.03em] text-[#102946]">
-        Albuquerque West Is a High-Volume Roofing Market.
-      </h2>
+    <h2 class="ajs-reveal text-3xl font-black tracking-[-0.03em] text-[#102946]">
+      Albuquerque West Is a High-Volume Roofing Market.
+    </h2>
 
-      <div class="mt-10 grid gap-6 md:grid-cols-3">
+    <!-- CENTRADO DE CARDS -->
+    <div class="mt-10 flex justify-center">
+      <div class="grid gap-6 md:grid-cols-2 max-w-2xl w-full">
 
-        <div class="ajs-stat-card ajs-reveal">
-          <span class="ajs-stat-number">High Volume</span>
-          <span class="ajs-stat-label">Active roofing market in 87120</span>
+        <div class="ajs-stat-card ajs-reveal text-center">
+          <span class="ajs-stat-number block">High Volume</span>
+          <span class="ajs-stat-label block mt-2">
+            Active roofing market in 87120
+          </span>
         </div>
 
-        <div class="ajs-stat-card ajs-reveal">
-          <span class="ajs-stat-number">Shingle</span>
-          <span class="ajs-stat-label">Primary replacement market</span>
-        </div>
-
-        <div class="ajs-stat-card ajs-reveal">
-          <span class="ajs-stat-number">NM Conditions</span>
-          <span class="ajs-stat-label">UV · Hail · Monsoon wear</span>
+        <div class="ajs-stat-card ajs-reveal text-center">
+          <span class="ajs-stat-number block">Shingle</span>
+          <span class="ajs-stat-label block mt-2">
+            Primary replacement market
+          </span>
         </div>
 
       </div>
-
     </div>
-  </section>
+
+  </div>
+</section>
 
   <!-- SERVICES -->
   <section class="py-16 md:py-20">
