@@ -44,10 +44,38 @@ get_header(); ?>
           Choose a time that works for you.
         </p>
 
-        <div class="mt-5 overflow-hidden rounded-[24px] border border-[#d3d8db] bg-[#f5f9fc] p-3">
-          <!-- Reemplaza este bloque con tu embed real de Calendly o scheduler -->
-          <div class="flex min-h-[520px] items-center justify-center rounded-[18px] border border-dashed border-[#6eaace]/40 bg-white px-6 text-center text-[#42474b]/70">
-            Calendly / scheduling embed goes here
+        <div id="scheduler" class="mt-5 overflow-hidden rounded-[24px] border border-[#d3d8db] bg-[#f5f9fc] p-3">
+          <!-- Calendario real -->
+          <div class="bg-white rounded-[18px] p-4 shadow-sm">
+            <!-- Header del calendario -->
+            <div class="flex items-center justify-between mb-4">
+              <button id="prevMonth" class="text-[#6eaace] hover:text-[#132d41] text-2xl leading-none">&lt;</button>
+              <div id="monthYear" class="font-bold text-[#132d41] text-lg"></div>
+              <button id="nextMonth" class="text-[#6eaace] hover:text-[#132d41] text-2xl leading-none">&gt;</button>
+            </div>
+
+            <!-- Días de la semana -->
+            <div class="grid grid-cols-7 gap-1 text-center text-xs font-medium text-[#42474b]/70 mb-2">
+              <div>S</div><div>M</div><div>T</div><div>W</div><div>T</div><div>F</div><div>S</div>
+            </div>
+
+            <!-- Días del calendario -->
+            <div id="calendarGrid" class="grid grid-cols-7 gap-1 text-center"></div>
+
+            <!-- Horarios disponibles (se muestra después de elegir fecha) -->
+            <div id="timeSlotsSection" class="hidden mt-6">
+              <p class="text-sm font-semibold text-[#132d41] mb-3">Available times on <span id="selectedDateDisplay" class="text-[#6eaace]"></span></p>
+              <div id="timeSlots" class="grid grid-cols-2 gap-2"></div>
+            </div>
+
+            <!-- Botón de programar -->
+            <div id="confirmSection" class="hidden mt-6">
+              <button id="scheduleBtn"
+                      class="w-full bg-[#132d41] hover:bg-[#1f4661] text-white font-bold py-4 rounded-2xl transition-all active:scale-[0.98]">
+                Programar la llamada
+              </button>
+              <p id="confirmationMessage" class="hidden mt-4 text-center text-green-600 font-medium"></p>
+            </div>
           </div>
         </div>
       </div>
@@ -57,62 +85,61 @@ get_header(); ?>
 </main>
 
 <style>
-  .ajs-reveal-left,
-  .ajs-reveal-right {
-    opacity: 0;
-    transition: opacity .85s ease, transform .85s cubic-bezier(.22,.61,.36,1);
-    will-change: opacity, transform;
+  /* Estilos del calendario */
+  .calendar-day {
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .calendar-day:hover {
+    background-color: #e0f0ff;
+  }
+  .calendar-day.today {
+    background-color: #6eaace;
+    color: white;
+    font-weight: bold;
+  }
+  .calendar-day.selected {
+    background-color: #132d41;
+    color: white;
+  }
+  .calendar-day.disabled {
+    color: #ccc;
+    cursor: not-allowed;
+  }
+  .calendar-day.other-month {
+    color: #aaa;
   }
 
-  .ajs-reveal-left {
-    transform: translateX(-42px);
+  .time-slot {
+    padding: 12px 16px;
+    border: 2px solid #d3d8db;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
   }
-
-  .ajs-reveal-right {
-    transform: translateX(42px);
+  .time-slot:hover {
+    border-color: #6eaace;
+    background-color: #f0f7ff;
   }
-
-  .ajs-reveal-left.is-visible,
-  .ajs-reveal-right.is-visible {
-    opacity: 1;
-    transform: translate(0, 0);
-  }
-
-  .ajs-float-slow {
-    animation: ajsFloatSlow 8s ease-in-out infinite;
-  }
-
-  .ajs-float-slower {
-    animation: ajsFloatSlower 11s ease-in-out infinite;
-  }
-
-  @keyframes ajsFloatSlow {
-    0%, 100% { transform: translate3d(0,0,0); }
-    50% { transform: translate3d(0,-14px,0); }
-  }
-
-  @keyframes ajsFloatSlower {
-    0%, 100% { transform: translate3d(0,0,0); }
-    50% { transform: translate3d(12px,-10px,0); }
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    .ajs-reveal-left,
-    .ajs-reveal-right,
-    .ajs-float-slow,
-    .ajs-float-slower {
-      animation: none !important;
-      transition: none !important;
-      transform: none !important;
-      opacity: 1 !important;
-    }
+  .time-slot.selected {
+    background-color: #132d41;
+    color: white;
+    border-color: #132d41;
   }
 </style>
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
+    // Animaciones existentes
     const items = document.querySelectorAll(".ajs-reveal-left, .ajs-reveal-right");
-
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -121,8 +148,145 @@ get_header(); ?>
         }
       });
     }, { threshold: 0.12 });
-
     items.forEach((item) => observer.observe(item));
+
+    // === LÓGICA DEL CALENDARIO ===
+    let currentDate = new Date();
+    let selectedDate = null;
+    let selectedTime = null;
+
+    const monthYearEl = document.getElementById("monthYear");
+    const calendarGrid = document.getElementById("calendarGrid");
+    const timeSlotsSection = document.getElementById("timeSlotsSection");
+    const timeSlotsEl = document.getElementById("timeSlots");
+    const selectedDateDisplay = document.getElementById("selectedDateDisplay");
+    const confirmSection = document.getElementById("confirmSection");
+    const scheduleBtn = document.getElementById("scheduleBtn");
+    const confirmationMessage = document.getElementById("confirmationMessage");
+
+    // Horarios de ejemplo (puedes cambiarlos)
+    const availableTimes = ["09:00", "10:00", "11:00", "14:00", "15:00", "16:00"];
+
+    function renderCalendar() {
+      calendarGrid.innerHTML = "";
+      const year = currentDate.getFullYear();
+      const month = currentDate.getMonth();
+
+      monthYearEl.textContent = currentDate.toLocaleString('default', { month: 'long', year: 'numeric' });
+
+      const firstDay = new Date(year, month, 1).getDay();
+      const daysInMonth = new Date(year, month + 1, 0).getDate();
+      const today = new Date();
+      today.setHours(0,0,0,0);
+
+      // Días del mes anterior
+      const prevMonthDays = new Date(year, month, 0).getDate();
+      for (let i = firstDay - 1; i >= 0; i--) {
+        const dayEl = document.createElement("div");
+        dayEl.className = "calendar-day other-month";
+        dayEl.textContent = prevMonthDays - i;
+        calendarGrid.appendChild(dayEl);
+      }
+
+      // Días del mes actual
+      for (let day = 1; day <= daysInMonth; day++) {
+        const date = new Date(year, month, day);
+        const dayEl = document.createElement("div");
+        dayEl.className = "calendar-day";
+        dayEl.textContent = day;
+
+        if (date.getTime() === today.getTime()) {
+          dayEl.classList.add("today");
+        }
+
+        if (date < today) {
+          dayEl.classList.add("disabled");
+        } else {
+          dayEl.addEventListener("click", () => selectDate(date, dayEl));
+        }
+
+        if (selectedDate && date.getTime() === selectedDate.getTime()) {
+          dayEl.classList.add("selected");
+        }
+
+        calendarGrid.appendChild(dayEl);
+      }
+
+      // Días del siguiente mes
+      const remainingCells = 42 - (firstDay + daysInMonth);
+      for (let day = 1; day <= remainingCells; day++) {
+        const dayEl = document.createElement("div");
+        dayEl.className = "calendar-day other-month";
+        dayEl.textContent = day;
+        calendarGrid.appendChild(dayEl);
+      }
+    }
+
+    function selectDate(date, element) {
+      // Quitar selección anterior
+      document.querySelectorAll(".calendar-day").forEach(el => el.classList.remove("selected"));
+      element.classList.add("selected");
+
+      selectedDate = date;
+      selectedTime = null;
+
+      // Mostrar fecha seleccionada y horarios
+      const options = { weekday: 'long', month: 'long', day: 'numeric' };
+      selectedDateDisplay.textContent = date.toLocaleDateString('en-US', options);
+
+      timeSlotsSection.classList.remove("hidden");
+      confirmSection.classList.add("hidden");
+
+      renderTimeSlots();
+    }
+
+    function renderTimeSlots() {
+      timeSlotsEl.innerHTML = "";
+      availableTimes.forEach(time => {
+        const slot = document.createElement("div");
+        slot.className = "time-slot";
+        slot.textContent = time;
+        slot.addEventListener("click", () => {
+          document.querySelectorAll(".time-slot").forEach(s => s.classList.remove("selected"));
+          slot.classList.add("selected");
+          selectedTime = time;
+
+          confirmSection.classList.remove("hidden");
+        });
+        timeSlotsEl.appendChild(slot);
+      });
+    }
+
+    // Navegación de meses
+    document.getElementById("prevMonth").addEventListener("click", () => {
+      currentDate.setMonth(currentDate.getMonth() - 1);
+      renderCalendar();
+    });
+
+    document.getElementById("nextMonth").addEventListener("click", () => {
+      currentDate.setMonth(currentDate.getMonth() + 1);
+      renderCalendar();
+    });
+
+    // Botón de programar llamada
+    scheduleBtn.addEventListener("click", () => {
+      if (selectedDate && selectedTime) {
+        const formattedDate = selectedDate.toLocaleDateString('en-US', { 
+          weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' 
+        });
+        
+        confirmationMessage.textContent = `✅ Call scheduled for ${formattedDate} at ${selectedTime}`;
+        confirmationMessage.classList.remove("hidden");
+        scheduleBtn.style.opacity = "0.6";
+        scheduleBtn.textContent = "Scheduled!";
+
+        // Aquí puedes agregar fetch a tu backend o redirigir
+        console.log(`Llamada programada: ${formattedDate} - ${selectedTime}`);
+      }
+    });
+
+    // Inicializar
+    renderCalendar();
   });
 </script>
 

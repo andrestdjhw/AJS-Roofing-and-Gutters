@@ -106,48 +106,69 @@ get_header(); ?>
   </section>
 
   <!-- GALLERY -->
-  <section class="bg-[#d3d8db]/20 py-20">
-    <div class="mx-auto max-w-7xl px-4">
-      <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-        <div>
-          <p class="ajs-reveal mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
-            Recent Work
-          </p>
-          <h2 class="ajs-reveal text-3xl font-black tracking-[-0.03em] text-[#132d41] md:text-5xl">
-            Inspection &amp; Maintenance Projects
-          </h2>
-        </div>
-
-        <p class="ajs-reveal max-w-xl text-base leading-8 text-[#42474b]">
-          Add real inspection photos, documentation screenshots, maintenance visits, and condition-tracking images here.
+<section class="bg-[#d3d8db]/20 py-20">
+  <div class="mx-auto max-w-7xl px-4">
+    <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+      <div>
+        <p class="ajs-reveal mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
+          Recent Work
         </p>
+        <h2 class="ajs-reveal text-3xl font-black tracking-[-0.03em] text-[#132d41] md:text-5xl">
+          Inspection &amp; Maintenance Projects
+        </h2>
       </div>
 
-      <div class="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-        <?php
-        $gallery_items = [
-          'Photo-Documented Inspection',
-          'Condition Tracking',
-          'Maintenance Visit',
-          'Roof Detail Review',
-          'Annual Inspection Record',
-          'Preventive Maintenance',
-        ];
-
-        foreach ($gallery_items as $item) : ?>
-          <div class="ajs-reveal ajs-gallery-card group relative min-h-[240px] overflow-hidden rounded-[24px] border border-[#d3d8db] bg-[linear-gradient(180deg,rgba(19,45,65,0.08),rgba(19,45,65,0.18)),linear-gradient(180deg,#eef6fb_0%,#d3d8db_100%)] p-6 shadow-[0_14px_32px_rgba(19,45,65,0.07)]">
-            <div class="absolute inset-0 scale-100 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.35),transparent_35%)] transition duration-700 group-hover:scale-110"></div>
-            <div class="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#132d41]/35 to-transparent"></div>
-            <div class="relative flex h-full items-end">
-              <span class="text-base font-black text-[#132d41]">
-                <?php echo esc_html($item); ?>
-              </span>
-            </div>
-          </div>
-        <?php endforeach; ?>
-      </div>
+      <p class="ajs-reveal max-w-xl text-base leading-8 text-[#42474b]">
+        A selection of recent inspection and maintenance work focused on identifying issues early and keeping roofing systems in good condition.
+      </p>
     </div>
-  </section>
+
+    <div class="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+      <?php
+      $gallery_items = [
+        [
+          'label' => 'Photo-Documented Inspection',
+          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/peter-wang-NibBkxeSXS8-unsplash-scaled.jpg'
+        ],
+        [
+          'label' => 'Condition Tracking',
+          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/scott-blake-ZOiGMIcfXXg-unsplash-scaled.jpg'
+        ],
+        [
+          'label' => 'Maintenance Visit',
+          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/ronnakorn-triraganon-qjxlAZYkGpU-unsplash-scaled.jpg'
+        ],
+        [
+          'label' => 'Roof Detail Review',
+          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/tanya-paquet-fXJZXzYVBUs-unsplash-scaled.jpg'
+        ],
+        [
+          'label' => 'Annual Inspection Record',
+          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/chris-robert-ms07HdgOZow-unsplash-scaled.jpg'
+        ],
+        [
+          'label' => 'Preventive Maintenance',
+          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/immo-wegmann-sKiCvM6sPtU-unsplash-scaled.jpg'
+        ],
+      ];
+
+      foreach ($gallery_items as $item) : ?>
+        <div
+          class="ajs-reveal ajs-gallery-card group relative min-h-[240px] overflow-hidden rounded-[24px] border border-[#d3d8db] p-6 shadow-[0_14px_32px_rgba(19,45,65,0.07)] bg-cover bg-center"
+          style="background-image: linear-gradient(180deg, rgba(19,45,65,0.15), rgba(19,45,65,0.45)), url('<?php echo esc_url($item['image']); ?>');"
+        >
+          <div class="absolute inset-0 scale-100 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.18),transparent_35%)] transition duration-700 group-hover:scale-110"></div>
+          <div class="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#132d41]/25 to-transparent"></div>
+          <div class="relative flex h-full items-end">
+            <span class="text-base font-black text-white">
+              <?php echo esc_html($item['label']); ?>
+            </span>
+          </div>
+        </div>
+      <?php endforeach; ?>
+    </div>
+  </div>
+</section>
 
     <!-- LOCATION -->
   <section class="py-20">

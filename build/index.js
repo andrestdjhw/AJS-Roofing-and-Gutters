@@ -544,6 +544,64 @@ function CloseIcon({
     })]
   });
 }
+function InstagramIcon({
+  className = ""
+}) {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("svg", {
+    className: className,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    "aria-hidden": "true",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("rect", {
+      x: "3.5",
+      y: "3.5",
+      width: "17",
+      height: "17",
+      rx: "4",
+      stroke: "currentColor",
+      strokeWidth: "1.7"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("circle", {
+      cx: "12",
+      cy: "12",
+      r: "4",
+      stroke: "currentColor",
+      strokeWidth: "1.7"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("circle", {
+      cx: "17.2",
+      cy: "6.8",
+      r: "1",
+      fill: "currentColor"
+    })]
+  });
+}
+function FacebookIcon({
+  className = ""
+}) {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("svg", {
+    className: className,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    "aria-hidden": "true",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
+      d: "M14 8H16V5H14C11.8 5 10 6.8 10 9V11H8V14H10V19H13V14H15.5L16 11H13V9C13 8.45 13.45 8 14 8Z",
+      fill: "currentColor"
+    })
+  });
+}
+function TiktokIcon({
+  className = ""
+}) {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("svg", {
+    className: className,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    "aria-hidden": "true",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
+      d: "M14 4C14.3 5.8 15.5 7.2 17.2 7.8C18 8.1 18.8 8.2 19.5 8.2V11C18.2 11 16.9 10.6 15.8 9.9V14.8C15.8 17.7 13.5 20 10.6 20C7.7 20 5.4 17.7 5.4 14.8C5.4 11.9 7.7 9.6 10.6 9.6C10.9 9.6 11.2 9.6 11.5 9.7V12.5C11.2 12.4 10.9 12.3 10.6 12.3C9.2 12.3 8.1 13.4 8.1 14.8C8.1 16.2 9.2 17.3 10.6 17.3C12 17.3 13.1 16.2 13.1 14.8V4H14Z",
+      fill: "currentColor"
+    })
+  });
+}
 function NavbarExample() {
   const [activeMenu, setActiveMenu] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
   const [mobileOpen, setMobileOpen] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
@@ -575,255 +633,323 @@ function NavbarExample() {
     setMobileServicesOpen(false);
     setMobileLocationsOpen(false);
   }
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("header", {
-    className: "ajs-nav-wrap",
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-      className: "ajs-nav-shell",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-        className: "ajs-nav-top",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-          className: "ajs-nav-brand",
-          href: "/",
-          "aria-label": "AJS Roofing and Gutters Home",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
-            src: "/wp-content/uploads/2026/03/AJS_Imagotipo_horizontal-scaled.png",
-            alt: "AJS Roofing & Gutters",
-            className: "ajs-nav-brand-logo"
-          })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("nav", {
-          className: "ajs-nav-desktop",
-          "aria-label": "Main navigation",
-          onMouseLeave: closeMenuWithDelay,
-          children: MAIN_NAV.map(item => {
-            if (item.type === "mega") {
-              return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-                className: "ajs-nav-item",
-                onMouseEnter: () => openMenu("services"),
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("button", {
-                  type: "button",
-                  className: `ajs-nav-trigger ${activeMenu === "services" ? "is-active" : ""}`,
-                  onFocus: () => openMenu("services"),
-                  "aria-expanded": activeMenu === "services",
-                  children: [item.label, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(ChevronDownIcon, {
-                    className: "ajs-nav-caret"
-                  })]
-                })
-              }, item.label);
-            }
-            if (item.type === "dropdown") {
-              return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-                className: "ajs-nav-item",
-                onMouseEnter: () => openMenu("locations"),
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("button", {
-                  type: "button",
-                  className: `ajs-nav-trigger ${activeMenu === "locations" ? "is-active" : ""}`,
-                  onFocus: () => openMenu("locations"),
-                  "aria-expanded": activeMenu === "locations",
-                  children: [item.label, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(ChevronDownIcon, {
-                    className: "ajs-nav-caret"
-                  })]
-                })
-              }, item.label);
-            }
-            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-              className: "ajs-nav-link",
-              href: item.href,
-              children: item.label
-            }, item.label);
-          })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-          className: "ajs-nav-actions",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("a", {
-            className: "ajs-nav-phone desktop-only",
-            href: PHONE_LINK,
-            "aria-label": `Call ${PHONE_DISPLAY}`,
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(PhoneIcon, {
-              className: "ajs-nav-phone-svg"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
-              children: PHONE_DISPLAY
-            })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-            className: "ajs-nav-quote desktop-only",
-            href: "/estimate",
-            children: "Get Your Free Inspection"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-            className: "ajs-nav-icon-button mobile-only",
-            href: PHONE_LINK,
-            "aria-label": "Call AJS Roofing and Gutters",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(PhoneIcon, {
-              className: "ajs-nav-icon-svg"
-            })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("button", {
-            type: "button",
-            className: "ajs-nav-mobile-toggle mobile-only",
-            "aria-expanded": mobileOpen,
-            "aria-controls": "ajs-mobile-menu",
-            onClick: () => setMobileOpen(prev => !prev),
-            children: [mobileOpen ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(CloseIcon, {
-              className: "ajs-nav-icon-svg"
-            }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(MenuIcon, {
-              className: "ajs-nav-icon-svg"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
-              children: mobileOpen ? "Close" : "Menu"
-            })]
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      className: "ajs-topbar",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        className: "ajs-topbar-inner",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("a", {
+          href: PHONE_LINK,
+          className: "ajs-topbar-phone",
+          "aria-label": `Call ${PHONE_DISPLAY}`,
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(PhoneIcon, {
+            className: "ajs-topbar-phone-icon"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+            children: PHONE_DISPLAY
           })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+          className: "ajs-topbar-divider",
+          "aria-hidden": "true"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+          href: "https://www.instagram.com/",
+          className: "ajs-topbar-social",
+          "aria-label": "Instagram",
+          target: "_blank",
+          rel: "noopener noreferrer",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(InstagramIcon, {
+            className: "ajs-topbar-social-icon"
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+          href: "https://www.facebook.com/",
+          className: "ajs-topbar-social",
+          "aria-label": "Facebook",
+          target: "_blank",
+          rel: "noopener noreferrer",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(FacebookIcon, {
+            className: "ajs-topbar-social-icon"
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+          href: "https://www.tiktok.com/",
+          className: "ajs-topbar-social",
+          "aria-label": "TikTok",
+          target: "_blank",
+          rel: "noopener noreferrer",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(TiktokIcon, {
+            className: "ajs-topbar-social-icon"
+          })
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-        className: `ajs-nav-dropdown ajs-nav-mega ${activeMenu === "services" ? "is-open" : ""}`,
-        onMouseEnter: () => openMenu("services"),
-        onMouseLeave: closeMenuWithDelay,
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-          className: "ajs-nav-dropdown-inner",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-            className: "ajs-nav-mega-header",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
-              className: "ajs-nav-eyebrow",
-              children: "Roofing Without Uncertainty"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h2", {
-              children: "Services built on order, clarity, and lasting protection."
-            })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-            className: "ajs-nav-mega-grid",
-            children: SERVICES_MENU.map(section => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-              className: "ajs-nav-section",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h3", {
-                children: section.title
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("ul", {
-                children: section.links.map(link => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
-                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-                    href: link.href,
-                    className: link.isHighlight ? "is-highlight-link" : "",
-                    children: link.label
-                  })
-                }, link.label))
-              })]
-            }, section.title))
-          })]
-        })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-        className: `ajs-nav-dropdown ajs-nav-mega ${activeMenu === "locations" ? "is-open" : ""}`,
-        onMouseEnter: () => openMenu("locations"),
-        onMouseLeave: closeMenuWithDelay,
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-          className: "ajs-nav-dropdown-inner",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-            className: "ajs-nav-mega-header",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
-              className: "ajs-nav-eyebrow",
-              children: "Proudly Serving New Mexico"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h2", {
-              children: "Roofing and gutters across Albuquerque, Santa Fe & Rio Rancho."
-            })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-            className: "ajs-nav-mega-grid",
-            children: LOCATIONS_MENU.map(group => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-              className: "ajs-nav-section",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h3", {
-                children: group.tier
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("ul", {
-                children: group.links.map(link => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
-                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-                    href: link.href,
-                    children: link.label
-                  })
-                }, link.label))
-              })]
-            }, group.tier))
-          })]
-        })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-        id: "ajs-mobile-menu",
-        className: `ajs-mobile-panel ${mobileOpen ? "is-open" : ""}`,
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-          href: "/",
-          className: "ajs-mobile-link",
-          onClick: closeEverything,
-          children: "Home"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-          href: "/about",
-          className: "ajs-mobile-link",
-          onClick: closeEverything,
-          children: "About"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-          className: "ajs-mobile-group",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("button", {
-            type: "button",
-            className: "ajs-mobile-group-trigger",
-            onClick: () => setMobileServicesOpen(prev => !prev),
-            "aria-expanded": mobileServicesOpen,
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
-              children: "Services"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(ChevronDownIcon, {
-              className: `ajs-mobile-caret ${mobileServicesOpen ? "is-open" : ""}`
-            })]
-          }), mobileServicesOpen && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-            className: "ajs-mobile-group-panel",
-            children: SERVICES_MENU.map(section => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-              className: "ajs-mobile-section",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h3", {
-                children: section.title
-              }), section.links.map(link => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-                href: link.href,
-                onClick: closeEverything,
-                children: link.label
-              }, link.label))]
-            }, section.title))
-          })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-          href: "/projects",
-          className: "ajs-mobile-link",
-          onClick: closeEverything,
-          children: "Projects"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-          className: "ajs-mobile-group",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("button", {
-            type: "button",
-            className: "ajs-mobile-group-trigger",
-            onClick: () => setMobileLocationsOpen(prev => !prev),
-            "aria-expanded": mobileLocationsOpen,
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
-              children: "Locations"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(ChevronDownIcon, {
-              className: `ajs-mobile-caret ${mobileLocationsOpen ? "is-open" : ""}`
-            })]
-          }), mobileLocationsOpen && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-            className: "ajs-mobile-group-panel",
-            children: LOCATIONS_MENU.map(group => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-              className: "ajs-mobile-section",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h3", {
-                children: group.tier
-              }), group.links.map(link => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-                href: link.href,
-                onClick: closeEverything,
-                children: link.label
-              }, link.label))]
-            }, group.tier))
-          })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-          href: "/contact",
-          className: "ajs-mobile-link",
-          onClick: closeEverything,
-          children: "Contact"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-          className: "ajs-mobile-cta-wrap",
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("header", {
+      className: "ajs-nav-wrap",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        className: "ajs-nav-shell",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+          className: "ajs-nav-top",
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-            href: "/estimate",
-            className: "ajs-mobile-cta",
+            className: "ajs-nav-brand",
+            href: "/",
+            "aria-label": "AJS Roofing and Gutters Home",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+              src: "/wp-content/uploads/2026/03/AJS_Imagotipo_horizontal-scaled.png",
+              alt: "AJS Roofing & Gutters",
+              className: "ajs-nav-brand-logo"
+            })
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("nav", {
+            className: "ajs-nav-desktop",
+            "aria-label": "Main navigation",
+            onMouseLeave: closeMenuWithDelay,
+            children: MAIN_NAV.map(item => {
+              if (item.type === "mega") {
+                return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+                  className: "ajs-nav-item",
+                  onMouseEnter: () => openMenu("services"),
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("button", {
+                    type: "button",
+                    className: `ajs-nav-trigger ${activeMenu === "services" ? "is-active" : ""}`,
+                    onFocus: () => openMenu("services"),
+                    "aria-expanded": activeMenu === "services",
+                    children: [item.label, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(ChevronDownIcon, {
+                      className: "ajs-nav-caret"
+                    })]
+                  })
+                }, item.label);
+              }
+              if (item.type === "dropdown") {
+                return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+                  className: "ajs-nav-item",
+                  onMouseEnter: () => openMenu("locations"),
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("button", {
+                    type: "button",
+                    className: `ajs-nav-trigger ${activeMenu === "locations" ? "is-active" : ""}`,
+                    onFocus: () => openMenu("locations"),
+                    "aria-expanded": activeMenu === "locations",
+                    children: [item.label, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(ChevronDownIcon, {
+                      className: "ajs-nav-caret"
+                    })]
+                  })
+                }, item.label);
+              }
+              return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+                className: "ajs-nav-link",
+                href: item.href,
+                children: item.label
+              }, item.label);
+            })
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+            className: "ajs-nav-actions",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+              className: "ajs-nav-quote desktop-only",
+              href: "/estimate",
+              children: "Get Your Free Inspection"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+              className: "ajs-nav-icon-button mobile-only",
+              href: PHONE_LINK,
+              "aria-label": "Call AJS Roofing and Gutters",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(PhoneIcon, {
+                className: "ajs-nav-icon-svg"
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("button", {
+              type: "button",
+              className: "ajs-nav-mobile-toggle mobile-only",
+              "aria-expanded": mobileOpen,
+              "aria-controls": "ajs-mobile-menu",
+              onClick: () => setMobileOpen(prev => !prev),
+              children: [mobileOpen ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(CloseIcon, {
+                className: "ajs-nav-icon-svg"
+              }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(MenuIcon, {
+                className: "ajs-nav-icon-svg"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+                children: mobileOpen ? "Close" : "Menu"
+              })]
+            })]
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+          className: `ajs-nav-dropdown ajs-nav-mega ${activeMenu === "services" ? "is-open" : ""}`,
+          onMouseEnter: () => openMenu("services"),
+          onMouseLeave: closeMenuWithDelay,
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+            className: "ajs-nav-dropdown-inner",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+              className: "ajs-nav-mega-header",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+                className: "ajs-nav-eyebrow",
+                children: "Roofing Without Uncertainty"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h2", {
+                children: "Services built on order, clarity, and lasting protection."
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+              className: "ajs-nav-mega-grid",
+              children: SERVICES_MENU.map(section => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+                className: "ajs-nav-section",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h3", {
+                  children: section.title
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("ul", {
+                  children: section.links.map(link => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+                      href: link.href,
+                      className: link.isHighlight ? "is-highlight-link" : "",
+                      children: link.label
+                    })
+                  }, link.label))
+                })]
+              }, section.title))
+            })]
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+          className: `ajs-nav-dropdown ajs-nav-mega ${activeMenu === "locations" ? "is-open" : ""}`,
+          onMouseEnter: () => openMenu("locations"),
+          onMouseLeave: closeMenuWithDelay,
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+            className: "ajs-nav-dropdown-inner",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+              className: "ajs-nav-mega-header",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+                className: "ajs-nav-eyebrow",
+                children: "Proudly Serving New Mexico"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h2", {
+                children: "Roofing and gutters across Albuquerque, Santa Fe & Rio Rancho."
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+              className: "ajs-nav-mega-grid",
+              children: LOCATIONS_MENU.map(group => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+                className: "ajs-nav-section",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h3", {
+                  children: group.tier
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("ul", {
+                  children: group.links.map(link => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+                      href: link.href,
+                      children: link.label
+                    })
+                  }, link.label))
+                })]
+              }, group.tier))
+            })]
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+          id: "ajs-mobile-menu",
+          className: `ajs-mobile-panel ${mobileOpen ? "is-open" : ""}`,
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+            href: "/",
+            className: "ajs-mobile-link",
             onClick: closeEverything,
-            children: "Get Your Free Inspection"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("a", {
-            href: PHONE_LINK,
-            className: "ajs-mobile-call",
+            children: "Home"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+            href: "/about",
+            className: "ajs-mobile-link",
             onClick: closeEverything,
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(PhoneIcon, {
-              className: "ajs-mobile-call-icon"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("span", {
-              children: ["Call ", PHONE_DISPLAY]
+            children: "About"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+            className: "ajs-mobile-group",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("button", {
+              type: "button",
+              className: "ajs-mobile-group-trigger",
+              onClick: () => setMobileServicesOpen(prev => !prev),
+              "aria-expanded": mobileServicesOpen,
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+                children: "Services"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(ChevronDownIcon, {
+                className: `ajs-mobile-caret ${mobileServicesOpen ? "is-open" : ""}`
+              })]
+            }), mobileServicesOpen && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+              className: "ajs-mobile-group-panel",
+              children: SERVICES_MENU.map(section => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+                className: "ajs-mobile-section",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h3", {
+                  children: section.title
+                }), section.links.map(link => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+                  href: link.href,
+                  onClick: closeEverything,
+                  children: link.label
+                }, link.label))]
+              }, section.title))
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+            href: "/projects",
+            className: "ajs-mobile-link",
+            onClick: closeEverything,
+            children: "Projects"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+            className: "ajs-mobile-group",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("button", {
+              type: "button",
+              className: "ajs-mobile-group-trigger",
+              onClick: () => setMobileLocationsOpen(prev => !prev),
+              "aria-expanded": mobileLocationsOpen,
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+                children: "Locations"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(ChevronDownIcon, {
+                className: `ajs-mobile-caret ${mobileLocationsOpen ? "is-open" : ""}`
+              })]
+            }), mobileLocationsOpen && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+              className: "ajs-mobile-group-panel",
+              children: LOCATIONS_MENU.map(group => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+                className: "ajs-mobile-section",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h3", {
+                  children: group.tier
+                }), group.links.map(link => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+                  href: link.href,
+                  onClick: closeEverything,
+                  children: link.label
+                }, link.label))]
+              }, group.tier))
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+            href: "/contact",
+            className: "ajs-mobile-link",
+            onClick: closeEverything,
+            children: "Contact"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+            className: "ajs-mobile-cta-wrap",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+              href: "/estimate",
+              className: "ajs-mobile-cta",
+              onClick: closeEverything,
+              children: "Get Your Free Inspection"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("a", {
+              href: PHONE_LINK,
+              className: "ajs-mobile-call",
+              onClick: closeEverything,
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(PhoneIcon, {
+                className: "ajs-mobile-call-icon"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("span", {
+                children: ["Call ", PHONE_DISPLAY]
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+              className: "ajs-mobile-socials",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+                href: "https://www.instagram.com/",
+                className: "ajs-nav-social",
+                "aria-label": "Instagram",
+                target: "_blank",
+                rel: "noopener noreferrer",
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(InstagramIcon, {
+                  className: "ajs-nav-social-icon"
+                })
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+                href: "https://www.facebook.com/",
+                className: "ajs-nav-social",
+                "aria-label": "Facebook",
+                target: "_blank",
+                rel: "noopener noreferrer",
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(FacebookIcon, {
+                  className: "ajs-nav-social-icon"
+                })
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+                href: "https://www.tiktok.com/",
+                className: "ajs-nav-social",
+                "aria-label": "TikTok",
+                target: "_blank",
+                rel: "noopener noreferrer",
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(TiktokIcon, {
+                  className: "ajs-nav-social-icon"
+                })
+              })]
             })]
           })]
         })]
-      })]
-    })
+      })
+    })]
   });
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (NavbarExample);

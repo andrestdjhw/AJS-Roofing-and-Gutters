@@ -54,14 +54,14 @@ get_header(); ?>
 
         <?php
         $projects = [
-          ['title' => 'Roof Replacement',    'zip' => '87122', 'image' => '/wp-content/uploads/roof1.jpg'],
-          ['title' => 'Metal Roofing',       'zip' => '87111', 'image' => '/wp-content/uploads/roof2.jpg'],
-          ['title' => 'Seamless Gutters',    'zip' => '87124', 'image' => '/wp-content/uploads/roof3.jpg'],
-          ['title' => 'Storm Damage Repair', 'zip' => '87120', 'image' => '/wp-content/uploads/roof4.jpg'],
-          ['title' => 'Roof Replacement',    'zip' => '87501', 'image' => '/wp-content/uploads/roof5.jpg'],
-          ['title' => 'Metal Roofing',       'zip' => '87506', 'image' => '/wp-content/uploads/roof6.jpg'],
-          ['title' => 'Roof Replacement',    'zip' => '87114', 'image' => '/wp-content/uploads/roof7.jpg'],
-          ['title' => 'Seamless Gutters',    'zip' => '87124', 'image' => '/wp-content/uploads/roof8.jpg'],
+          ['title' => 'Roof Replacement',    'zip' => '87122', 'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/archidea-x-CgGdE-BB9Jw-unsplash-scaled.jpg'],
+          ['title' => 'Metal Roofing',       'zip' => '87111', 'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/tanya-paquet-fXJZXzYVBUs-unsplash-scaled.jpg'],
+          ['title' => 'Seamless Gutters',    'zip' => '87124', 'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/raze-solar-G8tyblQ4p04-unsplash-scaled.jpg'],
+          ['title' => 'Storm Damage Repair', 'zip' => '87120', 'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/immo-wegmann-sKiCvM6sPtU-unsplash-scaled.jpg'],
+          ['title' => 'Roof Replacement',    'zip' => '87501', 'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/ruslan-shchegolikhin-5YUWvRoqf40-unsplash-scaled.jpg'],
+          ['title' => 'Metal Roofing',       'zip' => '87506', 'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/archidea-x-CgGdE-BB9Jw-unsplash-scaled.jpg'],
+          ['title' => 'Roof Replacement',    'zip' => '87114', 'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/tanya-paquet-fXJZXzYVBUs-unsplash-scaled.jpg'],
+          ['title' => 'Seamless Gutters',    'zip' => '87124', 'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/raze-solar-G8tyblQ4p04-unsplash-scaled.jpg'],
         ];
 
         $sizes = ['ajs-tall', 'ajs-medium', 'ajs-medium', 'ajs-tall', 'ajs-medium', 'ajs-medium', 'ajs-tall', 'ajs-medium'];
@@ -192,7 +192,7 @@ get_header(); ?>
     inset: 0;
     background: linear-gradient(
       to top,
-      rgba(19,45,65,0.55) 0%,
+      rgba(19,45,65,0.45) 0%,
       rgba(19,45,65,0.15) 40%,
       rgba(19,45,65,0) 70%
     );

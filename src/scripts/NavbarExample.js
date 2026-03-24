@@ -100,6 +100,32 @@ function CloseIcon({ className = "" }) {
 	)
 }
 
+function InstagramIcon({ className = "" }) {
+	return (
+		<svg className={className} viewBox="0 0 24 24" fill="none" aria-hidden="true">
+			<rect x="3.5" y="3.5" width="17" height="17" rx="4" stroke="currentColor" strokeWidth="1.7" />
+			<circle cx="12" cy="12" r="4" stroke="currentColor" strokeWidth="1.7" />
+			<circle cx="17.2" cy="6.8" r="1" fill="currentColor" />
+		</svg>
+	)
+}
+
+function FacebookIcon({ className = "" }) {
+	return (
+		<svg className={className} viewBox="0 0 24 24" fill="none" aria-hidden="true">
+			<path d="M14 8H16V5H14C11.8 5 10 6.8 10 9V11H8V14H10V19H13V14H15.5L16 11H13V9C13 8.45 13.45 8 14 8Z" fill="currentColor" />
+		</svg>
+	)
+}
+
+function TiktokIcon({ className = "" }) {
+	return (
+		<svg className={className} viewBox="0 0 24 24" fill="none" aria-hidden="true">
+			<path d="M14 4C14.3 5.8 15.5 7.2 17.2 7.8C18 8.1 18.8 8.2 19.5 8.2V11C18.2 11 16.9 10.6 15.8 9.9V14.8C15.8 17.7 13.5 20 10.6 20C7.7 20 5.4 17.7 5.4 14.8C5.4 11.9 7.7 9.6 10.6 9.6C10.9 9.6 11.2 9.6 11.5 9.7V12.5C11.2 12.4 10.9 12.3 10.6 12.3C9.2 12.3 8.1 13.4 8.1 14.8C8.1 16.2 9.2 17.3 10.6 17.3C12 17.3 13.1 16.2 13.1 14.8V4H14Z" fill="currentColor" />
+		</svg>
+	)
+}
+
 function NavbarExample() {
 	const [activeMenu, setActiveMenu] = useState(null)
 	const [mobileOpen, setMobileOpen] = useState(false)
@@ -138,221 +164,253 @@ function NavbarExample() {
 	}
 
 	return (
-		<header className="ajs-nav-wrap">
-			<div className="ajs-nav-shell">
-				<div className="ajs-nav-top">
-					<a className="ajs-nav-brand" href="/" aria-label="AJS Roofing and Gutters Home">
-						<img
-							src="/wp-content/uploads/2026/03/AJS_Imagotipo_horizontal-scaled.png"
-							alt="AJS Roofing & Gutters"
-							className="ajs-nav-brand-logo"
-						/>
-					</a>
-
-					<nav
-						className="ajs-nav-desktop"
-						aria-label="Main navigation"
-						onMouseLeave={closeMenuWithDelay}
-					>
-						{MAIN_NAV.map(item => {
-							if (item.type === "mega") {
-								return (
-									<div key={item.label} className="ajs-nav-item" onMouseEnter={() => openMenu("services")}>
-										<button
-											type="button"
-											className={`ajs-nav-trigger ${activeMenu === "services" ? "is-active" : ""}`}
-											onFocus={() => openMenu("services")}
-											aria-expanded={activeMenu === "services"}
-										>
-											{item.label}
-											<ChevronDownIcon className="ajs-nav-caret" />
-										</button>
-									</div>
-								)
-							}
-
-							if (item.type === "dropdown") {
-								return (
-									<div key={item.label} className="ajs-nav-item" onMouseEnter={() => openMenu("locations")}>
-										<button
-											type="button"
-											className={`ajs-nav-trigger ${activeMenu === "locations" ? "is-active" : ""}`}
-											onFocus={() => openMenu("locations")}
-											aria-expanded={activeMenu === "locations"}
-										>
-											{item.label}
-											<ChevronDownIcon className="ajs-nav-caret" />
-										</button>
-									</div>
-								)
-							}
-
-							return (
-								<a key={item.label} className="ajs-nav-link" href={item.href}>
-									{item.label}
-								</a>
-							)
-						})}
-					</nav>
-
-					<div className="ajs-nav-actions">
-						<a className="ajs-nav-phone desktop-only" href={PHONE_LINK} aria-label={`Call ${PHONE_DISPLAY}`}>
-							<PhoneIcon className="ajs-nav-phone-svg" />
-							<span>{PHONE_DISPLAY}</span>
-						</a>
-
-						<a className="ajs-nav-quote desktop-only" href="/estimate">
-							Get Your Free Inspection
-						</a>
-
-						<a className="ajs-nav-icon-button mobile-only" href={PHONE_LINK} aria-label="Call AJS Roofing and Gutters">
-							<PhoneIcon className="ajs-nav-icon-svg" />
-						</a>
-
-						<button
-							type="button"
-							className="ajs-nav-mobile-toggle mobile-only"
-							aria-expanded={mobileOpen}
-							aria-controls="ajs-mobile-menu"
-							onClick={() => setMobileOpen(prev => !prev)}
-						>
-							{mobileOpen ? <CloseIcon className="ajs-nav-icon-svg" /> : <MenuIcon className="ajs-nav-icon-svg" />}
-							<span>{mobileOpen ? "Close" : "Menu"}</span>
-						</button>
-					</div>
-				</div>
-
-				{/* Services mega menu — sin cambios */}
-				<div
-					className={`ajs-nav-dropdown ajs-nav-mega ${activeMenu === "services" ? "is-open" : ""}`}
-					onMouseEnter={() => openMenu("services")}
-					onMouseLeave={closeMenuWithDelay}
-				>
-					<div className="ajs-nav-dropdown-inner">
-						<div className="ajs-nav-mega-header">
-							<p className="ajs-nav-eyebrow">Roofing Without Uncertainty</p>
-							<h2>Services built on order, clarity, and lasting protection.</h2>
-						</div>
-						<div className="ajs-nav-mega-grid">
-							{SERVICES_MENU.map(section => (
-								<div key={section.title} className="ajs-nav-section">
-									<h3>{section.title}</h3>
-									<ul>
-										{section.links.map(link => (
-											<li key={link.label}>
-												<a href={link.href} className={link.isHighlight ? "is-highlight-link" : ""}>
-													{link.label}
-												</a>
-											</li>
-										))}
-									</ul>
-								</div>
-							))}
-						</div>
-					</div>
-				</div>
-
-{/* Locations — ahora usa exactamente el mismo estilo que services */}
-<div
-    className={`ajs-nav-dropdown ajs-nav-mega ${activeMenu === "locations" ? "is-open" : ""}`}
-    onMouseEnter={() => openMenu("locations")}
-    onMouseLeave={closeMenuWithDelay}
->
-    <div className="ajs-nav-dropdown-inner">
-        <div className="ajs-nav-mega-header">
-            <p className="ajs-nav-eyebrow">Proudly Serving New Mexico</p>
-            <h2>Roofing and gutters across Albuquerque, Santa Fe & Rio Rancho.</h2>
-        </div>
-        <div className="ajs-nav-mega-grid">
-            {LOCATIONS_MENU.map(group => (
-                <div key={group.tier} className="ajs-nav-section">
-                    <h3>{group.tier}</h3>
-                    <ul>
-                        {group.links.map(link => (
-                            <li key={link.label}>
-                                <a href={link.href}>{link.label}</a>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-            ))}
-        </div>
+		<>
+{/* ── TOPBAR — solo desktop ── */}
+<div className="ajs-topbar">
+    <div className="ajs-topbar-inner">
+        <a href={PHONE_LINK} className="ajs-topbar-phone" aria-label={`Call ${PHONE_DISPLAY}`}>
+            <PhoneIcon className="ajs-topbar-phone-icon" />
+            <span>{PHONE_DISPLAY}</span>
+        </a>
+        <span className="ajs-topbar-divider" aria-hidden="true" />
+        <a href="https://www.instagram.com/" className="ajs-topbar-social" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+            <InstagramIcon className="ajs-topbar-social-icon" />
+        </a>
+        <a href="https://www.facebook.com/" className="ajs-topbar-social" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+            <FacebookIcon className="ajs-topbar-social-icon" />
+        </a>
+        <a href="https://www.tiktok.com/" className="ajs-topbar-social" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
+            <TiktokIcon className="ajs-topbar-social-icon" />
+        </a>
     </div>
 </div>
 
-				{/* Mobile menu — sin cambios */}
-				<div id="ajs-mobile-menu" className={`ajs-mobile-panel ${mobileOpen ? "is-open" : ""}`}>
-					<a href="/" className="ajs-mobile-link" onClick={closeEverything}>Home</a>
-					<a href="/about" className="ajs-mobile-link" onClick={closeEverything}>About</a>
+			{/* ── NAVBAR ── */}
+			<header className="ajs-nav-wrap">
+				<div className="ajs-nav-shell">
 
-					<div className="ajs-mobile-group">
-						<button
-							type="button"
-							className="ajs-mobile-group-trigger"
-							onClick={() => setMobileServicesOpen(prev => !prev)}
-							aria-expanded={mobileServicesOpen}
+					<div className="ajs-nav-top">
+						<a className="ajs-nav-brand" href="/" aria-label="AJS Roofing and Gutters Home">
+							<img
+								src="/wp-content/uploads/2026/03/AJS_Imagotipo_horizontal-scaled.png"
+								alt="AJS Roofing & Gutters"
+								className="ajs-nav-brand-logo"
+							/>
+						</a>
+
+						<nav
+							className="ajs-nav-desktop"
+							aria-label="Main navigation"
+							onMouseLeave={closeMenuWithDelay}
 						>
-							<span>Services</span>
-							<ChevronDownIcon className={`ajs-mobile-caret ${mobileServicesOpen ? "is-open" : ""}`} />
-						</button>
-						{mobileServicesOpen && (
-							<div className="ajs-mobile-group-panel">
+							{MAIN_NAV.map(item => {
+								if (item.type === "mega") {
+									return (
+										<div key={item.label} className="ajs-nav-item" onMouseEnter={() => openMenu("services")}>
+											<button
+												type="button"
+												className={`ajs-nav-trigger ${activeMenu === "services" ? "is-active" : ""}`}
+												onFocus={() => openMenu("services")}
+												aria-expanded={activeMenu === "services"}
+											>
+												{item.label}
+												<ChevronDownIcon className="ajs-nav-caret" />
+											</button>
+										</div>
+									)
+								}
+
+								if (item.type === "dropdown") {
+									return (
+										<div key={item.label} className="ajs-nav-item" onMouseEnter={() => openMenu("locations")}>
+											<button
+												type="button"
+												className={`ajs-nav-trigger ${activeMenu === "locations" ? "is-active" : ""}`}
+												onFocus={() => openMenu("locations")}
+												aria-expanded={activeMenu === "locations"}
+											>
+												{item.label}
+												<ChevronDownIcon className="ajs-nav-caret" />
+											</button>
+										</div>
+									)
+								}
+
+								return (
+									<a key={item.label} className="ajs-nav-link" href={item.href}>
+										{item.label}
+									</a>
+								)
+							})}
+						</nav>
+
+						<div className="ajs-nav-actions">
+							{/* Desktop: solo el botón CTA */}
+							<a className="ajs-nav-quote desktop-only" href="/estimate">
+								Get Your Free Inspection
+							</a>
+
+							{/* Mobile: icono teléfono + hamburguesa */}
+							<a className="ajs-nav-icon-button mobile-only" href={PHONE_LINK} aria-label="Call AJS Roofing and Gutters">
+								<PhoneIcon className="ajs-nav-icon-svg" />
+							</a>
+
+							<button
+								type="button"
+								className="ajs-nav-mobile-toggle mobile-only"
+								aria-expanded={mobileOpen}
+								aria-controls="ajs-mobile-menu"
+								onClick={() => setMobileOpen(prev => !prev)}
+							>
+								{mobileOpen ? <CloseIcon className="ajs-nav-icon-svg" /> : <MenuIcon className="ajs-nav-icon-svg" />}
+								<span>{mobileOpen ? "Close" : "Menu"}</span>
+							</button>
+						</div>
+					</div>
+
+					{/* Services mega menu */}
+					<div
+						className={`ajs-nav-dropdown ajs-nav-mega ${activeMenu === "services" ? "is-open" : ""}`}
+						onMouseEnter={() => openMenu("services")}
+						onMouseLeave={closeMenuWithDelay}
+					>
+						<div className="ajs-nav-dropdown-inner">
+							<div className="ajs-nav-mega-header">
+								<p className="ajs-nav-eyebrow">Roofing Without Uncertainty</p>
+								<h2>Services built on order, clarity, and lasting protection.</h2>
+							</div>
+							<div className="ajs-nav-mega-grid">
 								{SERVICES_MENU.map(section => (
-									<div key={section.title} className="ajs-mobile-section">
+									<div key={section.title} className="ajs-nav-section">
 										<h3>{section.title}</h3>
-										{section.links.map(link => (
-											<a key={link.label} href={link.href} onClick={closeEverything}>
-												{link.label}
-											</a>
-										))}
+										<ul>
+											{section.links.map(link => (
+												<li key={link.label}>
+													<a href={link.href} className={link.isHighlight ? "is-highlight-link" : ""}>
+														{link.label}
+													</a>
+												</li>
+											))}
+										</ul>
 									</div>
 								))}
 							</div>
-						)}
+						</div>
 					</div>
 
-					<a href="/projects" className="ajs-mobile-link" onClick={closeEverything}>Projects</a>
-
-					<div className="ajs-mobile-group">
-						<button
-							type="button"
-							className="ajs-mobile-group-trigger"
-							onClick={() => setMobileLocationsOpen(prev => !prev)}
-							aria-expanded={mobileLocationsOpen}
-						>
-							<span>Locations</span>
-							<ChevronDownIcon className={`ajs-mobile-caret ${mobileLocationsOpen ? "is-open" : ""}`} />
-						</button>
-						{mobileLocationsOpen && (
-							<div className="ajs-mobile-group-panel">
+					{/* Locations mega menu */}
+					<div
+						className={`ajs-nav-dropdown ajs-nav-mega ${activeMenu === "locations" ? "is-open" : ""}`}
+						onMouseEnter={() => openMenu("locations")}
+						onMouseLeave={closeMenuWithDelay}
+					>
+						<div className="ajs-nav-dropdown-inner">
+							<div className="ajs-nav-mega-header">
+								<p className="ajs-nav-eyebrow">Proudly Serving New Mexico</p>
+								<h2>Roofing and gutters across Albuquerque, Santa Fe & Rio Rancho.</h2>
+							</div>
+							<div className="ajs-nav-mega-grid">
 								{LOCATIONS_MENU.map(group => (
-									<div key={group.tier} className="ajs-mobile-section">
+									<div key={group.tier} className="ajs-nav-section">
 										<h3>{group.tier}</h3>
-										{group.links.map(link => (
-											<a key={link.label} href={link.href} onClick={closeEverything}>
-												{link.label}
-											</a>
-										))}
+										<ul>
+											{group.links.map(link => (
+												<li key={link.label}>
+													<a href={link.href}>{link.label}</a>
+												</li>
+											))}
+										</ul>
 									</div>
 								))}
 							</div>
-						)}
+						</div>
 					</div>
 
-					<a href="/contact" className="ajs-mobile-link" onClick={closeEverything}>Contact</a>
+					{/* Mobile menu */}
+					<div id="ajs-mobile-menu" className={`ajs-mobile-panel ${mobileOpen ? "is-open" : ""}`}>
+						<a href="/" className="ajs-mobile-link" onClick={closeEverything}>Home</a>
+						<a href="/about" className="ajs-mobile-link" onClick={closeEverything}>About</a>
 
-					<div className="ajs-mobile-cta-wrap">
-						<a href="/estimate" className="ajs-mobile-cta" onClick={closeEverything}>
-							Get Your Free Inspection
-						</a>
-						<a href={PHONE_LINK} className="ajs-mobile-call" onClick={closeEverything}>
-							<PhoneIcon className="ajs-mobile-call-icon" />
-							<span>Call {PHONE_DISPLAY}</span>
-						</a>
+						<div className="ajs-mobile-group">
+							<button
+								type="button"
+								className="ajs-mobile-group-trigger"
+								onClick={() => setMobileServicesOpen(prev => !prev)}
+								aria-expanded={mobileServicesOpen}
+							>
+								<span>Services</span>
+								<ChevronDownIcon className={`ajs-mobile-caret ${mobileServicesOpen ? "is-open" : ""}`} />
+							</button>
+							{mobileServicesOpen && (
+								<div className="ajs-mobile-group-panel">
+									{SERVICES_MENU.map(section => (
+										<div key={section.title} className="ajs-mobile-section">
+											<h3>{section.title}</h3>
+											{section.links.map(link => (
+												<a key={link.label} href={link.href} onClick={closeEverything}>
+													{link.label}
+												</a>
+											))}
+										</div>
+									))}
+								</div>
+							)}
+						</div>
+
+						<a href="/projects" className="ajs-mobile-link" onClick={closeEverything}>Projects</a>
+
+						<div className="ajs-mobile-group">
+							<button
+								type="button"
+								className="ajs-mobile-group-trigger"
+								onClick={() => setMobileLocationsOpen(prev => !prev)}
+								aria-expanded={mobileLocationsOpen}
+							>
+								<span>Locations</span>
+								<ChevronDownIcon className={`ajs-mobile-caret ${mobileLocationsOpen ? "is-open" : ""}`} />
+							</button>
+							{mobileLocationsOpen && (
+								<div className="ajs-mobile-group-panel">
+									{LOCATIONS_MENU.map(group => (
+										<div key={group.tier} className="ajs-mobile-section">
+											<h3>{group.tier}</h3>
+											{group.links.map(link => (
+												<a key={link.label} href={link.href} onClick={closeEverything}>
+													{link.label}
+												</a>
+											))}
+										</div>
+									))}
+								</div>
+							)}
+						</div>
+
+						<a href="/contact" className="ajs-mobile-link" onClick={closeEverything}>Contact</a>
+
+						<div className="ajs-mobile-cta-wrap">
+							<a href="/estimate" className="ajs-mobile-cta" onClick={closeEverything}>
+								Get Your Free Inspection
+							</a>
+							<a href={PHONE_LINK} className="ajs-mobile-call" onClick={closeEverything}>
+								<PhoneIcon className="ajs-mobile-call-icon" />
+								<span>Call {PHONE_DISPLAY}</span>
+							</a>
+							<div className="ajs-mobile-socials">
+								<a href="https://www.instagram.com/" className="ajs-nav-social" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+									<InstagramIcon className="ajs-nav-social-icon" />
+								</a>
+								<a href="https://www.facebook.com/" className="ajs-nav-social" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+									<FacebookIcon className="ajs-nav-social-icon" />
+								</a>
+								<a href="https://www.tiktok.com/" className="ajs-nav-social" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
+									<TiktokIcon className="ajs-nav-social-icon" />
+								</a>
+							</div>
+						</div>
 					</div>
 				</div>
-			</div>
-		</header>
+			</header>
+		</>
 	)
 }
 

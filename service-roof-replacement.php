@@ -123,48 +123,69 @@ get_header(); ?>
   </section>
 
   <!-- GALLERY -->
-  <section class="bg-[#d3d8db]/20 py-20">
-    <div class="mx-auto max-w-7xl px-4">
-      <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-        <div>
-          <p class="ajs-reveal mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
-            Recent Work
-          </p>
-          <h2 class="ajs-reveal text-3xl font-black tracking-[-0.03em] text-[#132d41] md:text-5xl">
-            Recent Roof Replacements
-          </h2>
-        </div>
-
-        <p class="ajs-reveal max-w-xl text-base leading-8 text-[#42474b]">
-          Use 6–12 real roof replacement photos here. Label projects by type, area, or ZIP to strengthen visual proof and local relevance.
+<section class="bg-[#d3d8db]/20 py-20">
+  <div class="mx-auto max-w-7xl px-4">
+    <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+      <div>
+        <p class="ajs-reveal mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
+          Recent Work
         </p>
+        <h2 class="ajs-reveal text-3xl font-black tracking-[-0.03em] text-[#132d41] md:text-5xl">
+          Recent Roof Replacements
+        </h2>
       </div>
 
-      <div class="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-        <?php
-        $gallery_items = [
-          'Full Replacement · 87114',
-          'Architectural Shingles · 87501',
-          'Storm Restoration · 87120',
-          'System Upgrade · 87124',
-          'Insurance Claim Project · 87111',
-          'Steep-Slope Replacement · 87506',
-        ];
-
-        foreach ($gallery_items as $item) : ?>
-          <div class="ajs-reveal ajs-gallery-card group relative min-h-[240px] overflow-hidden rounded-[24px] border border-[#d3d8db] bg-[linear-gradient(180deg,rgba(19,45,65,0.08),rgba(19,45,65,0.18)),linear-gradient(180deg,#eef6fb_0%,#d3d8db_100%)] p-6 shadow-[0_14px_32px_rgba(19,45,65,0.07)]">
-            <div class="absolute inset-0 scale-100 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.35),transparent_35%)] transition duration-700 group-hover:scale-110"></div>
-            <div class="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#132d41]/35 to-transparent"></div>
-            <div class="relative flex h-full items-end">
-              <span class="text-base font-black text-[#132d41]">
-                <?php echo esc_html($item); ?>
-              </span>
-            </div>
-          </div>
-        <?php endforeach; ?>
-      </div>
+      <p class="ajs-reveal max-w-xl text-base leading-8 text-[#42474b]">
+        A selection of recent roofing projects completed across New Mexico, showcasing consistent workmanship and reliable installation standards.
+      </p>
     </div>
-  </section>
+
+    <div class="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+      <?php
+      $gallery_items = [
+        [
+          'label' => 'Full Replacement · 87114',
+          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/archidea-x-CgGdE-BB9Jw-unsplash-scaled.jpg'
+        ],
+        [
+          'label' => 'Architectural Shingles · 87501',
+          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/tanya-paquet-fXJZXzYVBUs-unsplash-scaled.jpg'
+        ],
+        [
+          'label' => 'Storm Restoration · 87120',
+          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/raze-solar-G8tyblQ4p04-unsplash-scaled.jpg'
+        ],
+        [
+          'label' => 'System Upgrade · 87124',
+          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/immo-wegmann-sKiCvM6sPtU-unsplash-scaled.jpg'
+        ],
+        [
+          'label' => 'Insurance Claim Project · 87111',
+          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/ruslan-shchegolikhin-5YUWvRoqf40-unsplash-scaled.jpg'
+        ],
+        [
+          'label' => 'Steep-Slope Replacement · 87506',
+          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/raze-solar-Scaj0T40nFI-unsplash-scaled.jpg'
+        ],
+      ];
+
+      foreach ($gallery_items as $item) : ?>
+        <div
+          class="ajs-reveal ajs-gallery-card group relative min-h-[240px] overflow-hidden rounded-[24px] border border-[#d3d8db] p-6 shadow-[0_14px_32px_rgba(19,45,65,0.07)] bg-cover bg-center"
+          style="background-image: linear-gradient(180deg, rgba(19,45,65,0.15), rgba(19,45,65,0.45)), url('<?php echo esc_url($item['image']); ?>');"
+        >
+          <div class="absolute inset-0 scale-100 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.18),transparent_35%)] transition duration-700 group-hover:scale-110"></div>
+          <div class="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#132d41]/25 to-transparent"></div>
+          <div class="relative flex h-full items-end">
+            <span class="text-base font-black text-white">
+              <?php echo esc_html($item['label']); ?>
+            </span>
+          </div>
+        </div>
+      <?php endforeach; ?>
+    </div>
+  </div>
+</section>
 
   <!-- VALUE CARDS -->
   <section class="py-20">

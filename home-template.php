@@ -318,40 +318,49 @@ get_header(); ?>
       </div>
     </div>
   </section>
+<!-- Gallery -->
+<section class="py-20">
+  <div class="mx-auto max-w-7xl px-4">
+    <p class="ajs-reveal mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
+      Installed Right. Protected for Years.
+    </p>
 
-  <!-- Gallery -->
-  <section class="py-20">
-    <div class="mx-auto max-w-7xl px-4">
-      <p class="ajs-reveal mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
-        Installed Right. Protected for Years.
-      </p>
-      <h2 class="ajs-reveal max-w-4xl text-3xl font-black leading-tight tracking-[-0.03em] text-[#132d41] md:text-5xl">
-        Recent work across New Mexico communities.
-      </h2>
+    <h2 class="ajs-reveal max-w-4xl text-3xl font-black leading-tight tracking-[-0.03em] text-[#132d41] md:text-5xl">
+      Recent work across New Mexico communities.
+    </h2>
 
-      <div class="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
-        <div class="ajs-hover-lift ajs-reveal flex min-h-[220px] items-end rounded-[24px] border border-[#d3d8db] bg-[linear-gradient(180deg,rgba(19,45,65,0.08),rgba(19,45,65,0.18)),linear-gradient(180deg,#eef6fb_0%,#d3d8db_100%)] p-6 font-black text-[#132d41]">
-          Roof Replacement · 87114
-        </div>
-        <div class="ajs-hover-lift ajs-reveal flex min-h-[220px] items-end rounded-[24px] border border-[#d3d8db] bg-[linear-gradient(180deg,rgba(19,45,65,0.08),rgba(19,45,65,0.18)),linear-gradient(180deg,#eef6fb_0%,#d3d8db_100%)] p-6 font-black text-[#132d41]">
-          Metal Roofing · 87501
-        </div>
-        <div class="ajs-hover-lift ajs-reveal flex min-h-[220px] items-end rounded-[24px] border border-[#d3d8db] bg-[linear-gradient(180deg,rgba(19,45,65,0.08),rgba(19,45,65,0.18)),linear-gradient(180deg,#eef6fb_0%,#d3d8db_100%)] p-6 font-black text-[#132d41]">
-          Seamless Gutters · 87124
-        </div>
-        <div class="ajs-hover-lift ajs-reveal flex min-h-[220px] items-end rounded-[24px] border border-[#d3d8db] bg-[linear-gradient(180deg,rgba(19,45,65,0.08),rgba(19,45,65,0.18)),linear-gradient(180deg,#eef6fb_0%,#d3d8db_100%)] p-6 font-black text-[#132d41]">
-          Storm Damage Repair · 87120
-        </div>
+    <div class="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+
+      <div class="ajs-hover-lift ajs-reveal flex min-h-[220px] items-end rounded-[24px] border border-[#d3d8db] p-6 font-black text-white bg-cover bg-center"
+        style="background-image: linear-gradient(180deg, rgba(19,45,65,0.15), rgba(19,45,65,0.45)), url('http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/raze-solar-Scaj0T40nFI-unsplash-scaled.jpg');">
+        Roof Replacement · 87114
       </div>
 
-      <div class="ajs-reveal mt-6">
-        <a href="/projects"
-           class="ajs-btn-animate inline-flex items-center justify-center rounded-full border border-[#132d41]/12 bg-[#132d41]/5 px-6 py-4 text-sm font-black text-[#132d41] transition hover:bg-[#132d41] hover:text-white">
-          View Full Gallery
-        </a>
+      <div class="ajs-hover-lift ajs-reveal flex min-h-[220px] items-end rounded-[24px] border border-[#d3d8db] p-6 font-black text-white bg-cover bg-center"
+        style="background-image: linear-gradient(180deg, rgba(19,45,65,0.15), rgba(19,45,65,0.45)), url('http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/paddy-pohlod-EhIUYktUunU-unsplash-scaled.jpg');">
+        Metal Roofing · 87501
       </div>
+
+      <div class="ajs-hover-lift ajs-reveal flex min-h-[220px] items-end rounded-[24px] border border-[#d3d8db] p-6 font-black text-white bg-cover bg-center"
+        style="background-image: linear-gradient(180deg, rgba(19,45,65,0.15), rgba(19,45,65,0.45)), url('http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/gene-yllanes-6mZT8lxpZSA-unsplash-scaled.jpg');">
+        Seamless Gutters · 87124
+      </div>
+
+      <div class="ajs-hover-lift ajs-reveal flex min-h-[220px] items-end rounded-[24px] border border-[#d3d8db] p-6 font-black text-white bg-cover bg-center"
+        style="background-image: linear-gradient(180deg, rgba(19,45,65,0.15), rgba(19,45,65,0.45)), url('http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/alexander-von-schulz-1lVHc5aJEgk-unsplash-scaled.jpg');">
+        Storm Damage Repair · 87120
+      </div>
+
     </div>
-  </section>
+
+    <div class="ajs-reveal mt-6">
+      <a href="/projects"
+        class="ajs-btn-animate inline-flex items-center justify-center rounded-full border border-[#132d41]/12 bg-[#132d41]/5 px-6 py-4 text-sm font-black text-[#132d41] transition hover:bg-[#132d41] hover:text-white">
+        View Full Gallery
+      </a>
+    </div>
+  </div>
+</section>
 
   <!-- Reviews -->
   <section class="bg-[#d3d8db]/30 py-20">

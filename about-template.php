@@ -216,67 +216,76 @@ get_header(); ?>
   </section>
 
   <!-- Team -->
-  <section class="py-20 bg-slate-50">
-    <div class="mx-auto max-w-7xl px-4">
-      <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-        <div class="ajs-reveal">
-          <p class="mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#b7841a]">
-            Meet The Team
-          </p>
-          <h2 class="max-w-4xl text-3xl font-black leading-tight tracking-[-0.03em] text-[#102946] md:text-5xl">
-            Real people, real accountability, real pride in the work.
-          </h2>
-        </div>
-      </div>
-
-      <div class="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-        <article class="ajs-hover-lift ajs-reveal overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-[0_14px_32px_rgba(16,41,70,0.06)]">
-          <div class="flex min-h-[260px] items-end bg-[linear-gradient(180deg,#dbe6f1_0%,#eef3f8_100%)] p-6">
-            <span class="rounded-full bg-white/70 px-4 py-2 text-xs font-black uppercase tracking-[0.18em] text-[#102946]">
-              Team Photo
-            </span>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-black text-[#102946]">Team Member Name</h3>
-            <p class="mt-1 text-sm font-bold text-[#245791]">Owner / Project Lead</p>
-            <p class="mt-4 text-[15px] leading-8 text-slate-600">
-              Add a short bio with years of experience, certifications, and leadership role.
-            </p>
-          </div>
-        </article>
-
-        <article class="ajs-hover-lift ajs-reveal overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-[0_14px_32px_rgba(16,41,70,0.06)]">
-          <div class="flex min-h-[260px] items-end bg-[linear-gradient(180deg,#dbe6f1_0%,#eef3f8_100%)] p-6">
-            <span class="rounded-full bg-white/70 px-4 py-2 text-xs font-black uppercase tracking-[0.18em] text-[#102946]">
-              Team Photo
-            </span>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-black text-[#102946]">Team Member Name</h3>
-            <p class="mt-1 text-sm font-bold text-[#245791]">Operations / Field Lead</p>
-            <p class="mt-4 text-[15px] leading-8 text-slate-600">
-              Add a short bio with years of experience, certifications, and operational focus.
-            </p>
-          </div>
-        </article>
-
-        <article class="ajs-hover-lift ajs-reveal overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-[0_14px_32px_rgba(16,41,70,0.06)]">
-          <div class="flex min-h-[260px] items-end bg-[linear-gradient(180deg,#dbe6f1_0%,#eef3f8_100%)] p-6">
-            <span class="rounded-full bg-white/70 px-4 py-2 text-xs font-black uppercase tracking-[0.18em] text-[#102946]">
-              Team Photo
-            </span>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-black text-[#102946]">Team Member Name</h3>
-            <p class="mt-1 text-sm font-bold text-[#245791]">Inspection / Client Experience</p>
-            <p class="mt-4 text-[15px] leading-8 text-slate-600">
-              Add a short bio with years of experience, certifications, and customer-facing role.
-            </p>
-          </div>
-        </article>
+<section class="py-20 bg-slate-50">
+  <div class="mx-auto max-w-7xl px-4">
+    <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+      <div class="ajs-reveal">
+        <p class="mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#b7841a]">
+          Meet The Team
+        </p>
+        <h2 class="max-w-4xl text-3xl font-black leading-tight tracking-[-0.03em] text-[#102946] md:text-5xl">
+          Real people, real accountability, real pride in the work.
+        </h2>
       </div>
     </div>
-  </section>
+
+    <div class="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+      <article class="ajs-hover-lift ajs-reveal overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-[0_14px_32px_rgba(16,41,70,0.06)]">
+        <div
+          class="flex min-h-[260px] items-end bg-cover bg-center p-6"
+          style="background-image: linear-gradient(180deg, rgba(16,41,70,0.08), rgba(16,41,70,0.28)), url('http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/Captura-de-pantalla-2026-03-23-191212.png');"
+        >
+          <span class="rounded-full bg-white/75 px-4 py-2 text-xs font-black uppercase tracking-[0.18em] text-[#102946]">
+            12+ Years Experience
+          </span>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-black text-[#102946]">Daniel Martinez</h3>
+          <p class="mt-1 text-sm font-bold text-[#245791]">Owner / Project Lead</p>
+          <p class="mt-4 text-[15px] leading-8 text-slate-600">
+            Daniel oversees project planning, customer communication, and quality control from start to finish. With more than a decade of hands-on roofing experience, he helps ensure every project is completed with clear expectations and dependable workmanship.
+          </p>
+        </div>
+      </article>
+
+      <article class="ajs-hover-lift ajs-reveal overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-[0_14px_32px_rgba(16,41,70,0.06)]">
+        <div
+          class="flex min-h-[260px] items-end bg-cover bg-center p-6"
+          style="background-image: linear-gradient(180deg, rgba(16,41,70,0.08), rgba(16,41,70,0.28)), url('http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/parth-shingod-4DwRp_5Dzo0-unsplash-scaled-e1774314839133.jpg');"
+        >
+          <span class="rounded-full bg-white/75 px-4 py-2 text-xs font-black uppercase tracking-[0.18em] text-[#102946]">
+            Field Operations
+          </span>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-black text-[#102946]">Luis Herrera</h3>
+          <p class="mt-1 text-sm font-bold text-[#245791]">Operations / Field Lead</p>
+          <p class="mt-4 text-[15px] leading-8 text-slate-600">
+            Luis coordinates crews, materials, and on-site execution to keep projects moving efficiently. His background in installations and repairs helps maintain consistency across roofing, gutter, and storm restoration work in the field.
+          </p>
+        </div>
+      </article>
+
+      <article class="ajs-hover-lift ajs-reveal overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-[0_14px_32px_rgba(16,41,70,0.06)]">
+        <div
+          class="flex min-h-[260px] items-end bg-cover bg-center p-6"
+          style="background-image: linear-gradient(180deg, rgba(16,41,70,0.08), rgba(16,41,70,0.28)), url('http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/aung-swam-nyi-8OWcgGeB-Rk-unsplash-scaled.jpg');"
+        >
+          <span class="rounded-full bg-white/75 px-4 py-2 text-xs font-black uppercase tracking-[0.18em] text-[#102946]">
+            Client Support
+          </span>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-black text-[#102946]">Gerardo Ramirez</h3>
+          <p class="mt-1 text-sm font-bold text-[#245791]">Inspection / Client Experience</p>
+          <p class="mt-4 text-[15px] leading-8 text-slate-600">
+            Gerardo supports inspections, documentation, and communication throughout the service process. She focuses on helping homeowners understand project details, scheduling, and next steps while making the experience as smooth and transparent as possible.
+          </p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
 
   <!-- Credentials -->
   <section class="py-20">

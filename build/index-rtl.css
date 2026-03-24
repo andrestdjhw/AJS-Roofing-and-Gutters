@@ -1811,3 +1811,127 @@ a {
 		align-items: flex-start;
 	}
 }
+
+.ajs-nav-socials {
+	display: flex;
+	align-items: center;
+	gap: 0.55rem;
+	margin-left: 0.75rem;
+	padding-left: 0.9rem;
+	border-left: 1px solid rgba(16, 41, 70, 0.12);
+}
+
+.ajs-nav-social {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 34px;
+	height: 34px;
+	border-radius: 999px;
+	color: #102946;
+	transition: color .2s ease, background-color .2s ease, transform .2s ease;
+}
+
+.ajs-nav-social:hover {
+	color: #d04418;
+	background: rgba(208, 68, 24, 0.08);
+	transform: translateY(-1px);
+}
+
+.ajs-nav-social-icon {
+	width: 17px;
+	height: 17px;
+	display: block;
+}
+
+/* ── TOPBAR ── */
+
+.ajs-topbar {
+    background: var(--ajs-navy-deep);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.ajs-topbar-inner {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0.42rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.2rem;
+}
+
+.ajs-topbar-divider {
+    display: block;
+    width: 1px;
+    height: 16px;
+    background: rgba(255, 255, 255, 0.15);
+    margin: 0 0.5rem;
+}
+
+.ajs-topbar-socials {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.ajs-topbar-social {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 999px;
+    color: rgba(255, 255, 255, 0.7);
+    transition: color 180ms ease, background-color 180ms ease;
+}
+
+.ajs-topbar-social:hover {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.ajs-topbar-social-icon {
+    width: 15px;
+    height: 15px;
+    display: block;
+}
+
+.ajs-topbar-phone {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.84rem;
+    font-weight: 800;
+    transition: color 180ms ease;
+}
+
+.ajs-topbar-phone:hover {
+    color: #ffffff;
+}
+
+.ajs-topbar-phone-icon {
+    width: 0.9rem;
+    height: 0.9rem;
+    color: var(--ajs-gold);
+    flex-shrink: 0;
+}
+
+/* Ocultar topbar en mobile */
+
+@media (max-width: 920px) {
+    .ajs-topbar {
+        display: none;
+    }
+}
+
+/* Mobile socials */
+
+.ajs-mobile-socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.55rem;
+    padding-top: 0.5rem;
+}

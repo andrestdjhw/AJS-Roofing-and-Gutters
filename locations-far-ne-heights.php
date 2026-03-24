@@ -129,37 +129,48 @@ get_header(); ?>
     </div>
   </section>
 
-  <!-- LOCAL PROJECTS -->
-  <section class="bg-[#f5f9fc] py-16 md:py-20">
-    <div class="mx-auto max-w-7xl px-4">
+ <!-- LOCAL PROJECTS -->
+<section class="bg-[#f5f9fc] py-16 md:py-20">
+  <div class="mx-auto max-w-7xl px-4">
 
-      <p class="ajs-reveal text-xs font-black uppercase tracking-[0.18em] text-[#b7841a] mb-3 text-center">
-        Installed Right. Protected for Years.
-      </p>
+    <p class="ajs-reveal text-xs font-black uppercase tracking-[0.18em] text-[#b7841a] mb-3 text-center">
+      Installed Right. Protected for Years.
+    </p>
 
-      <h2 class="ajs-reveal text-3xl font-black text-[#102946] text-center">
-        Projects in Far NE Heights
-      </h2>
+    <h2 class="ajs-reveal text-3xl font-black text-[#102946] text-center">
+      Projects in Far NE Heights
+    </h2>
 
-      <div class="mt-10 grid gap-5 md:grid-cols-3">
+    <div class="mt-10 grid gap-5 md:grid-cols-3">
 
-        <div class="ajs-img-card ajs-reveal">
-          <img src="/wp-content/uploads/roof1.jpg" alt="Roofing project Far NE Heights 87111">
-        </div>
+      <div class="ajs-img-card ajs-reveal">
+        <img 
+          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/tanya-paquet-fXJZXzYVBUs-unsplash-scaled.jpg" 
+          alt="Roofing project Far NE Heights 87111"
+          class="w-full h-full object-cover rounded-[20px]"
+        >
+      </div>
 
-        <div class="ajs-img-card ajs-reveal">
-          <img src="/wp-content/uploads/roof2.jpg" alt="Roof replacement Far NE Heights Albuquerque">
-        </div>
+      <div class="ajs-img-card ajs-reveal">
+        <img 
+          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/immo-wegmann-sKiCvM6sPtU-unsplash-scaled.jpg" 
+          alt="Roof replacement Far NE Heights Albuquerque"
+          class="w-full h-full object-cover rounded-[20px]"
+        >
+      </div>
 
-        <div class="ajs-img-card ajs-reveal">
-          <img src="/wp-content/uploads/roof3.jpg" alt="Seamless gutters 87111">
-        </div>
-
+      <div class="ajs-img-card ajs-reveal">
+        <img 
+          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/ruslan-shchegolikhin-5YUWvRoqf40-unsplash-scaled.jpg" 
+          alt="Seamless gutter installation 87111"
+          class="w-full h-full object-cover rounded-[20px]"
+        >
       </div>
 
     </div>
-  </section>
 
+  </div>
+</section>
   
     <!-- LOCAL LOCATION -->
   <section class="py-16 md:py-20 bg-white">
@@ -206,7 +217,7 @@ get_header(); ?>
       </div>
     </div>
   </section>
-  
+
   <!-- FAQ -->
   <section class="py-16 md:py-20">
     <div class="mx-auto max-w-4xl px-4">
