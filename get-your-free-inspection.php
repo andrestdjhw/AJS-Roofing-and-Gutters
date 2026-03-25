@@ -8,7 +8,7 @@ get_header(); ?>
 <main class="bg-white text-[#42474b] overflow-hidden">
 
   <!-- HERO / PRIMARY CONVERSION -->
-  <section class="relative overflow-hidden bg-[linear-gradient(135deg,rgba(19,45,65,0.96),rgba(31,70,97,0.88))] text-white">
+  <section class="relative overflow-hidden bg-[linear-gradient(135deg,#132d41_0%,#1a3a52_100%)] text-white">
     <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(110,170,206,0.22),transparent_30%)]"></div>
     <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(208,68,24,0.12),transparent_28%)]"></div>
 
@@ -36,7 +36,7 @@ get_header(); ?>
         </a>
       </div>
 
-      <div class="ajs-reveal-right rounded-[28px] border border-white/10 bg-white p-5 text-[#42474b] shadow-2xl">
+      <div class="ajs-reveal-right rounded-[28px] border border-[#d3d8db] bg-white p-5 text-[#42474b] shadow-[0_20px_44px_rgba(19,45,65,0.18)]">
         <h2 class="text-2xl font-black tracking-[-0.03em] text-[#132d41]">
           Request your free inspection.
         </h2>
@@ -45,41 +45,91 @@ get_header(); ?>
           Start with a clear next step. Submit your information and we’ll help you move from uncertainty to documented clarity.
         </p>
 
-        <form class="mt-5 grid gap-3">
-          <input type="text" placeholder="Full Name *"
-                 class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20">
+        <div id="ajsEstimateFormSuccess" class="hidden mt-5 rounded-2xl border border-green-200 bg-green-50 px-4 py-4 text-sm text-green-700">
+          Thanks for reaching out. Your inspection request was sent successfully.
+        </div>
 
-          <input type="tel" placeholder="Phone Number *"
-                 class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20">
+        <div id="ajsEstimateFormError" class="hidden mt-5 rounded-2xl border border-red-200 bg-red-50 px-4 py-4 text-sm text-red-700">
+          Something went wrong. Please try again.
+        </div>
 
-          <input type="email" placeholder="Email *"
-                 class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20">
+        <form id="ajsEstimateForm" class="mt-5 grid gap-3">
+          <input
+            id="ajs_estimate_name"
+            name="name"
+            type="text"
+            placeholder="Full Name *"
+            required
+            class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+          >
+
+          <input
+            id="ajs_estimate_phone"
+            name="phone"
+            type="tel"
+            placeholder="Phone Number *"
+            required
+            class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+          >
+
+          <input
+            id="ajs_estimate_email"
+            name="email"
+            type="email"
+            placeholder="Email *"
+            required
+            class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+          >
 
           <select
-            class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm text-[#42474b] outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20">
-            <option selected disabled>What do you need? *</option>
-            <option>Roof Replacement</option>
-            <option>Metal Roofing</option>
-            <option>Gutters</option>
-            <option>Roof Repair</option>
-            <option>Storm Damage / Insurance</option>
-            <option>Inspection / Maintenance</option>
-            <option>Not Sure</option>
+            id="ajs_estimate_service"
+            name="service"
+            required
+            class="w-full rounded-2xl border border-[#d3d8db] bg-white px-4 py-4 text-sm text-[#42474b] outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+          >
+            <option value="" selected disabled>What do you need? *</option>
+            <option value="Roof Replacement">Roof Replacement</option>
+            <option value="Metal Roofing">Metal Roofing</option>
+            <option value="Gutters">Gutters</option>
+            <option value="Roof Repair">Roof Repair</option>
+            <option value="Storm Damage / Insurance">Storm Damage / Insurance</option>
+            <option value="Inspection / Maintenance">Inspection / Maintenance</option>
+            <option value="Not Sure">Not Sure</option>
           </select>
 
-          <input type="text" placeholder="Address or ZIP Code *"
-                 class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20">
+          <input
+            id="ajs_estimate_address"
+            name="address"
+            type="text"
+            placeholder="Address or ZIP Code *"
+            required
+            class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+          >
 
-          <textarea rows="4" placeholder="Anything else we should know? (optional)"
-                    class="w-full resize-y rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"></textarea>
+          <textarea
+            id="ajs_estimate_message"
+            name="message"
+            rows="4"
+            placeholder="Anything else we should know? (optional)"
+            class="w-full resize-y rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+          ></textarea>
 
           <label class="flex items-start gap-3 text-sm leading-6 text-[#42474b]/80">
-            <input type="checkbox" class="mt-1 h-4 w-4 rounded border-[#d3d8db]">
+            <input
+              id="ajs_estimate_consent"
+              name="consent"
+              type="checkbox"
+              required
+              class="mt-1 h-4 w-4 rounded border-[#d3d8db] text-[#d04418] focus:ring-[#6eaace]/20"
+            >
             <span>I agree to be contacted about my inspection request.</span>
           </label>
 
-          <button type="submit"
-                  class="ajs-btn-animate inline-flex items-center justify-center rounded-full bg-[linear-gradient(135deg,#d04418,#b63c15)] px-6 py-4 text-sm font-black text-white shadow-[0_16px_32px_rgba(208,68,24,0.28)] transition">
+          <button
+            id="ajsEstimateSubmitBtn"
+            type="submit"
+            class="ajs-btn-animate inline-flex items-center justify-center rounded-full bg-[#d04418] px-6 py-4 text-sm font-black text-white shadow-[0_16px_32px_rgba(208,68,24,0.28)]"
+          >
             Get Your Free Inspection
           </button>
 
@@ -94,6 +144,10 @@ get_header(); ?>
 </main>
 
 <style>
+  .hidden {
+    display: none !important;
+  }
+
   .ajs-reveal-left,
   .ajs-reveal-right {
     opacity: 0;
@@ -160,6 +214,8 @@ get_header(); ?>
   }
 </style>
 
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const items = document.querySelectorAll(".ajs-reveal-left, .ajs-reveal-right");
@@ -176,6 +232,56 @@ get_header(); ?>
     });
 
     items.forEach((item) => observer.observe(item));
+
+    if (window.emailjs) {
+      emailjs.init({
+        publicKey: "CDikedp0ZSxxiBeLb"
+      });
+    }
+
+    const form = document.getElementById("ajsEstimateForm");
+    const submitBtn = document.getElementById("ajsEstimateSubmitBtn");
+    const successBox = document.getElementById("ajsEstimateFormSuccess");
+    const errorBox = document.getElementById("ajsEstimateFormError");
+
+    if (form) {
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        successBox.classList.add("hidden");
+        errorBox.classList.add("hidden");
+
+        const originalButtonText = submitBtn.textContent;
+        submitBtn.disabled = true;
+        submitBtn.textContent = "Sending...";
+
+        const formData = {
+          name: document.getElementById("ajs_estimate_name").value,
+          phone: document.getElementById("ajs_estimate_phone").value,
+          email: document.getElementById("ajs_estimate_email").value,
+          service: document.getElementById("ajs_estimate_service").value,
+          address: document.getElementById("ajs_estimate_address").value,
+          message: document.getElementById("ajs_estimate_message").value,
+          consent: document.getElementById("ajs_estimate_consent").checked ? "Yes" : "No"
+        };
+
+        emailjs.send(
+          "service_a03f0zf",
+          "template_5o4w9bj",
+          formData
+        ).then(function () {
+          form.reset();
+          successBox.classList.remove("hidden");
+          submitBtn.disabled = false;
+          submitBtn.textContent = originalButtonText;
+        }).catch(function (error) {
+          console.error("EmailJS error:", error);
+          errorBox.classList.remove("hidden");
+          submitBtn.disabled = false;
+          submitBtn.textContent = originalButtonText;
+        });
+      });
+    }
   });
 </script>
 

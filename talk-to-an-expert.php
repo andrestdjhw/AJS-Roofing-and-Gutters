@@ -25,7 +25,9 @@ get_header(); ?>
         </h1>
 
         <p class="mt-5 max-w-2xl text-base leading-8 text-white/85 md:text-lg">
-          For people not ready for an in-person inspection.
+          Get guidance before committing to an in-person visit. Tell us what’s going on,
+          what kind of help you may need, and when you’d like to talk. We’ll follow up
+          with a call that gives you clarity, not pressure.
         </p>
 
         <a href="tel:+15050000000"
@@ -37,47 +39,112 @@ get_header(); ?>
 
       <div class="ajs-reveal-right rounded-[28px] border border-white/10 bg-white p-5 text-[#42474b] shadow-2xl">
         <h2 class="text-2xl font-black tracking-[-0.03em] text-[#132d41]">
-          Schedule your call.
+          Request a call with our team.
         </h2>
 
         <p class="mt-2 text-sm leading-7 text-[#42474b]/80">
-          Choose a time that works for you.
+          Share a few details and we’ll reach out to discuss your questions, options, and next steps.
         </p>
 
-        <div id="scheduler" class="mt-5 overflow-hidden rounded-[24px] border border-[#d3d8db] bg-[#f5f9fc] p-3">
-          <!-- Calendario real -->
-          <div class="bg-white rounded-[18px] p-4 shadow-sm">
-            <!-- Header del calendario -->
-            <div class="flex items-center justify-between mb-4">
-              <button id="prevMonth" class="text-[#6eaace] hover:text-[#132d41] text-2xl leading-none">&lt;</button>
-              <div id="monthYear" class="font-bold text-[#132d41] text-lg"></div>
-              <button id="nextMonth" class="text-[#6eaace] hover:text-[#132d41] text-2xl leading-none">&gt;</button>
-            </div>
-
-            <!-- Días de la semana -->
-            <div class="grid grid-cols-7 gap-1 text-center text-xs font-medium text-[#42474b]/70 mb-2">
-              <div>S</div><div>M</div><div>T</div><div>W</div><div>T</div><div>F</div><div>S</div>
-            </div>
-
-            <!-- Días del calendario -->
-            <div id="calendarGrid" class="grid grid-cols-7 gap-1 text-center"></div>
-
-            <!-- Horarios disponibles (se muestra después de elegir fecha) -->
-            <div id="timeSlotsSection" class="hidden mt-6">
-              <p class="text-sm font-semibold text-[#132d41] mb-3">Available times on <span id="selectedDateDisplay" class="text-[#6eaace]"></span></p>
-              <div id="timeSlots" class="grid grid-cols-2 gap-2"></div>
-            </div>
-
-            <!-- Botón de programar -->
-            <div id="confirmSection" class="hidden mt-6">
-              <button id="scheduleBtn"
-                      class="w-full bg-[#132d41] hover:bg-[#1f4661] text-white font-bold py-4 rounded-2xl transition-all active:scale-[0.98]">
-                Programar la llamada
-              </button>
-              <p id="confirmationMessage" class="hidden mt-4 text-center text-green-600 font-medium"></p>
-            </div>
-          </div>
+        <div id="ajsCallFormSuccess" class="hidden mt-5 rounded-2xl border border-green-200 bg-green-50 px-4 py-4 text-sm text-green-700">
+          Thanks for reaching out. Your call request was sent successfully.
         </div>
+
+        <div id="ajsCallFormError" class="hidden mt-5 rounded-2xl border border-red-200 bg-red-50 px-4 py-4 text-sm text-red-700">
+          Something went wrong. Please try again.
+        </div>
+
+        <form id="ajsCallForm" class="mt-5 grid gap-3">
+          <input
+            id="ajs_call_name"
+            name="name"
+            type="text"
+            placeholder="Full Name *"
+            required
+            class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+          >
+
+          <input
+            id="ajs_call_phone"
+            name="phone"
+            type="tel"
+            placeholder="Phone Number *"
+            required
+            class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+          >
+
+          <input
+            id="ajs_call_email"
+            name="email"
+            type="email"
+            placeholder="Email *"
+            required
+            class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+          >
+
+          <select
+            id="ajs_call_service"
+            name="service"
+            required
+            class="w-full rounded-2xl border border-[#d3d8db] bg-white px-4 py-4 text-sm text-[#42474b] outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+          >
+            <option value="" selected disabled>What would you like to discuss? *</option>
+            <option value="Roof Replacement Consultation">Roof Replacement Consultation</option>
+            <option value="Metal Roofing Consultation">Metal Roofing Consultation</option>
+            <option value="Gutters Consultation">Gutters Consultation</option>
+            <option value="Roof Repair Questions">Roof Repair Questions</option>
+            <option value="Storm Damage / Insurance Help">Storm Damage / Insurance Help</option>
+            <option value="Inspection / Maintenance Questions">Inspection / Maintenance Questions</option>
+            <option value="Not Sure / Need Guidance">Not Sure / Need Guidance</option>
+          </select>
+
+          <input
+            id="ajs_call_address"
+            name="address"
+            type="text"
+            placeholder="Property Address or ZIP Code *"
+            required
+            class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+          >
+
+          <input
+            id="ajs_call_preferred"
+            type="text"
+            placeholder="Preferred day/time for a call (optional)"
+            class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+          >
+
+          <textarea
+            id="ajs_call_message"
+            name="message"
+            rows="5"
+            placeholder="What questions would you like to discuss with our expert?"
+            class="w-full resize-y rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+          ></textarea>
+
+          <label class="flex items-start gap-3 text-sm leading-6 text-[#42474b]/80">
+            <input
+              id="ajs_call_consent"
+              name="consent"
+              type="checkbox"
+              class="mt-1 h-4 w-4 rounded border-[#d3d8db] text-[#d04418] focus:ring-[#6eaace]/20"
+              required
+            >
+            <span>I agree to be contacted by AJS Roofing &amp; Gutters regarding my call request.</span>
+          </label>
+
+<button
+  id="ajsCallSubmitBtn"
+  type="submit"
+  class="ajs-btn-animate inline-flex w-full items-center justify-center rounded-full bg-[#d04418] px-6 py-4 text-sm font-black text-white shadow-[0_16px_32px_rgba(208,68,24,0.28)]"
+>
+  Request My Call
+</button>
+
+          <p class="text-sm text-[#42474b]/70">
+            We’ll reach out to confirm timing and answer your questions clearly.
+          </p>
+        </form>
       </div>
     </div>
   </section>
@@ -85,61 +152,68 @@ get_header(); ?>
 </main>
 
 <style>
-  /* Estilos del calendario */
-  .calendar-day {
-    aspect-ratio: 1/1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 9999px;
-    font-size: 0.95rem;
-    cursor: pointer;
-    transition: all 0.2s;
-  }
-  .calendar-day:hover {
-    background-color: #e0f0ff;
-  }
-  .calendar-day.today {
-    background-color: #6eaace;
-    color: white;
-    font-weight: bold;
-  }
-  .calendar-day.selected {
-    background-color: #132d41;
-    color: white;
-  }
-  .calendar-day.disabled {
-    color: #ccc;
-    cursor: not-allowed;
-  }
-  .calendar-day.other-month {
-    color: #aaa;
+  .hidden {
+    display: none !important;
   }
 
-  .time-slot {
-    padding: 12px 16px;
-    border: 2px solid #d3d8db;
-    border-radius: 12px;
-    text-align: center;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.2s;
+  .ajs-reveal-left,
+  .ajs-reveal-right {
+    opacity: 0;
+    transition: opacity .85s ease, transform .85s cubic-bezier(.22,.61,.36,1);
+    will-change: opacity, transform;
   }
-  .time-slot:hover {
-    border-color: #6eaace;
-    background-color: #f0f7ff;
+
+  .ajs-reveal-left {
+    transform: translateX(-42px);
   }
-  .time-slot.selected {
-    background-color: #132d41;
-    color: white;
-    border-color: #132d41;
+
+  .ajs-reveal-right {
+    transform: translateX(42px);
+  }
+
+  .ajs-reveal-left.is-visible,
+  .ajs-reveal-right.is-visible {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+
+  .ajs-float-slow {
+    animation: ajsFloatSlow 8s ease-in-out infinite;
+  }
+
+  .ajs-float-slower {
+    animation: ajsFloatSlower 11s ease-in-out infinite;
+  }
+
+  @keyframes ajsFloatSlow {
+    0%, 100% { transform: translate3d(0,0,0); }
+    50% { transform: translate3d(0,-14px,0); }
+  }
+
+  @keyframes ajsFloatSlower {
+    0%, 100% { transform: translate3d(0,0,0); }
+    50% { transform: translate3d(12px,-10px,0); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ajs-reveal-left,
+    .ajs-reveal-right,
+    .ajs-float-slow,
+    .ajs-float-slower {
+      animation: none !important;
+      transition: none !important;
+      transform: none !important;
+      opacity: 1 !important;
+    }
   }
 </style>
 
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    // Animaciones existentes
     const items = document.querySelectorAll(".ajs-reveal-left, .ajs-reveal-right");
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -148,145 +222,66 @@ get_header(); ?>
         }
       });
     }, { threshold: 0.12 });
+
     items.forEach((item) => observer.observe(item));
 
-    // === LÓGICA DEL CALENDARIO ===
-    let currentDate = new Date();
-    let selectedDate = null;
-    let selectedTime = null;
-
-    const monthYearEl = document.getElementById("monthYear");
-    const calendarGrid = document.getElementById("calendarGrid");
-    const timeSlotsSection = document.getElementById("timeSlotsSection");
-    const timeSlotsEl = document.getElementById("timeSlots");
-    const selectedDateDisplay = document.getElementById("selectedDateDisplay");
-    const confirmSection = document.getElementById("confirmSection");
-    const scheduleBtn = document.getElementById("scheduleBtn");
-    const confirmationMessage = document.getElementById("confirmationMessage");
-
-    // Horarios de ejemplo (puedes cambiarlos)
-    const availableTimes = ["09:00", "10:00", "11:00", "14:00", "15:00", "16:00"];
-
-    function renderCalendar() {
-      calendarGrid.innerHTML = "";
-      const year = currentDate.getFullYear();
-      const month = currentDate.getMonth();
-
-      monthYearEl.textContent = currentDate.toLocaleString('default', { month: 'long', year: 'numeric' });
-
-      const firstDay = new Date(year, month, 1).getDay();
-      const daysInMonth = new Date(year, month + 1, 0).getDate();
-      const today = new Date();
-      today.setHours(0,0,0,0);
-
-      // Días del mes anterior
-      const prevMonthDays = new Date(year, month, 0).getDate();
-      for (let i = firstDay - 1; i >= 0; i--) {
-        const dayEl = document.createElement("div");
-        dayEl.className = "calendar-day other-month";
-        dayEl.textContent = prevMonthDays - i;
-        calendarGrid.appendChild(dayEl);
-      }
-
-      // Días del mes actual
-      for (let day = 1; day <= daysInMonth; day++) {
-        const date = new Date(year, month, day);
-        const dayEl = document.createElement("div");
-        dayEl.className = "calendar-day";
-        dayEl.textContent = day;
-
-        if (date.getTime() === today.getTime()) {
-          dayEl.classList.add("today");
-        }
-
-        if (date < today) {
-          dayEl.classList.add("disabled");
-        } else {
-          dayEl.addEventListener("click", () => selectDate(date, dayEl));
-        }
-
-        if (selectedDate && date.getTime() === selectedDate.getTime()) {
-          dayEl.classList.add("selected");
-        }
-
-        calendarGrid.appendChild(dayEl);
-      }
-
-      // Días del siguiente mes
-      const remainingCells = 42 - (firstDay + daysInMonth);
-      for (let day = 1; day <= remainingCells; day++) {
-        const dayEl = document.createElement("div");
-        dayEl.className = "calendar-day other-month";
-        dayEl.textContent = day;
-        calendarGrid.appendChild(dayEl);
-      }
-    }
-
-    function selectDate(date, element) {
-      // Quitar selección anterior
-      document.querySelectorAll(".calendar-day").forEach(el => el.classList.remove("selected"));
-      element.classList.add("selected");
-
-      selectedDate = date;
-      selectedTime = null;
-
-      // Mostrar fecha seleccionada y horarios
-      const options = { weekday: 'long', month: 'long', day: 'numeric' };
-      selectedDateDisplay.textContent = date.toLocaleDateString('en-US', options);
-
-      timeSlotsSection.classList.remove("hidden");
-      confirmSection.classList.add("hidden");
-
-      renderTimeSlots();
-    }
-
-    function renderTimeSlots() {
-      timeSlotsEl.innerHTML = "";
-      availableTimes.forEach(time => {
-        const slot = document.createElement("div");
-        slot.className = "time-slot";
-        slot.textContent = time;
-        slot.addEventListener("click", () => {
-          document.querySelectorAll(".time-slot").forEach(s => s.classList.remove("selected"));
-          slot.classList.add("selected");
-          selectedTime = time;
-
-          confirmSection.classList.remove("hidden");
-        });
-        timeSlotsEl.appendChild(slot);
+    if (window.emailjs) {
+      emailjs.init({
+        publicKey: "CDikedp0ZSxxiBeLb"
       });
     }
 
-    // Navegación de meses
-    document.getElementById("prevMonth").addEventListener("click", () => {
-      currentDate.setMonth(currentDate.getMonth() - 1);
-      renderCalendar();
-    });
+    const form = document.getElementById("ajsCallForm");
+    const submitBtn = document.getElementById("ajsCallSubmitBtn");
+    const successBox = document.getElementById("ajsCallFormSuccess");
+    const errorBox = document.getElementById("ajsCallFormError");
 
-    document.getElementById("nextMonth").addEventListener("click", () => {
-      currentDate.setMonth(currentDate.getMonth() + 1);
-      renderCalendar();
-    });
+    if (form) {
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
 
-    // Botón de programar llamada
-    scheduleBtn.addEventListener("click", () => {
-      if (selectedDate && selectedTime) {
-        const formattedDate = selectedDate.toLocaleDateString('en-US', { 
-          weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' 
+        successBox.classList.add("hidden");
+        errorBox.classList.add("hidden");
+
+        const originalButtonText = submitBtn.textContent;
+        submitBtn.disabled = true;
+        submitBtn.textContent = "Sending...";
+
+        const preferredTime = document.getElementById("ajs_call_preferred").value.trim();
+        const baseMessage = document.getElementById("ajs_call_message").value.trim();
+
+        const combinedMessage = [
+          baseMessage ? "Questions / Notes: " + baseMessage : "",
+          preferredTime ? "Preferred Call Time: " + preferredTime : ""
+        ].filter(Boolean).join("\n\n");
+
+        const formData = {
+          name: document.getElementById("ajs_call_name").value,
+          phone: document.getElementById("ajs_call_phone").value,
+          email: document.getElementById("ajs_call_email").value,
+          service: document.getElementById("ajs_call_service").value,
+          address: document.getElementById("ajs_call_address").value,
+          message: combinedMessage || "No additional details provided.",
+          consent: document.getElementById("ajs_call_consent").checked ? "Yes" : "No"
+        };
+
+        emailjs.send(
+          "service_a03f0zf",
+          "template_5o4w9bj",
+          formData
+        ).then(function () {
+          form.reset();
+          successBox.classList.remove("hidden");
+          submitBtn.disabled = false;
+          submitBtn.textContent = originalButtonText;
+        }).catch(function (error) {
+          console.error("EmailJS error:", error);
+          errorBox.classList.remove("hidden");
+          submitBtn.disabled = false;
+          submitBtn.textContent = originalButtonText;
         });
-        
-        confirmationMessage.textContent = `✅ Call scheduled for ${formattedDate} at ${selectedTime}`;
-        confirmationMessage.classList.remove("hidden");
-        scheduleBtn.style.opacity = "0.6";
-        scheduleBtn.textContent = "Scheduled!";
-
-        // Aquí puedes agregar fetch a tu backend o redirigir
-        console.log(`Llamada programada: ${formattedDate} - ${selectedTime}`);
-      }
-    });
-
-    // Inicializar
-    renderCalendar();
+      });
+    }
   });
 </script>
 

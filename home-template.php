@@ -10,7 +10,7 @@ get_header(); ?>
 
 <main class="bg-white text-[#42474b]">
   <!-- Hero -->
-  <section class="relative overflow-hidden bg-[linear-gradient(135deg,rgba(19,45,65,0.96),rgba(31,70,97,0.88))] text-white">
+  <section class="relative overflow-hidden bg-[linear-gradient(135deg,#132d41_0%,#1a3a52_100%)] text-white">
     <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(110,170,206,0.22),transparent_30%)]"></div>
     <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(208,68,24,0.12),transparent_28%)]"></div>
 
@@ -32,7 +32,7 @@ get_header(); ?>
 
         <div class="mt-7 flex flex-wrap gap-3">
           <a href="/estimate"
-             class="ajs-btn-animate inline-flex items-center justify-center rounded-full bg-[linear-gradient(135deg,#d04418,#b63c15)] px-6 py-4 text-sm font-black text-white shadow-[0_16px_32px_rgba(208,68,24,0.28)] transition">
+             class="ajs-btn-animate inline-flex items-center justify-center rounded-full bg-[#d04418] px-6 py-4 text-sm font-black text-white shadow-[0_16px_32px_rgba(208,68,24,0.28)] transition">
             Get Your Free Inspection
           </a>
 
@@ -49,7 +49,7 @@ get_header(); ?>
         </a>
       </div>
 
-      <div class="ajs-reveal-right rounded-[28px] border border-white/10 bg-white p-5 text-[#42474b] shadow-2xl">
+      <div class="ajs-reveal-right rounded-[28px] border border-[#d3d8db] bg-white p-5 text-[#42474b] shadow-[0_20px_44px_rgba(19,45,65,0.18)]">
         <h2 class="text-2xl font-black tracking-[-0.03em] text-[#132d41]">
           Start with a clear inspection.
         </h2>
@@ -57,41 +57,89 @@ get_header(); ?>
           Tell us what's going on and we'll help you take the next step with confidence.
         </p>
 
-        <form class="mt-5 grid gap-3">
-          <input type="text" placeholder="Full Name *"
-                 class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20">
+        <div id="ajsHomeHeroFormSuccess" class="hidden mt-5 rounded-2xl border border-green-200 bg-green-50 px-4 py-4 text-sm text-green-700">
+          Thanks for reaching out. Your inspection request was sent successfully.
+        </div>
 
-          <input type="tel" placeholder="Phone Number *"
-                 class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20">
+        <div id="ajsHomeHeroFormError" class="hidden mt-5 rounded-2xl border border-red-200 bg-red-50 px-4 py-4 text-sm text-red-700">
+          Something went wrong. Please try again.
+        </div>
 
-          <input type="email" placeholder="Email *"
-                 class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20">
+        <form id="ajsHomeHeroForm" class="mt-5 grid gap-3">
+          <input
+            id="ajs_home_hero_name"
+            name="name"
+            type="text"
+            placeholder="Full Name *"
+            required
+            class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+          >
+
+          <input
+            id="ajs_home_hero_phone"
+            name="phone"
+            type="tel"
+            placeholder="Phone Number *"
+            required
+            class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+          >
+
+          <input
+            id="ajs_home_hero_email"
+            name="email"
+            type="email"
+            placeholder="Email *"
+            required
+            class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+          >
 
           <select
-            class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm text-[#42474b] outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20">
-            <option selected disabled>What do you need? *</option>
-            <option>Roof Replacement</option>
-            <option>Metal Roofing</option>
-            <option>Gutters</option>
-            <option>Roof Repair</option>
-            <option>Storm Damage / Insurance</option>
-            <option>Inspection / Maintenance</option>
-            <option>Not Sure</option>
+            id="ajs_home_hero_service"
+            name="service"
+            required
+            class="w-full rounded-2xl border border-[#d3d8db] bg-white px-4 py-4 text-sm text-[#42474b] outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20">
+            <option value="" selected disabled>What do you need? *</option>
+            <option value="Roof Replacement">Roof Replacement</option>
+            <option value="Metal Roofing">Metal Roofing</option>
+            <option value="Gutters">Gutters</option>
+            <option value="Roof Repair">Roof Repair</option>
+            <option value="Storm Damage / Insurance">Storm Damage / Insurance</option>
+            <option value="Inspection / Maintenance">Inspection / Maintenance</option>
+            <option value="Not Sure">Not Sure</option>
           </select>
 
-          <input type="text" placeholder="Address or ZIP Code *"
-                 class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20">
+          <input
+            id="ajs_home_hero_address"
+            name="address"
+            type="text"
+            placeholder="Address or ZIP Code *"
+            required
+            class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+          >
 
-          <textarea rows="4" placeholder="Anything else we should know? (optional)"
-                    class="w-full resize-y rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"></textarea>
+          <textarea
+            id="ajs_home_hero_message"
+            name="message"
+            rows="4"
+            placeholder="Anything else we should know? (optional)"
+            class="w-full resize-y rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+          ></textarea>
 
           <label class="flex items-start gap-3 text-sm leading-6 text-[#42474b]/80">
-            <input type="checkbox" class="mt-1 h-4 w-4 rounded border-[#d3d8db]" required>
+            <input
+              id="ajs_home_hero_consent"
+              name="consent"
+              type="checkbox"
+              class="mt-1 h-4 w-4 rounded border-[#d3d8db] text-[#d04418]"
+              required
+            >
             <span>I agree to be contacted by AJS Roofing &amp; Gutters regarding my request.</span>
           </label>
 
-          <button type="submit"
-                  class="ajs-btn-animate inline-flex items-center justify-center rounded-full bg-[linear-gradient(135deg,#d04418,#b63c15)] px-6 py-4 text-sm font-black text-white shadow-[0_16px_32px_rgba(208,68,24,0.28)] transition">
+          <button
+            id="ajsHomeHeroSubmitBtn"
+            type="submit"
+            class="ajs-btn-animate inline-flex items-center justify-center rounded-full bg-[#d04418] px-6 py-4 text-sm font-black text-white shadow-[0_16px_32px_rgba(208,68,24,0.28)] transition">
             Get Your Free Inspection
           </button>
 
@@ -212,7 +260,7 @@ get_header(); ?>
         ];
 
         foreach ($services as $service) : ?>
-          <article class="ajs-hover-lift ajs-reveal rounded-[24px] border border-[#d3d8db] bg-[linear-gradient(180deg,#ffffff_0%,#f5f9fc_100%)] p-6 shadow-[0_14px_32px_rgba(19,45,65,0.07)]">
+          <article class="ajs-hover-lift ajs-reveal rounded-[24px] border border-[#d3d8db] bg-[linear-gradient(180deg,#ffffff_0%,#f5f7f8_100%)] p-6 shadow-[0_14px_32px_rgba(19,45,65,0.07)]">
             <h3 class="text-xl font-black tracking-[-0.02em] text-[#132d41]">
               <?php echo esc_html($service['title']); ?>
             </h3>
@@ -240,7 +288,7 @@ get_header(); ?>
       </h2>
 
       <div class="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-        <article class="ajs-hover-lift ajs-reveal rounded-[24px] border border-[#d3d8db] bg-[linear-gradient(180deg,#ffffff_0%,#f5f9fc_100%)] p-6 shadow-[0_14px_32px_rgba(19,45,65,0.07)] md:col-span-2">
+        <article class="ajs-hover-lift ajs-reveal rounded-[24px] border border-[#d3d8db] bg-[linear-gradient(180deg,#ffffff_0%,#f5f7f8_100%)] p-6 shadow-[0_14px_32px_rgba(19,45,65,0.07)] md:col-span-2">
           <h3 class="text-xl font-black text-[#132d41]">Documented 5-Step Process</h3>
           <p class="mt-4 text-[15px] leading-8 text-[#42474b]">
             Every AJS project follows the same system: Inspect, Plan, Protect, Build, Verify.
@@ -248,7 +296,7 @@ get_header(); ?>
           </p>
         </article>
 
-        <article class="ajs-hover-lift ajs-reveal rounded-[24px] border border-[#d3d8db] bg-[linear-gradient(180deg,#ffffff_0%,#f5f9fc_100%)] p-6 shadow-[0_14px_32px_rgba(19,45,65,0.07)]">
+        <article class="ajs-hover-lift ajs-reveal rounded-[24px] border border-[#d3d8db] bg-[linear-gradient(180deg,#ffffff_0%,#f5f7f8_100%)] p-6 shadow-[0_14px_32px_rgba(19,45,65,0.07)]">
           <h3 class="text-xl font-black text-[#132d41]">Licensed, Insured &amp; Manufacturer Certified</h3>
           <p class="mt-4 text-[15px] leading-8 text-[#42474b]">
             Professional standards, clear accountability, and systems built to last.
@@ -262,14 +310,14 @@ get_header(); ?>
           </p>
         </article>
 
-        <article class="ajs-hover-lift ajs-reveal rounded-[24px] border border-[#d3d8db] bg-[linear-gradient(180deg,#ffffff_0%,#f5f9fc_100%)] p-6 shadow-[0_14px_32px_rgba(19,45,65,0.07)]">
+        <article class="ajs-hover-lift ajs-reveal rounded-[24px] border border-[#d3d8db] bg-[linear-gradient(180deg,#ffffff_0%,#f5f7f8_100%)] p-6 shadow-[0_14px_32px_rgba(19,45,65,0.07)]">
           <h3 class="text-xl font-black text-[#132d41]">Photo-Documented Clarity</h3>
           <p class="mt-4 text-[15px] leading-8 text-[#42474b]">
             You don't have to guess what's happening on your roof. We show you.
           </p>
         </article>
 
-        <article class="ajs-hover-lift ajs-reveal rounded-[24px] border border-[#d3d8db] bg-[linear-gradient(180deg,#ffffff_0%,#f5f9fc_100%)] p-6 shadow-[0_14px_32px_rgba(19,45,65,0.07)]">
+        <article class="ajs-hover-lift ajs-reveal rounded-[24px] border border-[#d3d8db] bg-[linear-gradient(180deg,#ffffff_0%,#f5f7f8_100%)] p-6 shadow-[0_14px_32px_rgba(19,45,65,0.07)]">
           <h3 class="text-xl font-black text-[#132d41]">Peace of Mind, Not Pressure</h3>
           <p class="mt-4 text-[15px] leading-8 text-[#42474b]">
             No manufactured urgency. No confusion. Just clear recommendations and next steps.
@@ -318,49 +366,50 @@ get_header(); ?>
       </div>
     </div>
   </section>
-<!-- Gallery -->
-<section class="py-20">
-  <div class="mx-auto max-w-7xl px-4">
-    <p class="ajs-reveal mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
-      Installed Right. Protected for Years.
-    </p>
 
-    <h2 class="ajs-reveal max-w-4xl text-3xl font-black leading-tight tracking-[-0.03em] text-[#132d41] md:text-5xl">
-      Recent work across New Mexico communities.
-    </h2>
+  <!-- Gallery -->
+  <section class="py-20">
+    <div class="mx-auto max-w-7xl px-4">
+      <p class="ajs-reveal mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
+        Installed Right. Protected for Years.
+      </p>
 
-    <div class="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+      <h2 class="ajs-reveal max-w-4xl text-3xl font-black leading-tight tracking-[-0.03em] text-[#132d41] md:text-5xl">
+        Recent work across New Mexico communities.
+      </h2>
 
-      <div class="ajs-hover-lift ajs-reveal flex min-h-[220px] items-end rounded-[24px] border border-[#d3d8db] p-6 font-black text-white bg-cover bg-center"
-        style="background-image: linear-gradient(180deg, rgba(19,45,65,0.15), rgba(19,45,65,0.45)), url('http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/raze-solar-Scaj0T40nFI-unsplash-scaled.jpg');">
-        Roof Replacement · 87114
+      <div class="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+
+        <div class="ajs-hover-lift ajs-reveal flex min-h-[220px] items-end rounded-[24px] border border-[#d3d8db] p-6 font-black text-white bg-cover bg-center"
+          style="background-image: linear-gradient(180deg, rgba(19,45,65,0.15), rgba(19,45,65,0.45)), url('http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/raze-solar-Scaj0T40nFI-unsplash-scaled.jpg');">
+          Roof Replacement · 87114
+        </div>
+
+        <div class="ajs-hover-lift ajs-reveal flex min-h-[220px] items-end rounded-[24px] border border-[#d3d8db] p-6 font-black text-white bg-cover bg-center"
+          style="background-image: linear-gradient(180deg, rgba(19,45,65,0.15), rgba(19,45,65,0.45)), url('http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/paddy-pohlod-EhIUYktUunU-unsplash-scaled.jpg');">
+          Metal Roofing · 87501
+        </div>
+
+        <div class="ajs-hover-lift ajs-reveal flex min-h-[220px] items-end rounded-[24px] border border-[#d3d8db] p-6 font-black text-white bg-cover bg-center"
+          style="background-image: linear-gradient(180deg, rgba(19,45,65,0.15), rgba(19,45,65,0.45)), url('http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/gene-yllanes-6mZT8lxpZSA-unsplash-scaled.jpg');">
+          Seamless Gutters · 87124
+        </div>
+
+        <div class="ajs-hover-lift ajs-reveal flex min-h-[220px] items-end rounded-[24px] border border-[#d3d8db] p-6 font-black text-white bg-cover bg-center"
+          style="background-image: linear-gradient(180deg, rgba(19,45,65,0.15), rgba(19,45,65,0.45)), url('http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/alexander-von-schulz-1lVHc5aJEgk-unsplash-scaled.jpg');">
+          Storm Damage Repair · 87120
+        </div>
+
       </div>
 
-      <div class="ajs-hover-lift ajs-reveal flex min-h-[220px] items-end rounded-[24px] border border-[#d3d8db] p-6 font-black text-white bg-cover bg-center"
-        style="background-image: linear-gradient(180deg, rgba(19,45,65,0.15), rgba(19,45,65,0.45)), url('http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/paddy-pohlod-EhIUYktUunU-unsplash-scaled.jpg');">
-        Metal Roofing · 87501
+      <div class="ajs-reveal mt-6">
+        <a href="/projects"
+          class="ajs-btn-animate inline-flex items-center justify-center rounded-full border border-[#132d41]/12 bg-[#132d41]/5 px-6 py-4 text-sm font-black text-[#132d41] transition hover:bg-[#132d41] hover:text-white">
+          View Full Gallery
+        </a>
       </div>
-
-      <div class="ajs-hover-lift ajs-reveal flex min-h-[220px] items-end rounded-[24px] border border-[#d3d8db] p-6 font-black text-white bg-cover bg-center"
-        style="background-image: linear-gradient(180deg, rgba(19,45,65,0.15), rgba(19,45,65,0.45)), url('http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/gene-yllanes-6mZT8lxpZSA-unsplash-scaled.jpg');">
-        Seamless Gutters · 87124
-      </div>
-
-      <div class="ajs-hover-lift ajs-reveal flex min-h-[220px] items-end rounded-[24px] border border-[#d3d8db] p-6 font-black text-white bg-cover bg-center"
-        style="background-image: linear-gradient(180deg, rgba(19,45,65,0.15), rgba(19,45,65,0.45)), url('http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/alexander-von-schulz-1lVHc5aJEgk-unsplash-scaled.jpg');">
-        Storm Damage Repair · 87120
-      </div>
-
     </div>
-
-    <div class="ajs-reveal mt-6">
-      <a href="/projects"
-        class="ajs-btn-animate inline-flex items-center justify-center rounded-full border border-[#132d41]/12 bg-[#132d41]/5 px-6 py-4 text-sm font-black text-[#132d41] transition hover:bg-[#132d41] hover:text-white">
-        View Full Gallery
-      </a>
-    </div>
-  </div>
-</section>
+  </section>
 
   <!-- Reviews -->
   <section class="bg-[#d3d8db]/30 py-20">
@@ -430,7 +479,8 @@ get_header(); ?>
         <p class="mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
           Proudly Serving New Mexico Communities
         </p>
-<h2 class="max-w-xl text-3xl font-black leading-[1.1] tracking-[-0.03em] text-[#132d41] md:text-5xl">          Local service with clear communication and reliable execution.
+        <h2 class="max-w-xl text-3xl font-black leading-[1.1] tracking-[-0.03em] text-[#132d41] md:text-5xl">
+          Local service with clear communication and reliable execution.
         </h2>
 
         <p class="mt-5 max-w-xl text-base leading-8 text-[#42474b]">
@@ -464,7 +514,7 @@ get_header(); ?>
         </a>
       </div>
 
-      <div class="ajs-hover-lift ajs-reveal-right overflow-hidden rounded-[24px] border border-[#d3d8db] bg-[linear-gradient(180deg,#ffffff_0%,#f5f9fc_100%)] p-3 shadow-[0_14px_32px_rgba(19,45,65,0.07)]">
+      <div class="ajs-hover-lift ajs-reveal-right overflow-hidden rounded-[24px] border border-[#d3d8db] bg-[linear-gradient(180deg,#ffffff_0%,#f5f7f8_100%)] p-3 shadow-[0_14px_32px_rgba(19,45,65,0.07)]">
         <div class="overflow-hidden rounded-[20px] border border-[#d3d8db]">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12267.925854957912!2d-106.49962583992456!3d35.14702501422682!2m3!1f0!2f0!3f0!2m3!1i1024!2i768!4f13.1!3m3!1m2!1s0x87189fa05f8517d9%3A0xa4f35cdf5e1c54a4!2sHigh Desert%2C Albuquerque%2C NM%2C USA!5e1!3m2!1sen!2shn!4v1774275830057!5m2!1sen!2shn"
@@ -530,7 +580,7 @@ get_header(); ?>
   </section>
 
   <!-- Closing CTA -->
-  <section id="closing-cta" class="ajs-home-sticky-offset bg-[linear-gradient(180deg,#132d41_0%,#1c425f_100%)] py-20 text-white">
+  <section id="closing-cta" class="ajs-home-sticky-offset bg-[linear-gradient(180deg,#132d41_0%,#1a3a52_100%)] py-20 text-white">
     <div class="mx-auto grid max-w-7xl gap-10 px-4 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
       <div class="ajs-reveal-left">
         <p class="mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#6eaace]">
@@ -557,46 +607,94 @@ get_header(); ?>
         </p>
       </div>
 
-      <div class="ajs-reveal-right rounded-[28px] border border-white/10 bg-white p-5 text-[#42474b] shadow-[0_18px_40px_rgba(19,45,65,0.2)]">
+      <div class="ajs-reveal-right rounded-[28px] border border-[#d3d8db] bg-white p-5 text-[#42474b] shadow-[0_18px_40px_rgba(19,45,65,0.2)]">
         <h2 class="text-2xl font-black tracking-[-0.03em] text-[#132d41]">
           Request your free inspection.
         </h2>
 
-        <form class="mt-5 grid gap-3">
-          <input type="text" placeholder="Full Name *"
-                 class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20">
+        <div id="ajsHomeClosingFormSuccess" class="hidden mt-5 rounded-2xl border border-green-200 bg-green-50 px-4 py-4 text-sm text-green-700">
+          Thanks for reaching out. Your inspection request was sent successfully.
+        </div>
 
-          <input type="tel" placeholder="Phone Number *"
-                 class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20">
+        <div id="ajsHomeClosingFormError" class="hidden mt-5 rounded-2xl border border-red-200 bg-red-50 px-4 py-4 text-sm text-red-700">
+          Something went wrong. Please try again.
+        </div>
 
-          <input type="email" placeholder="Email *"
-                 class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20">
+        <form id="ajsHomeClosingForm" class="mt-5 grid gap-3">
+          <input
+            id="ajs_home_closing_name"
+            name="name"
+            type="text"
+            placeholder="Full Name *"
+            required
+            class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+          >
+
+          <input
+            id="ajs_home_closing_phone"
+            name="phone"
+            type="tel"
+            placeholder="Phone Number *"
+            required
+            class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+          >
+
+          <input
+            id="ajs_home_closing_email"
+            name="email"
+            type="email"
+            placeholder="Email *"
+            required
+            class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+          >
 
           <select
-            class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm text-[#42474b] outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20">
-            <option selected disabled>What do you need? *</option>
-            <option>Roof Replacement</option>
-            <option>Metal Roofing</option>
-            <option>Gutters</option>
-            <option>Roof Repair</option>
-            <option>Storm Damage / Insurance</option>
-            <option>Inspection / Maintenance</option>
-            <option>Not Sure</option>
+            id="ajs_home_closing_service"
+            name="service"
+            required
+            class="w-full rounded-2xl border border-[#d3d8db] bg-white px-4 py-4 text-sm text-[#42474b] outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20">
+            <option value="" selected disabled>What do you need? *</option>
+            <option value="Roof Replacement">Roof Replacement</option>
+            <option value="Metal Roofing">Metal Roofing</option>
+            <option value="Gutters">Gutters</option>
+            <option value="Roof Repair">Roof Repair</option>
+            <option value="Storm Damage / Insurance">Storm Damage / Insurance</option>
+            <option value="Inspection / Maintenance">Inspection / Maintenance</option>
+            <option value="Not Sure">Not Sure</option>
           </select>
 
-          <input type="text" placeholder="Address or ZIP Code *"
-                 class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20">
+          <input
+            id="ajs_home_closing_address"
+            name="address"
+            type="text"
+            placeholder="Address or ZIP Code *"
+            required
+            class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+          >
 
-          <textarea rows="4" placeholder="Anything else we should know? (optional)"
-                    class="w-full resize-y rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"></textarea>
+          <textarea
+            id="ajs_home_closing_message"
+            name="message"
+            rows="4"
+            placeholder="Anything else we should know? (optional)"
+            class="w-full resize-y rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+          ></textarea>
 
           <label class="flex items-start gap-3 text-sm leading-6 text-[#42474b]/80">
-            <input type="checkbox" class="mt-1 h-4 w-4 rounded border-[#d3d8db]" required>
+            <input
+              id="ajs_home_closing_consent"
+              name="consent"
+              type="checkbox"
+              class="mt-1 h-4 w-4 rounded border-[#d3d8db] text-[#d04418]"
+              required
+            >
             <span>I agree to be contacted by AJS Roofing &amp; Gutters regarding my request.</span>
           </label>
 
-          <button type="submit"
-                  class="ajs-btn-animate inline-flex items-center justify-center rounded-full bg-[linear-gradient(135deg,#d04418,#b63c15)] px-6 py-4 text-sm font-black text-white shadow-[0_16px_32px_rgba(208,68,24,0.28)] transition">
+          <button
+            id="ajsHomeClosingSubmitBtn"
+            type="submit"
+            class="ajs-btn-animate inline-flex items-center justify-center rounded-full bg-[#d04418] px-6 py-4 text-sm font-black text-white shadow-[0_16px_32px_rgba(208,68,24,0.28)] transition">
             Get Your Free Inspection
           </button>
         </form>
@@ -606,6 +704,10 @@ get_header(); ?>
 </main>
 
 <style>
+  .hidden {
+    display: none !important;
+  }
+
   .ajs-ticker {
     overflow: hidden;
     width: 100%;
@@ -715,6 +817,8 @@ get_header(); ?>
   }
 </style>
 
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const items = document.querySelectorAll(".ajs-reveal, .ajs-reveal-left, .ajs-reveal-right");
@@ -728,6 +832,86 @@ get_header(); ?>
     }, { threshold: 0.12 });
 
     items.forEach((item) => observer.observe(item));
+
+    if (window.emailjs) {
+      emailjs.init({
+        publicKey: "CDikedp0ZSxxiBeLb"
+      });
+    }
+
+    function setupHomeForm(config) {
+      const form = document.getElementById(config.formId);
+      const submitBtn = document.getElementById(config.submitBtnId);
+      const successBox = document.getElementById(config.successBoxId);
+      const errorBox = document.getElementById(config.errorBoxId);
+
+      if (!form || !submitBtn || !successBox || !errorBox) return;
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        successBox.classList.add("hidden");
+        errorBox.classList.add("hidden");
+
+        const originalButtonText = submitBtn.textContent;
+        submitBtn.disabled = true;
+        submitBtn.textContent = "Sending...";
+
+        const formData = {
+          name: document.getElementById(config.nameId).value,
+          phone: document.getElementById(config.phoneId).value,
+          email: document.getElementById(config.emailId).value,
+          service: document.getElementById(config.serviceId).value,
+          address: document.getElementById(config.addressId).value,
+          message: document.getElementById(config.messageId).value,
+          consent: document.getElementById(config.consentId).checked ? "Yes" : "No"
+        };
+
+        emailjs.send(
+          "service_a03f0zf",
+          "template_5o4w9bj",
+          formData
+        ).then(function () {
+          form.reset();
+          successBox.classList.remove("hidden");
+          submitBtn.disabled = false;
+          submitBtn.textContent = originalButtonText;
+        }).catch(function (error) {
+          console.error("EmailJS error:", error);
+          errorBox.classList.remove("hidden");
+          submitBtn.disabled = false;
+          submitBtn.textContent = originalButtonText;
+        });
+      });
+    }
+
+    setupHomeForm({
+      formId: "ajsHomeHeroForm",
+      submitBtnId: "ajsHomeHeroSubmitBtn",
+      successBoxId: "ajsHomeHeroFormSuccess",
+      errorBoxId: "ajsHomeHeroFormError",
+      nameId: "ajs_home_hero_name",
+      phoneId: "ajs_home_hero_phone",
+      emailId: "ajs_home_hero_email",
+      serviceId: "ajs_home_hero_service",
+      addressId: "ajs_home_hero_address",
+      messageId: "ajs_home_hero_message",
+      consentId: "ajs_home_hero_consent"
+    });
+
+    setupHomeForm({
+      formId: "ajsHomeClosingForm",
+      submitBtnId: "ajsHomeClosingSubmitBtn",
+      successBoxId: "ajsHomeClosingFormSuccess",
+      errorBoxId: "ajsHomeClosingFormError",
+      nameId: "ajs_home_closing_name",
+      phoneId: "ajs_home_closing_phone",
+      emailId: "ajs_home_closing_email",
+      serviceId: "ajs_home_closing_service",
+      addressId: "ajs_home_closing_address",
+      messageId: "ajs_home_closing_message",
+      consentId: "ajs_home_closing_consent"
+    });
   });
 </script>
 

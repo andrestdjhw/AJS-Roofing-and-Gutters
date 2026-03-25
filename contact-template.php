@@ -10,14 +10,14 @@ get_header(); ?>
 <main class="bg-white text-slate-900">
 
 <!-- Hero -->
-<section class="relative overflow-hidden bg-[linear-gradient(180deg,#102946_0%,#16355c_100%)] text-white">
-  <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(211,161,53,0.18),transparent_30%)]"></div>
+<section class="relative overflow-hidden bg-[linear-gradient(180deg,#132d41_0%,#1a3a52_100%)] text-white">
+  <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(110,170,206,0.18),transparent_30%)]"></div>
 
   <div class="relative mx-auto max-w-7xl px-4 py-16 md:py-20">
     <div class="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
 
       <div class="ajs-reveal-left">
-        <p class="mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#d3a135]">
+        <p class="mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#6eaace]">
           Contact AJS Roofing
         </p>
 
@@ -33,7 +33,7 @@ get_header(); ?>
 
         <div class="mt-8 flex flex-wrap gap-4">
           <a href="tel:+15050000000"
-             class="ajs-btn-animate inline-flex items-center justify-center rounded-full bg-[linear-gradient(135deg,#d3a135,#b7841a)] px-6 py-4 text-sm font-black text-slate-900 shadow-[0_16px_32px_rgba(211,161,53,0.25)]">
+             class="ajs-btn-animate inline-flex items-center justify-center rounded-full bg-[#d04418] px-6 py-4 text-sm font-black text-white shadow-[0_16px_32px_rgba(208,68,24,0.25)]">
             Call (505) 000-0000
           </a>
 
@@ -45,24 +45,24 @@ get_header(); ?>
       </div>
 
       <div class="ajs-reveal-right rounded-[28px] border border-white/10 bg-white/10 p-6 backdrop-blur-sm shadow-2xl">
-        <p class="text-xs font-black uppercase tracking-[0.18em] text-[#d3a135]">
+        <p class="text-xs font-black uppercase tracking-[0.18em] text-[#6eaace]">
           Quick Contact
         </p>
 
         <div class="mt-4 space-y-4 text-sm">
 
           <div class="flex items-start gap-3">
-            <span class="text-[#d3a135] font-black">Phone</span>
+            <span class="font-black text-[#6eaace]">Phone</span>
             <span>(505) 000-0000</span>
           </div>
 
           <div class="flex items-start gap-3">
-            <span class="text-[#d3a135] font-black">Email</span>
+            <span class="font-black text-[#6eaace]">Email</span>
             <span>info@ajsroofing.com</span>
           </div>
 
           <div class="flex items-start gap-3">
-            <span class="text-[#d3a135] font-black">Hours</span>
+            <span class="font-black text-[#6eaace]">Hours</span>
             <span>Mon-Fri 8AM-6PM</span>
           </div>
 
@@ -80,36 +80,67 @@ get_header(); ?>
     <div class="grid gap-10 lg:grid-cols-[1fr_1fr]">
 
       <!-- Form -->
-      <div class="ajs-reveal-left rounded-[28px] border border-slate-200 bg-white p-7 shadow-[0_18px_40px_rgba(16,41,70,0.08)]">
+      <div class="ajs-reveal-left rounded-[28px] border border-[#d3d8db] bg-white p-7 shadow-[0_18px_40px_rgba(19,45,65,0.08)]">
 
-        <p class="mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#b7841a]">
+        <p class="mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
           Send Us A Message
         </p>
 
-        <h2 class="text-3xl font-black tracking-[-0.03em] text-[#102946]">
+        <h2 class="text-3xl font-black tracking-[-0.03em] text-[#132d41]">
           Tell us what you need.
         </h2>
 
-        <form class="mt-6 grid gap-4">
+        <div id="ajsContactFormSuccess" class="hidden mt-6 rounded-2xl border border-green-200 bg-green-50 px-4 py-4 text-sm text-green-700">
+          Thanks for reaching out. Your message was sent successfully.
+        </div>
 
-          <input type="text"
-                 placeholder="Full Name *"
-                 class="w-full rounded-2xl border border-slate-300 px-4 py-4 text-sm outline-none focus:border-[#245791] focus:ring-4 focus:ring-[#245791]/10">
+        <div id="ajsContactFormError" class="hidden mt-6 rounded-2xl border border-red-200 bg-red-50 px-4 py-4 text-sm text-red-700">
+          Something went wrong. Please try again.
+        </div>
 
-          <input type="tel"
-                 placeholder="Phone Number *"
-                 class="w-full rounded-2xl border border-slate-300 px-4 py-4 text-sm outline-none focus:border-[#245791] focus:ring-4 focus:ring-[#245791]/10">
+        <form id="ajsContactForm" class="mt-6 grid gap-4">
 
-          <input type="email"
-                 placeholder="Email Address *"
-                 class="w-full rounded-2xl border border-slate-300 px-4 py-4 text-sm outline-none focus:border-[#245791] focus:ring-4 focus:ring-[#245791]/10">
+          <input
+            id="ajs_contact_name"
+            name="name"
+            type="text"
+            placeholder="Full Name *"
+            required
+            class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+          >
 
-          <textarea rows="4"
-                    placeholder="How can we help?"
-                    class="w-full resize-y rounded-2xl border border-slate-300 px-4 py-4 text-sm outline-none focus:border-[#245791] focus:ring-4 focus:ring-[#245791]/10"></textarea>
+          <input
+            id="ajs_contact_phone"
+            name="phone"
+            type="tel"
+            placeholder="Phone Number *"
+            required
+            class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+          >
 
-          <button type="submit"
-                  class="ajs-btn-animate inline-flex items-center justify-center rounded-full bg-[linear-gradient(135deg,#d3a135,#b7841a)] px-6 py-4 text-sm font-black text-slate-900 shadow-[0_16px_32px_rgba(211,161,53,0.24)]">
+          <input
+            id="ajs_contact_email"
+            name="email"
+            type="email"
+            placeholder="Email Address *"
+            required
+            class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+          >
+
+          <textarea
+            id="ajs_contact_message"
+            name="message"
+            rows="4"
+            placeholder="How can we help?"
+            required
+            class="w-full resize-y rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+          ></textarea>
+
+          <button
+            id="ajsContactSubmitBtn"
+            type="submit"
+            class="ajs-btn-animate inline-flex items-center justify-center rounded-full bg-[#d04418] px-6 py-4 text-sm font-black text-white shadow-[0_16px_32px_rgba(208,68,24,0.24)]"
+          >
             Send Message
           </button>
 
@@ -120,28 +151,28 @@ get_header(); ?>
       <!-- Address / Map -->
       <div class="ajs-reveal-right space-y-6">
 
-        <div class="rounded-[28px] border border-slate-200 bg-white p-7 shadow-[0_18px_40px_rgba(16,41,70,0.08)]">
+        <div class="rounded-[28px] border border-[#d3d8db] bg-white p-7 shadow-[0_18px_40px_rgba(19,45,65,0.08)]">
 
-          <p class="text-xs font-black uppercase tracking-[0.18em] text-[#b7841a]">
+          <p class="text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
             Office Location
           </p>
 
-          <h3 class="mt-2 text-2xl font-black text-[#102946]">
+          <h3 class="mt-2 text-2xl font-black text-[#132d41]">
             Visit Our Office
           </h3>
 
-          <p class="mt-4 text-slate-600 leading-8">
+          <p class="mt-4 leading-8 text-[#42474b]">
             123 Example Street<br>
             Albuquerque, NM 87101
           </p>
 
-          <p class="mt-4 text-sm text-slate-500">
+          <p class="mt-4 text-sm text-[#42474b]/80">
             Serving Albuquerque, Santa Fe, Rio Rancho, and surrounding areas.
           </p>
 
         </div>
 
-        <div class="overflow-hidden rounded-[28px] border border-slate-200 shadow-[0_18px_40px_rgba(16,41,70,0.08)]">
+        <div class="overflow-hidden rounded-[28px] border border-[#d3d8db] shadow-[0_18px_40px_rgba(19,45,65,0.08)]">
 
           <iframe
             src="https://maps.google.com/maps?q=Albuquerque&t=&z=13&ie=UTF8&iwloc=&output=embed"
@@ -162,54 +193,102 @@ get_header(); ?>
 
 </main>
 
-
 <style>
+.hidden {
+  display: none !important;
+}
 
 .ajs-reveal-left,
 .ajs-reveal-right {
-  opacity:0;
-  transform:translateY(40px);
-  transition:all .8s ease;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all .8s ease;
 }
 
 .ajs-reveal-left.is-visible,
-.ajs-reveal-right.is-visible{
-  opacity:1;
-  transform:translateY(0);
+.ajs-reveal-right.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
-.ajs-reveal-left{transform:translateX(-40px)}
-.ajs-reveal-right{transform:translateX(40px)}
+.ajs-reveal-left { transform: translateX(-40px); }
+.ajs-reveal-right { transform: translateX(40px); }
 
-.ajs-btn-animate{
-transition:transform .2s ease, box-shadow .2s ease;
+.ajs-btn-animate {
+  transition: transform .2s ease, box-shadow .2s ease;
 }
 
-.ajs-btn-animate:hover{
-transform:translateY(-2px);
-box-shadow:0 20px 40px rgba(0,0,0,.15);
+.ajs-btn-animate:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 40px rgba(19,45,65,.15);
 }
-
 </style>
 
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
 <script>
+document.addEventListener("DOMContentLoaded", function () {
 
-document.addEventListener("DOMContentLoaded",function(){
+  const items = document.querySelectorAll(".ajs-reveal-left,.ajs-reveal-right");
 
-const items=document.querySelectorAll(".ajs-reveal-left,.ajs-reveal-right")
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+      }
+    });
+  }, { threshold: 0.2 });
 
-const observer=new IntersectionObserver(entries=>{
-entries.forEach(entry=>{
-if(entry.isIntersecting){
-entry.target.classList.add("is-visible")
-}
-})
-},{threshold:0.2})
+  items.forEach(item => observer.observe(item));
 
-items.forEach(item=>observer.observe(item))
+  if (window.emailjs) {
+    emailjs.init({
+      publicKey: "CDikedp0ZSxxiBeLb"
+    });
+  }
 
-})
+  const form = document.getElementById("ajsContactForm");
+  const submitBtn = document.getElementById("ajsContactSubmitBtn");
+  const successBox = document.getElementById("ajsContactFormSuccess");
+  const errorBox = document.getElementById("ajsContactFormError");
 
+  if (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      successBox.classList.add("hidden");
+      errorBox.classList.add("hidden");
+
+      const originalButtonText = submitBtn.textContent;
+      submitBtn.disabled = true;
+      submitBtn.textContent = "Sending...";
+
+      const formData = {
+        name: document.getElementById("ajs_contact_name").value,
+        phone: document.getElementById("ajs_contact_phone").value,
+        email: document.getElementById("ajs_contact_email").value,
+        message: document.getElementById("ajs_contact_message").value
+      };
+
+      emailjs.send(
+        "service_a03f0zf",
+        "template_5o4w9bj",
+        formData
+      ).then(function () {
+        form.reset();
+        successBox.classList.remove("hidden");
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalButtonText;
+      }).catch(function (error) {
+        console.error("EmailJS error:", error);
+        errorBox.classList.remove("hidden");
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalButtonText;
+      });
+    });
+  }
+
+});
 </script>
 
 <?php get_footer(); ?>

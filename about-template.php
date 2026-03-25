@@ -10,34 +10,34 @@ get_header(); ?>
 
 <main class="bg-white text-slate-900">
   <!-- Editorial Hero -->
-  <section class="relative overflow-hidden border-b border-slate-200 bg-[linear-gradient(180deg,#f8fafc_0%,#eef3f8_100%)]">
-    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(36,87,145,0.12),transparent_28%)]"></div>
-    <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,rgba(211,161,53,0.14),transparent_24%)]"></div>
+  <section class="relative overflow-hidden border-b border-[#d3d8db] bg-[linear-gradient(180deg,#ffffff_0%,#f3f6f8_100%)]">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(110,170,206,0.16),transparent_28%)]"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,rgba(208,68,24,0.10),transparent_24%)]"></div>
 
     <div class="relative mx-auto max-w-7xl px-4 py-16 md:py-20">
       <div class="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-end">
         <div class="ajs-reveal-left">
-          <p class="mb-3 text-xs font-black uppercase tracking-[0.2em] text-[#b7841a]">
+          <p class="mb-3 text-xs font-black uppercase tracking-[0.2em] text-[#d04418]">
             About AJS Roofing &amp; Gutters
           </p>
 
-          <h1 class="max-w-[11ch] text-4xl font-black leading-[0.94] tracking-[-0.045em] text-[#102946] md:text-6xl xl:text-7xl">
-            The People Behind Your Home’s Calm
+          <h1 class="max-w-[11ch] text-4xl font-black leading-[0.94] tracking-[-0.045em] text-[#132d41] md:text-6xl xl:text-7xl">
+            The People Behind Your Home's Calm
           </h1>
 
-          <p class="mt-6 max-w-2xl text-base leading-8 text-slate-600 md:text-lg">
+          <p class="mt-6 max-w-2xl text-base leading-8 text-[#42474b] md:text-lg">
             Meet the team committed to transforming roofing from a stressful experience
             into a clear, trustworthy, and predictable process.
           </p>
 
           <div class="mt-8 flex flex-wrap gap-3">
             <a href="/estimate"
-               class="ajs-btn-animate inline-flex items-center justify-center rounded-full bg-[linear-gradient(135deg,#d3a135,#b7841a)] px-6 py-4 text-sm font-black text-slate-900 shadow-[0_16px_32px_rgba(211,161,53,0.22)]">
+               class="ajs-btn-animate inline-flex items-center justify-center rounded-full bg-[linear-gradient(135deg,#d04418,#132d41)] px-6 py-4 text-sm font-black text-white shadow-[0_16px_32px_rgba(19,45,65,0.22)]">
               Get Your Free Inspection
             </a>
 
             <a href="/contact"
-               class="ajs-btn-animate inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-6 py-4 text-sm font-black text-[#102946] shadow-sm">
+               class="ajs-btn-animate inline-flex items-center justify-center rounded-full border border-[#d3d8db] bg-white px-6 py-4 text-sm font-black text-[#132d41] shadow-sm">
               Talk With Our Team
             </a>
           </div>
@@ -45,8 +45,8 @@ get_header(); ?>
 
         <div class="ajs-reveal-right">
           <div class="grid gap-4 sm:grid-cols-2">
-            <div class="rounded-[28px] bg-[#102946] p-6 text-white shadow-[0_18px_40px_rgba(16,41,70,0.18)]">
-              <p class="text-xs font-black uppercase tracking-[0.18em] text-[#d3a135]">
+            <div class="rounded-[28px] bg-[#132d41] p-6 text-white shadow-[0_18px_40px_rgba(19,45,65,0.18)]">
+              <p class="text-xs font-black uppercase tracking-[0.18em] text-[#6eaace]">
                 Brand Mantra
               </p>
               <p class="mt-5 text-3xl font-black leading-tight tracking-[-0.03em]">
@@ -57,11 +57,11 @@ get_header(); ?>
               </p>
             </div>
 
-            <div class="rounded-[28px] border border-slate-200 bg-white p-6 shadow-[0_14px_32px_rgba(16,41,70,0.06)]">
-              <p class="text-xs font-black uppercase tracking-[0.18em] text-[#b7841a]">
+            <div class="rounded-[28px] border border-[#d3d8db] bg-white p-6 shadow-[0_14px_32px_rgba(19,45,65,0.08)]">
+              <p class="text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
                 Service Area
               </p>
-              <ul class="mt-5 grid gap-3 text-sm font-bold text-[#102946]">
+              <ul class="mt-5 grid gap-3 text-sm font-bold text-[#132d41]">
                 <li>Albuquerque</li>
                 <li>Santa Fe</li>
                 <li>Rio Rancho</li>
@@ -69,11 +69,11 @@ get_header(); ?>
               </ul>
             </div>
 
-            <div class="rounded-[28px] border border-slate-200 bg-white p-6 shadow-[0_14px_32px_rgba(16,41,70,0.06)] sm:col-span-2">
-              <p class="text-xs font-black uppercase tracking-[0.18em] text-[#b7841a]">
+            <div class="rounded-[28px] border border-[#d3d8db] bg-white p-6 shadow-[0_14px_32px_rgba(19,45,65,0.08)] sm:col-span-2">
+              <p class="text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
                 Why Clients Trust AJS
               </p>
-              <p class="mt-4 text-lg font-black leading-8 tracking-[-0.02em] text-[#102946]">
+              <p class="mt-4 text-lg font-black leading-8 tracking-[-0.02em] text-[#132d41]">
                 Clear process. Honest communication. Professional execution. No pressure.
               </p>
             </div>
@@ -88,31 +88,31 @@ get_header(); ?>
     <div class="mx-auto max-w-7xl px-4">
       <div class="grid gap-8 lg:grid-cols-[0.75fr_1.25fr]">
         <div class="ajs-reveal-left">
-          <p class="mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#b7841a]">
+          <p class="mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
             Our Story
           </p>
-          <h2 class="max-w-[12ch] text-3xl font-black leading-tight tracking-[-0.03em] text-[#102946] md:text-5xl">
+          <h2 class="max-w-[12ch] text-3xl font-black leading-tight tracking-[-0.03em] text-[#132d41] md:text-5xl">
             From roofing chaos to homeowner confidence.
           </h2>
         </div>
 
-        <div class="ajs-reveal-right rounded-[32px] border border-slate-200 bg-[linear-gradient(180deg,#ffffff_0%,#f8fafc_100%)] p-8 shadow-[0_18px_36px_rgba(16,41,70,0.06)]">
+        <div class="ajs-reveal-right rounded-[32px] border border-[#d3d8db] bg-[linear-gradient(180deg,#ffffff_0%,#f7f9fa_100%)] p-8 shadow-[0_18px_36px_rgba(19,45,65,0.08)]">
           <div class="grid gap-6 md:grid-cols-2">
-            <p class="text-base leading-8 text-slate-600">
-              When a roof problem appears, it’s not just physical damage — it’s uncertainty.
+            <p class="text-base leading-8 text-[#42474b]">
+              When a roof problem appears, it's not just physical damage — it's uncertainty.
               Too many options, too little clarity, and the fear of making a bad decision.
-              The chaos isn’t just on the roof. It’s in your mind.
+              The chaos isn't just on the roof. It's in your mind.
             </p>
 
-            <p class="text-base leading-8 text-slate-600">
+            <p class="text-base leading-8 text-[#42474b]">
               AJS Roofing &amp; Gutters was built to change that experience. Through clear
               communication, documented process, and work done right from the start,
               we help homeowners move from uncertainty to confidence.
             </p>
 
-            <p class="text-base leading-8 text-slate-600 md:col-span-2">
-              We don’t believe roofing should feel confusing, rushed, or high-pressure.
-              We believe it should feel understandable, professional, and secure. That’s
+            <p class="text-base leading-8 text-[#42474b] md:col-span-2">
+              We don't believe roofing should feel confusing, rushed, or high-pressure.
+              We believe it should feel understandable, professional, and secure. That's
               what “From Chaos to Calm” means in practice.
             </p>
           </div>
@@ -121,88 +121,88 @@ get_header(); ?>
     </div>
   </section>
 
-<!-- Mission + Vision Split -->
-<section class="py-20 bg-slate-50 overflow-hidden">
-  <div class="mx-auto max-w-7xl px-4">
-    <div class="grid gap-6 lg:grid-cols-2">
-      <article class="ajs-mv-wow ajs-mv-wow-mission ajs-reveal-left overflow-hidden rounded-[30px] border border-slate-200 bg-white shadow-[0_14px_32px_rgba(16,41,70,0.06)]">
-        <div class="ajs-mv-wow-top border-b border-slate-200 bg-[#102946] px-7 py-5 text-white">
-          <p class="text-xs font-black uppercase tracking-[0.18em] text-[#d3a135]">Mission</p>
-        </div>
-        <div class="ajs-mv-wow-body p-7">
-          <h3 class="ajs-mv-wow-title text-2xl font-black tracking-[-0.02em] text-[#102946]">
-            Reliable protection delivered through a clear process.
-          </h3>
-          <p class="mt-5 text-[15px] leading-8 text-slate-600">
-            To deliver reliable, clear, and well-executed roofing and gutter solutions that
-            protect the home and restore peace of mind through professional process and no shortcuts.
-          </p>
-        </div>
-        <div class="ajs-mv-wow-glow"></div>
-      </article>
+  <!-- Mission + Vision Split -->
+  <section class="py-20 bg-[#f5f7f8] overflow-hidden">
+    <div class="mx-auto max-w-7xl px-4">
+      <div class="grid gap-6 lg:grid-cols-2">
+        <article class="ajs-mv-wow ajs-mv-wow-mission ajs-reveal-left overflow-hidden rounded-[30px] border border-[#d3d8db] bg-white shadow-[0_14px_32px_rgba(19,45,65,0.08)]">
+          <div class="ajs-mv-wow-top border-b border-[#d3d8db] bg-[#132d41] px-7 py-5 text-white">
+            <p class="text-xs font-black uppercase tracking-[0.18em] text-[#6eaace]">Mission</p>
+          </div>
+          <div class="ajs-mv-wow-body p-7">
+            <h3 class="ajs-mv-wow-title text-2xl font-black tracking-[-0.02em] text-[#132d41]">
+              Reliable protection delivered through a clear process.
+            </h3>
+            <p class="mt-5 text-[15px] leading-8 text-[#42474b]">
+              To deliver reliable, clear, and well-executed roofing and gutter solutions that
+              protect the home and restore peace of mind through professional process and no shortcuts.
+            </p>
+          </div>
+          <div class="ajs-mv-wow-glow"></div>
+        </article>
 
-      <article class="ajs-mv-wow ajs-mv-wow-vision ajs-reveal-right overflow-hidden rounded-[30px] border border-slate-200 bg-white shadow-[0_14px_32px_rgba(16,41,70,0.06)]">
-        <div class="ajs-mv-wow-top border-b border-slate-200 bg-[linear-gradient(135deg,#d3a135,#b7841a)] px-7 py-5 text-slate-900">
-          <p class="text-xs font-black uppercase tracking-[0.18em]">Vision</p>
-        </div>
-        <div class="ajs-mv-wow-body p-7">
-          <h3 class="ajs-mv-wow-title text-2xl font-black tracking-[-0.02em] text-[#102946]">
-            The most trusted roofing experience in our market.
-          </h3>
-          <p class="mt-5 text-[15px] leading-8 text-slate-600">
-            To become the most trusted roofing company in our market, recognized for
-            transforming a technical service into an experience of order, certainty,
-            and peace of mind for homeowners.
-          </p>
-        </div>
-        <div class="ajs-mv-wow-glow"></div>
-      </article>
+        <article class="ajs-mv-wow ajs-mv-wow-vision ajs-reveal-right overflow-hidden rounded-[30px] border border-[#d3d8db] bg-white shadow-[0_14px_32px_rgba(19,45,65,0.08)]">
+          <div class="ajs-mv-wow-top border-b border-[#d3d8db] bg-[linear-gradient(135deg,#d04418,#132d41)] px-7 py-5 text-white">
+            <p class="text-xs font-black uppercase tracking-[0.18em]">Vision</p>
+          </div>
+          <div class="ajs-mv-wow-body p-7">
+            <h3 class="ajs-mv-wow-title text-2xl font-black tracking-[-0.02em] text-[#132d41]">
+              The most trusted roofing experience in our market.
+            </h3>
+            <p class="mt-5 text-[15px] leading-8 text-[#42474b]">
+              To become the most trusted roofing company in our market, recognized for
+              transforming a technical service into an experience of order, certainty,
+              and peace of mind for homeowners.
+            </p>
+          </div>
+          <div class="ajs-mv-wow-glow"></div>
+        </article>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- Values -->
   <section class="py-20">
     <div class="mx-auto max-w-7xl px-4">
-      <p class="ajs-reveal mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#b7841a]">
+      <p class="ajs-reveal mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
         What We Stand For
       </p>
-      <h2 class="ajs-reveal max-w-4xl text-3xl font-black leading-tight tracking-[-0.03em] text-[#102946] md:text-5xl">
+      <h2 class="ajs-reveal max-w-4xl text-3xl font-black leading-tight tracking-[-0.03em] text-[#132d41] md:text-5xl">
         Four values that shape how we work, communicate, and protect.
       </h2>
 
       <div class="mt-8 grid gap-5 md:grid-cols-2">
-        <article class="ajs-hover-lift ajs-reveal rounded-[28px] border border-slate-200 bg-white p-7 shadow-[0_14px_32px_rgba(16,41,70,0.06)]">
-          <div class="mb-5 inline-flex rounded-full bg-[#102946]/8 px-4 py-2 text-xs font-black uppercase tracking-[0.18em] text-[#245791]">
+        <article class="ajs-hover-lift ajs-reveal rounded-[28px] border border-[#d3d8db] bg-white p-7 shadow-[0_14px_32px_rgba(19,45,65,0.08)]">
+          <div class="mb-5 inline-flex rounded-full bg-[#6eaace]/15 px-4 py-2 text-xs font-black uppercase tracking-[0.18em] text-[#132d41]">
             01
           </div>
-          <h3 class="text-2xl font-black text-[#102946]">Order Over Chaos</h3>
-          <p class="mt-4 text-[15px] leading-8 text-slate-600">
+          <h3 class="text-2xl font-black text-[#132d41]">Order Over Chaos</h3>
+          <p class="mt-4 text-[15px] leading-8 text-[#42474b]">
             We follow a repeatable process because roofing should feel organized, not improvised.
           </p>
         </article>
 
-        <article class="ajs-hover-lift ajs-reveal rounded-[28px] border border-slate-200 bg-white p-7 shadow-[0_14px_32px_rgba(16,41,70,0.06)]">
-          <div class="mb-5 inline-flex rounded-full bg-[#102946]/8 px-4 py-2 text-xs font-black uppercase tracking-[0.18em] text-[#245791]">
+        <article class="ajs-hover-lift ajs-reveal rounded-[28px] border border-[#d3d8db] bg-white p-7 shadow-[0_14px_32px_rgba(19,45,65,0.08)]">
+          <div class="mb-5 inline-flex rounded-full bg-[#6eaace]/15 px-4 py-2 text-xs font-black uppercase tracking-[0.18em] text-[#132d41]">
             02
           </div>
-          <h3 class="text-2xl font-black text-[#102946]">Clarity Over Confusion</h3>
-          <p class="mt-4 text-[15px] leading-8 text-slate-600">
+          <h3 class="text-2xl font-black text-[#132d41]">Clarity Over Confusion</h3>
+          <p class="mt-4 text-[15px] leading-8 text-[#42474b]">
             We explain everything in plain language so clients can make decisions with confidence.
           </p>
         </article>
 
-        <article class="ajs-hover-lift ajs-reveal rounded-[28px] border border-slate-200 bg-white p-7 shadow-[0_14px_32px_rgba(16,41,70,0.06)]">
-          <div class="mb-5 inline-flex rounded-full bg-[#102946]/8 px-4 py-2 text-xs font-black uppercase tracking-[0.18em] text-[#245791]">
+        <article class="ajs-hover-lift ajs-reveal rounded-[28px] border border-[#d3d8db] bg-white p-7 shadow-[0_14px_32px_rgba(19,45,65,0.08)]">
+          <div class="mb-5 inline-flex rounded-full bg-[#6eaace]/15 px-4 py-2 text-xs font-black uppercase tracking-[0.18em] text-[#132d41]">
             03
           </div>
-          <h3 class="text-2xl font-black text-[#102946]">Protection Over Promises</h3>
-          <p class="mt-4 text-[15px] leading-8 text-slate-600">
+          <h3 class="text-2xl font-black text-[#132d41]">Protection Over Promises</h3>
+          <p class="mt-4 text-[15px] leading-8 text-[#42474b]">
             We document our work, follow manufacturer standards, and build systems meant to last.
           </p>
         </article>
 
-        <article class="ajs-hover-lift ajs-reveal rounded-[28px] border border-slate-200 bg-[linear-gradient(135deg,rgba(36,87,145,0.96),rgba(16,41,70,0.96))] p-7 text-white shadow-[0_14px_32px_rgba(16,41,70,0.06)]">
+        <article class="ajs-hover-lift ajs-reveal rounded-[28px] border border-[#d3d8db] bg-[linear-gradient(135deg,rgba(208,68,24,0.96),rgba(19,45,65,0.96))] p-7 text-white shadow-[0_14px_32px_rgba(19,45,65,0.08)]">
           <div class="mb-5 inline-flex rounded-full bg-white/12 px-4 py-2 text-xs font-black uppercase tracking-[0.18em] text-white/90">
             04
           </div>
@@ -216,116 +216,116 @@ get_header(); ?>
   </section>
 
   <!-- Team -->
-<section class="py-20 bg-slate-50">
-  <div class="mx-auto max-w-7xl px-4">
-    <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-      <div class="ajs-reveal">
-        <p class="mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#b7841a]">
-          Meet The Team
-        </p>
-        <h2 class="max-w-4xl text-3xl font-black leading-tight tracking-[-0.03em] text-[#102946] md:text-5xl">
-          Real people, real accountability, real pride in the work.
-        </h2>
+  <section class="py-20 bg-[#f5f7f8]">
+    <div class="mx-auto max-w-7xl px-4">
+      <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+        <div class="ajs-reveal">
+          <p class="mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
+            Meet The Team
+          </p>
+          <h2 class="max-w-4xl text-3xl font-black leading-tight tracking-[-0.03em] text-[#132d41] md:text-5xl">
+            Real people, real accountability, real pride in the work.
+          </h2>
+        </div>
+      </div>
+
+      <div class="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+        <article class="ajs-hover-lift ajs-reveal overflow-hidden rounded-[28px] border border-[#d3d8db] bg-white shadow-[0_14px_32px_rgba(19,45,65,0.08)]">
+          <div
+            class="flex min-h-[260px] items-end bg-cover bg-center p-6"
+            style="background-image: linear-gradient(180deg, rgba(19,45,65,0.08), rgba(19,45,65,0.28)), url('http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg');"
+          >
+            <span class="rounded-full bg-white/75 px-4 py-2 text-xs font-black uppercase tracking-[0.18em] text-[#132d41]">
+              12+ Years Experience
+            </span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-black text-[#132d41]">Daniel Martinez</h3>
+            <p class="mt-1 text-sm font-bold text-[#6eaace]">Owner / Project Lead</p>
+            <p class="mt-4 text-[15px] leading-8 text-[#42474b]">
+              Daniel oversees project planning, customer communication, and quality control from start to finish. With more than a decade of hands-on roofing experience, he helps ensure every project is completed with clear expectations and dependable workmanship.
+            </p>
+          </div>
+        </article>
+
+        <article class="ajs-hover-lift ajs-reveal overflow-hidden rounded-[28px] border border-[#d3d8db] bg-white shadow-[0_14px_32px_rgba(19,45,65,0.08)]">
+          <div
+            class="flex min-h-[260px] items-end bg-cover bg-center p-6"
+            style="background-image: linear-gradient(180deg, rgba(19,45,65,0.08), rgba(19,45,65,0.28)), url('http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg');"
+          >
+            <span class="rounded-full bg-white/75 px-4 py-2 text-xs font-black uppercase tracking-[0.18em] text-[#132d41]">
+              Field Operations
+            </span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-black text-[#132d41]">Luis Herrera</h3>
+            <p class="mt-1 text-sm font-bold text-[#6eaace]">Operations / Field Lead</p>
+            <p class="mt-4 text-[15px] leading-8 text-[#42474b]">
+              Luis coordinates crews, materials, and on-site execution to keep projects moving efficiently. His background in installations and repairs helps maintain consistency across roofing, gutter, and storm restoration work in the field.
+            </p>
+          </div>
+        </article>
+
+        <article class="ajs-hover-lift ajs-reveal overflow-hidden rounded-[28px] border border-[#d3d8db] bg-white shadow-[0_14px_32px_rgba(19,45,65,0.08)]">
+          <div
+            class="flex min-h-[260px] items-end bg-cover bg-center p-6"
+            style="background-image: linear-gradient(180deg, rgba(19,45,65,0.08), rgba(19,45,65,0.28)), url('http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg');"
+          >
+            <span class="rounded-full bg-white/75 px-4 py-2 text-xs font-black uppercase tracking-[0.18em] text-[#132d41]">
+              Client Support
+            </span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-black text-[#132d41]">Gerardo Ramirez</h3>
+            <p class="mt-1 text-sm font-bold text-[#6eaace]">Inspection / Client Experience</p>
+            <p class="mt-4 text-[15px] leading-8 text-[#42474b]">
+              Gerardo supports inspections, documentation, and communication throughout the service process. He focuses on helping homeowners understand project details, scheduling, and next steps while making the experience as smooth and transparent as possible.
+            </p>
+          </div>
+        </article>
       </div>
     </div>
-
-    <div class="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-      <article class="ajs-hover-lift ajs-reveal overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-[0_14px_32px_rgba(16,41,70,0.06)]">
-        <div
-          class="flex min-h-[260px] items-end bg-cover bg-center p-6"
-          style="background-image: linear-gradient(180deg, rgba(16,41,70,0.08), rgba(16,41,70,0.28)), url('http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/Captura-de-pantalla-2026-03-23-191212.png');"
-        >
-          <span class="rounded-full bg-white/75 px-4 py-2 text-xs font-black uppercase tracking-[0.18em] text-[#102946]">
-            12+ Years Experience
-          </span>
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-black text-[#102946]">Daniel Martinez</h3>
-          <p class="mt-1 text-sm font-bold text-[#245791]">Owner / Project Lead</p>
-          <p class="mt-4 text-[15px] leading-8 text-slate-600">
-            Daniel oversees project planning, customer communication, and quality control from start to finish. With more than a decade of hands-on roofing experience, he helps ensure every project is completed with clear expectations and dependable workmanship.
-          </p>
-        </div>
-      </article>
-
-      <article class="ajs-hover-lift ajs-reveal overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-[0_14px_32px_rgba(16,41,70,0.06)]">
-        <div
-          class="flex min-h-[260px] items-end bg-cover bg-center p-6"
-          style="background-image: linear-gradient(180deg, rgba(16,41,70,0.08), rgba(16,41,70,0.28)), url('http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/parth-shingod-4DwRp_5Dzo0-unsplash-scaled-e1774314839133.jpg');"
-        >
-          <span class="rounded-full bg-white/75 px-4 py-2 text-xs font-black uppercase tracking-[0.18em] text-[#102946]">
-            Field Operations
-          </span>
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-black text-[#102946]">Luis Herrera</h3>
-          <p class="mt-1 text-sm font-bold text-[#245791]">Operations / Field Lead</p>
-          <p class="mt-4 text-[15px] leading-8 text-slate-600">
-            Luis coordinates crews, materials, and on-site execution to keep projects moving efficiently. His background in installations and repairs helps maintain consistency across roofing, gutter, and storm restoration work in the field.
-          </p>
-        </div>
-      </article>
-
-      <article class="ajs-hover-lift ajs-reveal overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-[0_14px_32px_rgba(16,41,70,0.06)]">
-        <div
-          class="flex min-h-[260px] items-end bg-cover bg-center p-6"
-          style="background-image: linear-gradient(180deg, rgba(16,41,70,0.08), rgba(16,41,70,0.28)), url('http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/aung-swam-nyi-8OWcgGeB-Rk-unsplash-scaled.jpg');"
-        >
-          <span class="rounded-full bg-white/75 px-4 py-2 text-xs font-black uppercase tracking-[0.18em] text-[#102946]">
-            Client Support
-          </span>
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-black text-[#102946]">Gerardo Ramirez</h3>
-          <p class="mt-1 text-sm font-bold text-[#245791]">Inspection / Client Experience</p>
-          <p class="mt-4 text-[15px] leading-8 text-slate-600">
-            Gerardo supports inspections, documentation, and communication throughout the service process. She focuses on helping homeowners understand project details, scheduling, and next steps while making the experience as smooth and transparent as possible.
-          </p>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
+  </section>
 
   <!-- Credentials -->
   <section class="py-20">
     <div class="mx-auto max-w-7xl px-4">
-      <p class="ajs-reveal mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#b7841a]">
+      <p class="ajs-reveal mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
         Credentials & Proof
       </p>
-      <h2 class="ajs-reveal max-w-4xl text-3xl font-black leading-tight tracking-[-0.03em] text-[#102946] md:text-5xl">
+      <h2 class="ajs-reveal max-w-4xl text-3xl font-black leading-tight tracking-[-0.03em] text-[#132d41] md:text-5xl">
         The trust signals that support the work.
       </h2>
 
       <div class="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
-        <div class="ajs-hover-lift ajs-reveal rounded-[26px] border border-slate-200 bg-white p-6 shadow-[0_14px_32px_rgba(16,41,70,0.06)]">
-          <p class="text-xs font-black uppercase tracking-[0.18em] text-[#b7841a]">License</p>
-          <p class="mt-4 text-xl font-black text-[#102946]">NM License #[NUMBER]</p>
+        <div class="ajs-hover-lift ajs-reveal rounded-[26px] border border-[#d3d8db] bg-white p-6 shadow-[0_14px_32px_rgba(19,45,65,0.08)]">
+          <p class="text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">License</p>
+          <p class="mt-4 text-xl font-black text-[#132d41]">NM License #[NUMBER]</p>
         </div>
 
-        <div class="ajs-hover-lift ajs-reveal rounded-[26px] border border-slate-200 bg-white p-6 shadow-[0_14px_32px_rgba(16,41,70,0.06)]">
-          <p class="text-xs font-black uppercase tracking-[0.18em] text-[#b7841a]">Coverage</p>
-          <p class="mt-4 text-xl font-black text-[#102946]">Fully Insured</p>
+        <div class="ajs-hover-lift ajs-reveal rounded-[26px] border border-[#d3d8db] bg-white p-6 shadow-[0_14px_32px_rgba(19,45,65,0.08)]">
+          <p class="text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">Coverage</p>
+          <p class="mt-4 text-xl font-black text-[#132d41]">Fully Insured</p>
         </div>
 
-        <div class="ajs-hover-lift ajs-reveal rounded-[26px] border border-slate-200 bg-white p-6 shadow-[0_14px_32px_rgba(16,41,70,0.06)]">
-          <p class="text-xs font-black uppercase tracking-[0.18em] text-[#b7841a]">Certification</p>
-          <p class="mt-4 text-xl font-black text-[#102946]">Manufacturer Certified</p>
+        <div class="ajs-hover-lift ajs-reveal rounded-[26px] border border-[#d3d8db] bg-white p-6 shadow-[0_14px_32px_rgba(19,45,65,0.08)]">
+          <p class="text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">Certification</p>
+          <p class="mt-4 text-xl font-black text-[#132d41]">Manufacturer Certified</p>
         </div>
 
-        <div class="ajs-hover-lift ajs-reveal rounded-[26px] border border-slate-200 bg-white p-6 shadow-[0_14px_32px_rgba(16,41,70,0.06)]">
-          <p class="text-xs font-black uppercase tracking-[0.18em] text-[#b7841a]">Trust Badge</p>
-          <p class="mt-4 text-xl font-black text-[#102946]">BBB Placeholder</p>
+        <div class="ajs-hover-lift ajs-reveal rounded-[26px] border border-[#d3d8db] bg-white p-6 shadow-[0_14px_32px_rgba(19,45,65,0.08)]">
+          <p class="text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">Trust Badge</p>
+          <p class="mt-4 text-xl font-black text-[#132d41]">BBB Placeholder</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Closing CTA -->
-  <section class="overflow-hidden bg-[#102946] py-20 text-white">
+  <section class="overflow-hidden bg-[#132d41] py-20 text-white">
     <div class="mx-auto grid max-w-7xl gap-8 px-4 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
       <div class="ajs-reveal-left">
-        <p class="mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#d3a135]">
+        <p class="mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#6eaace]">
           Bring Order Above.
         </p>
         <h2 class="max-w-[13ch] text-3xl font-black leading-tight tracking-[-0.03em] md:text-5xl">
@@ -333,12 +333,12 @@ get_header(); ?>
         </h2>
         <p class="mt-5 max-w-2xl text-base leading-8 text-white/80">
           Schedule your free inspection and let us show you exactly what your roof needs —
-          and exactly what it doesn’t. No pressure. Just a clear path forward.
+          and exactly what it doesn't. No pressure. Just a clear path forward.
         </p>
 
         <div class="mt-7 flex flex-wrap gap-3">
           <a href="/estimate"
-             class="ajs-btn-animate inline-flex items-center justify-center rounded-full bg-[linear-gradient(135deg,#d3a135,#b7841a)] px-6 py-4 text-sm font-black text-slate-900 shadow-[0_16px_32px_rgba(211,161,53,0.24)]">
+             class="ajs-btn-animate inline-flex items-center justify-center rounded-full bg-[#d04418] px-6 py-4 text-sm font-black text-white shadow-[0_16px_32px_rgba(208,68,24,0.24)]">
             Get Your Free Inspection
           </a>
 
@@ -350,28 +350,63 @@ get_header(); ?>
       </div>
 
       <div class="ajs-reveal-right rounded-[30px] bg-white p-6 text-slate-900 shadow-[0_20px_44px_rgba(0,0,0,0.18)]">
-        <p class="text-xs font-black uppercase tracking-[0.18em] text-[#b7841a]">
+        <p class="text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
           Quick Inquiry
         </p>
-        <h3 class="mt-3 text-2xl font-black tracking-[-0.03em] text-[#102946]">
+        <h3 class="mt-3 text-2xl font-black tracking-[-0.03em] text-[#132d41]">
           Tell us what you need.
         </h3>
 
-        <form class="mt-5 grid gap-3">
-          <input type="text" placeholder="Full Name *"
-                 class="w-full rounded-2xl border border-slate-300 px-4 py-4 text-sm outline-none focus:border-[#245791] focus:ring-4 focus:ring-[#245791]/10">
+        <div id="ajsAboutFormSuccess" class="hidden mt-5 rounded-2xl border border-green-200 bg-green-50 px-4 py-4 text-sm text-green-700">
+          Thanks for reaching out. Your inquiry was sent successfully.
+        </div>
 
-          <input type="tel" placeholder="Phone Number *"
-                 class="w-full rounded-2xl border border-slate-300 px-4 py-4 text-sm outline-none focus:border-[#245791] focus:ring-4 focus:ring-[#245791]/10">
+        <div id="ajsAboutFormError" class="hidden mt-5 rounded-2xl border border-red-200 bg-red-50 px-4 py-4 text-sm text-red-700">
+          Something went wrong. Please try again.
+        </div>
 
-          <input type="email" placeholder="Email *"
-                 class="w-full rounded-2xl border border-slate-300 px-4 py-4 text-sm outline-none focus:border-[#245791] focus:ring-4 focus:ring-[#245791]/10">
+        <form id="ajsAboutContactForm" class="mt-5 grid gap-3">
+          <input
+            id="ajs_name"
+            name="name"
+            type="text"
+            placeholder="Full Name *"
+            required
+            class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+          >
 
-          <textarea rows="4" placeholder="How can we help?"
-                    class="w-full resize-y rounded-2xl border border-slate-300 px-4 py-4 text-sm outline-none focus:border-[#245791] focus:ring-4 focus:ring-[#245791]/10"></textarea>
+          <input
+            id="ajs_phone"
+            name="phone"
+            type="tel"
+            placeholder="Phone Number *"
+            required
+            class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+          >
 
-          <button type="submit"
-                  class="ajs-btn-animate inline-flex items-center justify-center rounded-full bg-[linear-gradient(135deg,#d3a135,#b7841a)] px-6 py-4 text-sm font-black text-slate-900 shadow-[0_16px_32px_rgba(211,161,53,0.22)]">
+          <input
+            id="ajs_email"
+            name="email"
+            type="email"
+            placeholder="Email *"
+            required
+            class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+          >
+
+          <textarea
+            id="ajs_message"
+            name="message"
+            rows="4"
+            placeholder="How can we help?"
+            required
+            class="w-full resize-y rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+          ></textarea>
+
+          <button
+            id="ajsAboutSubmitBtn"
+            type="submit"
+            class="ajs-btn-animate inline-flex items-center justify-center rounded-full bg-[#d04418] px-6 py-4 text-sm font-black text-white shadow-[0_16px_32px_rgba(208,68,24,0.22)]"
+          >
             Send Inquiry
           </button>
         </form>
@@ -381,6 +416,10 @@ get_header(); ?>
 </main>
 
 <style>
+  .hidden {
+    display: none !important;
+  }
+
   .ajs-reveal {
     opacity: 0;
     transform: translateY(36px);
@@ -421,7 +460,7 @@ get_header(); ?>
 
   .ajs-hover-lift:hover {
     transform: translateY(-8px);
-    box-shadow: 0 24px 48px rgba(16, 41, 70, 0.12);
+    box-shadow: 0 24px 48px rgba(19, 45, 65, 0.12);
   }
 
   .ajs-btn-animate {
@@ -437,21 +476,21 @@ get_header(); ?>
     transform: translateY(0);
   }
 
-    .ajs-mv-card {
+  .ajs-mv-card {
     position: relative;
     overflow: hidden;
     border-radius: 30px;
-    border: 1px solid rgba(226, 232, 240, 1);
-    background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
-    box-shadow: 0 16px 36px rgba(16, 41, 70, 0.08);
+    border: 1px solid rgba(211, 216, 219, 1);
+    background: linear-gradient(180deg, #ffffff 0%, #f7f9fa 100%);
+    box-shadow: 0 16px 36px rgba(19, 45, 65, 0.08);
     transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;
     isolation: isolate;
   }
 
   .ajs-mv-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 28px 56px rgba(16, 41, 70, 0.14);
-    border-color: rgba(36, 87, 145, 0.18);
+    box-shadow: 0 28px 56px rgba(19, 45, 65, 0.14);
+    border-color: rgba(110, 170, 206, 0.28);
   }
 
   .ajs-mv-inner {
@@ -468,11 +507,11 @@ get_header(); ?>
   }
 
   .ajs-mv-card-mission .ajs-mv-topbar {
-    background: linear-gradient(90deg, #102946 0%, #245791 100%);
+    background: linear-gradient(90deg, #132d41 0%, #6eaace 100%);
   }
 
   .ajs-mv-card-vision .ajs-mv-topbar {
-    background: linear-gradient(90deg, #d3a135 0%, #b7841a 100%);
+    background: linear-gradient(90deg, #d04418 0%, #132d41 100%);
   }
 
   .ajs-mv-topbar::after {
@@ -499,13 +538,13 @@ get_header(); ?>
   }
 
   .ajs-mv-card-mission .ajs-mv-pill {
-    background: rgba(16, 41, 70, 0.08);
-    color: #245791;
+    background: rgba(110, 170, 206, 0.14);
+    color: #132d41;
   }
 
   .ajs-mv-card-vision .ajs-mv-pill {
-    background: rgba(211, 161, 53, 0.14);
-    color: #9a6d10;
+    background: rgba(208, 68, 24, 0.12);
+    color: #d04418;
   }
 
   .ajs-mv-title {
@@ -514,7 +553,7 @@ get_header(); ?>
     line-height: 1.08;
     letter-spacing: -0.03em;
     font-weight: 900;
-    color: #102946;
+    color: #132d41;
     max-width: 14ch;
     transition: transform .35s ease, color .35s ease;
   }
@@ -528,7 +567,7 @@ get_header(); ?>
     max-width: 50ch;
     font-size: 0.98rem;
     line-height: 1.9;
-    color: #5b6778;
+    color: #42474b;
   }
 
   .ajs-mv-glow {
@@ -546,11 +585,11 @@ get_header(); ?>
   }
 
   .ajs-mv-card-mission .ajs-mv-glow {
-    background: rgba(36, 87, 145, 0.35);
+    background: rgba(110, 170, 206, 0.35);
   }
 
   .ajs-mv-card-vision .ajs-mv-glow {
-    background: rgba(211, 161, 53, 0.42);
+    background: rgba(208, 68, 24, 0.30);
   }
 
   .ajs-mv-card:hover .ajs-mv-glow {
@@ -618,7 +657,6 @@ get_header(); ?>
     }
   }
 
-
   .ajs-mv-wow {
     position: relative;
     isolation: isolate;
@@ -653,8 +691,8 @@ get_header(); ?>
 
   .ajs-mv-wow:hover {
     transform: translateY(-10px) scale(1.01);
-    box-shadow: 0 28px 56px rgba(16, 41, 70, 0.14);
-    border-color: rgba(36, 87, 145, 0.16);
+    box-shadow: 0 28px 56px rgba(19, 45, 65, 0.14);
+    border-color: rgba(110, 170, 206, 0.28);
   }
 
   .ajs-mv-wow-top {
@@ -718,11 +756,11 @@ get_header(); ?>
   }
 
   .ajs-mv-wow-mission .ajs-mv-wow-glow {
-    background: rgba(36, 87, 145, 0.28);
+    background: rgba(110, 170, 206, 0.28);
   }
 
   .ajs-mv-wow-vision .ajs-mv-wow-glow {
-    background: rgba(211, 161, 53, 0.34);
+    background: rgba(208, 68, 24, 0.30);
   }
 
   .ajs-mv-wow:hover .ajs-mv-wow-glow {
@@ -772,10 +810,9 @@ get_header(); ?>
       transform: none !important;
     }
   }
-
-
-
 </style>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
@@ -790,6 +827,53 @@ get_header(); ?>
     }, { threshold: 0.12 });
 
     items.forEach((item) => observer.observe(item));
+
+    if (window.emailjs) {
+      emailjs.init({
+        publicKey: "CDikedp0ZSxxiBeLb"
+      });
+    }
+
+    const form = document.getElementById("ajsAboutContactForm");
+    const submitBtn = document.getElementById("ajsAboutSubmitBtn");
+    const successBox = document.getElementById("ajsAboutFormSuccess");
+    const errorBox = document.getElementById("ajsAboutFormError");
+
+    if (form) {
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        successBox.classList.add("hidden");
+        errorBox.classList.add("hidden");
+
+        const originalButtonText = submitBtn.textContent;
+        submitBtn.disabled = true;
+        submitBtn.textContent = "Sending...";
+
+        const formData = {
+          name: document.getElementById("ajs_name").value,
+          phone: document.getElementById("ajs_phone").value,
+          email: document.getElementById("ajs_email").value,
+          message: document.getElementById("ajs_message").value
+        };
+
+        emailjs.send(
+          "service_a03f0zf",
+          "template_17g32zt",
+          formData
+        ).then(function () {
+          form.reset();
+          successBox.classList.remove("hidden");
+          submitBtn.disabled = false;
+          submitBtn.textContent = originalButtonText;
+        }).catch(function (error) {
+          console.error("EmailJS error:", error);
+          errorBox.classList.remove("hidden");
+          submitBtn.disabled = false;
+          submitBtn.textContent = originalButtonText;
+        });
+      });
+    }
   });
 </script>
 

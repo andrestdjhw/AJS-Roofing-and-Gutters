@@ -8,20 +8,20 @@ get_header(); ?>
 <main class="bg-white text-[#42474b] overflow-hidden">
 
   <!-- HERO -->
-  <section class="relative overflow-hidden bg-[linear-gradient(135deg,#102946_0%,#1c425f_100%)] text-white py-20 md:py-24">
+  <section class="relative overflow-hidden bg-[linear-gradient(135deg,#132d41_0%,#1c425f_100%)] py-20 text-white md:py-24">
     <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(110,170,206,0.14),transparent_30%)]"></div>
-    <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(211,161,53,0.10),transparent_28%)]"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(208,68,24,0.10),transparent_28%)]"></div>
 
     <div class="relative mx-auto max-w-5xl px-4 text-center">
       <p class="ajs-reveal text-xs font-black uppercase tracking-[0.18em] text-[#6eaace]">
         Service Areas
       </p>
 
-      <h1 class="ajs-reveal mt-4 text-4xl md:text-5xl lg:text-6xl font-black tracking-[-0.04em] leading-tight">
+      <h1 class="ajs-reveal mt-4 text-4xl font-black leading-tight tracking-[-0.04em] md:text-5xl lg:text-6xl">
         Locations We Serve
       </h1>
 
-      <p class="ajs-reveal mt-6 max-w-2xl mx-auto text-base md:text-lg leading-8 text-white/80">
+      <p class="ajs-reveal mx-auto mt-6 max-w-2xl text-base leading-8 text-white/80 md:text-lg">
         Explore the areas we serve across Albuquerque, Santa Fe, and Rio Rancho.
         Select your location to view local service pages and area-specific information.
       </p>
@@ -29,9 +29,9 @@ get_header(); ?>
   </section>
 
   <!-- INTRO -->
-  <section class="py-12 md:py-16 bg-white">
+  <section class="bg-white py-12 md:py-16">
     <div class="mx-auto max-w-4xl px-4 text-center">
-      <p class="ajs-reveal text-[#425066] text-lg leading-8">
+      <p class="ajs-reveal text-lg leading-8 text-[#42474b]">
         Choose the location closest to your home to see services, projects, and local information tailored to that area.
       </p>
     </div>
@@ -107,10 +107,10 @@ get_header(); ?>
   gap: 10px;
   padding: 28px;
   border-radius: 24px;
-  border: 1px solid rgba(16, 41, 70, 0.08);
-  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  border: 1px solid rgba(211, 216, 219, 0.9);
+  background: linear-gradient(180deg, #ffffff 0%, #f5f7f8 100%);
   text-decoration: none;
-  box-shadow: 0 10px 24px rgba(16, 41, 70, 0.05);
+  box-shadow: 0 10px 24px rgba(19, 45, 65, 0.05);
   transition: transform .28s ease, box-shadow .28s ease, border-color .28s ease;
 }
 
@@ -124,8 +124,8 @@ get_header(); ?>
 
 .ajs-location-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 18px 38px rgba(16, 41, 70, 0.12);
-  border-color: rgba(36, 87, 145, 0.18);
+  box-shadow: 0 18px 38px rgba(19, 45, 65, 0.12);
+  border-color: rgba(110, 170, 206, 0.22);
 }
 
 .ajs-location-tag {
@@ -135,8 +135,8 @@ get_header(); ?>
   width: fit-content;
   padding: 7px 12px;
   border-radius: 999px;
-  background: rgba(211, 161, 53, 0.12);
-  color: #b7841a;
+  background: rgba(208, 68, 24, 0.10);
+  color: #d04418;
   font-size: 0.74rem;
   font-weight: 900;
   letter-spacing: 0.08em;
@@ -149,7 +149,7 @@ get_header(); ?>
   font-size: 1.35rem;
   line-height: 1.2;
   font-weight: 900;
-  color: #102946;
+  color: #132d41;
   letter-spacing: -0.03em;
 }
 
@@ -158,7 +158,7 @@ get_header(); ?>
   z-index: 1;
   font-size: 0.95rem;
   font-weight: 700;
-  color: #6f7c8d;
+  color: #42474b;
 }
 
 .ajs-location-link {
@@ -169,13 +169,13 @@ get_header(); ?>
   width: fit-content;
   font-size: 0.88rem;
   font-weight: 900;
-  color: #102946;
+  color: #132d41;
   transition: transform .25s ease, color .25s ease;
 }
 
 .ajs-location-card:hover .ajs-location-link {
   transform: translateX(4px);
-  color: #245791;
+  color: #6eaace;
 }
 
 .ajs-reveal {

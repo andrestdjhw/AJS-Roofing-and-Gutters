@@ -8,18 +8,18 @@ get_header(); ?>
 <main class="bg-white text-[#42474b] overflow-hidden">
 
   <!-- HERO + H1 -->
-  <section class="relative overflow-hidden bg-[linear-gradient(135deg,#102946_0%,#1c425f_100%)] text-white py-20">
+  <section class="relative overflow-hidden bg-[linear-gradient(135deg,#132d41_0%,#1c425f_100%)] py-20 text-white">
     <div class="mx-auto max-w-5xl px-4 text-center">
 
       <p class="ajs-reveal text-xs font-black uppercase tracking-[0.18em] text-[#6eaace]">
         Albuquerque West · ZIP 87120
       </p>
 
-      <h1 class="ajs-reveal mt-4 text-4xl md:text-5xl lg:text-6xl font-black tracking-[-0.04em] leading-tight">
+      <h1 class="ajs-reveal mt-4 text-4xl font-black leading-tight tracking-[-0.04em] md:text-5xl lg:text-6xl">
         Roofing Company in Albuquerque West — AJS Roofing &amp; Gutters
       </h1>
 
-      <div class="ajs-reveal mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+      <div class="ajs-reveal mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
         <a href="/estimate" class="ajs-btn-primary">Get Your Free Inspection</a>
         <a href="tel:+15050000000" class="ajs-btn-secondary">Call (505) 000-0000</a>
       </div>
@@ -31,66 +31,66 @@ get_header(); ?>
   <section class="py-16 md:py-20">
     <div class="mx-auto max-w-4xl px-4">
 
-      <h2 class="ajs-reveal text-3xl md:text-4xl font-black tracking-[-0.03em] text-[#102946]">
+      <h2 class="ajs-reveal text-3xl font-black tracking-[-0.03em] text-[#132d41] md:text-4xl">
         Where Chaos Ends. Home Begins.
       </h2>
 
-      <p class="ajs-reveal mt-6 text-[#425066] text-lg leading-8">
+      <p class="ajs-reveal mt-6 text-lg leading-8 text-[#42474b]">
         AJS Roofing &amp; Gutters is a licensed roofing contractor serving Albuquerque West and the 87120 area — one of Albuquerque's highest-volume roofing markets, where shingle replacements are the most common need and where homeowners deserve the same clarity, process, and professional execution as anyone else. We don't just install roofs — we restore peace of mind. Through clear processes, professional execution, and work done right from the start, we turn a moment of uncertainty into lasting protection and confidence.
       </p>
 
-      <p class="ajs-reveal mt-5 text-[#425066] text-lg leading-8">
+      <p class="ajs-reveal mt-5 text-lg leading-8 text-[#42474b]">
         With manufacturer certifications and our own on-site gutter fabrication machine, AJS is the roofing partner that brings order to a process that usually feels chaotic — with recommendations built for what New Mexico's UV, hail, and monsoon conditions actually do to a roof.
       </p>
 
     </div>
   </section>
 
-<!-- LOCAL HOUSING DATA -->
-<section class="bg-[#f5f9fc] py-16 md:py-20">
-  <div class="mx-auto max-w-5xl px-4 text-center">
+  <!-- LOCAL HOUSING DATA -->
+  <section class="bg-[#f5f7f8] py-16 md:py-20">
+    <div class="mx-auto max-w-5xl px-4 text-center">
 
-    <p class="ajs-reveal text-xs font-black uppercase tracking-[0.18em] text-[#b7841a] mb-3">
-      The 87120 Market
-    </p>
+      <p class="ajs-reveal mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
+        The 87120 Market
+      </p>
 
-    <h2 class="ajs-reveal text-3xl font-black tracking-[-0.03em] text-[#102946]">
-      Albuquerque West Is a High-Volume Roofing Market.
-    </h2>
+      <h2 class="ajs-reveal text-3xl font-black tracking-[-0.03em] text-[#132d41]">
+        Albuquerque West Is a High-Volume Roofing Market.
+      </h2>
 
-    <!-- CENTRADO DE CARDS -->
-    <div class="mt-10 flex justify-center">
-      <div class="grid gap-6 md:grid-cols-2 max-w-2xl w-full">
+      <!-- CENTRADO DE CARDS -->
+      <div class="mt-10 flex justify-center">
+        <div class="grid w-full max-w-2xl gap-6 md:grid-cols-2">
 
-        <div class="ajs-stat-card ajs-reveal text-center">
-          <span class="ajs-stat-number block">High Volume</span>
-          <span class="ajs-stat-label block mt-2">
-            Active roofing market in 87120
-          </span>
+          <div class="ajs-stat-card ajs-reveal text-center">
+            <span class="ajs-stat-number block">High Volume</span>
+            <span class="ajs-stat-label block mt-2">
+              Active roofing market in 87120
+            </span>
+          </div>
+
+          <div class="ajs-stat-card ajs-reveal text-center">
+            <span class="ajs-stat-number block">Shingle</span>
+            <span class="ajs-stat-label block mt-2">
+              Primary replacement market
+            </span>
+          </div>
+
         </div>
-
-        <div class="ajs-stat-card ajs-reveal text-center">
-          <span class="ajs-stat-number block">Shingle</span>
-          <span class="ajs-stat-label block mt-2">
-            Primary replacement market
-          </span>
-        </div>
-
       </div>
-    </div>
 
-  </div>
-</section>
+    </div>
+  </section>
 
   <!-- SERVICES -->
   <section class="py-16 md:py-20">
     <div class="mx-auto max-w-7xl px-4">
 
-      <p class="ajs-reveal text-xs font-black uppercase tracking-[0.18em] text-[#b7841a] mb-3 text-center">
+      <p class="ajs-reveal mb-3 text-center text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
         Protection You Can Feel
       </p>
 
-      <h2 class="ajs-reveal text-3xl font-black tracking-[-0.03em] text-[#102946] text-center">
+      <h2 class="ajs-reveal text-center text-3xl font-black tracking-[-0.03em] text-[#132d41]">
         Roofing &amp; Gutter Services in Albuquerque West
       </h2>
 
@@ -131,79 +131,79 @@ get_header(); ?>
     </div>
   </section>
 
-<!-- LOCAL PROJECTS -->
-<section class="bg-[#f5f9fc] py-16 md:py-20">
-  <div class="mx-auto max-w-7xl px-4">
+  <!-- LOCAL PROJECTS -->
+  <section class="bg-[#f5f7f8] py-16 md:py-20">
+    <div class="mx-auto max-w-7xl px-4">
 
-    <p class="ajs-reveal text-xs font-black uppercase tracking-[0.18em] text-[#b7841a] mb-3 text-center">
-      Installed Right. Protected for Years.
-    </p>
+      <p class="ajs-reveal mb-3 text-center text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
+        Installed Right. Protected for Years.
+      </p>
 
-    <h2 class="ajs-reveal text-3xl font-black text-[#102946] text-center">
-      Projects in Albuquerque West
-    </h2>
+      <h2 class="ajs-reveal text-center text-3xl font-black text-[#132d41]">
+        Projects in Albuquerque West
+      </h2>
 
-    <div class="mt-10 grid gap-5 md:grid-cols-3">
+      <div class="mt-10 grid gap-5 md:grid-cols-3">
 
-      <div class="ajs-img-card ajs-reveal">
-        <img 
-          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/paragon-exterior-uvuU43FAwQ-unsplash-scaled.jpg" 
-          alt="Roofing project Albuquerque West 87120"
-          class="w-full h-full object-cover rounded-[20px]"
-        >
-      </div>
+        <div class="ajs-img-card ajs-reveal">
+          <img 
+            src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/paragon-exterior-uvuU43FAwQ-unsplash-scaled.jpg" 
+            alt="Roofing project Albuquerque West 87120"
+            class="h-full w-full rounded-[20px] object-cover"
+          >
+        </div>
 
-      <div class="ajs-img-card ajs-reveal">
-        <img 
-          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/raze-solar-umJz4M-iCOw-unsplash-scaled.jpg" 
-          alt="Shingle roof replacement Albuquerque West"
-          class="w-full h-full object-cover rounded-[20px]"
-        >
-      </div>
+        <div class="ajs-img-card ajs-reveal">
+          <img 
+            src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/raze-solar-umJz4M-iCOw-unsplash-scaled.jpg" 
+            alt="Shingle roof replacement Albuquerque West"
+            class="h-full w-full rounded-[20px] object-cover"
+          >
+        </div>
 
-      <div class="ajs-img-card ajs-reveal">
-        <img 
-          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/sergej-karpow-bquoYvs3KtQ-unsplash-scaled.jpg" 
-          alt="Seamless gutters 87120 Albuquerque West"
-          class="w-full h-full object-cover rounded-[20px]"
-        >
+        <div class="ajs-img-card ajs-reveal">
+          <img 
+            src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/sergej-karpow-bquoYvs3KtQ-unsplash-scaled.jpg" 
+            alt="Seamless gutters 87120 Albuquerque West"
+            class="h-full w-full rounded-[20px] object-cover"
+          >
+        </div>
+
       </div>
 
     </div>
+  </section>
 
-  </div>
-</section>
-
-    <!-- LOCAL LOCATION -->
-  <section class="py-16 md:py-20 bg-white">
+  <!-- LOCAL LOCATION -->
+  <section class="bg-white py-16 md:py-20">
     <div class="mx-auto max-w-7xl px-4">
       <div class="grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
 
         <div class="ajs-reveal">
-          <p class="text-xs font-black uppercase tracking-[0.18em] text-[#b7841a] mb-3">
+          <p class="mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
             Location
           </p>
 
-          <h2 class="text-3xl md:text-4xl font-black tracking-[-0.03em] text-[#102946]">
+          <h2 class="text-3xl font-black tracking-[-0.03em] text-[#132d41] md:text-4xl">
             Albuquerque West · 87120
           </h2>
 
-          <p class="mt-6 text-[#425066] text-lg leading-8">
+          <p class="mt-6 text-lg leading-8 text-[#42474b]">
             AJS Roofing &amp; Gutters serves homeowners across Albuquerque West and the 87120 area with clear communication, documented processes, and reliable execution from start to finish.
           </p>
 
-          <div class="mt-6 rounded-[18px] border border-[rgba(16,41,70,0.08)] bg-[#f8fafc] p-5">
-            <p class="text-sm font-black uppercase tracking-[0.14em] text-[#b7841a]">
+          <div class="mt-6 rounded-[18px] border border-[#d3d8db] bg-[#f5f7f8] p-5">
+            <p class="text-sm font-black uppercase tracking-[0.14em] text-[#d04418]">
               Service Area
             </p>
-            <p class="mt-2 text-base font-bold text-[#102946]">
+            <p class="mt-2 text-base font-bold text-[#132d41]">
               Albuquerque West · Albuquerque, NM · 87120
             </p>
           </div>
         </div>
 
         <div class="ajs-reveal">
-          <div class="overflow-hidden rounded-[22px] border border-[rgba(16,41,70,0.08)] shadow-[0_14px_32px_rgba(16,41,70,0.08)]">
+          <div class="overflow-hidden rounded-[22px] border border-[#d3d8db] shadow-[0_14px_32px_rgba(19,45,65,0.08)]">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d98168.16624682212!2d-106.76241087747766!3d35.12648901533057!2m3!1f0!2f0!3f0!2m3!1i1024!2i768!4f13.1!3m3!1m2!1s0x87226d096118b29d%3A0x8d18451225722b4!2sAlbuquerque%2C NM 87120%2C USA!5e1!3m2!1sen!2shn!4v1774276260366!5m2!1sen!2shn"
               width="100%"
@@ -224,11 +224,11 @@ get_header(); ?>
   <section class="py-16 md:py-20">
     <div class="mx-auto max-w-4xl px-4">
 
-      <p class="ajs-reveal text-xs font-black uppercase tracking-[0.18em] text-[#b7841a] mb-3 text-center">
+      <p class="ajs-reveal mb-3 text-center text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
         Common Questions
       </p>
 
-      <h2 class="ajs-reveal text-3xl font-black text-[#102946] text-center">
+      <h2 class="ajs-reveal text-center text-3xl font-black text-[#132d41]">
         Roofing Questions from Albuquerque West Homeowners
       </h2>
 
@@ -275,73 +275,81 @@ get_header(); ?>
   </section>
 
   <!-- CTA WITH FORM -->
-  <section class="bg-[linear-gradient(135deg,#102946_0%,#1c425f_100%)] text-white py-20">
-    <div class="max-w-5xl mx-auto px-4">
+  <section class="bg-[linear-gradient(135deg,#132d41_0%,#1c425f_100%)] py-20 text-white">
+    <div class="mx-auto max-w-5xl px-4">
 
-      <div class="text-center mb-12">
-        <p class="ajs-reveal text-xs font-black uppercase tracking-[0.18em] text-[#6eaace] mb-4">
+      <div class="mb-12 text-center">
+        <p class="ajs-reveal mb-4 text-xs font-black uppercase tracking-[0.18em] text-[#6eaace]">
           Albuquerque West · 87120
         </p>
-        <h2 class="ajs-reveal text-3xl md:text-4xl font-black tracking-[-0.03em]">
+        <h2 class="ajs-reveal text-3xl font-black tracking-[-0.03em] md:text-4xl">
           When Everything Is Right Above, Calm Returns Home.
         </h2>
-        <p class="ajs-reveal mt-5 text-white/80 text-lg max-w-xl mx-auto">
+        <p class="ajs-reveal mx-auto mt-5 max-w-xl text-lg text-white/80">
           Schedule your free inspection. We'll show you exactly what your roof needs — and exactly what it doesn't. No pressure. No surprises. Just a clear path from uncertainty to protection.
         </p>
       </div>
 
-      <div class="ajs-reveal ajs-form-wrap">
+      <div id="ajsLocationFormSuccess" class="hidden mx-auto mb-5 max-w-[720px] rounded-2xl border border-green-200 bg-green-50 px-4 py-4 text-sm text-green-700">
+        Thanks for reaching out. Your inspection request was sent successfully.
+      </div>
+
+      <div id="ajsLocationFormError" class="hidden mx-auto mb-5 max-w-[720px] rounded-2xl border border-red-200 bg-red-50 px-4 py-4 text-sm text-red-700">
+        Something went wrong. Please try again.
+      </div>
+
+      <form id="ajsLocationForm" class="ajs-reveal ajs-form-wrap">
 
         <div class="grid gap-4 md:grid-cols-2">
           <div class="ajs-field">
             <label>Full Name *</label>
-            <input type="text" placeholder="Your name" required>
+            <input id="ajs_location_name" name="name" type="text" placeholder="Your name" required>
           </div>
           <div class="ajs-field">
             <label>Phone Number *</label>
-            <input type="tel" placeholder="(505) 000-0000" required>
+            <input id="ajs_location_phone" name="phone" type="tel" placeholder="(505) 000-0000" required>
           </div>
           <div class="ajs-field">
             <label>Email *</label>
-            <input type="email" placeholder="you@email.com" required>
+            <input id="ajs_location_email" name="email" type="email" placeholder="you@email.com" required>
           </div>
           <div class="ajs-field">
             <label>What do you need? *</label>
-            <select required>
+            <select id="ajs_location_service" name="service" required>
               <option value="" disabled selected>Select a service</option>
-              <option>Roof Replacement</option>
-              <option>Metal Roofing</option>
-              <option>Gutters</option>
-              <option>Roof Repair</option>
-              <option>Storm Damage / Insurance</option>
-              <option>Inspection / Maintenance</option>
-              <option>Not Sure</option>
+              <option value="Roof Replacement">Roof Replacement</option>
+              <option value="Metal Roofing">Metal Roofing</option>
+              <option value="Gutters">Gutters</option>
+              <option value="Roof Repair">Roof Repair</option>
+              <option value="Storm Damage / Insurance">Storm Damage / Insurance</option>
+              <option value="Inspection / Maintenance">Inspection / Maintenance</option>
+              <option value="Not Sure">Not Sure</option>
             </select>
           </div>
           <div class="ajs-field md:col-span-2">
             <label>Address or ZIP Code *</label>
-            <input type="text" placeholder="87120" required>
+            <input id="ajs_location_address" name="address" type="text" placeholder="87120" required>
           </div>
           <div class="ajs-field md:col-span-2">
             <label>Anything else we should know? <span class="opacity-60">(optional)</span></label>
-            <textarea rows="3" placeholder="Tell us about your project..."></textarea>
+            <textarea id="ajs_location_message" name="message" rows="3" placeholder="Tell us about your project..."></textarea>
           </div>
         </div>
 
         <div class="mt-4 flex items-start gap-3">
-          <input type="checkbox" id="terms" class="mt-1 flex-shrink-0">
-          <label for="terms" class="text-white/70 text-sm">I agree to be contacted by AJS Roofing &amp; Gutters regarding my request.</label>
+          <input id="ajs_location_consent" type="checkbox" class="mt-1 flex-shrink-0" required>
+          <label for="ajs_location_consent" class="text-sm text-white/70">I agree to be contacted by AJS Roofing &amp; Gutters regarding my request.</label>
         </div>
 
-        <button type="submit" class="ajs-btn-primary mt-6 w-full">
+        <button id="ajsLocationSubmitBtn" type="submit" class="ajs-btn-primary mt-6 w-full">
           Get Your Free Inspection
         </button>
 
-        <p class="mt-4 text-center text-white/50 text-sm">
+        <p class="mt-4 text-center text-sm text-white/50">
           Response within 24 hours. Detailed photo report included.
         </p>
 
-      </div>
+      </form>
 
     </div>
   </section>
@@ -349,14 +357,18 @@ get_header(); ?>
 </main>
 
 <style>
+.hidden {
+  display: none !important;
+}
+
 .ajs-btn-primary {
-  background: linear-gradient(135deg, #d3a135 0%, #b7841a 100%);
+  background: #d04418;
   padding: 16px 38px;
   font-weight: 900;
   border-radius: 999px;
-  color: #111827;
+  color: #ffffff;
   font-size: 0.92rem;
-  box-shadow: 0 14px 30px rgba(211, 161, 53, 0.28);
+  box-shadow: 0 14px 30px rgba(208, 68, 24, 0.28);
   transition: all .25s ease;
   display: inline-flex;
   align-items: center;
@@ -367,7 +379,7 @@ get_header(); ?>
 
 .ajs-btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 18px 36px rgba(211, 161, 53, 0.36);
+  box-shadow: 0 18px 36px rgba(208, 68, 24, 0.36);
 }
 
 .ajs-btn-secondary {
@@ -391,9 +403,9 @@ get_header(); ?>
 .ajs-stat-card {
   padding: 24px;
   border-radius: 20px;
-  border: 1px solid rgba(16, 41, 70, 0.08);
+  border: 1px solid rgba(211, 216, 219, 0.9);
   background: #ffffff;
-  box-shadow: 0 12px 28px rgba(16, 41, 70, 0.06);
+  box-shadow: 0 12px 28px rgba(19, 45, 65, 0.06);
   display: flex;
   flex-direction: column;
   gap: 6px;
@@ -402,7 +414,7 @@ get_header(); ?>
 .ajs-stat-number {
   font-size: 1.6rem;
   font-weight: 900;
-  color: #102946;
+  color: #132d41;
   letter-spacing: -0.03em;
   line-height: 1;
 }
@@ -412,36 +424,36 @@ get_header(); ?>
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: #b7841a;
+  color: #d04418;
 }
 
 .ajs-location-card {
   padding: 22px 24px;
   border-radius: 18px;
-  border: 1px solid rgba(16, 41, 70, 0.08);
-  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  border: 1px solid rgba(211, 216, 219, 0.9);
+  background: linear-gradient(180deg, #ffffff 0%, #f5f7f8 100%);
   transition: all .25s ease;
   display: flex;
   flex-direction: column;
   gap: 6px;
-  box-shadow: 0 8px 20px rgba(16, 41, 70, 0.05);
+  box-shadow: 0 8px 20px rgba(19, 45, 65, 0.05);
 }
 
 .ajs-location-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 16px 32px rgba(16, 41, 70, 0.1);
-  border-color: rgba(36, 87, 145, 0.18);
+  box-shadow: 0 16px 32px rgba(19, 45, 65, 0.1);
+  border-color: rgba(110, 170, 206, 0.22);
 }
 
 .ajs-card-title {
   font-size: 1rem;
   font-weight: 900;
-  color: #102946;
+  color: #132d41;
 }
 
 .ajs-card-desc {
   font-size: 0.87rem;
-  color: #6f7c8d;
+  color: #42474b;
   font-weight: 500;
   line-height: 1.55;
 }
@@ -449,7 +461,7 @@ get_header(); ?>
 .ajs-img-card {
   overflow: hidden;
   border-radius: 20px;
-  box-shadow: 0 14px 30px rgba(16, 41, 70, 0.08);
+  box-shadow: 0 14px 30px rgba(19, 45, 65, 0.08);
 }
 
 .ajs-img-card img {
@@ -465,29 +477,29 @@ get_header(); ?>
 }
 
 .ajs-faq {
-  border: 1px solid rgba(16, 41, 70, 0.1);
+  border: 1px solid rgba(211, 216, 219, 0.9);
   border-radius: 16px;
   padding: 18px 20px;
   background: #ffffff;
-  box-shadow: 0 4px 12px rgba(16, 41, 70, 0.04);
+  box-shadow: 0 4px 12px rgba(19, 45, 65, 0.04);
 }
 
 .ajs-faq summary {
   font-weight: 800;
   cursor: pointer;
-  color: #102946;
+  color: #132d41;
   font-size: 0.97rem;
   line-height: 1.4;
   list-style: none;
 }
 
 .ajs-faq summary::-webkit-details-marker { display: none; }
-.ajs-faq[open] summary { color: #245791; }
+.ajs-faq[open] summary { color: #6eaace; }
 
 .ajs-faq p {
   margin-top: 12px;
   font-size: 0.93rem;
-  color: #6f7c8d;
+  color: #42474b;
   line-height: 1.7;
 }
 
@@ -537,11 +549,11 @@ get_header(); ?>
 .ajs-field input:focus,
 .ajs-field select:focus,
 .ajs-field textarea:focus {
-  border-color: rgba(211, 161, 53, 0.6);
+  border-color: rgba(110, 170, 206, 0.6);
 }
 
 .ajs-field select option {
-  background: #102946;
+  background: #132d41;
   color: #ffffff;
 }
 
@@ -557,6 +569,8 @@ get_header(); ?>
 }
 </style>
 
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const items = document.querySelectorAll(".ajs-reveal");
@@ -566,6 +580,56 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }, { threshold: 0.12 });
   items.forEach(el => observer.observe(el));
+
+  if (window.emailjs) {
+    emailjs.init({
+      publicKey: "CDikedp0ZSxxiBeLb"
+    });
+  }
+
+  const form = document.getElementById("ajsLocationForm");
+  const submitBtn = document.getElementById("ajsLocationSubmitBtn");
+  const successBox = document.getElementById("ajsLocationFormSuccess");
+  const errorBox = document.getElementById("ajsLocationFormError");
+
+  if (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      successBox.classList.add("hidden");
+      errorBox.classList.add("hidden");
+
+      const originalButtonText = submitBtn.textContent;
+      submitBtn.disabled = true;
+      submitBtn.textContent = "Sending...";
+
+      const formData = {
+        name: document.getElementById("ajs_location_name").value,
+        phone: document.getElementById("ajs_location_phone").value,
+        email: document.getElementById("ajs_location_email").value,
+        service: document.getElementById("ajs_location_service").value,
+        address: document.getElementById("ajs_location_address").value,
+        message: document.getElementById("ajs_location_message").value || "No additional details provided.",
+        consent: document.getElementById("ajs_location_consent").checked ? "Yes" : "No"
+      };
+
+      emailjs.send(
+        "service_a03f0zf",
+        "template_5o4w9bj",
+        formData
+      ).then(function () {
+        form.reset();
+        successBox.classList.remove("hidden");
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalButtonText;
+      }).catch(function (error) {
+        console.error("EmailJS error:", error);
+        errorBox.classList.remove("hidden");
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalButtonText;
+      });
+    });
+  }
 });
 </script>
 

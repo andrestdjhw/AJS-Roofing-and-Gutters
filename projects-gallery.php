@@ -162,7 +162,7 @@ get_header(); ?>
     height: 100%;
     min-height: inherit;
     border-radius: 22px;
-    border: 1px solid rgba(19,45,65,0.08);
+    border: 1px solid rgba(211,216,219,0.9);
     background: #fff;
     box-shadow: 0 10px 24px rgba(19,45,65,0.06);
     transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
