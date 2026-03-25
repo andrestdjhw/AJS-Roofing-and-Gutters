@@ -215,6 +215,63 @@ get_header(); ?>
       </div>
     </div>
   </section>
+  <!-- FAQ -->
+<section id="seamless-gutters-faq" class="bg-[#d3d8db]/20 py-20">
+  <div class="mx-auto max-w-4xl px-4">
+    <p class="ajs-reveal mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
+      Seamless Gutters FAQ
+    </p>
+    <h2 class="ajs-reveal text-3xl font-black tracking-[-0.03em] text-[#132d41] md:text-5xl">
+      Answers that make seamless gutters easier to understand.
+    </h2>
+
+    <div class="mt-10 grid gap-4">
+      <?php
+      $faqs = [
+        [
+          'q' => 'What makes seamless gutters different from standard gutters?',
+          'a' => 'Seamless gutters are fabricated to fit the home more precisely, which reduces the number of joints where leaks typically develop. The result is a cleaner system built for better long-term drainage.'
+        ],
+        [
+          'q' => 'Are your seamless gutters made on-site?',
+          'a' => 'Yes. AJS fabricates seamless gutters on-site using our own machine. That means the system is measured and formed for the property itself instead of relying on pre-cut sections.'
+        ],
+        [
+          'q' => 'Why does “no seams” matter so much?',
+          'a' => 'Seams are one of the most common failure points in a gutter system. Fewer seams means fewer opportunities for leaks, separation, and water escaping where it should not.'
+        ],
+        [
+          'q' => 'Do you use subcontractors for gutter installation?',
+          'a' => 'No. AJS handles seamless gutter fabrication and installation directly. That helps maintain consistency, accountability, and precision from measurement to final installation.'
+        ],
+        [
+          'q' => 'How do seamless gutters protect the home?',
+          'a' => 'Their job is to control roof runoff and direct water away from the structure. Proper drainage helps protect the foundation and supports the long-term performance of the exterior system.'
+        ],
+        [
+          'q' => 'How do I know if seamless gutters are the right fit for my home?',
+          'a' => 'That starts with an inspection and a clear conversation about drainage, roof runoff, and the condition of the current system. From there, we explain what makes sense for the property and why.'
+        ],
+      ];
+
+      foreach ($faqs as $faq) : ?>
+        <details class="ajs-reveal ajs-faq-item group rounded-[20px] border border-[#d3d8db] bg-white px-5 py-4 shadow-[0_10px_24px_rgba(19,45,65,0.04)]">
+          <summary class="cursor-pointer list-none pr-8 text-base font-black text-[#132d41] relative">
+            <?php echo esc_html($faq['q']); ?>
+            <span class="ajs-faq-plus pointer-events-none absolute right-0 top-1 text-[#d04418] transition-transform duration-300">+</span>
+          </summary>
+          <div class="grid transition-all duration-300 ease-out" style="grid-template-rows:0fr;">
+            <div class="overflow-hidden">
+              <p class="mt-4 text-[15px] leading-8 text-[#42474b]">
+                <?php echo esc_html($faq['a']); ?>
+              </p>
+            </div>
+          </div>
+        </details>
+      <?php endforeach; ?>
+    </div>
+  </div>
+</section>
   <!-- LOCATION -->
   <section class="py-20">
     <div class="mx-auto grid max-w-7xl gap-8 px-4 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
@@ -366,6 +423,13 @@ get_header(); ?>
   .ajs-gallery-card {
     transition: transform .35s ease, box-shadow .35s ease;
   }
+  .ajs-faq-item[open] > div {
+  grid-template-rows: 1fr !important;
+}
+
+.ajs-faq-item[open] .ajs-faq-plus {
+  transform: rotate(45deg);
+}
   .ajs-gallery-card:hover {
     transform: translateY(-8px) scale(1.01);
     box-shadow: 0 24px 44px rgba(19, 45, 65, 0.14);

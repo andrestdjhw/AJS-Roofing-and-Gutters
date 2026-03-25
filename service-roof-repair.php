@@ -215,6 +215,64 @@ get_header(); ?>
       </div>
     </div>
   </section>
+
+  <!-- FAQ -->
+<section id="roof-repair-faq" class="bg-[#d3d8db]/20 py-20">
+  <div class="mx-auto max-w-4xl px-4">
+    <p class="ajs-reveal mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
+      Roof Repair FAQ
+    </p>
+    <h2 class="ajs-reveal text-3xl font-black tracking-[-0.03em] text-[#132d41] md:text-5xl">
+      Answers that make roof repair easier to understand.
+    </h2>
+
+    <div class="mt-10 grid gap-4">
+      <?php
+      $faqs = [
+        [
+          'q' => 'What kinds of roof problems can be repaired?',
+          'a' => 'AJS handles targeted roof repairs for leaks, missing shingles, flashing failures, and weather-related wear. The goal is to solve the actual problem clearly and correctly, not to push work you do not need.'
+        ],
+        [
+          'q' => 'How do I know if a repair is enough or if I need a full replacement?',
+          'a' => 'That starts with an honest inspection. If a repair is enough, we will tell you. If replacement makes more financial sense, we will explain why with photos and clear documentation so you can make the right decision with confidence.'
+        ],
+        [
+          'q' => 'Can a roof leak be repaired without replacing the whole roof?',
+          'a' => 'Yes, in many cases it can. Some leaks come from localized issues like damaged shingles, flashing failures, or problem areas around penetrations. The first step is identifying the true source instead of guessing.'
+        ],
+        [
+          'q' => 'Do you document what you find before doing the repair?',
+          'a' => 'Yes. AJS uses a documented process that helps homeowners understand what was found, what needs to be fixed, and why. That clarity is part of how we turn a stressful repair decision into a manageable one.'
+        ],
+        [
+          'q' => 'Is roof repair worth it on an older roof?',
+          'a' => 'Sometimes yes, sometimes no. If the issue is isolated and the rest of the roof still has useful life left, a repair can be the smart option. If the roof has widespread wear, we will explain when a replacement makes more sense long-term.'
+        ],
+        [
+          'q' => 'How do I know if I should schedule a roof repair inspection now?',
+          'a' => 'If you have noticed a leak, missing shingles, visible storm wear, or signs that something has changed, it is worth inspecting now. Catching a smaller problem early can prevent a more expensive repair later.'
+        ],
+      ];
+
+      foreach ($faqs as $faq) : ?>
+        <details class="ajs-reveal ajs-faq-item group rounded-[20px] border border-[#d3d8db] bg-white px-5 py-4 shadow-[0_10px_24px_rgba(19,45,65,0.04)]">
+          <summary class="cursor-pointer list-none pr-8 text-base font-black text-[#132d41] relative">
+            <?php echo esc_html($faq['q']); ?>
+            <span class="ajs-faq-plus pointer-events-none absolute right-0 top-1 text-[#d04418] transition-transform duration-300">+</span>
+          </summary>
+          <div class="grid transition-all duration-300 ease-out" style="grid-template-rows:0fr;">
+            <div class="overflow-hidden">
+              <p class="mt-4 text-[15px] leading-8 text-[#42474b]">
+                <?php echo esc_html($faq['a']); ?>
+              </p>
+            </div>
+          </div>
+        </details>
+      <?php endforeach; ?>
+    </div>
+  </div>
+</section>
   <!-- LOCATION -->
   <section class="py-20">
     <div class="mx-auto grid max-w-7xl gap-8 px-4 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
@@ -357,6 +415,14 @@ get_header(); ?>
     box-shadow: 0 22px 42px rgba(19, 45, 65, 0.14);
     border-color: rgba(110, 170, 206, 0.45);
   }
+
+  .ajs-faq-item[open] > div {
+  grid-template-rows: 1fr !important;
+}
+
+.ajs-faq-item[open] .ajs-faq-plus {
+  transform: rotate(45deg);
+}
 
   .ajs-btn-animate {
     transition: transform .22s ease, box-shadow .22s ease, filter .22s ease;

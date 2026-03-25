@@ -216,6 +216,63 @@ get_header(); ?>
       </div>
     </div>
   </section>
+  <!-- FAQ -->
+<section id="roof-inspection-maintenance-faq" class="bg-[#d3d8db]/20 py-20">
+  <div class="mx-auto max-w-4xl px-4">
+    <p class="ajs-reveal mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
+      Roof Inspection &amp; Maintenance FAQ
+    </p>
+    <h2 class="ajs-reveal text-3xl font-black tracking-[-0.03em] text-[#132d41] md:text-5xl">
+      Answers that make roof inspections and maintenance easier to understand.
+    </h2>
+
+    <div class="mt-10 grid gap-4">
+      <?php
+      $faqs = [
+        [
+          'q' => 'What happens during a roof inspection?',
+          'a' => 'AJS performs a detailed inspection of the roof system and documents what we find with photos. The goal is to show you the actual condition of the roof so you can understand what is happening without guesswork.'
+        ],
+        [
+          'q' => 'Why is a documented inspection important?',
+          'a' => 'Documentation removes uncertainty. Instead of relying on descriptions alone, you can see what is happening on your roof and understand what needs attention and what does not.'
+        ],
+        [
+          'q' => 'How often should a roof be inspected?',
+          'a' => 'Regular inspections help catch problems early. Annual inspections and checks after major weather events are a practical way to stay ahead of issues before they become more expensive.'
+        ],
+        [
+          'q' => 'What is included in roof maintenance?',
+          'a' => 'Maintenance focuses on identifying and addressing small issues before they grow. This can include checking vulnerable areas, monitoring wear, and making minor corrections that help extend the life of the roof.'
+        ],
+        [
+          'q' => 'Can inspections prevent major repairs?',
+          'a' => 'They help reduce the risk. Catching small problems early makes them easier and less expensive to address, which can prevent more extensive work later.'
+        ],
+        [
+          'q' => 'How do I know if I should schedule an inspection?',
+          'a' => 'If it has been a while since your last inspection, if a storm recently passed through, or if something about your roof has changed, it is a good time to take a closer look and get clarity.'
+        ],
+      ];
+
+      foreach ($faqs as $faq) : ?>
+        <details class="ajs-reveal ajs-faq-item group rounded-[20px] border border-[#d3d8db] bg-white px-5 py-4 shadow-[0_10px_24px_rgba(19,45,65,0.04)]">
+          <summary class="cursor-pointer list-none pr-8 text-base font-black text-[#132d41] relative">
+            <?php echo esc_html($faq['q']); ?>
+            <span class="ajs-faq-plus pointer-events-none absolute right-0 top-1 text-[#d04418] transition-transform duration-300">+</span>
+          </summary>
+          <div class="grid transition-all duration-300 ease-out" style="grid-template-rows:0fr;">
+            <div class="overflow-hidden">
+              <p class="mt-4 text-[15px] leading-8 text-[#42474b]">
+                <?php echo esc_html($faq['a']); ?>
+              </p>
+            </div>
+          </div>
+        </details>
+      <?php endforeach; ?>
+    </div>
+  </div>
+</section>
 
     <!-- LOCATION -->
   <section class="py-20">
@@ -359,6 +416,13 @@ get_header(); ?>
     box-shadow: 0 22px 42px rgba(19, 45, 65, 0.14);
     border-color: rgba(110, 170, 206, 0.45);
   }
+  .ajs-faq-item[open] > div {
+  grid-template-rows: 1fr !important;
+}
+
+.ajs-faq-item[open] .ajs-faq-plus {
+  transform: rotate(45deg);
+}
 
   .ajs-btn-animate {
     transition: transform .22s ease, box-shadow .22s ease, filter .22s ease;
