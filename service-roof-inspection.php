@@ -170,6 +170,53 @@ get_header(); ?>
   </div>
 </section>
 
+  <!-- OTHER SERVICES -->
+  <section class="py-20">
+    <div class="mx-auto max-w-7xl px-4">
+      <div class="mb-10 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+        <div>
+          <p class="ajs-reveal mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
+            Other Services
+          </p>
+          <h2 class="ajs-reveal text-3xl font-black tracking-[-0.03em] text-[#132d41] md:text-5xl">
+            Explore related services.
+          </h2>
+        </div>
+
+        <p class="ajs-reveal max-w-xl text-base leading-8 text-[#42474b]">
+          Cross-link this page to the rest of the service stack so visitors can compare systems and choose the right fit for their home.
+        </p>
+      </div>
+
+      <div class="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+        <?php
+        $services = [
+          ['Roof Replacement', '/service/roof-replacement', 'Complete tear-off and rebuild with documented process and manufacturer-backed protection.'],
+          ['Seamless Gutters', '/service/gutters', 'Precise drainage protection fabricated on-site for clean performance and fit.'],
+          ['Storm Damage & Insurance', '/service/storm-damage-insurance', 'Documentation and claim support when weather turns uncertainty into urgency.'],
+          ['Roof Repair', '/service/roof-repair', 'Targeted fixes when replacement is not yet necessary.'],
+          ['Metal Roofing', '/service/metal-roofing', 'Durable, long-lasting roofing solutions for residential and commercial properties.'],
+        ];
+
+        foreach ($services as $service) : ?>
+          <a href="<?php echo esc_url($service[1]); ?>"
+             class="ajs-reveal ajs-hover-lift group rounded-[24px] border border-[#d3d8db] bg-[linear-gradient(180deg,#ffffff_0%,#f5f9fc_100%)] p-6 shadow-[0_14px_32px_rgba(19,45,65,0.06)]">
+            <div class="mb-5 h-1.5 w-14 rounded-full bg-[#6eaace] transition-all duration-500 group-hover:w-24"></div>
+            <h3 class="text-xl font-black text-[#132d41]">
+              <?php echo esc_html($service[0]); ?>
+            </h3>
+            <p class="mt-4 text-[15px] leading-8 text-[#42474b]">
+              <?php echo esc_html($service[2]); ?>
+            </p>
+            <span class="mt-5 inline-flex font-black text-[#d04418] transition group-hover:translate-x-[3px]">
+              Keep reading
+            </span>
+          </a>
+        <?php endforeach; ?>
+      </div>
+    </div>
+  </section>
+
     <!-- LOCATION -->
   <section class="py-20">
     <div class="mx-auto grid max-w-7xl gap-8 px-4 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
