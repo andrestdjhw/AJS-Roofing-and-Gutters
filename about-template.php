@@ -99,7 +99,7 @@ get_header(); ?>
         <div class="ajs-reveal-right rounded-[32px] border border-[#d3d8db] bg-[linear-gradient(180deg,#ffffff_0%,#f7f9fa_100%)] p-8 shadow-[0_18px_36px_rgba(19,45,65,0.08)]">
           <div class="grid gap-6 md:grid-cols-2">
             <p class="text-base leading-8 text-[#42474b]">
-              When a roof problem appears, it's not just physical damage — it's uncertainty.
+              When a roof problem appears, it's not just physical damage  it's uncertainty.
               Too many options, too little clarity, and the fear of making a bad decision.
               The chaos isn't just on the roof. It's in your mind.
             </p>
@@ -332,7 +332,7 @@ get_header(); ?>
         Ready to experience roofing with clarity?
       </h2>
       <p class="mt-5 max-w-2xl text-base leading-8 text-[#42474b]">
-        Schedule your free inspection and let us show you exactly what your roof needs —
+        Schedule your free inspection and let us show you exactly what your roof needs 
         and exactly what it doesn't. No pressure. Just a clear path forward.
       </p>
 

@@ -7,37 +7,37 @@ get_header(); ?>
 
 <main class="bg-white text-[#42474b] overflow-hidden">
 
-  <section class="relative overflow-hidden bg-[linear-gradient(135deg,rgba(19,45,65,0.96),rgba(31,70,97,0.88))] text-white">
-    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(110,170,206,0.22),transparent_30%)]"></div>
-    <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(208,68,24,0.12),transparent_28%)]"></div>
+  <section class="relative overflow-hidden border-b border-[#d3d8db] bg-[linear-gradient(180deg,#ffffff_0%,#f5f7f8_100%)]">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(110,170,206,0.18),transparent_30%)]"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,rgba(208,68,24,0.10),transparent_24%)]"></div>
 
     <div class="absolute right-[-120px] top-[-120px] h-[280px] w-[280px] rounded-full bg-[#6eaace]/10 blur-3xl ajs-float-slow"></div>
     <div class="absolute bottom-[-120px] left-[-120px] h-[260px] w-[260px] rounded-full bg-[#d04418]/10 blur-3xl ajs-float-slower"></div>
 
     <div class="relative mx-auto grid max-w-7xl gap-10 px-4 py-16 md:py-20 lg:grid-cols-[1.02fr_0.98fr] lg:items-center">
       <div class="ajs-reveal-left">
-        <p class="mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#6eaace]">
+        <p class="mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
           Talk to an Expert
         </p>
 
-        <h1 class="max-w-[12ch] text-4xl font-black leading-[0.95] tracking-[-0.04em] md:text-5xl lg:text-7xl">
+        <h1 class="max-w-[12ch] text-4xl font-black leading-[0.95] tracking-[-0.04em] text-[#132d41] md:text-5xl lg:text-7xl">
           Have Questions? Let’s Talk.
         </h1>
 
-        <p class="mt-5 max-w-2xl text-base leading-8 text-white/85 md:text-lg">
+        <p class="mt-5 max-w-2xl text-base leading-8 text-[#42474b] md:text-lg">
           Get guidance before committing to an in-person visit. Tell us what’s going on,
           what kind of help you may need, and when you’d like to talk. We’ll follow up
           with a call that gives you clarity, not pressure.
         </p>
 
         <a href="tel:+15050000000"
-           class="mt-6 inline-flex items-center gap-2 text-base font-extrabold text-white">
-          <span class="text-white/70">Call Now:</span>
+           class="mt-6 inline-flex items-center gap-2 text-base font-extrabold text-[#132d41]">
+          <span class="text-[#42474b]/70">Call Now:</span>
           <span>(505) 000-0000</span>
         </a>
       </div>
 
-      <div class="ajs-reveal-right rounded-[28px] border border-white/10 bg-white p-5 text-[#42474b] shadow-2xl">
+      <div class="ajs-reveal-right rounded-[28px] border border-[#d3d8db] bg-[linear-gradient(180deg,#ffffff_0%,#f7f9fa_100%)] p-5 text-[#42474b] shadow-[0_20px_44px_rgba(19,45,65,0.10)]">
         <h2 class="text-2xl font-black tracking-[-0.03em] text-[#132d41]">
           Request a call with our team.
         </h2>
@@ -61,7 +61,7 @@ get_header(); ?>
             type="text"
             placeholder="Full Name *"
             required
-            class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+            class="w-full rounded-2xl border border-[#d3d8db] bg-white px-4 py-4 text-sm text-[#132d41] placeholder:text-[#42474b]/65 outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
           >
 
           <input
@@ -70,7 +70,7 @@ get_header(); ?>
             type="tel"
             placeholder="Phone Number *"
             required
-            class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+            class="w-full rounded-2xl border border-[#d3d8db] bg-white px-4 py-4 text-sm text-[#132d41] placeholder:text-[#42474b]/65 outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
           >
 
           <input
@@ -79,7 +79,7 @@ get_header(); ?>
             type="email"
             placeholder="Email *"
             required
-            class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+            class="w-full rounded-2xl border border-[#d3d8db] bg-white px-4 py-4 text-sm text-[#132d41] placeholder:text-[#42474b]/65 outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
           >
 
           <select
@@ -104,14 +104,14 @@ get_header(); ?>
             type="text"
             placeholder="Property Address or ZIP Code *"
             required
-            class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+            class="w-full rounded-2xl border border-[#d3d8db] bg-white px-4 py-4 text-sm text-[#132d41] placeholder:text-[#42474b]/65 outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
           >
 
           <input
             id="ajs_call_preferred"
             type="text"
             placeholder="Preferred day/time for a call (optional)"
-            class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+            class="w-full rounded-2xl border border-[#d3d8db] bg-white px-4 py-4 text-sm text-[#132d41] placeholder:text-[#42474b]/65 outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
           >
 
           <textarea
@@ -119,7 +119,7 @@ get_header(); ?>
             name="message"
             rows="5"
             placeholder="What questions would you like to discuss with our expert?"
-            class="w-full resize-y rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+            class="w-full resize-y rounded-2xl border border-[#d3d8db] bg-white px-4 py-4 text-sm text-[#132d41] placeholder:text-[#42474b]/65 outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
           ></textarea>
 
           <label class="flex items-start gap-3 text-sm leading-6 text-[#42474b]/80">
@@ -133,13 +133,13 @@ get_header(); ?>
             <span>I agree to be contacted by AJS Roofing &amp; Gutters regarding my call request.</span>
           </label>
 
-<button
-  id="ajsCallSubmitBtn"
-  type="submit"
-  class="ajs-btn-animate inline-flex w-full items-center justify-center rounded-full bg-[#d04418] px-6 py-4 text-sm font-black text-white shadow-[0_16px_32px_rgba(208,68,24,0.28)]"
->
-  Request My Call
-</button>
+          <button
+            id="ajsCallSubmitBtn"
+            type="submit"
+            class="ajs-btn-animate inline-flex w-full items-center justify-center rounded-full bg-[#d04418] px-6 py-4 text-sm font-black text-white shadow-[0_16px_32px_rgba(208,68,24,0.28)]"
+          >
+            Request My Call
+          </button>
 
           <p class="text-sm text-[#42474b]/70">
             We’ll reach out to confirm timing and answer your questions clearly.

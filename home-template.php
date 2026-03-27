@@ -2,60 +2,110 @@
 /**
  * Template Name: Home Template
  *
- * Homepage AJS — HTML + Tailwind inline.
+ * Homepage AJS  HTML + Tailwind inline.
  * Navbar y footer vienen de header.php / footer.php.
  */
 
 get_header(); ?>
 
 <main class="bg-white text-[#42474b]">
-  <!-- Hero -->
-  <section class="relative overflow-hidden bg-[linear-gradient(135deg,#132d41_0%,#1a3a52_100%)] text-white">
-    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(110,170,206,0.22),transparent_30%)]"></div>
-    <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(208,68,24,0.12),transparent_28%)]"></div>
+ <!-- Hero -->
+<section class="relative overflow-hidden border-b border-[#d3d8db] bg-[linear-gradient(180deg,#ffffff_0%,#f4f7f9_100%)]">
+  <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(110,170,206,0.22),transparent_30%)]"></div>
+  <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,rgba(208,68,24,0.12),transparent_24%)]"></div>
+  <div class="absolute inset-x-0 top-0 h-px bg-[linear-gradient(90deg,transparent,rgba(110,170,206,0.55),transparent)]"></div>
 
-    <div class="relative mx-auto grid max-w-7xl gap-10 px-4 py-16 md:py-20 lg:grid-cols-[1.08fr_0.92fr] lg:items-center">
-      <div class="ajs-reveal-left">
-        <p class="mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#6eaace]">
+  <div class="absolute right-[-120px] top-[-120px] h-[320px] w-[320px] rounded-full bg-[#6eaace]/12 blur-3xl"></div>
+  <div class="absolute bottom-[-120px] left-[-120px] h-[280px] w-[280px] rounded-full bg-[#d04418]/10 blur-3xl"></div>
+
+  <div class="relative mx-auto grid max-w-7xl gap-10 px-4 py-16 md:py-20 lg:grid-cols-[1.08fr_0.92fr] lg:items-center">
+    <div class="ajs-reveal-left">
+      <div class="inline-flex items-center gap-2 rounded-full border border-[#d3d8db] bg-white/85 px-4 py-2 shadow-sm backdrop-blur-sm">
+        <span class="h-2.5 w-2.5 rounded-full bg-[#d04418]"></span>
+        <p class="text-[11px] font-black uppercase tracking-[0.18em] text-[#132d41]">
           Roofing Without Uncertainty
         </p>
+      </div>
 
-        <h1 class="max-w-[12ch] text-4xl font-black leading-[0.95] tracking-[-0.04em] md:text-5xl lg:text-7xl">
-          Your Roof Shouldn't Be a Question Mark.
-        </h1>
+      <h1 class="mt-6 max-w-[12ch] text-4xl font-black leading-[0.92] tracking-[-0.045em] text-[#132d41] md:text-5xl lg:text-7xl">
+        Your Roof Shouldn't Be a Question Mark.
+      </h1>
 
-        <p class="mt-5 max-w-2xl text-base leading-8 text-white/85 md:text-lg">
-          We inspect, install, and protect with a system designed to eliminate uncertainty —
-          so your home feels secure again. AJS Roofing &amp; Gutters brings order, clarity,
-          and precision to every project across Albuquerque, Santa Fe, and Rio Rancho.
-        </p>
+      <p class="mt-5 max-w-2xl text-base leading-8 text-[#42474b] md:text-lg">
+        We inspect, install, and protect with a system designed to eliminate uncertainty 
+        so your home feels secure again. AJS Roofing &amp; Gutters brings order, clarity,
+        and precision to every project across Albuquerque, Santa Fe, and Rio Rancho.
+      </p>
 
-        <div class="mt-7 flex flex-wrap gap-3">
-          <a href="/estimate"
-             class="ajs-btn-animate inline-flex items-center justify-center rounded-full bg-[#d04418] px-6 py-4 text-sm font-black text-white shadow-[0_16px_32px_rgba(208,68,24,0.28)] transition">
-            Get Your Free Inspection
-          </a>
+      <div class="mt-7 flex flex-wrap gap-3">
+<a href="/estimate"
+   class="ajs-btn-animate inline-flex items-center justify-center rounded-full bg-[#d04418] px-6 py-4 text-sm font-black text-white shadow-[0_18px_36px_rgba(208,68,24,0.28)] transition">
+  Get Your Free Inspection
+</a>
 
-          <a href="#services"
-             class="ajs-btn-animate inline-flex items-center justify-center rounded-full border border-white/15 bg-white/10 px-6 py-4 text-sm font-black text-white backdrop-blur-sm transition hover:bg-white/15">
-            Explore Our Services
-          </a>
-        </div>
-
-        <a href="tel:+15050000000"
-           class="mt-6 inline-flex items-center gap-2 text-base font-extrabold text-white">
-          <span class="text-white/70">Call Now:</span>
-          <span>(505) 000-0000</span>
+        <a href="#services"
+           class="ajs-btn-animate inline-flex items-center justify-center rounded-full border border-[#d3d8db] bg-white px-6 py-4 text-sm font-black text-[#132d41] shadow-sm transition hover:border-[#6eaace]/40 hover:bg-[#f8fbfd]">
+          Explore Our Services
         </a>
       </div>
 
-      <div class="ajs-reveal-right rounded-[28px] border border-[#d3d8db] bg-white p-5 text-[#42474b] shadow-[0_20px_44px_rgba(19,45,65,0.18)]">
-        <h2 class="text-2xl font-black tracking-[-0.03em] text-[#132d41]">
-          Start with a clear inspection.
-        </h2>
-        <p class="mt-2 text-sm leading-7 text-[#42474b]/80">
-          Tell us what's going on and we'll help you take the next step with confidence.
-        </p>
+      <div class="mt-8 flex flex-wrap items-center gap-6">
+        <a href="tel:+15050000000"
+           class="inline-flex items-center gap-2 text-base font-extrabold text-[#132d41]">
+          <span class="text-[#42474b]/70">Call Now:</span>
+          <span>(505) 000-0000</span>
+        </a>
+
+        <div class="flex flex-wrap items-center gap-2">
+          <span class="rounded-full bg-[#132d41] px-3 py-1 text-[11px] font-black uppercase tracking-[0.16em] text-white">
+            Clear Process
+          </span>
+          <span class="rounded-full bg-[#6eaace]/15 px-3 py-1 text-[11px] font-black uppercase tracking-[0.16em] text-[#132d41]">
+            No Pressure
+          </span>
+          <span class="rounded-full bg-[#d04418]/12 px-3 py-1 text-[11px] font-black uppercase tracking-[0.16em] text-[#d04418]">
+            Photo Documented
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="ajs-reveal-right">
+      <div class="overflow-hidden rounded-[30px] border border-[#d3d8db] bg-[linear-gradient(180deg,#ffffff_0%,#f7f9fa_100%)] p-5 text-[#42474b] shadow-[0_24px_54px_rgba(19,45,65,0.12)]">
+        <div class="mb-5 flex items-start justify-between gap-4">
+          <div>
+            <p class="text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
+              Start Here
+            </p>
+            <h2 class="mt-2 text-2xl font-black tracking-[-0.03em] text-[#132d41]">
+              Start with a clear inspection.
+            </h2>
+            <p class="mt-2 text-sm leading-7 text-[#42474b]/80">
+              Tell us what's going on and we'll help you take the next step with confidence.
+            </p>
+          </div>
+
+          <div class="hidden sm:flex h-12 w-12 items-center justify-center rounded-2xl bg-[linear-gradient(135deg,#d04418,#132d41)] text-white shadow-[0_12px_24px_rgba(19,45,65,0.18)]">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l8 4v6c0 5.25-3.438 9.75-8 11-4.562-1.25-8-5.75-8-11V6l8-4zm0 3.18L6 8v4c0 3.98 2.438 7.41 6 8.57 3.562-1.16 6-4.59 6-8.57V8l-6-2.82z"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="mb-5 grid gap-3 sm:grid-cols-3">
+          <div class="rounded-2xl border border-[#d3d8db] bg-white px-4 py-3 shadow-sm">
+            <p class="text-[11px] font-black uppercase tracking-[0.16em] text-[#d04418]">Fast</p>
+            <p class="mt-1 text-sm font-bold text-[#132d41]">24hr Response</p>
+          </div>
+          <div class="rounded-2xl border border-[#d3d8db] bg-white px-4 py-3 shadow-sm">
+            <p class="text-[11px] font-black uppercase tracking-[0.16em] text-[#d04418]">Clear</p>
+            <p class="mt-1 text-sm font-bold text-[#132d41]">Photo Report</p>
+          </div>
+          <div class="rounded-2xl border border-[#d3d8db] bg-white px-4 py-3 shadow-sm">
+            <p class="text-[11px] font-black uppercase tracking-[0.16em] text-[#d04418]">Simple</p>
+            <p class="mt-1 text-sm font-bold text-[#132d41]">No Pressure</p>
+          </div>
+        </div>
 
         <div id="ajsHomeHeroFormSuccess" class="hidden mt-5 rounded-2xl border border-green-200 bg-green-50 px-4 py-4 text-sm text-green-700">
           Thanks for reaching out. Your inspection request was sent successfully.
@@ -72,7 +122,7 @@ get_header(); ?>
             type="text"
             placeholder="Full Name *"
             required
-            class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+            class="w-full rounded-2xl border border-[#d3d8db] bg-white px-4 py-4 text-sm text-[#132d41] placeholder:text-[#42474b]/65 outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
           >
 
           <input
@@ -81,7 +131,7 @@ get_header(); ?>
             type="tel"
             placeholder="Phone Number *"
             required
-            class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+            class="w-full rounded-2xl border border-[#d3d8db] bg-white px-4 py-4 text-sm text-[#132d41] placeholder:text-[#42474b]/65 outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
           >
 
           <input
@@ -90,7 +140,7 @@ get_header(); ?>
             type="email"
             placeholder="Email *"
             required
-            class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+            class="w-full rounded-2xl border border-[#d3d8db] bg-white px-4 py-4 text-sm text-[#132d41] placeholder:text-[#42474b]/65 outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
           >
 
           <select
@@ -114,7 +164,7 @@ get_header(); ?>
             type="text"
             placeholder="Address or ZIP Code *"
             required
-            class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+            class="w-full rounded-2xl border border-[#d3d8db] bg-white px-4 py-4 text-sm text-[#132d41] placeholder:text-[#42474b]/65 outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
           >
 
           <textarea
@@ -122,7 +172,7 @@ get_header(); ?>
             name="message"
             rows="4"
             placeholder="Anything else we should know? (optional)"
-            class="w-full resize-y rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+            class="w-full resize-y rounded-2xl border border-[#d3d8db] bg-white px-4 py-4 text-sm text-[#132d41] placeholder:text-[#42474b]/65 outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
           ></textarea>
 
           <label class="flex items-start gap-3 text-sm leading-6 text-[#42474b]/80">
@@ -136,20 +186,20 @@ get_header(); ?>
             <span>I agree to be contacted by AJS Roofing &amp; Gutters regarding my request.</span>
           </label>
 
-          <button
-            id="ajsHomeHeroSubmitBtn"
-            type="submit"
-            class="ajs-btn-animate inline-flex items-center justify-center rounded-full bg-[#d04418] px-6 py-4 text-sm font-black text-white shadow-[0_16px_32px_rgba(208,68,24,0.28)] transition">
-            Get Your Free Inspection
-          </button>
-
+<button
+  id="ajsHomeHeroSubmitBtn"
+  type="submit"
+  class="ajs-btn-animate inline-flex items-center justify-center rounded-full bg-[#d04418] px-6 py-4 text-sm font-black text-white shadow-[0_18px_36px_rgba(208,68,24,0.28)] transition">
+  Get Your Free Inspection
+</button>
           <p class="text-sm text-[#42474b]/70">
             Response within 24 hours. Detailed photo report included.
           </p>
         </form>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- Ticker -->
   <section class="overflow-hidden border-y border-[#d3d8db] bg-white">
@@ -192,7 +242,7 @@ get_header(); ?>
         <p>
           AJS Roofing &amp; Gutters is a licensed roofing contractor serving Albuquerque,
           Santa Fe, Rio Rancho, and surrounding New Mexico communities. We don't just
-          install roofs — we restore peace of mind.
+          install roofs  we restore peace of mind.
         </p>
 
         <p>
@@ -244,17 +294,17 @@ get_header(); ?>
           ],
           [
             'title' => 'Storm Damage & Insurance',
-            'copy'  => 'Hail or wind damage? We inspect, document everything with photos, and work with your insurance to streamline the process. Here\'s what we found — and here\'s how we fix it.',
+            'copy'  => 'Hail or wind damage? We inspect, document everything with photos, and work with your insurance to streamline the process. Here\'s what we found  and here\'s how we fix it.',
             'link'  => '/service/storm-damage-insurance'
           ],
           [
             'title' => 'Roof Repair',
-            'copy'  => 'Targeted repairs for leaks, missing shingles, and weather wear. Honest assessment first — we\'ll tell you if a repair is enough or if replacement makes more sense.',
+            'copy'  => 'Targeted repairs for leaks, missing shingles, and weather wear. Honest assessment first  we\'ll tell you if a repair is enough or if replacement makes more sense.',
             'link'  => '/service/roof-repair'
           ],
           [
             'title' => 'Roof Inspection & Maintenance',
-            'copy'  => 'Photo-documented inspections and annual maintenance plans. Catch small problems before they become expensive ones. You don\'t need to understand roofing — that\'s our job.',
+            'copy'  => 'Photo-documented inspections and annual maintenance plans. Catch small problems before they become expensive ones. You don\'t need to understand roofing  that\'s our job.',
             'link'  => '/service/roof-inspection'
           ],
         ];
@@ -429,9 +479,9 @@ get_header(); ?>
             <img src="https://m.bbb.org/brand/logos/BBB_PrimaryLogo_Blue_RGB.svg" alt="BBB Accredited" class="h-5 opacity-50">
           </div>
           <p class="mt-4 text-[15px] leading-8 text-[#42474b]">
-            "They not only replaced my roof, but also took the time to correct all the mistakes left behind by others. What really stood out was their communication — I was kept informed at every stage, which gave me total peace of mind throughout the project. They finished ahead of schedule."
+            "They not only replaced my roof, but also took the time to correct all the mistakes left behind by others. What really stood out was their communication  I was kept informed at every stage, which gave me total peace of mind throughout the project. They finished ahead of schedule."
           </p>
-          <strong class="mt-4 inline-block text-[#132d41]">— Alberto R.</strong>
+          <strong class="mt-4 inline-block text-[#132d41]"> Alberto R.</strong>
           <p class="mt-1 text-xs text-[#42474b]/55">Verified BBB Review &middot; April 2025</p>
         </article>
 
@@ -443,7 +493,7 @@ get_header(); ?>
           <p class="mt-4 text-[15px] leading-8 text-[#42474b]">
             "When they came to look at the house, he took photographs of the roof, drew diagrams to explain, and showed me the issues. He found so many issues that none of the other contractors found. Through the whole process, I was educated about roofs and about my roof in particular. Solid people, solid work."
           </p>
-          <strong class="mt-4 inline-block text-[#132d41]">— Cyndi-Marie M.</strong>
+          <strong class="mt-4 inline-block text-[#132d41]"> Cyndi-Marie M.</strong>
           <p class="mt-1 text-xs text-[#42474b]/55">Verified BBB Review &middot; August 2023</p>
         </article>
 
@@ -455,7 +505,7 @@ get_header(); ?>
           <p class="mt-4 text-[15px] leading-8 text-[#42474b]">
             "I highly recommend AJ's Professional Roofing. Their work is consistently high-quality, communication is clear and timely, and they are dependable from start to finish. It's rare to find a roofing company you can trust both personally and professionally."
           </p>
-          <strong class="mt-4 inline-block text-[#132d41]">— Christine L.</strong>
+          <strong class="mt-4 inline-block text-[#132d41]"> Christine L.</strong>
           <p class="mt-1 text-xs text-[#42474b]/55">Verified BBB Review &middot; January 2026</p>
         </article>
 
@@ -578,129 +628,146 @@ get_header(); ?>
       </div>
     </div>
   </section>
+<!-- Closing CTA -->
+<section id="closing-cta" class="ajs-home-sticky-offset border-t border-[#d3d8db] bg-[#f1f3f5] py-20">
+  
+  <div class="mx-auto grid max-w-7xl gap-10 px-4 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+    
+    <!-- Left Content -->
+    <div class="ajs-reveal-left">
+      <p class="mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
+        Bring Order Above.
+      </p>
 
-  <!-- Closing CTA -->
-  <section id="closing-cta" class="ajs-home-sticky-offset bg-[linear-gradient(180deg,#132d41_0%,#1a3a52_100%)] py-20 text-white">
-    <div class="mx-auto grid max-w-7xl gap-10 px-4 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
-      <div class="ajs-reveal-left">
-        <p class="mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#6eaace]">
-          Bring Order Above.
-        </p>
-        <h2 class="max-w-[14ch] text-3xl font-black leading-tight tracking-[-0.03em] md:text-5xl">
-          When Everything Is Right Above, Calm Returns Home.
-        </h2>
+      <h2 class="max-w-[14ch] text-3xl font-black leading-tight tracking-[-0.03em] text-[#132d41] md:text-5xl">
+        When Everything Is Right Above, Calm Returns Home.
+      </h2>
 
-        <p class="mt-5 max-w-2xl text-base leading-8 text-white/82">
-          Schedule your free inspection. We'll show you exactly what your roof needs —
-          and exactly what it doesn't. No pressure. No surprises. Just a clear path
-          from uncertainty to protection.
-        </p>
+      <p class="mt-5 max-w-2xl text-base leading-8 text-[#42474b]">
+        Schedule your free inspection. We'll show you exactly what your roof needs 
+        and exactly what it doesn't. No pressure. No surprises. Just a clear path
+        from uncertainty to protection.
+      </p>
 
-        <a href="tel:+15050000000"
-           class="mt-6 inline-flex items-center gap-2 text-base font-extrabold text-white">
-          <span class="text-white/65">Call Now:</span>
-          <span>(505) 000-0000</span>
-        </a>
-
-        <p class="mt-4 text-sm text-white/65">
-          Response within 24 hours. Detailed photo report included.
-        </p>
+      <div class="mt-7 flex flex-wrap gap-2">
+        <span class="rounded-full bg-[#132d41] px-3 py-1 text-[11px] font-black uppercase tracking-[0.16em] text-white">
+          Clear Process
+        </span>
+        <span class="rounded-full bg-[#6eaace]/15 px-3 py-1 text-[11px] font-black uppercase tracking-[0.16em] text-[#132d41]">
+          No Pressure
+        </span>
+        <span class="rounded-full bg-[#d04418]/12 px-3 py-1 text-[11px] font-black uppercase tracking-[0.16em] text-[#d04418]">
+          Photo Documented
+        </span>
       </div>
 
-      <div class="ajs-reveal-right rounded-[28px] border border-[#d3d8db] bg-white p-5 text-[#42474b] shadow-[0_18px_40px_rgba(19,45,65,0.2)]">
-        <h2 class="text-2xl font-black tracking-[-0.03em] text-[#132d41]">
-          Request your free inspection.
-        </h2>
+      <a href="tel:+15050000000"
+         class="mt-6 inline-flex items-center gap-2 text-base font-extrabold text-[#132d41]">
+        <span class="text-[#42474b]/65">Call Now:</span>
+        <span>(505) 000-0000</span>
+      </a>
 
-        <div id="ajsHomeClosingFormSuccess" class="hidden mt-5 rounded-2xl border border-green-200 bg-green-50 px-4 py-4 text-sm text-green-700">
-          Thanks for reaching out. Your inspection request was sent successfully.
-        </div>
-
-        <div id="ajsHomeClosingFormError" class="hidden mt-5 rounded-2xl border border-red-200 bg-red-50 px-4 py-4 text-sm text-red-700">
-          Something went wrong. Please try again.
-        </div>
-
-        <form id="ajsHomeClosingForm" class="mt-5 grid gap-3">
-          <input
-            id="ajs_home_closing_name"
-            name="name"
-            type="text"
-            placeholder="Full Name *"
-            required
-            class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
-          >
-
-          <input
-            id="ajs_home_closing_phone"
-            name="phone"
-            type="tel"
-            placeholder="Phone Number *"
-            required
-            class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
-          >
-
-          <input
-            id="ajs_home_closing_email"
-            name="email"
-            type="email"
-            placeholder="Email *"
-            required
-            class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
-          >
-
-          <select
-            id="ajs_home_closing_service"
-            name="service"
-            required
-            class="w-full rounded-2xl border border-[#d3d8db] bg-white px-4 py-4 text-sm text-[#42474b] outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20">
-            <option value="" selected disabled>What do you need? *</option>
-            <option value="Roof Replacement">Roof Replacement</option>
-            <option value="Metal Roofing">Metal Roofing</option>
-            <option value="Gutters">Gutters</option>
-            <option value="Roof Repair">Roof Repair</option>
-            <option value="Storm Damage / Insurance">Storm Damage / Insurance</option>
-            <option value="Inspection / Maintenance">Inspection / Maintenance</option>
-            <option value="Not Sure">Not Sure</option>
-          </select>
-
-          <input
-            id="ajs_home_closing_address"
-            name="address"
-            type="text"
-            placeholder="Address or ZIP Code *"
-            required
-            class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
-          >
-
-          <textarea
-            id="ajs_home_closing_message"
-            name="message"
-            rows="4"
-            placeholder="Anything else we should know? (optional)"
-            class="w-full resize-y rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
-          ></textarea>
-
-          <label class="flex items-start gap-3 text-sm leading-6 text-[#42474b]/80">
-            <input
-              id="ajs_home_closing_consent"
-              name="consent"
-              type="checkbox"
-              class="mt-1 h-4 w-4 rounded border-[#d3d8db] text-[#d04418]"
-              required
-            >
-            <span>I agree to be contacted by AJS Roofing &amp; Gutters regarding my request.</span>
-          </label>
-
-          <button
-            id="ajsHomeClosingSubmitBtn"
-            type="submit"
-            class="ajs-btn-animate inline-flex items-center justify-center rounded-full bg-[#d04418] px-6 py-4 text-sm font-black text-white shadow-[0_16px_32px_rgba(208,68,24,0.28)] transition">
-            Get Your Free Inspection
-          </button>
-        </form>
-      </div>
+      <p class="mt-4 text-sm text-[#42474b]/70">
+        Response within 24 hours. Detailed photo report included.
+      </p>
     </div>
-  </section>
+
+    <!-- Form -->
+    <div class="ajs-reveal-right rounded-[28px] border border-[#d3d8db] bg-white p-5 text-[#42474b] shadow-[0_20px_44px_rgba(19,45,65,0.10)]">
+      <h2 class="text-2xl font-black tracking-[-0.03em] text-[#132d41]">
+        Request your free inspection.
+      </h2>
+
+      <div id="ajsHomeClosingFormSuccess" class="hidden mt-5 rounded-2xl border border-green-200 bg-green-50 px-4 py-4 text-sm text-green-700">
+        Thanks for reaching out. Your inspection request was sent successfully.
+      </div>
+
+      <div id="ajsHomeClosingFormError" class="hidden mt-5 rounded-2xl border border-red-200 bg-red-50 px-4 py-4 text-sm text-red-700">
+        Something went wrong. Please try again.
+      </div>
+
+      <form id="ajsHomeClosingForm" class="mt-5 grid gap-3">
+        <input
+          id="ajs_home_closing_name"
+          name="name"
+          type="text"
+          placeholder="Full Name *"
+          required
+          class="w-full rounded-2xl border border-[#d3d8db] bg-white px-4 py-4 text-sm text-[#132d41] placeholder:text-[#42474b]/65 outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+        >
+
+        <input
+          id="ajs_home_closing_phone"
+          name="phone"
+          type="tel"
+          placeholder="Phone Number *"
+          required
+          class="w-full rounded-2xl border border-[#d3d8db] bg-white px-4 py-4 text-sm text-[#132d41] placeholder:text-[#42474b]/65 outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+        >
+
+        <input
+          id="ajs_home_closing_email"
+          name="email"
+          type="email"
+          placeholder="Email *"
+          required
+          class="w-full rounded-2xl border border-[#d3d8db] bg-white px-4 py-4 text-sm text-[#132d41] placeholder:text-[#42474b]/65 outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+        >
+
+        <select
+          id="ajs_home_closing_service"
+          name="service"
+          required
+          class="w-full rounded-2xl border border-[#d3d8db] bg-white px-4 py-4 text-sm text-[#42474b] outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20">
+          <option value="" selected disabled>What do you need? *</option>
+          <option value="Roof Replacement">Roof Replacement</option>
+          <option value="Metal Roofing">Metal Roofing</option>
+          <option value="Gutters">Gutters</option>
+          <option value="Roof Repair">Roof Repair</option>
+          <option value="Storm Damage / Insurance">Storm Damage / Insurance</option>
+          <option value="Inspection / Maintenance">Inspection / Maintenance</option>
+          <option value="Not Sure">Not Sure</option>
+        </select>
+
+        <input
+          id="ajs_home_closing_address"
+          name="address"
+          type="text"
+          placeholder="Address or ZIP Code *"
+          required
+          class="w-full rounded-2xl border border-[#d3d8db] bg-white px-4 py-4 text-sm text-[#132d41] placeholder:text-[#42474b]/65 outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+        >
+
+        <textarea
+          id="ajs_home_closing_message"
+          name="message"
+          rows="4"
+          placeholder="Anything else we should know? (optional)"
+          class="w-full resize-y rounded-2xl border border-[#d3d8db] bg-white px-4 py-4 text-sm text-[#132d41] placeholder:text-[#42474b]/65 outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+        ></textarea>
+
+        <label class="flex items-start gap-3 text-sm leading-6 text-[#42474b]/80">
+          <input
+            id="ajs_home_closing_consent"
+            name="consent"
+            type="checkbox"
+            class="mt-1 h-4 w-4 rounded border-[#d3d8db] text-[#d04418]"
+            required
+          >
+          <span>I agree to be contacted by AJS Roofing &amp; Gutters regarding my request.</span>
+        </label>
+
+        <button
+          id="ajsHomeClosingSubmitBtn"
+          type="submit"
+          class="ajs-btn-animate inline-flex items-center justify-center rounded-full bg-[#d04418] px-6 py-4 text-sm font-black text-white shadow-[0_16px_32px_rgba(208,68,24,0.28)] transition">
+          Get Your Free Inspection
+        </button>
+      </form>
+    </div>
+
+  </div>
+</section>
 </main>
 
 <style>

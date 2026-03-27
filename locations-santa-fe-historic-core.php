@@ -12,7 +12,7 @@ get_header(); ?>
     <div class="mx-auto max-w-5xl px-4 text-center">
 
       <p class="ajs-reveal text-xs font-black uppercase tracking-[0.18em] text-[#6eaace]">
-        Santa Fe Historic Core · ZIP 87501
+        Santa Fe Historic Core 
       </p>
 
       <h1 class="ajs-reveal mt-4 text-4xl md:text-5xl lg:text-6xl font-black tracking-[-0.04em] leading-tight">
@@ -272,85 +272,95 @@ get_header(); ?>
     </div>
   </section>
 
-  <!-- CTA WITH FORM -->
-  <section class="bg-[linear-gradient(135deg,#132d41_0%,#1c425f_100%)] text-white py-20">
-    <div class="max-w-5xl mx-auto px-4">
+<!-- CTA WITH FORM -->
+<section class="overflow-hidden bg-[#f5f7f8] py-20">
+  <div class="mx-auto grid max-w-7xl gap-10 px-4 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
 
-      <div class="text-center mb-12">
-        <p class="ajs-reveal text-xs font-black uppercase tracking-[0.18em] text-[#6eaace] mb-4">
-          Santa Fe Historic Core · 87501
-        </p>
-        <h2 class="ajs-reveal text-3xl md:text-4xl font-black tracking-[-0.03em]">
-          When Everything Is Right Above, Calm Returns Home.
-        </h2>
-        <p class="ajs-reveal mt-5 text-white/80 text-lg max-w-xl mx-auto">
-          Schedule your free inspection. We'll show you exactly what your roof needs — and exactly what it doesn't. No pressure. No surprises. Just a clear path from uncertainty to protection.
-        </p>
-      </div>
+    <div class="ajs-reveal-left">
+      <p class="mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
+        Santa Fe Historic Core 
+      </p>
 
-      <div id="ajsLocationFormSuccess" class="hidden mx-auto mb-5 max-w-[720px] rounded-2xl border border-green-200 bg-green-50 px-4 py-4 text-sm text-green-700">
+      <h2 class="max-w-[14ch] text-3xl font-black leading-tight tracking-[-0.03em] text-[#132d41] md:text-5xl">
+        When Everything Is Right Above, Calm Returns Home.
+      </h2>
+
+      <p class="mt-5 max-w-2xl text-base leading-8 text-[#42474b]">
+        Schedule your free inspection. We'll show you exactly what your roof needs —
+        and exactly what it doesn't. No pressure. No surprises. Just a clear path from uncertainty to protection.
+      </p>
+    </div>
+
+    <div class="ajs-reveal-right rounded-[30px] bg-white p-6 text-slate-900 shadow-[0_20px_44px_rgba(19,45,65,0.12)] border border-[#d3d8db]">
+
+      <p class="text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
+        Quick Inspection Request
+      </p>
+
+      <h3 class="mt-3 text-2xl font-black tracking-[-0.03em] text-[#132d41]">
+        Tell us what you need.
+      </h3>
+
+      <div id="ajsLocationFormSuccess" class="hidden mt-5 rounded-2xl border border-green-200 bg-green-50 px-4 py-4 text-sm text-green-700">
         Thanks for reaching out. Your inspection request was sent successfully.
       </div>
 
-      <div id="ajsLocationFormError" class="hidden mx-auto mb-5 max-w-[720px] rounded-2xl border border-red-200 bg-red-50 px-4 py-4 text-sm text-red-700">
+      <div id="ajsLocationFormError" class="hidden mt-5 rounded-2xl border border-red-200 bg-red-50 px-4 py-4 text-sm text-red-700">
         Something went wrong. Please try again.
       </div>
 
-      <form id="ajsLocationForm" class="ajs-reveal ajs-form-wrap">
+      <form id="ajsLocationForm" class="mt-5 grid gap-3">
 
-        <div class="grid gap-4 md:grid-cols-2">
-          <div class="ajs-field">
-            <label>Full Name *</label>
-            <input id="ajs_location_name" name="name" type="text" placeholder="Your name" required>
-          </div>
-          <div class="ajs-field">
-            <label>Phone Number *</label>
-            <input id="ajs_location_phone" name="phone" type="tel" placeholder="(505) 000-0000" required>
-          </div>
-          <div class="ajs-field">
-            <label>Email *</label>
-            <input id="ajs_location_email" name="email" type="email" placeholder="you@email.com" required>
-          </div>
-          <div class="ajs-field">
-            <label>What do you need? *</label>
-            <select id="ajs_location_service" name="service" required>
-              <option value="" disabled selected>Select a service</option>
-              <option value="Roof Replacement">Roof Replacement</option>
-              <option value="Metal Roofing">Metal Roofing</option>
-              <option value="Gutters">Gutters</option>
-              <option value="Roof Repair">Roof Repair</option>
-              <option value="Storm Damage / Insurance">Storm Damage / Insurance</option>
-              <option value="Inspection / Maintenance">Inspection / Maintenance</option>
-              <option value="Not Sure">Not Sure</option>
-            </select>
-          </div>
-          <div class="ajs-field md:col-span-2">
-            <label>Address or ZIP Code *</label>
-            <input id="ajs_location_address" name="address" type="text" placeholder="87501" required>
-          </div>
-          <div class="ajs-field md:col-span-2">
-            <label>Anything else we should know? <span class="opacity-60">(optional)</span></label>
-            <textarea id="ajs_location_message" name="message" rows="3" placeholder="Tell us about your project..."></textarea>
-          </div>
-        </div>
+        <input id="ajs_location_name" name="name" type="text" placeholder="Full Name *" required
+          class="w-full rounded-2xl border border-[#d3d8db] bg-white px-4 py-4 text-sm text-[#132d41] placeholder:text-[#42474b]/65 outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20">
 
-        <div class="mt-4 flex items-start gap-3">
+        <input id="ajs_location_phone" name="phone" type="tel" placeholder="Phone Number *" required
+          class="w-full rounded-2xl border border-[#d3d8db] bg-white px-4 py-4 text-sm text-[#132d41] placeholder:text-[#42474b]/65 outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20">
+
+        <input id="ajs_location_email" name="email" type="email" placeholder="Email *" required
+          class="w-full rounded-2xl border border-[#d3d8db] bg-white px-4 py-4 text-sm text-[#132d41] placeholder:text-[#42474b]/65 outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20">
+
+        <select id="ajs_location_service" name="service" required
+          class="w-full rounded-2xl border border-[#d3d8db] bg-white px-4 py-4 text-sm text-[#132d41] outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20">
+          <option value="" disabled selected>Select a service</option>
+          <option value="Roof Replacement">Roof Replacement</option>
+          <option value="Metal Roofing">Metal Roofing</option>
+          <option value="Gutters">Gutters</option>
+          <option value="Roof Repair">Roof Repair</option>
+          <option value="Storm Damage / Insurance">Storm Damage / Insurance</option>
+          <option value="Inspection / Maintenance">Inspection / Maintenance</option>
+          <option value="Not Sure">Not Sure</option>
+        </select>
+
+        <input id="ajs_location_address" name="address" type="text" placeholder="Address or ZIP Code *" required
+          class="w-full rounded-2xl border border-[#d3d8db] bg-white px-4 py-4 text-sm text-[#132d41] placeholder:text-[#42474b]/65 outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20">
+
+        <textarea id="ajs_location_message" name="message" rows="3" placeholder="Anything else we should know?"
+          class="w-full resize-y rounded-2xl border border-[#d3d8db] bg-white px-4 py-4 text-sm text-[#132d41] placeholder:text-[#42474b]/65 outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"></textarea>
+
+        <div class="flex items-start gap-3 mt-2">
           <input id="ajs_location_consent" type="checkbox" class="mt-1 flex-shrink-0" required>
-          <label for="ajs_location_consent" class="text-white/70 text-sm">I agree to be contacted by AJS Roofing &amp; Gutters regarding my request.</label>
+          <label for="ajs_location_consent" class="text-sm text-[#42474b]">
+            I agree to be contacted by AJS Roofing &amp; Gutters regarding my request.
+          </label>
         </div>
 
-        <button id="ajsLocationSubmitBtn" type="submit" class="ajs-btn-primary mt-6 w-full">
+        <button
+          id="ajsLocationSubmitBtn"
+          type="submit"
+          class="ajs-btn-animate inline-flex items-center justify-center rounded-full bg-[#d04418] px-6 py-4 text-sm font-black text-white shadow-[0_16px_32px_rgba(208,68,24,0.24)] mt-4 w-full">
           Get Your Free Inspection
         </button>
 
-        <p class="mt-4 text-center text-white/50 text-sm">
+        <p class="text-center text-sm text-[#42474b]/70 mt-2">
           Response within 24 hours. Detailed photo report included.
         </p>
 
       </form>
-
     </div>
-  </section>
+
+  </div>
+</section>
 
 </main>
 

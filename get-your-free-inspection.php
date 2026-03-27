@@ -8,35 +8,35 @@ get_header(); ?>
 <main class="bg-white text-[#42474b] overflow-hidden">
 
   <!-- HERO / PRIMARY CONVERSION -->
-  <section class="relative overflow-hidden bg-[linear-gradient(135deg,#132d41_0%,#1a3a52_100%)] text-white">
-    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(110,170,206,0.22),transparent_30%)]"></div>
-    <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(208,68,24,0.12),transparent_28%)]"></div>
+  <section class="relative overflow-hidden border-b border-[#d3d8db] bg-[linear-gradient(180deg,#ffffff_0%,#f5f7f8_100%)]">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(110,170,206,0.18),transparent_30%)]"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,rgba(208,68,24,0.10),transparent_24%)]"></div>
 
     <div class="absolute right-[-120px] top-[-120px] h-[280px] w-[280px] rounded-full bg-[#6eaace]/10 blur-3xl ajs-float-slow"></div>
     <div class="absolute bottom-[-120px] left-[-120px] h-[260px] w-[260px] rounded-full bg-[#d04418]/10 blur-3xl ajs-float-slower"></div>
 
     <div class="relative mx-auto grid max-w-7xl gap-10 px-4 py-16 md:py-20 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
       <div class="ajs-reveal-left">
-        <p class="mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#6eaace]">
+        <p class="mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
           Get Your Free Inspection
         </p>
 
-        <h1 class="max-w-[13ch] text-4xl font-black leading-[0.95] tracking-[-0.04em] md:text-5xl lg:text-7xl">
+        <h1 class="max-w-[13ch] text-4xl font-black leading-[0.95] tracking-[-0.04em] text-[#132d41] md:text-5xl lg:text-7xl">
           Your Roof Shouldn’t Be a Question Mark. Let’s Find Out.
         </h1>
 
-        <p class="mt-5 max-w-2xl text-base leading-8 text-white/85 md:text-lg">
+        <p class="mt-5 max-w-2xl text-base leading-8 text-[#42474b] md:text-lg">
           Schedule a comprehensive, photo-documented inspection. We’ll show you exactly what your roof needs — and exactly what it doesn’t. No pressure. No obligation. Just clarity.
         </p>
 
         <a href="tel:+15050000000"
-           class="mt-6 inline-flex items-center gap-2 text-base font-extrabold text-white">
-          <span class="text-white/70">Call Now:</span>
+           class="mt-6 inline-flex items-center gap-2 text-base font-extrabold text-[#132d41]">
+          <span class="text-[#42474b]/70">Call Now:</span>
           <span>(505) 000-0000</span>
         </a>
       </div>
 
-      <div class="ajs-reveal-right rounded-[28px] border border-[#d3d8db] bg-white p-5 text-[#42474b] shadow-[0_20px_44px_rgba(19,45,65,0.18)]">
+      <div class="ajs-reveal-right rounded-[28px] border border-[#d3d8db] bg-[linear-gradient(180deg,#ffffff_0%,#f7f9fa_100%)] p-5 text-[#42474b] shadow-[0_20px_44px_rgba(19,45,65,0.10)]">
         <h2 class="text-2xl font-black tracking-[-0.03em] text-[#132d41]">
           Request your free inspection.
         </h2>
@@ -60,7 +60,7 @@ get_header(); ?>
             type="text"
             placeholder="Full Name *"
             required
-            class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+            class="w-full rounded-2xl border border-[#d3d8db] bg-white px-4 py-4 text-sm text-[#132d41] placeholder:text-[#42474b]/65 outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
           >
 
           <input
@@ -69,7 +69,7 @@ get_header(); ?>
             type="tel"
             placeholder="Phone Number *"
             required
-            class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+            class="w-full rounded-2xl border border-[#d3d8db] bg-white px-4 py-4 text-sm text-[#132d41] placeholder:text-[#42474b]/65 outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
           >
 
           <input
@@ -78,7 +78,7 @@ get_header(); ?>
             type="email"
             placeholder="Email *"
             required
-            class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+            class="w-full rounded-2xl border border-[#d3d8db] bg-white px-4 py-4 text-sm text-[#132d41] placeholder:text-[#42474b]/65 outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
           >
 
           <select
@@ -103,7 +103,7 @@ get_header(); ?>
             type="text"
             placeholder="Address or ZIP Code *"
             required
-            class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+            class="w-full rounded-2xl border border-[#d3d8db] bg-white px-4 py-4 text-sm text-[#132d41] placeholder:text-[#42474b]/65 outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
           >
 
           <textarea
@@ -111,7 +111,7 @@ get_header(); ?>
             name="message"
             rows="4"
             placeholder="Anything else we should know? (optional)"
-            class="w-full resize-y rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+            class="w-full resize-y rounded-2xl border border-[#d3d8db] bg-white px-4 py-4 text-sm text-[#132d41] placeholder:text-[#42474b]/65 outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
           ></textarea>
 
           <label class="flex items-start gap-3 text-sm leading-6 text-[#42474b]/80">
