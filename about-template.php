@@ -321,98 +321,98 @@ get_header(); ?>
     </div>
   </section>
 
-  <!-- Closing CTA -->
-  <section class="overflow-hidden bg-[#132d41] py-20 text-white">
-    <div class="mx-auto grid max-w-7xl gap-8 px-4 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
-      <div class="ajs-reveal-left">
-        <p class="mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#6eaace]">
-          Bring Order Above.
-        </p>
-        <h2 class="max-w-[13ch] text-3xl font-black leading-tight tracking-[-0.03em] md:text-5xl">
-          Ready to experience roofing with clarity?
-        </h2>
-        <p class="mt-5 max-w-2xl text-base leading-8 text-white/80">
-          Schedule your free inspection and let us show you exactly what your roof needs —
-          and exactly what it doesn't. No pressure. Just a clear path forward.
-        </p>
+<!-- Closing CTA -->
+<section class="overflow-hidden bg-[#f5f7f8] py-20">
+  <div class="mx-auto grid max-w-7xl gap-8 px-4 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
+    <div class="ajs-reveal-left">
+      <p class="mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
+        Bring Order Above.
+      </p>
+      <h2 class="max-w-[13ch] text-3xl font-black leading-tight tracking-[-0.03em] text-[#132d41] md:text-5xl">
+        Ready to experience roofing with clarity?
+      </h2>
+      <p class="mt-5 max-w-2xl text-base leading-8 text-[#42474b]">
+        Schedule your free inspection and let us show you exactly what your roof needs —
+        and exactly what it doesn't. No pressure. Just a clear path forward.
+      </p>
 
-        <div class="mt-7 flex flex-wrap gap-3">
-          <a href="/estimate"
-             class="ajs-btn-animate inline-flex items-center justify-center rounded-full bg-[#d04418] px-6 py-4 text-sm font-black text-white shadow-[0_16px_32px_rgba(208,68,24,0.24)]">
-            Get Your Free Inspection
-          </a>
+      <div class="mt-7 flex flex-wrap gap-3">
+        <a href="/estimate"
+           class="ajs-btn-animate inline-flex items-center justify-center rounded-full bg-[#d04418] px-6 py-4 text-sm font-black text-white shadow-[0_16px_32px_rgba(208,68,24,0.24)]">
+          Get Your Free Inspection
+        </a>
 
-          <a href="tel:+15050000000"
-             class="ajs-btn-animate inline-flex items-center justify-center rounded-full border border-white/15 bg-white/10 px-6 py-4 text-sm font-black text-white backdrop-blur-sm">
-            Call (505) 000-0000
-          </a>
-        </div>
-      </div>
-
-      <div class="ajs-reveal-right rounded-[30px] bg-white p-6 text-slate-900 shadow-[0_20px_44px_rgba(0,0,0,0.18)]">
-        <p class="text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
-          Quick Inquiry
-        </p>
-        <h3 class="mt-3 text-2xl font-black tracking-[-0.03em] text-[#132d41]">
-          Tell us what you need.
-        </h3>
-
-        <div id="ajsAboutFormSuccess" class="hidden mt-5 rounded-2xl border border-green-200 bg-green-50 px-4 py-4 text-sm text-green-700">
-          Thanks for reaching out. Your inquiry was sent successfully.
-        </div>
-
-        <div id="ajsAboutFormError" class="hidden mt-5 rounded-2xl border border-red-200 bg-red-50 px-4 py-4 text-sm text-red-700">
-          Something went wrong. Please try again.
-        </div>
-
-        <form id="ajsAboutContactForm" class="mt-5 grid gap-3">
-          <input
-            id="ajs_name"
-            name="name"
-            type="text"
-            placeholder="Full Name *"
-            required
-            class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
-          >
-
-          <input
-            id="ajs_phone"
-            name="phone"
-            type="tel"
-            placeholder="Phone Number *"
-            required
-            class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
-          >
-
-          <input
-            id="ajs_email"
-            name="email"
-            type="email"
-            placeholder="Email *"
-            required
-            class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
-          >
-
-          <textarea
-            id="ajs_message"
-            name="message"
-            rows="4"
-            placeholder="How can we help?"
-            required
-            class="w-full resize-y rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
-          ></textarea>
-
-          <button
-            id="ajsAboutSubmitBtn"
-            type="submit"
-            class="ajs-btn-animate inline-flex items-center justify-center rounded-full bg-[#d04418] px-6 py-4 text-sm font-black text-white shadow-[0_16px_32px_rgba(208,68,24,0.22)]"
-          >
-            Send Inquiry
-          </button>
-        </form>
+        <a href="tel:+15050000000"
+           class="ajs-btn-animate inline-flex items-center justify-center rounded-full border border-[#d3d8db] bg-white px-6 py-4 text-sm font-black text-[#132d41] shadow-sm">
+          Call (505) 000-0000
+        </a>
       </div>
     </div>
-  </section>
+
+    <div class="ajs-reveal-right rounded-[30px] bg-white p-6 text-slate-900 shadow-[0_20px_44px_rgba(19,45,65,0.12)] border border-[#d3d8db]">
+      <p class="text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
+        Quick Inquiry
+      </p>
+      <h3 class="mt-3 text-2xl font-black tracking-[-0.03em] text-[#132d41]">
+        Tell us what you need.
+      </h3>
+
+      <div id="ajsAboutFormSuccess" class="hidden mt-5 rounded-2xl border border-green-200 bg-green-50 px-4 py-4 text-sm text-green-700">
+        Thanks for reaching out. Your inquiry was sent successfully.
+      </div>
+
+      <div id="ajsAboutFormError" class="hidden mt-5 rounded-2xl border border-red-200 bg-red-50 px-4 py-4 text-sm text-red-700">
+        Something went wrong. Please try again.
+      </div>
+
+      <form id="ajsAboutContactForm" class="mt-5 grid gap-3">
+        <input
+          id="ajs_name"
+          name="name"
+          type="text"
+          placeholder="Full Name *"
+          required
+          class="w-full rounded-2xl border border-[#d3d8db] bg-white px-4 py-4 text-sm text-[#132d41] placeholder:text-[#42474b]/65 outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+        >
+
+        <input
+          id="ajs_phone"
+          name="phone"
+          type="tel"
+          placeholder="Phone Number *"
+          required
+          class="w-full rounded-2xl border border-[#d3d8db] bg-white px-4 py-4 text-sm text-[#132d41] placeholder:text-[#42474b]/65 outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+        >
+
+        <input
+          id="ajs_email"
+          name="email"
+          type="email"
+          placeholder="Email *"
+          required
+          class="w-full rounded-2xl border border-[#d3d8db] bg-white px-4 py-4 text-sm text-[#132d41] placeholder:text-[#42474b]/65 outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+        >
+
+        <textarea
+          id="ajs_message"
+          name="message"
+          rows="4"
+          placeholder="How can we help?"
+          required
+          class="w-full resize-y rounded-2xl border border-[#d3d8db] bg-white px-4 py-4 text-sm text-[#132d41] placeholder:text-[#42474b]/65 outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+        ></textarea>
+
+        <button
+          id="ajsAboutSubmitBtn"
+          type="submit"
+          class="ajs-btn-animate inline-flex items-center justify-center rounded-full bg-[#d04418] px-6 py-4 text-sm font-black text-white shadow-[0_16px_32px_rgba(208,68,24,0.22)]"
+        >
+          Send Inquiry
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
 </main>
 
 <style>

@@ -30,19 +30,19 @@ get_header(); ?>
   <section class="border-y border-[#d3d8db] bg-[#d3d8db]/20 py-6">
     <div class="ajs-projects-strip">
       <div class="ajs-projects-strip-track">
-        <span>Roof Replacement · 87122</span>
-        <span>Metal Roofing · 87111</span>
-        <span>Seamless Gutters · 87124</span>
-        <span>Storm Damage Repair · 87120</span>
-        <span>Roof Replacement · 87501</span>
-        <span>Metal Roofing · 87506</span>
+        <span>Roof Replacement  </span>
+        <span>Metal Roofing  </span>
+        <span>Seamless Gutters  </span>
+        <span>Storm Damage Repair  </span>
+        <span>Roof Replacement  </span>
+        <span>Metal Roofing  </span>
 
-        <span>Roof Replacement · 87122</span>
-        <span>Metal Roofing · 87111</span>
-        <span>Seamless Gutters · 87124</span>
-        <span>Storm Damage Repair · 87120</span>
-        <span>Roof Replacement · 87501</span>
-        <span>Metal Roofing · 87506</span>
+        <span>Roof Replacement  </span>
+        <span>Metal Roofing  </span>
+        <span>Seamless Gutters  </span>
+        <span>Storm Damage Repair  </span>
+        <span>Roof Replacement  </span>
+        <span>Metal Roofing </span>
       </div>
     </div>
   </section>

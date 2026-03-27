@@ -10,22 +10,26 @@ get_header(); ?>
 <main class="bg-white text-slate-900">
 
 <!-- Hero -->
-<section class="relative overflow-hidden bg-[linear-gradient(180deg,#132d41_0%,#1a3a52_100%)] text-white">
+<section class="relative overflow-hidden border-b border-[#d3d8db] bg-[linear-gradient(180deg,#ffffff_0%,#f3f6f8_100%)]">
+  
+  <!-- subtle color accents -->
   <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(110,170,206,0.18),transparent_30%)]"></div>
+  <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(208,68,24,0.10),transparent_28%)]"></div>
 
   <div class="relative mx-auto max-w-7xl px-4 py-16 md:py-20">
     <div class="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
 
+      <!-- LEFT -->
       <div class="ajs-reveal-left">
-        <p class="mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#6eaace]">
+        <p class="mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
           Contact AJS Roofing
         </p>
 
-        <h1 class="max-w-[12ch] text-4xl font-black leading-[0.95] tracking-[-0.04em] md:text-6xl">
+        <h1 class="max-w-[12ch] text-4xl font-black leading-[0.95] tracking-[-0.04em] text-[#132d41] md:text-6xl">
           Let’s Bring Calm Back To Your Roof.
         </h1>
 
-        <p class="mt-6 max-w-xl text-base leading-8 text-white/85 md:text-lg">
+        <p class="mt-6 max-w-xl text-base leading-8 text-[#42474b] md:text-lg">
           Have questions about your roof, gutters, or storm damage?
           Our team is ready to help you understand your options and
           guide you through the next steps with clarity.
@@ -38,41 +42,43 @@ get_header(); ?>
           </a>
 
           <a href="/estimate"
-             class="ajs-btn-animate inline-flex items-center justify-center rounded-full border border-white/20 bg-white/10 px-6 py-4 text-sm font-black text-white backdrop-blur-sm">
+             class="ajs-btn-animate inline-flex items-center justify-center rounded-full border border-[#d3d8db] bg-white px-6 py-4 text-sm font-black text-[#132d41] shadow-sm">
             Request Free Inspection
           </a>
         </div>
       </div>
 
-      <div class="ajs-reveal-right rounded-[28px] border border-white/10 bg-white/10 p-6 backdrop-blur-sm shadow-2xl">
-        <p class="text-xs font-black uppercase tracking-[0.18em] text-[#6eaace]">
+      <!-- RIGHT CARD -->
+      <div class="ajs-reveal-right rounded-[28px] border border-[#d3d8db] bg-[linear-gradient(180deg,#ffffff_0%,#f7f9fa_100%)] p-6 shadow-[0_18px_40px_rgba(19,45,65,0.10)]">
+        
+        <p class="text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
           Quick Contact
         </p>
 
-        <div class="mt-4 space-y-4 text-sm">
+        <div class="mt-5 space-y-4 text-sm text-[#42474b]">
 
           <div class="flex items-start gap-3">
-            <span class="font-black text-[#6eaace]">Phone</span>
+            <span class="font-black text-[#132d41]">Phone</span>
             <span>(505) 000-0000</span>
           </div>
 
           <div class="flex items-start gap-3">
-            <span class="font-black text-[#6eaace]">Email</span>
+            <span class="font-black text-[#132d41]">Email</span>
             <span>info@ajsroofing.com</span>
           </div>
 
           <div class="flex items-start gap-3">
-            <span class="font-black text-[#6eaace]">Hours</span>
+            <span class="font-black text-[#132d41]">Hours</span>
             <span>Mon-Fri 8AM-6PM</span>
           </div>
 
         </div>
+
       </div>
 
     </div>
   </div>
 </section>
-
 <!-- Contact Info -->
 <section class="py-20">
   <div class="mx-auto max-w-7xl px-4">
