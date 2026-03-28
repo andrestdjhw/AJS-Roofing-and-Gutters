@@ -55,7 +55,15 @@ const LOCATIONS_MENU = [
 		links: [
 			{ label: "Rio Rancho", href: "/locations/rio-rancho-87124" },
 		]
-	}
+	},
+	{
+	tier: "South of Albuquerque",
+	links: [
+		{ label: "Los Lunas", href: "/locations/los-lunas" },
+		{ label: "Belen", href: "/locations/belen" },
+		{ label: "Socorro", href: "/locations/socorro" },
+	]
+}
 ]
 
 const MAIN_NAV = [
