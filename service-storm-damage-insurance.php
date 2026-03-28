@@ -37,7 +37,7 @@ get_header(); ?>
           </p>
 
           <p class="mt-8 max-w-2xl text-base leading-8 text-white/85 md:text-lg">
-            New Mexico averages 3–8 severe hail events per year. When a storm hits, the chaos isn’t just on your roof — it’s the confusion of insurance claims, contractor calls, and uncertainty about the real damage.
+            New Mexico averages 3–8 severe hail events per year. When a storm hits, the chaos isn’t just on your roof it’s the confusion of insurance claims, contractor calls, and uncertainty about the real damage.
           </p>
 
           <p class="mt-4 max-w-2xl text-base leading-8 text-white/78">

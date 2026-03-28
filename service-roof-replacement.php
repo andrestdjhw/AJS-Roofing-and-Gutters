@@ -195,7 +195,7 @@ get_header(); ?>
           Why Choose AJS for Roof Replacement
         </p>
         <h2 class="ajs-reveal text-3xl font-black tracking-[-0.03em] text-[#132d41] md:text-5xl">
-          The difference is not just materials — it is the process, the proof, and the clarity.
+          The difference is not just materials it is the process, the proof, and the clarity.
         </h2>
       </div>
 

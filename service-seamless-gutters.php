@@ -41,7 +41,7 @@ get_header(); ?>
           </p>
 
           <p class="mt-4 max-w-2xl text-base leading-8 text-white/78">
-            The result is a custom-fit drainage system with no seams to leak and no middlemen. In New Mexico, monsoon season dumps massive water in short, violent bursts. Proper drainage isn’t optional — it’s protection your foundation depends on.
+            The result is a custom-fit drainage system with no seams to leak and no middlemen. In New Mexico, monsoon season dumps massive water in short, violent bursts. Proper drainage isn’t optional it’s protection your foundation depends on.
           </p>
 
           <div class="mt-8 flex flex-wrap gap-3">

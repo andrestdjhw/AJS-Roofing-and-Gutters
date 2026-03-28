@@ -20,8 +20,7 @@ get_header(); ?>
         Projects Gallery
       </p>
 
-      <h1 class="ajs-reveal mt-5 text-4xl font-black leading-[0.95] tracking-[-0.04em] md:text-5xl lg:text-7xl">
-        Installed Right. Protected for Years.
+<h1 class="ajs-reveal mt-5 text-4xl font-black leading-[1.04] tracking-[-0.04em] md:text-5xl lg:text-7xl">        Installed Right. Protected for Years.
       </h1>
     </div>
   </section>
@@ -30,19 +29,19 @@ get_header(); ?>
   <section class="border-y border-[#d3d8db] bg-[#d3d8db]/20 py-6">
     <div class="ajs-projects-strip">
       <div class="ajs-projects-strip-track">
-        <span>Roof Replacement  </span>
-        <span>Metal Roofing  </span>
-        <span>Seamless Gutters  </span>
-        <span>Storm Damage Repair  </span>
-        <span>Roof Replacement  </span>
-        <span>Metal Roofing  </span>
+        <span>Roof Replacement</span>
+        <span>Metal Roofing</span>
+        <span>Seamless Gutters</span>
+        <span>Storm Damage Repair</span>
+        <span>Roof Replacement</span>
+        <span>Metal Roofing</span>
 
-        <span>Roof Replacement  </span>
-        <span>Metal Roofing  </span>
-        <span>Seamless Gutters  </span>
-        <span>Storm Damage Repair  </span>
-        <span>Roof Replacement  </span>
-        <span>Metal Roofing </span>
+        <span>Roof Replacement</span>
+        <span>Metal Roofing</span>
+        <span>Seamless Gutters</span>
+        <span>Storm Damage Repair</span>
+        <span>Roof Replacement</span>
+        <span>Metal Roofing</span>
       </div>
     </div>
   </section>
@@ -79,7 +78,6 @@ get_header(); ?>
 
               <div class="ajs-project-badge">
                 <span><?php echo esc_html($project['title']); ?></span>
-                <small>ZIP <?php echo esc_html($project['zip']); ?></small>
               </div>
             </div>
           </article>
@@ -219,16 +217,6 @@ get_header(); ?>
     font-size: 0.95rem;
     font-weight: 800;
     letter-spacing: -0.02em;
-  }
-
-  .ajs-project-badge small {
-    display: block;
-    margin-top: 2px;
-    font-size: 0.7rem;
-    font-weight: 600;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: rgba(255,255,255,0.75);
   }
 
   .ajs-reveal {

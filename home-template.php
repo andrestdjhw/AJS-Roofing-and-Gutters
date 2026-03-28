@@ -264,68 +264,87 @@ get_header(); ?>
     </div>
   </section>
 
-  <!-- Services -->
-  <section id="services" class="ajs-home-sticky-offset bg-[#d3d8db]/20 py-20">
-    <div class="mx-auto max-w-7xl px-4">
-      <p class="ajs-reveal mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
-        Protection You Can Feel
-      </p>
-      <h2 class="ajs-reveal max-w-4xl text-3xl font-black leading-tight tracking-[-0.03em] text-[#132d41] md:text-5xl">
-        Roofing and gutter solutions built on order, precision, and lasting craftsmanship.
-      </h2>
+ <!-- Services -->
+<section id="services" class="ajs-home-sticky-offset bg-[#d3d8db]/20 py-20">
+  <div class="mx-auto max-w-7xl px-4">
+    <p class="ajs-reveal mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
+      Protection You Can Feel
+    </p>
+    <h2 class="ajs-reveal max-w-4xl text-3xl font-black leading-tight tracking-[-0.03em] text-[#132d41] md:text-5xl">
+      Roofing and gutter solutions built on order, precision, and lasting craftsmanship.
+    </h2>
 
-      <div class="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-        <?php
-        $services = [
-          [
-            'title' => 'Roof Replacement',
-            'copy'  => 'Complete tear-off and rebuild. Premium materials, manufacturer warranties, and our documented process. Done right. Done once.',
-            'link'  => '/service/roof-replacement'
-          ],
-          [
-            'title' => 'Metal Roofing',
-            'copy'  => 'Standing seam and metal panel systems built for New Mexico\'s extreme UV, hail, and wind. 40-70 year lifespan. The last roof your home will need.',
-            'link'  => '/service/metal-roofing'
-          ],
-          [
-            'title' => 'Seamless Gutters',
-            'copy'  => 'Custom-fabricated on-site with our own machine. No seams, no leaks, no subcontractors. Precision drainage that protects your foundation.',
-            'link'  => '/service/gutters'
-          ],
-          [
-            'title' => 'Storm Damage & Insurance',
-            'copy'  => 'Hail or wind damage? We inspect, document everything with photos, and work with your insurance to streamline the process. Here\'s what we found  and here\'s how we fix it.',
-            'link'  => '/service/storm-damage-insurance'
-          ],
-          [
-            'title' => 'Roof Repair',
-            'copy'  => 'Targeted repairs for leaks, missing shingles, and weather wear. Honest assessment first  we\'ll tell you if a repair is enough or if replacement makes more sense.',
-            'link'  => '/service/roof-repair'
-          ],
-          [
-            'title' => 'Roof Inspection & Maintenance',
-            'copy'  => 'Photo-documented inspections and annual maintenance plans. Catch small problems before they become expensive ones. You don\'t need to understand roofing  that\'s our job.',
-            'link'  => '/service/roof-inspection'
-          ],
-        ];
+    <div class="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+      <?php
+      $services = [
+        [
+          'title' => 'Roof Replacement',
+          'copy'  => 'Complete tear-off and rebuild. Premium materials, manufacturer warranties, and our documented process. Done right. Done once.',
+          'link'  => '/service/roof-replacement',
+          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/paddy-pohlod-EhIUYktUunU-unsplash-scaled.jpg'
+        ],
+        [
+          'title' => 'Metal Roofing',
+          'copy'  => 'Standing seam and metal panel systems built for New Mexico\'s extreme UV, hail, and wind. 40-70 year lifespan. The last roof your home will need.',
+          'link'  => '/service/metal-roofing',
+          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/gene-yllanes-6mZT8lxpZSA-unsplash-scaled.jpg'
+        ],
+        [
+          'title' => 'Seamless Gutters',
+          'copy'  => 'Custom-fabricated on-site with our own machine. No seams, no leaks, no subcontractors. Precision drainage that protects your foundation.',
+          'link'  => '/service/gutters',
+          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/paragon-exterior-uvuU43FAwQ-unsplash-scaled.jpg'
+        ],
+        [
+          'title' => 'Storm Damage & Insurance',
+          'copy'  => 'Hail or wind damage? We inspect, document everything with photos, and work with your insurance to streamline the process. Here\'s what we found and here\'s how we fix it.',
+          'link'  => '/service/storm-damage-insurance',
+          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/peter-wang-NibBkxeSXS8-unsplash-scaled.jpg'
+        ],
+        [
+          'title' => 'Roof Repair',
+          'copy'  => 'Targeted repairs for leaks, missing shingles, and weather wear. Honest assessment first — we\'ll tell you if a repair is enough or if replacement makes more sense.',
+          'link'  => '/service/roof-repair',
+          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/sergej-karpow-bquoYvs3KtQ-unsplash-scaled.jpg'
+        ],
+        [
+          'title' => 'Roof Inspection & Maintenance',
+          'copy'  => 'Photo-documented inspections and annual maintenance plans. Catch small problems before they become expensive ones. You don\'t need to understand roofing — that\'s our job.',
+          'link'  => '/service/roof-inspection',
+          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/scott-blake-ZOiGMIcfXXg-unsplash-scaled.jpg'
+        ],
+      ];
 
-        foreach ($services as $service) : ?>
-          <article class="ajs-hover-lift ajs-reveal rounded-[24px] border border-[#d3d8db] bg-[linear-gradient(180deg,#ffffff_0%,#f5f7f8_100%)] p-6 shadow-[0_14px_32px_rgba(19,45,65,0.07)]">
+      foreach ($services as $service) : ?>
+        <article class="ajs-hover-lift ajs-reveal overflow-hidden rounded-[24px] border border-[#d3d8db] bg-[linear-gradient(180deg,#ffffff_0%,#f5f7f8_100%)] shadow-[0_14px_32px_rgba(19,45,65,0.07)]">
+          <div class="relative h-[220px] overflow-hidden border-b border-[#d3d8db]">
+            <img
+              src="<?php echo esc_url($service['image']); ?>"
+              alt="<?php echo esc_attr($service['title']); ?>"
+              class="h-full w-full object-cover transition duration-500 ease-out hover:scale-[1.03]"
+            >
+            <div class="absolute inset-0 bg-[linear-gradient(180deg,rgba(19,45,65,0.06)_0%,rgba(19,45,65,0.18)_100%)]"></div>
+          </div>
+
+          <div class="p-6">
             <h3 class="text-xl font-black tracking-[-0.02em] text-[#132d41]">
               <?php echo esc_html($service['title']); ?>
             </h3>
+
             <p class="mt-4 text-[15px] leading-8 text-[#42474b]">
               <?php echo esc_html($service['copy']); ?>
             </p>
+
             <a href="<?php echo esc_url($service['link']); ?>"
                class="mt-5 inline-flex font-black text-[#d04418] transition hover:translate-x-[2px]">
               Keep reading
             </a>
-          </article>
-        <?php endforeach; ?>
-      </div>
+          </div>
+        </article>
+      <?php endforeach; ?>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- Why Choose AJS -->
   <section class="py-20">

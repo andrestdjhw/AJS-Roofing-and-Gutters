@@ -36,7 +36,7 @@ get_header(); ?>
           </p>
 
           <p class="mt-8 max-w-2xl text-base leading-8 text-white/85 md:text-lg">
-            AJS Roofing &amp; Gutters installs standing seam and metal panel systems across Albuquerque, Santa Fe, and throughout New Mexico. Metal roofing is the highest-performance option for the state’s extreme conditions — with a 40–70 year lifespan, superior energy efficiency, and virtually zero maintenance.
+            AJS Roofing &amp; Gutters installs standing seam and metal panel systems across Albuquerque, Santa Fe, and throughout New Mexico. Metal roofing is the highest-performance option for the state’s extreme conditions with a 40–70 year lifespan, superior energy efficiency, and virtually zero maintenance.
           </p>
 
           <p class="mt-4 max-w-2xl text-base leading-8 text-white/78">

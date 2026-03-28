@@ -16,7 +16,7 @@ get_header(); ?>
       </p>
 
       <h1 class="ajs-reveal mt-4 text-4xl font-black leading-tight tracking-[-0.04em] md:text-5xl lg:text-6xl">
-        Roofing Company in Albuquerque West — AJS Roofing &amp; Gutters
+        Roofing Company in Albuquerque West  AJS Roofing &amp; Gutters
       </h1>
 
       <div class="ajs-reveal mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -36,11 +36,11 @@ get_header(); ?>
       </h2>
 
       <p class="ajs-reveal mt-6 text-lg leading-8 text-[#42474b]">
-        AJS Roofing &amp; Gutters is a licensed roofing contractor serving Albuquerque West and the 87120 area — one of Albuquerque's highest-volume roofing markets, where shingle replacements are the most common need and where homeowners deserve the same clarity, process, and professional execution as anyone else. We don't just install roofs — we restore peace of mind. Through clear processes, professional execution, and work done right from the start, we turn a moment of uncertainty into lasting protection and confidence.
+        AJS Roofing &amp; Gutters is a licensed roofing contractor serving Albuquerque West and the 87120 area one of Albuquerque's highest-volume roofing markets, where shingle replacements are the most common need and where homeowners deserve the same clarity, process, and professional execution as anyone else. We don't just install roofs, we restore peace of mind. Through clear processes, professional execution, and work done right from the start, we turn a moment of uncertainty into lasting protection and confidence.
       </p>
 
       <p class="ajs-reveal mt-5 text-lg leading-8 text-[#42474b]">
-        With manufacturer certifications and our own on-site gutter fabrication machine, AJS is the roofing partner that brings order to a process that usually feels chaotic — with recommendations built for what New Mexico's UV, hail, and monsoon conditions actually do to a roof.
+        With manufacturer certifications and our own on-site gutter fabrication machine, AJS is the roofing partner that brings order to a process that usually feels chaotic with recommendations built for what New Mexico's UV, hail, and monsoon conditions actually do to a roof.
       </p>
 
     </div>
@@ -113,7 +113,7 @@ get_header(); ?>
 
         <a href="/service/roof-repair" class="ajs-location-card ajs-reveal">
           <span class="ajs-card-title">Roof Repair</span>
-          <span class="ajs-card-desc">Honest assessment first — we'll tell you if a repair is enough or if replacement makes more sense.</span>
+          <span class="ajs-card-desc">Honest assessment first  we'll tell you if a repair is enough or if replacement makes more sense.</span>
         </a>
 
         <a href="/service/storm-damage-insurance" class="ajs-location-card ajs-reveal">
@@ -237,35 +237,35 @@ get_header(); ?>
         <details class="ajs-faq ajs-reveal" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
           <summary itemprop="name">Do I need a full roof replacement or just a repair?</summary>
           <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-            <p itemprop="text">That's the most important question — and the honest answer depends on what we actually find on your roof. AJS starts every job with a photo-documented inspection. If a targeted repair is enough, we'll tell you. If replacement makes more financial sense given the age and condition, we'll show you exactly why with photos and data. You don't need to understand roofing. That's our job.</p>
+            <p itemprop="text">That's the most important question  and the honest answer depends on what we actually find on your roof. AJS starts every job with a photo-documented inspection. If a targeted repair is enough, we'll tell you. If replacement makes more financial sense given the age and condition, we'll show you exactly why with photos and data. You don't need to understand roofing. That's our job.</p>
           </div>
         </details>
 
         <details class="ajs-faq ajs-reveal" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
           <summary itemprop="name">How long does a shingle roof last in Albuquerque West?</summary>
           <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-            <p itemprop="text">New Mexico's UV index of 8–10, monsoon water volume, and seasonal hail accelerate shingle wear significantly faster than national averages suggest. A roof that performs well in Ohio doesn't face the same conditions as one in Albuquerque. Regular inspections — especially after storm seasons — are the best way to know where your roof stands before a small problem becomes an expensive one.</p>
+            <p itemprop="text">New Mexico's UV index of 8–10, monsoon water volume, and seasonal hail accelerate shingle wear significantly faster than national averages suggest. A roof that performs well in Ohio doesn't face the same conditions as one in Albuquerque. Regular inspections  especially after storm seasons  are the best way to know where your roof stands before a small problem becomes an expensive one.</p>
           </div>
         </details>
 
         <details class="ajs-faq ajs-reveal" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
           <summary itemprop="name">Do you help with storm damage insurance claims in 87120?</summary>
           <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-            <p itemprop="text">Yes. When a storm hits, the chaos isn't just on your roof — it's the confusion of insurance claims and uncertainty about the real damage. AJS provides emergency inspections, comprehensive documentation, and full insurance claim support. We photograph and measure all damage so your claim is complete, accurate, and processed faster. No guesswork. No uncertainty.</p>
+            <p itemprop="text">Yes. When a storm hits, the chaos isn't just on your roof  it's the confusion of insurance claims and uncertainty about the real damage. AJS provides emergency inspections, comprehensive documentation, and full insurance claim support. We photograph and measure all damage so your claim is complete, accurate, and processed faster. No guesswork. No uncertainty.</p>
           </div>
         </details>
 
         <details class="ajs-faq ajs-reveal" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
           <summary itemprop="name">What makes AJS different from other roofing contractors in Albuquerque West?</summary>
           <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-            <p itemprop="text">AJS follows a documented process on every project — regardless of size or neighborhood. Every phase is photographed and communicated. We fabricate seamless gutters on-site with our own machine, no subcontractors. And we're manufacturer-certified, which means extended warranties that standard contractors can't offer. You don't need to understand roofing. That's our job.</p>
+            <p itemprop="text">AJS follows a documented process on every project  regardless of size or neighborhood. Every phase is photographed and communicated. We fabricate seamless gutters on-site with our own machine, no subcontractors. And we're manufacturer-certified, which means extended warranties that standard contractors can't offer. You don't need to understand roofing. That's our job.</p>
           </div>
         </details>
 
         <details class="ajs-faq ajs-reveal" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
           <summary itemprop="name">Do you serve the entire 87120 ZIP code?</summary>
           <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-            <p itemprop="text">Yes. AJS Roofing &amp; Gutters serves homeowners across Albuquerque West and surrounding New Mexico communities. Our recommendations are built for what New Mexico's climate actually does to a roof — not a national average.</p>
+            <p itemprop="text">Yes. AJS Roofing &amp; Gutters serves homeowners across Albuquerque West and surrounding New Mexico communities. Our recommendations are built for what New Mexico's climate actually does to a roof  not a national average.</p>
           </div>
         </details>
 
@@ -289,7 +289,7 @@ get_header(); ?>
       </h2>
 
       <p class="mt-5 max-w-2xl text-base leading-8 text-[#42474b]">
-        Schedule your free inspection. We'll show you exactly what your roof needs —
+        Schedule your free inspection. We'll show you exactly what your roof needs 
         and exactly what it doesn't. No pressure. No surprises. Just a clear path from uncertainty to protection.
       </p>
     </div>

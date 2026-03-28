@@ -16,7 +16,7 @@ get_header(); ?>
       </p>
 
       <h1 class="ajs-reveal mt-4 text-4xl md:text-5xl lg:text-6xl font-black tracking-[-0.04em] leading-tight">
-        Roofing Company in Rio Rancho — AJS Roofing &amp; Gutters
+        Roofing Company in Rio Rancho  AJS Roofing &amp; Gutters
       </h1>
 
       <div class="ajs-reveal mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -36,11 +36,11 @@ get_header(); ?>
       </h2>
 
       <p class="ajs-reveal mt-6 text-[#42474b] text-lg leading-8">
-        AJS Roofing &amp; Gutters is a licensed roofing contractor serving Rio Rancho — one of New Mexico's most active and competitive roofing markets. When there's no shortage of contractors to choose from, the difference comes down to process, documentation, and work done right from the start. AJS brings order to a decision that usually feels chaotic, with clear communication at every step and a documented system built to protect your home — not just close a sale.
+        AJS Roofing &amp; Gutters is a licensed roofing contractor serving Rio Rancho  one of New Mexico's most active and competitive roofing markets. When there's no shortage of contractors to choose from, the difference comes down to process, documentation, and work done right from the start. AJS brings order to a decision that usually feels chaotic, with clear communication at every step and a documented system built to protect your home  not just close a sale.
       </p>
 
       <p class="ajs-reveal mt-5 text-[#42474b] text-lg leading-8">
-        With manufacturer certifications and our own on-site gutter fabrication machine, AJS is the roofing partner that brings order to a process that usually feels chaotic — with recommendations built for what New Mexico's UV, hail, and monsoon conditions actually do to a roof.
+        With manufacturer certifications and our own on-site gutter fabrication machine, AJS is the roofing partner that brings order to a process that usually feels chaotic  with recommendations built for what New Mexico's UV, hail, and monsoon conditions actually do to a roof.
       </p>
 
     </div>
@@ -113,7 +113,7 @@ get_header(); ?>
 
         <a href="/service/roof-repair" class="ajs-location-card ajs-reveal">
           <span class="ajs-card-title">Roof Repair</span>
-          <span class="ajs-card-desc">Honest assessment first — we'll tell you if a repair is enough or if replacement makes more sense.</span>
+          <span class="ajs-card-desc">Honest assessment first  we'll tell you if a repair is enough or if replacement makes more sense.</span>
         </a>
 
         <a href="/service/storm-damage-insurance" class="ajs-location-card ajs-reveal">
@@ -237,35 +237,35 @@ get_header(); ?>
         <details class="ajs-faq ajs-reveal" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
           <summary itemprop="name">There are a lot of roofing contractors in Rio Rancho. How do I choose?</summary>
           <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-            <p itemprop="text">In a competitive market, the right question isn't who's cheapest — it's who can show you their work. Ask any contractor for their process documentation, photo reports, and warranty paperwork. AJS provides a detailed photo inspection before any work begins, photographs every phase of the project, and hands you a complete warranty packet at the end. If a contractor can't show you what they did and how they did it, that's your answer.</p>
+            <p itemprop="text">In a competitive market, the right question isn't who's cheapest  it's who can show you their work. Ask any contractor for their process documentation, photo reports, and warranty paperwork. AJS provides a detailed photo inspection before any work begins, photographs every phase of the project, and hands you a complete warranty packet at the end. If a contractor can't show you what they did and how they did it, that's your answer.</p>
           </div>
         </details>
 
         <details class="ajs-faq ajs-reveal" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
           <summary itemprop="name">Do I need a repair or a full replacement?</summary>
           <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-            <p itemprop="text">That depends on what we actually find — and we'll show you with photos. AJS starts every job with an honest, documented inspection. If a repair is the right call, we'll tell you. If replacement makes more financial sense given your roof's age and condition, we'll explain why with data, not pressure. You don't need to understand roofing. That's our job.</p>
+            <p itemprop="text">That depends on what we actually find  and we'll show you with photos. AJS starts every job with an honest, documented inspection. If a repair is the right call, we'll tell you. If replacement makes more financial sense given your roof's age and condition, we'll explain why with data, not pressure. You don't need to understand roofing. That's our job.</p>
           </div>
         </details>
 
         <details class="ajs-faq ajs-reveal" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
           <summary itemprop="name">Do you help with storm damage insurance claims in Rio Rancho?</summary>
           <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-            <p itemprop="text">Yes. When a storm hits, the chaos isn't just on your roof — it's the confusion of insurance claims and uncertainty about the real damage. AJS provides emergency inspections, comprehensive documentation, and full insurance claim support. We photograph and measure all damage so your claim is complete, accurate, and processed faster. No guesswork. No uncertainty.</p>
+            <p itemprop="text">Yes. When a storm hits, the chaos isn't just on your roof  it's the confusion of insurance claims and uncertainty about the real damage. AJS provides emergency inspections, comprehensive documentation, and full insurance claim support. We photograph and measure all damage so your claim is complete, accurate, and processed faster. No guesswork. No uncertainty.</p>
           </div>
         </details>
 
         <details class="ajs-faq ajs-reveal" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
           <summary itemprop="name">What certifications does AJS have?</summary>
           <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-            <p itemprop="text">AJS is a licensed New Mexico roofing contractor, fully insured, and manufacturer-certified. Those certifications matter because they unlock extended warranty coverage that standard contractors simply can't offer. When you work with AJS, your warranty packet includes before and after photos, material specs, and full coverage documentation — not just a handshake promise.</p>
+            <p itemprop="text">AJS is a licensed New Mexico roofing contractor, fully insured, and manufacturer-certified. Those certifications matter because they unlock extended warranty coverage that standard contractors simply can't offer. When you work with AJS, your warranty packet includes before and after photos, material specs, and full coverage documentation  not just a handshake promise.</p>
           </div>
         </details>
 
         <details class="ajs-faq ajs-reveal" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
           <summary itemprop="name">Do you serve the entire 87124 ZIP code?</summary>
           <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-            <p itemprop="text">Yes. AJS Roofing &amp; Gutters serves homeowners across Rio Rancho and surrounding New Mexico communities. Our recommendations are built for what New Mexico's climate actually does to a roof — not a national average.</p>
+            <p itemprop="text">Yes. AJS Roofing &amp; Gutters serves homeowners across Rio Rancho and surrounding New Mexico communities. Our recommendations are built for what New Mexico's climate actually does to a roof  not a national average.</p>
           </div>
         </details>
 
@@ -289,7 +289,7 @@ get_header(); ?>
       </h2>
 
       <p class="mt-5 max-w-2xl text-base leading-8 text-[#42474b]">
-        Schedule your free inspection. We'll show you exactly what your roof needs —
+        Schedule your free inspection. We'll show you exactly what your roof needs 
         and exactly what it doesn't. No pressure. No surprises. Just a clear path from uncertainty to protection.
       </p>
     </div>

@@ -16,7 +16,7 @@ get_header(); ?>
       </p>
 
       <h1 class="ajs-reveal mt-4 text-4xl md:text-5xl lg:text-6xl font-black tracking-[-0.04em] leading-tight">
-        Roofing Company in Santa Fe Historic Core — AJS Roofing &amp; Gutters
+        Roofing Company in Santa Fe Historic Core  AJS Roofing &amp; Gutters
       </h1>
 
       <div class="ajs-reveal mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -36,11 +36,11 @@ get_header(); ?>
       </h2>
 
       <p class="ajs-reveal mt-6 text-[#42474b] text-lg leading-8">
-        AJS Roofing &amp; Gutters is a licensed roofing contractor serving the Santa Fe Historic Core and the 87501 area — one of New Mexico's most demanding markets, with homes ranging from $600K to over $1.1M and roofing that requires precision, experience, and premium execution. We don't just install roofs — we restore peace of mind. Through clear processes, professional execution, and work done right from the start, we turn a moment of uncertainty into lasting protection and confidence.
+        AJS Roofing &amp; Gutters is a licensed roofing contractor serving the Santa Fe Historic Core and the 87501 area  one of New Mexico's most demanding markets, with homes ranging from $600K to over $1.1M and roofing that requires precision, experience, and premium execution. We don't just install roofs  we restore peace of mind. Through clear processes, professional execution, and work done right from the start, we turn a moment of uncertainty into lasting protection and confidence.
       </p>
 
       <p class="ajs-reveal mt-5 text-[#42474b] text-lg leading-8">
-        With manufacturer certifications and our own on-site gutter fabrication machine, AJS is the roofing partner that brings order to a process that usually feels chaotic — with recommendations built for the complexity, craftsmanship, and premium expectations that Santa Fe homes demand.
+        With manufacturer certifications and our own on-site gutter fabrication machine, AJS is the roofing partner that brings order to a process that usually feels chaotic  with recommendations built for the complexity, craftsmanship, and premium expectations that Santa Fe homes demand.
       </p>
 
     </div>
@@ -111,7 +111,7 @@ get_header(); ?>
 
         <a href="/service/roof-repair" class="ajs-location-card ajs-reveal">
           <span class="ajs-card-title">Roof Repair</span>
-          <span class="ajs-card-desc">Honest assessment first — we'll tell you if a repair is enough or if replacement makes more sense.</span>
+          <span class="ajs-card-desc">Honest assessment first  we'll tell you if a repair is enough or if replacement makes more sense.</span>
         </a>
 
         <a href="/service/storm-damage-insurance" class="ajs-location-card ajs-reveal">
@@ -235,14 +235,14 @@ get_header(); ?>
         <details class="ajs-faq ajs-reveal" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
           <summary itemprop="name">Can AJS handle complex roof architecture in the Historic Core?</summary>
           <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-            <p itemprop="text">Yes. Santa Fe Historic Core homes often feature complex roof lines, unique materials, and architectural details that require precision and experience. AJS follows a documented process on every project — every phase photographed and communicated — so nothing is left to guesswork. A roof isn't just shingles and nails. It's ventilation, drainage, alignment, and precision working together.</p>
+            <p itemprop="text">Yes. Santa Fe Historic Core homes often feature complex roof lines, unique materials, and architectural details that require precision and experience. AJS follows a documented process on every project  every phase photographed and communicated  so nothing is left to guesswork. A roof isn't just shingles and nails. It's ventilation, drainage, alignment, and precision working together.</p>
           </div>
         </details>
 
         <details class="ajs-faq ajs-reveal" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
           <summary itemprop="name">What roofing materials do you recommend for Santa Fe homes?</summary>
           <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-            <p itemprop="text">For homes in the $600K–$1.1M+ range, we recommend solutions based on your home, its architecture, and your goals. Metal roofing offers a 40–70 year lifespan and is the highest-performance option for New Mexico's extreme UV, hail, and wind conditions. Premium shingle systems with manufacturer warranties are also an option. We'll walk you through both with clear data — no pressure, no manufactured urgency.</p>
+            <p itemprop="text">For homes in the $600K–$1.1M+ range, we recommend solutions based on your home, its architecture, and your goals. Metal roofing offers a 40–70 year lifespan and is the highest-performance option for New Mexico's extreme UV, hail, and wind conditions. Premium shingle systems with manufacturer warranties are also an option. We'll walk you through both with clear data  no pressure, no manufactured urgency.</p>
           </div>
         </details>
 
@@ -256,14 +256,14 @@ get_header(); ?>
         <details class="ajs-faq ajs-reveal" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
           <summary itemprop="name">Do you help with storm damage insurance claims in Santa Fe?</summary>
           <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-            <p itemprop="text">Yes. When a storm hits, the chaos isn't just on your roof — it's the confusion of insurance claims and uncertainty about the real damage. AJS provides emergency inspections, comprehensive documentation, and full insurance claim support. We photograph and measure all damage so your claim is complete, accurate, and processed faster. No guesswork. No uncertainty.</p>
+            <p itemprop="text">Yes. When a storm hits, the chaos isn't just on your roof  it's the confusion of insurance claims and uncertainty about the real damage. AJS provides emergency inspections, comprehensive documentation, and full insurance claim support. We photograph and measure all damage so your claim is complete, accurate, and processed faster. No guesswork. No uncertainty.</p>
           </div>
         </details>
 
         <details class="ajs-faq ajs-reveal" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
           <summary itemprop="name">Do you serve the entire 87501 ZIP code?</summary>
           <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-            <p itemprop="text">Yes. AJS Roofing &amp; Gutters serves homeowners across the Santa Fe Historic Core and surrounding New Mexico communities. Our recommendations are built for what New Mexico's climate actually does to a roof — not a national average.</p>
+            <p itemprop="text">Yes. AJS Roofing &amp; Gutters serves homeowners across the Santa Fe Historic Core and surrounding New Mexico communities. Our recommendations are built for what New Mexico's climate actually does to a roof  not a national average.</p>
           </div>
         </details>
 
@@ -286,7 +286,7 @@ get_header(); ?>
       </h2>
 
       <p class="mt-5 max-w-2xl text-base leading-8 text-[#42474b]">
-        Schedule your free inspection. We'll show you exactly what your roof needs —
+        Schedule your free inspection. We'll show you exactly what your roof needs 
         and exactly what it doesn't. No pressure. No surprises. Just a clear path from uncertainty to protection.
       </p>
     </div>

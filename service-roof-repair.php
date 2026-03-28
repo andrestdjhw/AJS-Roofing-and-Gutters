@@ -37,7 +37,7 @@ get_header(); ?>
           </p>
 
           <p class="mt-8 max-w-2xl text-base leading-8 text-white/85 md:text-lg">
-            Not every roof problem requires a full replacement. AJS provides targeted repairs for leaks, missing shingles, flashing failures, and weather wear. We start with an honest inspection — if a repair is enough, we’ll tell you.
+            Not every roof problem requires a full replacement. AJS provides targeted repairs for leaks, missing shingles, flashing failures, and weather wear. We start with an honest inspection if a repair is enough, we’ll tell you.
           </p>
 
           <p class="mt-4 max-w-2xl text-base leading-8 text-white/78">

@@ -21,7 +21,7 @@ get_header(); ?>
       </p>
 
       <h1 class="ajs-reveal mt-4 text-4xl md:text-5xl lg:text-6xl font-black tracking-[-0.04em]">
-        Roofing Company in Santa Fe — AJS Roofing &amp; Gutters
+        Roofing Company in Santa Fe  AJS Roofing &amp; Gutters
       </h1>
 
       <p class="ajs-reveal mt-6 max-w-2xl mx-auto text-white/85 text-lg leading-8">
@@ -109,7 +109,7 @@ get_header(); ?>
       </h2>
 
       <p class="ajs-reveal mt-4 text-white/80 text-base leading-8">
-        Schedule your free inspection. We’ll show you exactly what your roof needs — and exactly what it doesn’t.
+        Schedule your free inspection. We’ll show you exactly what your roof needs  and exactly what it doesn’t.
       </p>
 
       <a href="/estimate" class="ajs-btn-primary mt-8 inline-block">

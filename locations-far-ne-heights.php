@@ -16,7 +16,7 @@ get_header(); ?>
       </p>
 
       <h1 class="ajs-reveal mt-4 text-4xl md:text-5xl lg:text-6xl font-black tracking-[-0.04em] leading-tight">
-        Roofing Company in Far NE Heights — AJS Roofing &amp; Gutters
+        Roofing Company in Far NE Heights  AJS Roofing &amp; Gutters
       </h1>
 
       <div class="ajs-reveal mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -36,11 +36,11 @@ get_header(); ?>
       </h2>
 
       <p class="ajs-reveal mt-6 text-[#42474b] text-lg leading-8">
-        AJS Roofing &amp; Gutters is a licensed roofing contractor serving Far NE Heights and the 87111 area — an established Albuquerque community where homeowners have built roots and expect a roofing partner they can trust. We don't just install roofs — we restore peace of mind. Through clear processes, professional execution, and work done right from the start, we turn a moment of uncertainty into lasting protection and confidence.
+        AJS Roofing &amp; Gutters is a licensed roofing contractor serving Far NE Heights and the 87111 area  an established Albuquerque community where homeowners have built roots and expect a roofing partner they can trust. We don't just install roofs  we restore peace of mind. Through clear processes, professional execution, and work done right from the start, we turn a moment of uncertainty into lasting protection and confidence.
       </p>
 
       <p class="ajs-reveal mt-5 text-[#42474b] text-lg leading-8">
-        With manufacturer certifications and our own on-site gutter fabrication machine, AJS is the roofing partner that brings order to a process that usually feels chaotic — with recommendations built for what New Mexico's UV, hail, and monsoon conditions actually do to a roof.
+        With manufacturer certifications and our own on-site gutter fabrication machine, AJS is the roofing partner that brings order to a process that usually feels chaotic  with recommendations built for what New Mexico's UV, hail, and monsoon conditions actually do to a roof.
       </p>
 
     </div>
@@ -111,7 +111,7 @@ get_header(); ?>
 
         <a href="/service/roof-repair" class="ajs-location-card ajs-reveal">
           <span class="ajs-card-title">Roof Repair</span>
-          <span class="ajs-card-desc">Honest assessment first — we'll tell you if a repair is enough or if replacement makes more sense.</span>
+          <span class="ajs-card-desc">Honest assessment first  we'll tell you if a repair is enough or if replacement makes more sense.</span>
         </a>
 
         <a href="/service/storm-damage-insurance" class="ajs-location-card ajs-reveal">
@@ -235,35 +235,35 @@ get_header(); ?>
         <details class="ajs-faq ajs-reveal" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
           <summary itemprop="name">How do I know if my roof needs repair or full replacement?</summary>
           <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-            <p itemprop="text">We start with an honest inspection — if a repair is enough, we'll tell you. If replacement makes more financial sense, we'll explain why with photos and data. You don't need to understand roofing. That's our job. In the 87111 area, many homes have reached or are approaching the end of their shingle lifespan given New Mexico's UV and hail exposure.</p>
+            <p itemprop="text">We start with an honest inspection  if a repair is enough, we'll tell you. If replacement makes more financial sense, we'll explain why with photos and data. You don't need to understand roofing. That's our job. In the 87111 area, many homes have reached or are approaching the end of their shingle lifespan given New Mexico's UV and hail exposure.</p>
           </div>
         </details>
 
         <details class="ajs-faq ajs-reveal" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
           <summary itemprop="name">How does AJS communicate throughout the project?</summary>
           <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-            <p itemprop="text">You'll never wonder what's happening. We provide photo updates at every milestone, clear timelines, and a final walkthrough before the job is done. Every project includes a warranty packet with before/after photos, material specs, and coverage documentation. Transparent communication is part of our documented process — not an add-on.</p>
+            <p itemprop="text">You'll never wonder what's happening. We provide photo updates at every milestone, clear timelines, and a final walkthrough before the job is done. Every project includes a warranty packet with before/after photos, material specs, and coverage documentation. Transparent communication is part of our documented process  not an add-on.</p>
           </div>
         </details>
 
         <details class="ajs-faq ajs-reveal" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
           <summary itemprop="name">Do you help with storm damage insurance claims?</summary>
           <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-            <p itemprop="text">Yes. When a storm hits, the chaos isn't just on your roof — it's the confusion of insurance claims and uncertainty about the real damage. AJS provides emergency inspections, comprehensive documentation, and full insurance claim support. We photograph and measure all damage so your claim is complete, accurate, and processed faster. No guesswork. No uncertainty.</p>
+            <p itemprop="text">Yes. When a storm hits, the chaos isn't just on your roof  it's the confusion of insurance claims and uncertainty about the real damage. AJS provides emergency inspections, comprehensive documentation, and full insurance claim support. We photograph and measure all damage so your claim is complete, accurate, and processed faster. No guesswork. No uncertainty.</p>
           </div>
         </details>
 
         <details class="ajs-faq ajs-reveal" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
           <summary itemprop="name">Are your gutters fabricated on-site?</summary>
           <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-            <p itemprop="text">Yes. We bring our gutter machine to your property. Seamless gutters are measured, formed, and installed in real-time — no seams, no leaks, no subcontractors. In New Mexico, monsoon season dumps massive water in short, violent bursts. Proper drainage isn't optional — it's protection your foundation depends on.</p>
+            <p itemprop="text">Yes. We bring our gutter machine to your property. Seamless gutters are measured, formed, and installed in real-time  no seams, no leaks, no subcontractors. In New Mexico, monsoon season dumps massive water in short, violent bursts. Proper drainage isn't optional  it's protection your foundation depends on.</p>
           </div>
         </details>
 
         <details class="ajs-faq ajs-reveal" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
           <summary itemprop="name">Do you serve the entire 87111 ZIP code?</summary>
           <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-            <p itemprop="text">Yes. AJS Roofing &amp; Gutters serves homeowners across Far NE Heights and surrounding Albuquerque communities. Our recommendations are built for what New Mexico's climate actually does to a roof — not a national average.</p>
+            <p itemprop="text">Yes. AJS Roofing &amp; Gutters serves homeowners across Far NE Heights and surrounding Albuquerque communities. Our recommendations are built for what New Mexico's climate actually does to a roof  not a national average.</p>
           </div>
         </details>
 
@@ -287,7 +287,7 @@ get_header(); ?>
       </h2>
 
       <p class="mt-5 max-w-2xl text-base leading-8 text-[#42474b]">
-        Schedule your free inspection. We'll show you exactly what your roof needs —
+        Schedule your free inspection. We'll show you exactly what your roof needs 
         and exactly what it doesn't. No pressure. No surprises. Just a clear path from uncertainty to protection.
       </p>
     </div>

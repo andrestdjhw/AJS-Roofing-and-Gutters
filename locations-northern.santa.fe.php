@@ -16,7 +16,7 @@ get_header(); ?>
       </p>
 
       <h1 class="ajs-reveal mt-4 text-4xl md:text-5xl lg:text-6xl font-black tracking-[-0.04em] leading-tight">
-        Roofing Company in Northern Santa Fe — AJS Roofing &amp; Gutters
+        Roofing Company in Northern Santa Fe  AJS Roofing &amp; Gutters
       </h1>
 
       <div class="ajs-reveal mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -36,11 +36,11 @@ get_header(); ?>
       </h2>
 
       <p class="ajs-reveal mt-6 text-[#42474b] text-lg leading-8">
-        AJS Roofing &amp; Gutters is a licensed roofing contractor serving Northern Santa Fe and the 87506 area — New Mexico's highest-value residential market, with homes ranging from $800K to $1.5M where metal roofing and premium replacement are the standard, not the exception. We don't just install roofs — we restore peace of mind. Through clear processes, professional execution, and work done right from the start, we turn a moment of uncertainty into lasting protection and confidence.
+        AJS Roofing &amp; Gutters is a licensed roofing contractor serving Northern Santa Fe and the 87506 area  New Mexico's highest-value residential market, with homes ranging from $800K to $1.5M where metal roofing and premium replacement are the standard, not the exception. We don't just install roofs  we restore peace of mind. Through clear processes, professional execution, and work done right from the start, we turn a moment of uncertainty into lasting protection and confidence.
       </p>
 
       <p class="ajs-reveal mt-5 text-[#42474b] text-lg leading-8">
-        With manufacturer certifications and our own on-site gutter fabrication machine, AJS is the roofing partner that brings order to a process that usually feels chaotic — delivering the precision, documentation, and lasting protection that Northern Santa Fe homes require.
+        With manufacturer certifications and our own on-site gutter fabrication machine, AJS is the roofing partner that brings order to a process that usually feels chaotic  delivering the precision, documentation, and lasting protection that Northern Santa Fe homes require.
       </p>
 
     </div>
@@ -111,7 +111,7 @@ get_header(); ?>
 
         <a href="/service/roof-repair" class="ajs-location-card ajs-reveal">
           <span class="ajs-card-title">Roof Repair</span>
-          <span class="ajs-card-desc">Honest assessment first — we'll tell you if a repair is enough or if replacement makes more sense.</span>
+          <span class="ajs-card-desc">Honest assessment first  we'll tell you if a repair is enough or if replacement makes more sense.</span>
         </a>
 
         <a href="/service/storm-damage-insurance" class="ajs-location-card ajs-reveal">
@@ -235,35 +235,35 @@ get_header(); ?>
         <details class="ajs-faq ajs-reveal" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
           <summary itemprop="name">Why is metal roofing the right choice for Northern Santa Fe homes?</summary>
           <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-            <p itemprop="text">Metal roofing is the highest-performance option for New Mexico's extreme conditions — with a 40–70 year lifespan, superior energy efficiency, and virtually zero maintenance. For homes valued at $800K–$1.5M, metal eliminates 2–3 future replacement cycles and delivers lasting protection you can feel for decades. AJS installs standing seam and metal panel systems specified for what Northern Santa Fe's elevation, UV, and weather actually demand.</p>
+            <p itemprop="text">Metal roofing is the highest-performance option for New Mexico's extreme conditions  with a 40–70 year lifespan, superior energy efficiency, and virtually zero maintenance. For homes valued at $800K–$1.5M, metal eliminates 2–3 future replacement cycles and delivers lasting protection you can feel for decades. AJS installs standing seam and metal panel systems specified for what Northern Santa Fe's elevation, UV, and weather actually demand.</p>
           </div>
         </details>
 
         <details class="ajs-faq ajs-reveal" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
           <summary itemprop="name">What does your documented process look like on a premium project?</summary>
           <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-            <p itemprop="text">Every AJS project follows the same system regardless of home value: we inspect, plan, protect, build, and verify. Every phase is photographed and communicated. Nothing starts until you approve. The final walkthrough includes a warranty packet with before/after photos, material specs, and coverage documentation. When every detail matters, the result is simple — peace of mind.</p>
+            <p itemprop="text">Every AJS project follows the same system regardless of home value: we inspect, plan, protect, build, and verify. Every phase is photographed and communicated. Nothing starts until you approve. The final walkthrough includes a warranty packet with before/after photos, material specs, and coverage documentation. When every detail matters, the result is simple  peace of mind.</p>
           </div>
         </details>
 
         <details class="ajs-faq ajs-reveal" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
           <summary itemprop="name">Are your gutters fabricated on-site?</summary>
           <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-            <p itemprop="text">Yes. We bring our gutter machine to your property. Seamless gutters are measured, formed, and installed in real-time — no seams, no leaks, no subcontractors. In New Mexico, monsoon season dumps massive water in short, violent bursts. Proper drainage isn't optional — it's protection your foundation depends on.</p>
+            <p itemprop="text">Yes. We bring our gutter machine to your property. Seamless gutters are measured, formed, and installed in real-time  no seams, no leaks, no subcontractors. In New Mexico, monsoon season dumps massive water in short, violent bursts. Proper drainage isn't optional  it's protection your foundation depends on.</p>
           </div>
         </details>
 
         <details class="ajs-faq ajs-reveal" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
           <summary itemprop="name">Do you help with storm damage insurance claims in Northern Santa Fe?</summary>
           <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-            <p itemprop="text">Yes. When a storm hits, the chaos isn't just on your roof — it's the confusion of insurance claims and uncertainty about the real damage. AJS provides emergency inspections, comprehensive documentation, and full insurance claim support. We photograph and measure all damage so your claim is complete, accurate, and processed faster. No guesswork. No uncertainty.</p>
+            <p itemprop="text">Yes. When a storm hits, the chaos isn't just on your roof  it's the confusion of insurance claims and uncertainty about the real damage. AJS provides emergency inspections, comprehensive documentation, and full insurance claim support. We photograph and measure all damage so your claim is complete, accurate, and processed faster. No guesswork. No uncertainty.</p>
           </div>
         </details>
 
         <details class="ajs-faq ajs-reveal" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
           <summary itemprop="name">Do you serve the entire 87506 ZIP code?</summary>
           <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-            <p itemprop="text">Yes. AJS Roofing &amp; Gutters serves homeowners across Northern Santa Fe and surrounding New Mexico communities. Our recommendations are built for what New Mexico's climate actually does to a roof — not a national average.</p>
+            <p itemprop="text">Yes. AJS Roofing &amp; Gutters serves homeowners across Northern Santa Fe and surrounding New Mexico communities. Our recommendations are built for what New Mexico's climate actually does to a roof  not a national average.</p>
           </div>
         </details>
 
@@ -286,7 +286,7 @@ get_header(); ?>
       </h2>
 
       <p class="mt-5 max-w-2xl text-base leading-8 text-[#42474b]">
-        Schedule your free inspection. We'll show you exactly what your roof needs —
+        Schedule your free inspection. We'll show you exactly what your roof needs 
         and exactly what it doesn't. No pressure. No surprises. Just a clear path from uncertainty to protection.
       </p>
     </div>

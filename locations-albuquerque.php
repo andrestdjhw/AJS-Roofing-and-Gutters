@@ -16,7 +16,7 @@ get_header(); ?>
       </p>
 
       <h1 class="ajs-reveal mt-4 text-4xl md:text-5xl lg:text-6xl font-black tracking-[-0.04em] leading-tight">
-        Roofing Company in Albuquerque NE &amp; High Desert — AJS Roofing &amp; Gutters
+        Roofing Company in Albuquerque NE &amp; High Desert  AJS Roofing &amp; Gutters
       </h1>
 
       <div class="ajs-reveal mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -36,11 +36,11 @@ get_header(); ?>
       </h2>
 
       <p class="ajs-reveal mt-6 text-[#42474b] text-lg leading-8">
-        AJS Roofing &amp; Gutters is a licensed roofing contractor serving Albuquerque NE and the High Desert area — one of Albuquerque's highest-value markets, with homes ranging from $520K to $780K and roof stock averaging 22 to 32 years old. We don't just install roofs — we restore peace of mind. Through clear processes, professional execution, and work done right from the start, we turn a moment of uncertainty into lasting protection and confidence.
+        AJS Roofing &amp; Gutters is a licensed roofing contractor serving Albuquerque NE and the High Desert area  one of Albuquerque's highest-value markets, with homes ranging from $520K to $780K and roof stock averaging 22 to 32 years old. We don't just install roofs  we restore peace of mind. Through clear processes, professional execution, and work done right from the start, we turn a moment of uncertainty into lasting protection and confidence.
       </p>
 
       <p class="ajs-reveal mt-5 text-[#42474b] text-lg leading-8">
-        With manufacturer certifications and our own on-site gutter fabrication machine, AJS is the roofing partner that brings order to a process that usually feels chaotic — with recommendations built for what New Mexico's UV, hail, and monsoon conditions actually do to a roof.
+        With manufacturer certifications and our own on-site gutter fabrication machine, AJS is the roofing partner that brings order to a process that usually feels chaotic  with recommendations built for what New Mexico's UV, hail, and monsoon conditions actually do to a roof.
       </p>
 
     </div>
@@ -111,7 +111,7 @@ get_header(); ?>
 
         <a href="/service/roof-repair" class="ajs-location-card ajs-reveal">
           <span class="ajs-card-title">Roof Repair</span>
-          <span class="ajs-card-desc">Honest assessment first — we'll tell you if a repair is enough or if replacement makes more sense.</span>
+          <span class="ajs-card-desc">Honest assessment first  we'll tell you if a repair is enough or if replacement makes more sense.</span>
         </a>
 
         <a href="/service/storm-damage-insurance" class="ajs-location-card ajs-reveal">
@@ -235,35 +235,35 @@ get_header(); ?>
         <details class="ajs-faq ajs-reveal" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
           <summary itemprop="name">How often should a roof be replaced in the High Desert area?</summary>
           <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-            <p itemprop="text">New Mexico's UV levels, monsoon water volume, and hail patterns accelerate wear significantly. With most roofs in the 87122 area averaging 22 to 32 years old, many homes are at or past their replacement window. An honest inspection is the right first step — we'll show you exactly what we found and exactly what it means.</p>
+            <p itemprop="text">New Mexico's UV levels, monsoon water volume, and hail patterns accelerate wear significantly. With most roofs in the 87122 area averaging 22 to 32 years old, many homes are at or past their replacement window. An honest inspection is the right first step  we'll show you exactly what we found and exactly what it means.</p>
           </div>
         </details>
 
         <details class="ajs-faq ajs-reveal" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
           <summary itemprop="name">Is metal roofing a good option for High Desert homes?</summary>
           <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-            <p itemprop="text">Metal roofing is the highest-performance option for New Mexico's extreme conditions — with a 40 to 70 year lifespan, superior energy efficiency, and virtually zero maintenance. For homes in the $520K–$780K range, it's protection you can feel for decades. AJS installs standing seam and metal panel systems across the 87122 area.</p>
+            <p itemprop="text">Metal roofing is the highest-performance option for New Mexico's extreme conditions  with a 40 to 70 year lifespan, superior energy efficiency, and virtually zero maintenance. For homes in the $520K–$780K range, it's protection you can feel for decades. AJS installs standing seam and metal panel systems across the 87122 area.</p>
           </div>
         </details>
 
         <details class="ajs-faq ajs-reveal" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
           <summary itemprop="name">Do you help with storm damage insurance claims?</summary>
           <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-            <p itemprop="text">Yes. When a storm hits, the chaos isn't just on your roof — it's the confusion of insurance claims and uncertainty about the real damage. AJS provides emergency inspections, comprehensive documentation, and full insurance claim support. We photograph and measure all damage so your claim is complete, accurate, and processed faster. No guesswork. No uncertainty.</p>
+            <p itemprop="text">Yes. When a storm hits, the chaos isn't just on your roof  it's the confusion of insurance claims and uncertainty about the real damage. AJS provides emergency inspections, comprehensive documentation, and full insurance claim support. We photograph and measure all damage so your claim is complete, accurate, and processed faster. No guesswork. No uncertainty.</p>
           </div>
         </details>
 
         <details class="ajs-faq ajs-reveal" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
           <summary itemprop="name">What makes AJS different from other roofing contractors in Albuquerque?</summary>
           <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-            <p itemprop="text">AJS follows a documented process on every project. Every phase is photographed and communicated. We fabricate seamless gutters on-site with our own machine — no subcontractors. And we're manufacturer-certified, which means extended warranties that standard contractors can't offer. You don't need to understand roofing. That's our job.</p>
+            <p itemprop="text">AJS follows a documented process on every project. Every phase is photographed and communicated. We fabricate seamless gutters on-site with our own machine  no subcontractors. And we're manufacturer-certified, which means extended warranties that standard contractors can't offer. You don't need to understand roofing. That's our job.</p>
           </div>
         </details>
 
         <details class="ajs-faq ajs-reveal" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
           <summary itemprop="name">Do you serve the entire 87122 ZIP code?</summary>
           <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-            <p itemprop="text">Yes. AJS Roofing &amp; Gutters serves homeowners across Albuquerque NE, High Desert, and surrounding New Mexico communities. Our recommendations are built for what New Mexico's climate actually does to a roof — not a national average.</p>
+            <p itemprop="text">Yes. AJS Roofing &amp; Gutters serves homeowners across Albuquerque NE, High Desert, and surrounding New Mexico communities. Our recommendations are built for what New Mexico's climate actually does to a roof  not a national average.</p>
           </div>
         </details>
 
@@ -287,7 +287,7 @@ get_header(); ?>
       </h2>
 
       <p class="mt-5 max-w-2xl text-base leading-8 text-[#42474b]">
-        Schedule your free inspection. We'll show you exactly what your roof needs —
+        Schedule your free inspection. We'll show you exactly what your roof needs 
         and exactly what it doesn't. No pressure. No surprises. Just a clear path from uncertainty to protection.
       </p>
     </div>
