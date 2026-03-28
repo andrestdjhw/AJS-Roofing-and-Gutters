@@ -2,6 +2,8 @@ import React, { useEffect, useRef, useState } from "react"
 
 const PHONE_DISPLAY = "(505) 000-0000"
 const PHONE_LINK = "tel:+15050000000"
+const LOCATION_LABEL = "Albuquerque, NM"
+const LOCATION_LINK = "https://maps.google.com/?q=Albuquerque,+NM"
 
 const SERVICES_MENU = [
 	{
@@ -77,6 +79,15 @@ function PhoneIcon({ className = "" }) {
 	return (
 		<svg className={className} viewBox="0 0 24 24" fill="none" aria-hidden="true">
 			<path d="M21 16.2V19a2 2 0 0 1-2.18 2A19.8 19.8 0 0 1 3 5.18 2 2 0 0 1 5 3h2.8a2 2 0 0 1 2 1.72l.38 2.66a2 2 0 0 1-.58 1.72l-1.2 1.2a16 16 0 0 0 5.4 5.4l1.2-1.2a2 2 0 0 1 1.72-.58l2.66.38A2 2 0 0 1 21 16.2Z" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" />
+		</svg>
+	)
+}
+
+function MapPinIcon({ className = "" }) {
+	return (
+		<svg className={className} viewBox="0 0 24 24" fill="none" aria-hidden="true">
+			<path d="M12 21s6-5.8 6-11a6 6 0 1 0-12 0c0 5.2 6 11 6 11Z" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" />
+			<circle cx="12" cy="10" r="2.2" fill="currentColor" />
 		</svg>
 	)
 }
@@ -165,30 +176,50 @@ function NavbarExample() {
 
 	return (
 		<>
-{/* ── TOPBAR — solo desktop ── */}
-<div className="ajs-topbar">
-    <div className="ajs-topbar-inner">
-        <a href={PHONE_LINK} className="ajs-topbar-phone" aria-label={`Call ${PHONE_DISPLAY}`}>
-            <PhoneIcon className="ajs-topbar-phone-icon" />
-            <span>{PHONE_DISPLAY}</span>
-        </a>
-        <span className="ajs-topbar-divider" aria-hidden="true" />
-        <a href="https://www.instagram.com/" className="ajs-topbar-social" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
-            <InstagramIcon className="ajs-topbar-social-icon" />
-        </a>
-        <a href="https://www.facebook.com/" className="ajs-topbar-social" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
-            <FacebookIcon className="ajs-topbar-social-icon" />
-        </a>
-        <a href="https://www.tiktok.com/" className="ajs-topbar-social" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
-            <TiktokIcon className="ajs-topbar-social-icon" />
-        </a>
-    </div>
-</div>
+			{/* ── TOPBAR — desktop ── */}
+			<div className="ajs-topbar">
+				<div className="ajs-topbar-inner">
+					<div className="ajs-topbar-left" />
 
-			{/* ── NAVBAR ── */}
+					<div className="ajs-topbar-center">
+						<a
+							href={LOCATION_LINK}
+							className="ajs-topbar-location"
+							target="_blank"
+							rel="noopener noreferrer"
+							aria-label={`Open map for ${LOCATION_LABEL}`}
+						>
+							<MapPinIcon className="ajs-topbar-location-icon" />
+							<span>{LOCATION_LABEL}</span>
+						</a>
+
+						<span className="ajs-topbar-divider" aria-hidden="true" />
+
+						<a href={PHONE_LINK} className="ajs-topbar-phone" aria-label={`Call ${PHONE_DISPLAY}`}>
+							<PhoneIcon className="ajs-topbar-phone-icon" />
+							<span>{PHONE_DISPLAY}</span>
+						</a>
+					</div>
+
+					<div className="ajs-topbar-right">
+						<a href="https://www.instagram.com/" className="ajs-topbar-social" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+							<InstagramIcon className="ajs-topbar-social-icon" />
+						</a>
+						<a href="https://www.facebook.com/" className="ajs-topbar-social" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+							<FacebookIcon className="ajs-topbar-social-icon" />
+						</a>
+						<a href="https://www.tiktok.com/" className="ajs-topbar-social" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
+							<TiktokIcon className="ajs-topbar-social-icon" />
+						</a>
+						<a href="/bbb" className="ajs-topbar-bbb">
+							BBB
+						</a>
+					</div>
+				</div>
+			</div>
+
 			<header className="ajs-nav-wrap">
 				<div className="ajs-nav-shell">
-
 					<div className="ajs-nav-top">
 						<a className="ajs-nav-brand" href="/" aria-label="AJS Roofing and Gutters Home">
 							<img
@@ -245,12 +276,10 @@ function NavbarExample() {
 						</nav>
 
 						<div className="ajs-nav-actions">
-							{/* Desktop: solo el botón CTA */}
 							<a className="ajs-nav-quote desktop-only" href="/estimate">
 								Get Your Free Inspection
 							</a>
 
-							{/* Mobile: icono teléfono + hamburguesa */}
 							<a className="ajs-nav-icon-button mobile-only" href={PHONE_LINK} aria-label="Call AJS Roofing and Gutters">
 								<PhoneIcon className="ajs-nav-icon-svg" />
 							</a>
@@ -268,7 +297,6 @@ function NavbarExample() {
 						</div>
 					</div>
 
-					{/* Services mega menu */}
 					<div
 						className={`ajs-nav-dropdown ajs-nav-mega ${activeMenu === "services" ? "is-open" : ""}`}
 						onMouseEnter={() => openMenu("services")}
@@ -298,7 +326,6 @@ function NavbarExample() {
 						</div>
 					</div>
 
-					{/* Locations mega menu */}
 					<div
 						className={`ajs-nav-dropdown ajs-nav-mega ${activeMenu === "locations" ? "is-open" : ""}`}
 						onMouseEnter={() => openMenu("locations")}
@@ -326,7 +353,6 @@ function NavbarExample() {
 						</div>
 					</div>
 
-					{/* Mobile menu */}
 					<div id="ajs-mobile-menu" className={`ajs-mobile-panel ${mobileOpen ? "is-open" : ""}`}>
 						<a href="/" className="ajs-mobile-link" onClick={closeEverything}>Home</a>
 						<a href="/about" className="ajs-mobile-link" onClick={closeEverything}>About</a>

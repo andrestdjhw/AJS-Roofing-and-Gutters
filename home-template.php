@@ -303,13 +303,13 @@ get_header(); ?>
         ],
         [
           'title' => 'Roof Repair',
-          'copy'  => 'Targeted repairs for leaks, missing shingles, and weather wear. Honest assessment first — we\'ll tell you if a repair is enough or if replacement makes more sense.',
+          'copy'  => 'Targeted repairs for leaks, missing shingles, and weather wear. Honest assessment first, we\'ll tell you if a repair is enough or if replacement makes more sense.',
           'link'  => '/service/roof-repair',
           'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/sergej-karpow-bquoYvs3KtQ-unsplash-scaled.jpg'
         ],
         [
           'title' => 'Roof Inspection & Maintenance',
-          'copy'  => 'Photo-documented inspections and annual maintenance plans. Catch small problems before they become expensive ones. You don\'t need to understand roofing — that\'s our job.',
+          'copy'  => 'Photo-documented inspections and annual maintenance plans. Catch small problems before they become expensive ones. You don\'t need to understand roofing, that\'s our job.',
           'link'  => '/service/roof-inspection',
           'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/scott-blake-ZOiGMIcfXXg-unsplash-scaled.jpg'
         ],

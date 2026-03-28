@@ -26,7 +26,7 @@ get_header(); ?>
         </h1>
 
         <p class="mt-5 max-w-2xl text-base leading-8 text-[#42474b] md:text-lg">
-          Schedule a comprehensive, photo-documented inspection. We’ll show you exactly what your roof needs — and exactly what it doesn’t. No pressure. No obligation. Just clarity.
+          Schedule a comprehensive, photo-documented inspection. We’ll show you exactly what your roof needs and exactly what it doesn’t. No pressure. No obligation. Just clarity.
         </p>
 
         <a href="tel:+15050000000"

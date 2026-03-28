@@ -372,6 +372,8 @@ __webpack_require__.r(__webpack_exports__);
 
 const PHONE_DISPLAY = "(505) 000-0000";
 const PHONE_LINK = "tel:+15050000000";
+const LOCATION_LABEL = "Albuquerque, NM";
+const LOCATION_LINK = "https://maps.google.com/?q=Albuquerque,+NM";
 const SERVICES_MENU = [{
   title: "Core Services",
   links: [{
@@ -495,6 +497,28 @@ function PhoneIcon({
       strokeLinecap: "round",
       strokeLinejoin: "round"
     })
+  });
+}
+function MapPinIcon({
+  className = ""
+}) {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("svg", {
+    className: className,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    "aria-hidden": "true",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
+      d: "M12 21s6-5.8 6-11a6 6 0 1 0-12 0c0 5.2 6 11 6 11Z",
+      stroke: "currentColor",
+      strokeWidth: "1.7",
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("circle", {
+      cx: "12",
+      cy: "10",
+      r: "2.2",
+      fill: "currentColor"
+    })]
   });
 }
 function MenuIcon({
@@ -638,45 +662,68 @@ function NavbarExample() {
       className: "ajs-topbar",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
         className: "ajs-topbar-inner",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("a", {
-          href: PHONE_LINK,
-          className: "ajs-topbar-phone",
-          "aria-label": `Call ${PHONE_DISPLAY}`,
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(PhoneIcon, {
-            className: "ajs-topbar-phone-icon"
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+          className: "ajs-topbar-left"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+          className: "ajs-topbar-center",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("a", {
+            href: LOCATION_LINK,
+            className: "ajs-topbar-location",
+            target: "_blank",
+            rel: "noopener noreferrer",
+            "aria-label": `Open map for ${LOCATION_LABEL}`,
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(MapPinIcon, {
+              className: "ajs-topbar-location-icon"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+              children: LOCATION_LABEL
+            })]
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
-            children: PHONE_DISPLAY
+            className: "ajs-topbar-divider",
+            "aria-hidden": "true"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("a", {
+            href: PHONE_LINK,
+            className: "ajs-topbar-phone",
+            "aria-label": `Call ${PHONE_DISPLAY}`,
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(PhoneIcon, {
+              className: "ajs-topbar-phone-icon"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+              children: PHONE_DISPLAY
+            })]
           })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
-          className: "ajs-topbar-divider",
-          "aria-hidden": "true"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-          href: "https://www.instagram.com/",
-          className: "ajs-topbar-social",
-          "aria-label": "Instagram",
-          target: "_blank",
-          rel: "noopener noreferrer",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(InstagramIcon, {
-            className: "ajs-topbar-social-icon"
-          })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-          href: "https://www.facebook.com/",
-          className: "ajs-topbar-social",
-          "aria-label": "Facebook",
-          target: "_blank",
-          rel: "noopener noreferrer",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(FacebookIcon, {
-            className: "ajs-topbar-social-icon"
-          })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-          href: "https://www.tiktok.com/",
-          className: "ajs-topbar-social",
-          "aria-label": "TikTok",
-          target: "_blank",
-          rel: "noopener noreferrer",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(TiktokIcon, {
-            className: "ajs-topbar-social-icon"
-          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+          className: "ajs-topbar-right",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+            href: "https://www.instagram.com/",
+            className: "ajs-topbar-social",
+            "aria-label": "Instagram",
+            target: "_blank",
+            rel: "noopener noreferrer",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(InstagramIcon, {
+              className: "ajs-topbar-social-icon"
+            })
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+            href: "https://www.facebook.com/",
+            className: "ajs-topbar-social",
+            "aria-label": "Facebook",
+            target: "_blank",
+            rel: "noopener noreferrer",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(FacebookIcon, {
+              className: "ajs-topbar-social-icon"
+            })
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+            href: "https://www.tiktok.com/",
+            className: "ajs-topbar-social",
+            "aria-label": "TikTok",
+            target: "_blank",
+            rel: "noopener noreferrer",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(TiktokIcon, {
+              className: "ajs-topbar-social-icon"
+            })
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+            href: "/bbb",
+            className: "ajs-topbar-bbb",
+            children: "BBB"
+          })]
         })]
       })
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("header", {
