@@ -184,7 +184,7 @@ get_header(); ?>
           </p>
 
           <h2 class="text-3xl font-black tracking-[-0.03em] text-[#132d41] md:text-4xl">
-            Socorro · [ZIP PLACEHOLDER]
+            Socorro 
           </h2>
 
           <p class="mt-6 text-lg leading-8 text-[#42474b]">
@@ -196,7 +196,7 @@ get_header(); ?>
               Service Area
             </p>
             <p class="mt-2 text-base font-bold text-[#132d41]">
-              Socorro · New Mexico · [ZIP PLACEHOLDER]
+              Socorro · New Mexico 
             </p>
           </div>
         </div>
