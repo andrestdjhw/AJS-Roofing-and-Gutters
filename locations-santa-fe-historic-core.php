@@ -145,24 +145,24 @@ get_header(); ?>
 
       <div class="ajs-img-card ajs-reveal">
         <img 
-          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/immo-wegmann-sKiCvM6sPtU-unsplash-scaled.jpg" 
-          alt="Roofing project Santa Fe Historic Core 87501"
+          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/down-net_http20260223-317-60x0uj.jpeg" 
+          alt="Roof inspection Santa Fe Historic Core 87501"
           class="w-full h-full object-cover rounded-[20px]"
         >
       </div>
 
       <div class="ajs-img-card ajs-reveal">
         <img 
-          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/raze-solar-RGkNFjRPyO0-unsplash-scaled.jpg" 
-          alt="Premium roof replacement Santa Fe 87501"
+          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/Edited-WP-1-1-scaled.png" 
+          alt="Metal roofing system Santa Fe 87501"
           class="w-full h-full object-cover rounded-[20px]"
         >
       </div>
 
       <div class="ajs-img-card ajs-reveal">
         <img 
-          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/compagnons-YEsHJ62YGVM-unsplash-scaled.jpg" 
-          alt="Seamless gutters Santa Fe 87501"
+          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/down-net_http20260221-256-d4vc77.jpeg" 
+          alt="Roof installation detail Santa Fe Historic Core"
           class="w-full h-full object-cover rounded-[20px]"
         >
       </div>

@@ -131,7 +131,7 @@ get_header(); ?>
     </div>
   </section>
 
- <!-- LOCAL PROJECTS -->
+<!-- LOCAL PROJECTS -->
 <section class="bg-[#f5f7f8] py-16 md:py-20">
   <div class="mx-auto max-w-7xl px-4">
 
@@ -147,24 +147,24 @@ get_header(); ?>
 
       <div class="ajs-img-card ajs-reveal">
         <img 
-          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/raze-solar-G8tyblQ4p04-unsplash-scaled.jpg" 
-          alt="Roofing project NW Albuquerque 87114"
+          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/down-net_http20260223-122-k9uufd.jpg" 
+          alt="Metal roofing installation NW Albuquerque 87114"
           class="w-full h-full object-cover rounded-[20px]"
         >
       </div>
 
       <div class="ajs-img-card ajs-reveal">
         <img 
-          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/zohair-mirza-GXITWKvgm-k-unsplash-scaled.jpg" 
-          alt="Roof replacement Rio Rancho NW ABQ"
+          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/down-net_http20260221-118-ega2hz.jpeg" 
+          alt="Roof inspection and maintenance Rio Rancho NW ABQ"
           class="w-full h-full object-cover rounded-[20px]"
         >
       </div>
 
       <div class="ajs-img-card ajs-reveal">
         <img 
-          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/archidea-x-CgGdE-BB9Jw-unsplash-scaled.jpg" 
-          alt="Seamless gutters 87114 Rio Rancho"
+          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/AJs-truck-photo-edidted.png" 
+          alt="Roofing service truck NW Albuquerque 87114"
           class="w-full h-full object-cover rounded-[20px]"
         >
       </div>

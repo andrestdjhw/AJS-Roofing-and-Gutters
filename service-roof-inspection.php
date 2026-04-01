@@ -128,27 +128,27 @@ get_header(); ?>
       $gallery_items = [
         [
           'label' => 'Photo-Documented Inspection',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/peter-wang-NibBkxeSXS8-unsplash-scaled.jpg'
+          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/edit-tbd-2-1-scaled.png'
         ],
         [
           'label' => 'Condition Tracking',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/scott-blake-ZOiGMIcfXXg-unsplash-scaled.jpg'
+          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/down-net_http20260223-132-3ial8w.jpeg'
         ],
         [
           'label' => 'Maintenance Visit',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/ronnakorn-triraganon-qjxlAZYkGpU-unsplash-scaled.jpg'
+          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/down-net_http20260223-317-60x0uj.jpeg'
         ],
         [
           'label' => 'Roof Detail Review',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/tanya-paquet-fXJZXzYVBUs-unsplash-scaled.jpg'
+          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/down-net_http20260221-118-ega2hz.jpeg'
         ],
         [
           'label' => 'Annual Inspection Record',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/chris-robert-ms07HdgOZow-unsplash-scaled.jpg'
+          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/dji_fly_20260319_155024_0138_1774306153207_photo-2-scaled.png'
         ],
         [
           'label' => 'Preventive Maintenance',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/immo-wegmann-sKiCvM6sPtU-unsplash-scaled.jpg'
+          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/tpo-_3_2_26-scaled.jpeg'
         ],
       ];
 

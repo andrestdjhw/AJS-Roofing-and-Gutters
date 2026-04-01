@@ -129,48 +129,48 @@ get_header(); ?>
     </div>
   </section>
 
-  <!-- LOCAL PROJECTS -->
-  <section class="bg-[#f5f7f8] py-16 md:py-20">
-    <div class="mx-auto max-w-7xl px-4">
+<!-- LOCAL PROJECTS -->
+<section class="bg-[#f5f7f8] py-16 md:py-20">
+  <div class="mx-auto max-w-7xl px-4">
 
-      <p class="ajs-reveal text-xs font-black uppercase tracking-[0.18em] text-[#d04418] mb-3 text-center">
-        Installed Right. Protected for Years.
-      </p>
+    <p class="ajs-reveal text-xs font-black uppercase tracking-[0.18em] text-[#d04418] mb-3 text-center">
+      Installed Right. Protected for Years.
+    </p>
 
-      <h2 class="ajs-reveal text-3xl font-black text-[#132d41] text-center">
-        Projects in Albuquerque NE &amp; High Desert
-      </h2>
+    <h2 class="ajs-reveal text-3xl font-black text-[#132d41] text-center">
+      Projects in Albuquerque NE &amp; High Desert
+    </h2>
 
-      <div class="mt-10 grid gap-5 md:grid-cols-3">
+    <div class="mt-10 grid gap-5 md:grid-cols-3">
 
-        <div class="ajs-img-card ajs-reveal">
-          <img 
-            src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/archidea-x-CgGdE-BB9Jw-unsplash-scaled.jpg" 
-            alt="Roof replacement project Albuquerque NE 87122"
-            class="w-full h-full object-cover rounded-[20px]"
-          >
-        </div>
+      <div class="ajs-img-card ajs-reveal">
+        <img 
+          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/Edited-WP-1-1-scaled.png" 
+          alt="Metal roofing installation Albuquerque NE 87122"
+          class="w-full h-full object-cover rounded-[20px]"
+        >
+      </div>
 
-        <div class="ajs-img-card ajs-reveal">
-          <img 
-            src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/raze-solar-RGkNFjRPyO0-unsplash-scaled.jpg" 
-            alt="Metal roofing installation High Desert Albuquerque"
-            class="w-full h-full object-cover rounded-[20px]"
-          >
-        </div>
+      <div class="ajs-img-card ajs-reveal">
+        <img 
+          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/down-net_http20260223-132-3ial8w.jpeg" 
+          alt="Roof inspection and maintenance High Desert Albuquerque"
+          class="w-full h-full object-cover rounded-[20px]"
+        >
+      </div>
 
-        <div class="ajs-img-card ajs-reveal">
-          <img 
-            src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/compagnons-YEsHJ62YGVM-unsplash-scaled.jpg" 
-            alt="Seamless gutter installation Albuquerque 87122"
-            class="w-full h-full object-cover rounded-[20px]"
-          >
-        </div>
-
+      <div class="ajs-img-card ajs-reveal">
+        <img 
+          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/467ECB75-5075-4B67-86EA-677FE7A136E7_1_105_c.png" 
+          alt="Flat roof storm damage repair Albuquerque 87122"
+          class="w-full h-full object-cover rounded-[20px]"
+        >
       </div>
 
     </div>
-  </section>
+
+  </div>
+</section>
 
   <!-- LOCAL LOCATION -->
   <section class="py-16 md:py-20 bg-white">

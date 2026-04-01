@@ -123,38 +123,35 @@ get_header(); ?>
       </p>
     </div>
 
-    <div class="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-      <?php
-      $gallery_items = [
-        [
-          'label' => 'Hail Damage Inspection',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/peter-wang-NibBkxeSXS8-unsplash-scaled.jpg'
-        ],
-        [
-          'label' => 'Wind Damage Review',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/scott-blake-ZOiGMIcfXXg-unsplash-scaled.jpg'
-        ],
-        [
-          'label' => 'Photo Documentation',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/ronnakorn-triraganon-qjxlAZYkGpU-unsplash-scaled.jpg'
-        ],
-        [
-          'label' => 'Measured Impact Areas',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/paragon-exterior-uvuU43FAwQ-unsplash-scaled.jpg'
-        ],
-        [
-          'label' => 'Emergency Response',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/ian-talmacs-ccJ_tLTYvpE-unsplash-scaled.jpg'
-        ],
-        [
-          'label' => 'Claim Support Record',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/compagnons-YEsHJ62YGVM-unsplash-scaled.jpg'
-        ],
-      ];
+    <?php
+    $gallery_items = [
+      [
+        'label' => 'Storm Damage Inspection',
+        'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/TPO-edit-scaled.jpg'
+      ],
+      [
+        'label' => 'Insurance Claim Documentation',
+        'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/down-net_http20260221-276-cerz5n.jpeg'
+      ],
+      [
+        'label' => 'Aerial Roof Assessment',
+        'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/dji_fly_20260228_113648_0028_1774306177730_photo-2-scaled.png'
+      ],
+      [
+        'label' => 'Flat Roof Storm Repair Review',
+        'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/467ECB75-5075-4B67-86EA-677FE7A136E7_1_105_c.png'
+      ],
+      [
+        'label' => 'Weather Impact Evaluation',
+        'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/IMG_1497-1-scaled.jpeg'
+      ],
+    ];
+    ?>
 
-      foreach ($gallery_items as $item) : ?>
+    <div class="mt-10 grid gap-5 <?php echo count($gallery_items) === 4 ? 'grid-cols-1 md:grid-cols-2 max-w-5xl mx-auto' : 'grid-cols-1 md:grid-cols-2 xl:grid-cols-3'; ?>">
+      <?php foreach ($gallery_items as $item) : ?>
         <div
-          class="ajs-reveal ajs-gallery-card group relative min-h-[240px] overflow-hidden rounded-[24px] border border-[#d3d8db] p-6 shadow-[0_14px_32px_rgba(19,45,65,0.07)] bg-cover bg-center"
+          class="ajs-reveal ajs-gallery-card group relative w-full min-h-[240px] overflow-hidden rounded-[24px] border border-[#d3d8db] p-6 shadow-[0_14px_32px_rgba(19,45,65,0.07)] bg-cover bg-center"
           style="background-image: linear-gradient(180deg, rgba(19,45,65,0.15), rgba(19,45,65,0.45)), url('<?php echo esc_url($item['image']); ?>');"
         >
           <div class="absolute inset-0 scale-100 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.18),transparent_35%)] transition duration-700 group-hover:scale-110"></div>

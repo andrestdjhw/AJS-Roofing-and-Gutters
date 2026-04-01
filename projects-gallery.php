@@ -46,47 +46,78 @@ get_header(); ?>
     </div>
   </section>
 
-  <!-- GALLERY -->
-  <section class="py-16 md:py-20">
-    <div class="mx-auto max-w-7xl px-4">
-      <div class="ajs-projects-grid">
+<!-- GALLERY -->
+<section class="py-16 md:py-20">
+  <div class="mx-auto max-w-7xl px-4">
+    <div class="ajs-projects-grid">
 
-        <?php
-        $projects = [
-          ['title' => 'Roof Replacement',    'zip' => '87122', 'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/archidea-x-CgGdE-BB9Jw-unsplash-scaled.jpg'],
-          ['title' => 'Metal Roofing',       'zip' => '87111', 'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/tanya-paquet-fXJZXzYVBUs-unsplash-scaled.jpg'],
-          ['title' => 'Seamless Gutters',    'zip' => '87124', 'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/raze-solar-G8tyblQ4p04-unsplash-scaled.jpg'],
-          ['title' => 'Storm Damage Repair', 'zip' => '87120', 'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/immo-wegmann-sKiCvM6sPtU-unsplash-scaled.jpg'],
-          ['title' => 'Roof Replacement',    'zip' => '87501', 'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/ruslan-shchegolikhin-5YUWvRoqf40-unsplash-scaled.jpg'],
-          ['title' => 'Metal Roofing',       'zip' => '87506', 'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/archidea-x-CgGdE-BB9Jw-unsplash-scaled.jpg'],
-          ['title' => 'Roof Replacement',    'zip' => '87114', 'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/tanya-paquet-fXJZXzYVBUs-unsplash-scaled.jpg'],
-          ['title' => 'Seamless Gutters',    'zip' => '87124', 'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/raze-solar-G8tyblQ4p04-unsplash-scaled.jpg'],
-        ];
+      <?php
+      $projects = [
+        [
+          'title' => 'Roof Replacement',
+          'zip' => '87122',
+          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/DJI_20260211154218_0080_D-scaled.jpeg'
+        ],
+        [
+          'title' => 'Metal Roofing',
+          'zip' => '87111',
+          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/Edited-WP-1-1-scaled.png'
+        ],
+        [
+          'title' => 'Seamless Gutters',
+          'zip' => '87124',
+          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/down-net_http20260221-116-ew4z81.jpg'
+        ],
+        [
+          'title' => 'Storm Damage Repair',
+          'zip' => '87120',
+          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/IMG_1497-1-scaled.jpeg'
+        ],
+        [
+          'title' => 'Roof Repair',
+          'zip' => '87501',
+          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/PSRoof2-scaled.jpeg'
+        ],
+        [
+          'title' => 'Inspection & Maintenance',
+          'zip' => '87506',
+          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/down-net_http20260223-317-60x0uj.jpeg'
+        ],
+        [
+          'title' => 'Roof Replacement',
+          'zip' => '87114',
+          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/IMG_0862-scaled.jpg'
+        ],
+        [
+          'title' => 'Metal Roofing',
+          'zip' => '87124',
+          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/edit-tbd-2-1-scaled.png'
+        ],
+      ];
 
-        $sizes = ['ajs-tall', 'ajs-medium', 'ajs-medium', 'ajs-tall', 'ajs-medium', 'ajs-medium', 'ajs-tall', 'ajs-medium'];
+      $sizes = ['ajs-tall', 'ajs-medium', 'ajs-medium', 'ajs-tall', 'ajs-medium', 'ajs-medium', 'ajs-tall', 'ajs-medium'];
 
-        foreach ($projects as $index => $project) : ?>
-          <article class="ajs-project-card ajs-reveal <?php echo esc_attr($sizes[$index] ?? 'ajs-medium'); ?>">
-            <div class="ajs-project-frame">
-              <img
-                src="<?php echo esc_url($project['image']); ?>"
-                alt="<?php echo esc_attr($project['title'] . ' ' . $project['zip']); ?>"
-                class="ajs-project-image"
-              >
+      foreach ($projects as $index => $project) : ?>
+        <article class="ajs-project-card ajs-reveal <?php echo esc_attr($sizes[$index] ?? 'ajs-medium'); ?>">
+          <div class="ajs-project-frame">
+            <img
+              src="<?php echo esc_url($project['image']); ?>"
+              alt="<?php echo esc_attr($project['title'] . ' ' . $project['zip']); ?>"
+              class="ajs-project-image"
+            >
 
-              <div class="ajs-project-overlay"></div>
+            <div class="ajs-project-overlay"></div>
 
-              <div class="ajs-project-badge">
-                <span><?php echo esc_html($project['title']); ?></span>
-              </div>
+            <div class="ajs-project-badge">
+              <span><?php echo esc_html($project['title']); ?></span>
             </div>
-          </article>
-        <?php endforeach; ?>
+          </div>
+        </article>
+      <?php endforeach; ?>
 
-      </div>
     </div>
-  </section>
-
+  </div>
+</section>
 </main>
 
 <style>

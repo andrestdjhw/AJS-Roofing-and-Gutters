@@ -147,24 +147,24 @@ get_header(); ?>
 
       <div class="ajs-img-card ajs-reveal">
         <img 
-          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/raze-solar-umJz4M-iCOw-unsplash-scaled.jpg" 
-          alt="Roofing project Rio Rancho 87124"
+          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/DJI_20260130170840_0014_D-scaled.jpg" 
+          alt="Seamless gutter installation Rio Rancho 87124"
           class="w-full h-full object-cover rounded-[20px]"
         >
       </div>
 
       <div class="ajs-img-card ajs-reveal">
         <img 
-          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/sergej-karpow-bquoYvs3KtQ-unsplash-scaled.jpg" 
-          alt="Roof replacement Rio Rancho NM"
+          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/edit-123-tbd-d-scaled.png" 
+          alt="Metal roofing system Rio Rancho NM"
           class="w-full h-full object-cover rounded-[20px]"
         >
       </div>
 
       <div class="ajs-img-card ajs-reveal">
         <img 
-          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/tanya-paquet-fXJZXzYVBUs-unsplash-scaled.jpg" 
-          alt="Seamless gutters Rio Rancho 87124"
+          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/IMG_1497-1-scaled.jpeg" 
+          alt="Storm damage roof evaluation Rio Rancho 87124"
           class="w-full h-full object-cover rounded-[20px]"
         >
       </div>
@@ -173,7 +173,6 @@ get_header(); ?>
 
   </div>
 </section>
-
   <!-- LOCAL LOCATION -->
   <section class="py-16 md:py-20 bg-white">
     <div class="mx-auto max-w-7xl px-4">

@@ -123,38 +123,31 @@ get_header(); ?>
       </p>
     </div>
 
-    <div class="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-      <?php
-      $gallery_items = [
-        [
-          'label' => 'On-Site Fabrication',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/archidea-x-CgGdE-BB9Jw-unsplash-scaled.jpg'
-        ],
-        [
-          'label' => 'Custom-Fit Gutter Run',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/tanya-paquet-fXJZXzYVBUs-unsplash-scaled.jpg'
-        ],
-        [
-          'label' => 'Downspout Routing',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/raze-solar-G8tyblQ4p04-unsplash-scaled.jpg'
-        ],
-        [
-          'label' => 'Seamless Corner Detail',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/immo-wegmann-sKiCvM6sPtU-unsplash-scaled.jpg'
-        ],
-        [
-          'label' => 'Finished Roofline',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/ruslan-shchegolikhin-5YUWvRoqf40-unsplash-scaled.jpg'
-        ],
-        [
-          'label' => 'Drainage Protection',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/compagnons-YEsHJ62YGVM-unsplash-scaled.jpg'
-        ],
-      ];
+    <?php
+    $gallery_items = [
+      [
+        'label' => 'Custom Gutter Installation',
+        'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/down-net_http20260221-116-ew4z81.jpg'
+      ],
+      [
+        'label' => 'Seamless Fit Finish',
+        'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/edit-1234-tbd-scaled.jpg'
+      ],
+      [
+        'label' => 'Full Roofline System',
+        'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/DJI_20260130170840_0014_D-scaled.jpg'
+      ],
+      [
+        'label' => 'Clean Drainage Setup',
+        'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/IMG_1319-scaled.jpeg'
+      ],
+    ];
+    ?>
 
-      foreach ($gallery_items as $item) : ?>
+    <div class="mt-10 grid gap-5 <?php echo count($gallery_items) === 4 ? 'grid-cols-1 md:grid-cols-2 max-w-5xl mx-auto' : 'grid-cols-1 md:grid-cols-2 xl:grid-cols-3'; ?>">
+      <?php foreach ($gallery_items as $item) : ?>
         <div
-          class="ajs-reveal ajs-gallery-card group relative min-h-[240px] overflow-hidden rounded-[24px] border border-[#d3d8db] p-6 shadow-[0_14px_32px_rgba(19,45,65,0.07)] bg-cover bg-center"
+          class="ajs-reveal ajs-gallery-card group relative w-full min-h-[240px] overflow-hidden rounded-[24px] border border-[#d3d8db] p-6 shadow-[0_14px_32px_rgba(19,45,65,0.07)] bg-cover bg-center"
           style="background-image: linear-gradient(180deg, rgba(19,45,65,0.15), rgba(19,45,65,0.45)), url('<?php echo esc_url($item['image']); ?>');"
         >
           <div class="absolute inset-0 scale-100 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.18),transparent_35%)] transition duration-700 group-hover:scale-110"></div>

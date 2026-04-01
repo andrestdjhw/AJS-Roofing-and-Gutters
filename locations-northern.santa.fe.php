@@ -129,48 +129,48 @@ get_header(); ?>
     </div>
   </section>
 
-  <!-- LOCAL PROJECTS -->
-  <section class="bg-[#f5f7f8] py-16 md:py-20">
-    <div class="mx-auto max-w-7xl px-4">
+ <!-- LOCAL PROJECTS -->
+<section class="bg-[#f5f7f8] py-16 md:py-20">
+  <div class="mx-auto max-w-7xl px-4">
 
-      <p class="ajs-reveal text-xs font-black uppercase tracking-[0.18em] text-[#d04418] mb-3 text-center">
-        Installed Right. Protected for Years.
-      </p>
+    <p class="ajs-reveal text-xs font-black uppercase tracking-[0.18em] text-[#d04418] mb-3 text-center">
+      Installed Right. Protected for Years.
+    </p>
 
-      <h2 class="ajs-reveal text-3xl font-black text-[#132d41] text-center">
-        Projects in Northern Santa Fe
-      </h2>
+    <h2 class="ajs-reveal text-3xl font-black text-[#132d41] text-center">
+      Projects in Northern Santa Fe
+    </h2>
 
-      <div class="mt-10 grid gap-5 md:grid-cols-3">
+    <div class="mt-10 grid gap-5 md:grid-cols-3">
 
-        <div class="ajs-img-card ajs-reveal">
-          <img 
-            src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/paragon-exterior-uvuU43FAwQ-unsplash-scaled.jpg" 
-            alt="Roofing project Northern Santa Fe 87506"
-            class="w-full h-full object-cover rounded-[20px]"
-          >
-        </div>
+      <div class="ajs-img-card ajs-reveal">
+        <img 
+          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/DJI_20260211154218_0080_D-scaled.jpeg" 
+          alt="Premium roof replacement Northern Santa Fe 87506"
+          class="w-full h-full object-cover rounded-[20px]"
+        >
+      </div>
 
-        <div class="ajs-img-card ajs-reveal">
-          <img 
-            src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/raze-solar-Scaj0T40nFI-unsplash-scaled.jpg" 
-            alt="Metal roofing Northern Santa Fe 87506"
-            class="w-full h-full object-cover rounded-[20px]"
-          >
-        </div>
+      <div class="ajs-img-card ajs-reveal">
+        <img 
+          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/down-net_http20260221-483-mgbta8.jpeg" 
+          alt="Flat roofing system Northern Santa Fe 87506"
+          class="w-full h-full object-cover rounded-[20px]"
+        >
+      </div>
 
-        <div class="ajs-img-card ajs-reveal">
-          <img 
-            src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/ian-talmacs-ccJ_tLTYvpE-unsplash-scaled.jpg" 
-            alt="Premium roof replacement 87506"
-            class="w-full h-full object-cover rounded-[20px]"
-          >
-        </div>
-
+      <div class="ajs-img-card ajs-reveal">
+        <img 
+          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/tpo-_3_2_26-scaled.jpeg" 
+          alt="Roof inspection and maintenance Northern Santa Fe 87506"
+          class="w-full h-full object-cover rounded-[20px]"
+        >
       </div>
 
     </div>
-  </section>
+
+  </div>
+</section>
 
   <!-- LOCAL LOCATION -->
   <section class="py-16 md:py-20 bg-white">

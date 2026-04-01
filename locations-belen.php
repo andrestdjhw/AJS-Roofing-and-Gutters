@@ -130,48 +130,48 @@ get_header(); ?>
     </div>
   </section>
 
-  <!-- LOCAL PROJECTS -->
-  <section class="bg-[#f5f7f8] py-16 md:py-20">
-    <div class="mx-auto max-w-7xl px-4">
+<!-- LOCAL PROJECTS -->
+<section class="bg-[#f5f7f8] py-16 md:py-20">
+  <div class="mx-auto max-w-7xl px-4">
 
-      <p class="ajs-reveal mb-3 text-center text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
-        Installed Right. Protected for Years.
-      </p>
+    <p class="ajs-reveal mb-3 text-center text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
+      Installed Right. Protected for Years.
+    </p>
 
-      <h2 class="ajs-reveal text-center text-3xl font-black text-[#132d41]">
-        Projects in Belen
-      </h2>
+    <h2 class="ajs-reveal text-center text-3xl font-black text-[#132d41]">
+      Projects in Belen
+    </h2>
 
-      <div class="mt-10 grid gap-5 md:grid-cols-3">
+    <div class="mt-10 grid gap-5 md:grid-cols-3">
 
-        <div class="ajs-img-card ajs-reveal">
-          <img 
-            src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/paragon-exterior-uvuU43FAwQ-unsplash-scaled.jpg" 
-            alt="Roofing project Belen"
-            class="h-full w-full rounded-[20px] object-cover"
-          >
-        </div>
+      <div class="ajs-img-card ajs-reveal">
+        <img 
+          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/DJI_20260211154218_0080_D-scaled.jpeg" 
+          alt="Roof replacement project Belen"
+          class="h-full w-full rounded-[20px] object-cover"
+        >
+      </div>
 
-        <div class="ajs-img-card ajs-reveal">
-          <img 
-            src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/raze-solar-umJz4M-iCOw-unsplash-scaled.jpg" 
-            alt="Roof replacement Belen"
-            class="h-full w-full rounded-[20px] object-cover"
-          >
-        </div>
+      <div class="ajs-img-card ajs-reveal">
+        <img 
+          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/down-net_http20260221-483-mgbta8.jpeg" 
+          alt="Flat roof installation Belen"
+          class="h-full w-full rounded-[20px] object-cover"
+        >
+      </div>
 
-        <div class="ajs-img-card ajs-reveal">
-          <img 
-            src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/sergej-karpow-bquoYvs3KtQ-unsplash-scaled.jpg" 
-            alt="Seamless gutters Belen"
-            class="h-full w-full rounded-[20px] object-cover"
-          >
-        </div>
-
+      <div class="ajs-img-card ajs-reveal">
+        <img 
+          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/tpo-_3_2_26-scaled.jpeg" 
+          alt="Roof inspection and maintenance Belen"
+          class="h-full w-full rounded-[20px] object-cover"
+        >
       </div>
 
     </div>
-  </section>
+
+  </div>
+</section>
 
   <!-- LOCAL LOCATION -->
   <section class="bg-white py-16 md:py-20">

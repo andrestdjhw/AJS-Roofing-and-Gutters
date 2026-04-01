@@ -130,48 +130,48 @@ get_header(); ?>
     </div>
   </section>
 
-  <!-- LOCAL PROJECTS -->
-  <section class="bg-[#f5f7f8] py-16 md:py-20">
-    <div class="mx-auto max-w-7xl px-4">
+ <!-- LOCAL PROJECTS -->
+<section class="bg-[#f5f7f8] py-16 md:py-20">
+  <div class="mx-auto max-w-7xl px-4">
 
-      <p class="ajs-reveal mb-3 text-center text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
-        Installed Right. Protected for Years.
-      </p>
+    <p class="ajs-reveal mb-3 text-center text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
+      Installed Right. Protected for Years.
+    </p>
 
-      <h2 class="ajs-reveal text-center text-3xl font-black text-[#132d41]">
-        Projects in Los Lunas
-      </h2>
+    <h2 class="ajs-reveal text-center text-3xl font-black text-[#132d41]">
+      Projects in Los Lunas
+    </h2>
 
-      <div class="mt-10 grid gap-5 md:grid-cols-3">
+    <div class="mt-10 grid gap-5 md:grid-cols-3">
 
-        <div class="ajs-img-card ajs-reveal">
-          <img 
-            src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/paragon-exterior-uvuU43FAwQ-unsplash-scaled.jpg" 
-            alt="Roofing project Los Lunas"
-            class="h-full w-full rounded-[20px] object-cover"
-          >
-        </div>
+      <div class="ajs-img-card ajs-reveal">
+        <img 
+          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/TPO-edit-scaled.jpg" 
+          alt="Flat roof system Los Lunas"
+          class="h-full w-full rounded-[20px] object-cover"
+        >
+      </div>
 
-        <div class="ajs-img-card ajs-reveal">
-          <img 
-            src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/raze-solar-umJz4M-iCOw-unsplash-scaled.jpg" 
-            alt="Roof replacement Los Lunas"
-            class="h-full w-full rounded-[20px] object-cover"
-          >
-        </div>
+      <div class="ajs-img-card ajs-reveal">
+        <img 
+          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/edit-tbd-2-1-scaled.png" 
+          alt="Roof inspection and maintenance Los Lunas"
+          class="h-full w-full rounded-[20px] object-cover"
+        >
+      </div>
 
-        <div class="ajs-img-card ajs-reveal">
-          <img 
-            src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/sergej-karpow-bquoYvs3KtQ-unsplash-scaled.jpg" 
-            alt="Seamless gutters Los Lunas"
-            class="h-full w-full rounded-[20px] object-cover"
-          >
-        </div>
-
+      <div class="ajs-img-card ajs-reveal">
+        <img 
+          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/DJI_20260130170840_0014_D-scaled.jpg" 
+          alt="Seamless gutter installation Los Lunas"
+          class="h-full w-full rounded-[20px] object-cover"
+        >
       </div>
 
     </div>
-  </section>
+
+  </div>
+</section>
 
  <!-- LOCAL LOCATION -->
 <section class="bg-white py-16 md:py-20">

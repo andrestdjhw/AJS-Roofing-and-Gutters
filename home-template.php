@@ -264,7 +264,7 @@ get_header(); ?>
     </div>
   </section>
 
- <!-- Services -->
+<!-- Services -->
 <section id="services" class="ajs-home-sticky-offset bg-[#d3d8db]/20 py-20">
   <div class="mx-auto max-w-7xl px-4">
     <p class="ajs-reveal mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
@@ -281,37 +281,37 @@ get_header(); ?>
           'title' => 'Roof Replacement',
           'copy'  => 'Complete tear-off and rebuild. Premium materials, manufacturer warranties, and our documented process. Done right. Done once.',
           'link'  => '/service/roof-replacement',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/paddy-pohlod-EhIUYktUunU-unsplash-scaled.jpg'
+          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/down-net_http20260223-218-kolndq.png'
         ],
         [
           'title' => 'Metal Roofing',
           'copy'  => 'Standing seam and metal panel systems built for New Mexico\'s extreme UV, hail, and wind. 40-70 year lifespan. The last roof your home will need.',
           'link'  => '/service/metal-roofing',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/gene-yllanes-6mZT8lxpZSA-unsplash-scaled.jpg'
+          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/edit-123-tbd-d-scaled.png'
         ],
         [
           'title' => 'Seamless Gutters',
           'copy'  => 'Custom-fabricated on-site with our own machine. No seams, no leaks, no subcontractors. Precision drainage that protects your foundation.',
           'link'  => '/service/gutters',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/paragon-exterior-uvuU43FAwQ-unsplash-scaled.jpg'
+          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/DJI_20260130170840_0014_D-scaled.jpg'
         ],
         [
           'title' => 'Storm Damage & Insurance',
           'copy'  => 'Hail or wind damage? We inspect, document everything with photos, and work with your insurance to streamline the process. Here\'s what we found and here\'s how we fix it.',
           'link'  => '/service/storm-damage-insurance',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/peter-wang-NibBkxeSXS8-unsplash-scaled.jpg'
+          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/down-net_http20260306-151-4fjhqw.jpg' // ← era roof repair
         ],
         [
           'title' => 'Roof Repair',
           'copy'  => 'Targeted repairs for leaks, missing shingles, and weather wear. Honest assessment first, we\'ll tell you if a repair is enough or if replacement makes more sense.',
           'link'  => '/service/roof-repair',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/sergej-karpow-bquoYvs3KtQ-unsplash-scaled.jpg'
+          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/AJs-truck-photo-edidted.png' // ← era storm damage
         ],
         [
           'title' => 'Roof Inspection & Maintenance',
           'copy'  => 'Photo-documented inspections and annual maintenance plans. Catch small problems before they become expensive ones. You don\'t need to understand roofing, that\'s our job.',
           'link'  => '/service/roof-inspection',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/scott-blake-ZOiGMIcfXXg-unsplash-scaled.jpg'
+          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/467ECB75-5075-4B67-86EA-677FE7A136E7_1_105_c.png'
         ],
       ];
 
@@ -322,6 +322,13 @@ get_header(); ?>
               src="<?php echo esc_url($service['image']); ?>"
               alt="<?php echo esc_attr($service['title']); ?>"
               class="h-full w-full object-cover transition duration-500 ease-out hover:scale-[1.03]"
+              style="<?php 
+                if ($service['title'] === 'Storm Damage & Insurance') {
+                  echo 'object-position: center top;';
+                } elseif ($service['title'] === 'Roof Repair') {
+                  echo 'object-position: right center;';
+                }
+              ?>"
             >
             <div class="absolute inset-0 bg-[linear-gradient(180deg,rgba(19,45,65,0.06)_0%,rgba(19,45,65,0.18)_100%)]"></div>
           </div>
@@ -436,50 +443,53 @@ get_header(); ?>
     </div>
   </section>
 
-  <!-- Gallery -->
-  <section class="py-20">
-    <div class="mx-auto max-w-7xl px-4">
-      <p class="ajs-reveal mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
-        Installed Right. Protected for Years.
-      </p>
+ <!-- Gallery -->
+<section class="py-20">
+  <div class="mx-auto max-w-7xl px-4">
+    <p class="ajs-reveal mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
+      Installed Right. Protected for Years.
+    </p>
 
-      <h2 class="ajs-reveal max-w-4xl text-3xl font-black leading-tight tracking-[-0.03em] text-[#132d41] md:text-5xl">
-        Recent work across New Mexico communities.
-      </h2>
+    <h2 class="ajs-reveal max-w-4xl text-3xl font-black leading-tight tracking-[-0.03em] text-[#132d41] md:text-5xl">
+      Recent work across New Mexico communities.
+    </h2>
 
-      <div class="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+    <div class="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
 
-        <div class="ajs-hover-lift ajs-reveal flex min-h-[220px] items-end rounded-[24px] border border-[#d3d8db] p-6 font-black text-white bg-cover bg-center"
-          style="background-image: linear-gradient(180deg, rgba(19,45,65,0.15), rgba(19,45,65,0.45)), url('http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/raze-solar-Scaj0T40nFI-unsplash-scaled.jpg');">
-          Roof Replacement 
-        </div>
-
-        <div class="ajs-hover-lift ajs-reveal flex min-h-[220px] items-end rounded-[24px] border border-[#d3d8db] p-6 font-black text-white bg-cover bg-center"
-          style="background-image: linear-gradient(180deg, rgba(19,45,65,0.15), rgba(19,45,65,0.45)), url('http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/paddy-pohlod-EhIUYktUunU-unsplash-scaled.jpg');">
-          Metal Roofing 
-        </div>
-
-        <div class="ajs-hover-lift ajs-reveal flex min-h-[220px] items-end rounded-[24px] border border-[#d3d8db] p-6 font-black text-white bg-cover bg-center"
-          style="background-image: linear-gradient(180deg, rgba(19,45,65,0.15), rgba(19,45,65,0.45)), url('http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/gene-yllanes-6mZT8lxpZSA-unsplash-scaled.jpg');">
-          Seamless Gutters 
-        </div>
-
-        <div class="ajs-hover-lift ajs-reveal flex min-h-[220px] items-end rounded-[24px] border border-[#d3d8db] p-6 font-black text-white bg-cover bg-center"
-          style="background-image: linear-gradient(180deg, rgba(19,45,65,0.15), rgba(19,45,65,0.45)), url('http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/alexander-von-schulz-1lVHc5aJEgk-unsplash-scaled.jpg');">
-          Storm Damage Repair 
-        </div>
-
+      <!-- Roof Replacement -->
+      <div class="ajs-hover-lift ajs-reveal flex min-h-[220px] items-end rounded-[24px] border border-[#d3d8db] p-6 font-black text-white bg-cover bg-center"
+        style="background-image: linear-gradient(180deg, rgba(19,45,65,0.15), rgba(19,45,65,0.45)), url('http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/DJI_20260211154218_0080_D-scaled.jpeg');">
+        Roof Replacement 
       </div>
 
-      <div class="ajs-reveal mt-6">
-        <a href="/projects"
-          class="ajs-btn-animate inline-flex items-center justify-center rounded-full border border-[#132d41]/12 bg-[#132d41]/5 px-6 py-4 text-sm font-black text-[#132d41] transition hover:bg-[#132d41] hover:text-white">
-          View Full Gallery
-        </a>
+      <!-- Metal Roofing -->
+      <div class="ajs-hover-lift ajs-reveal flex min-h-[220px] items-end rounded-[24px] border border-[#d3d8db] p-6 font-black text-white bg-cover bg-center"
+        style="background-image: linear-gradient(180deg, rgba(19,45,65,0.15), rgba(19,45,65,0.45)), url('http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/Edited-WP-1-1-scaled.png');">
+        Metal Roofing 
       </div>
+
+      <!-- Seamless Gutters -->
+      <div class="ajs-hover-lift ajs-reveal flex min-h-[220px] items-end rounded-[24px] border border-[#d3d8db] p-6 font-black text-white bg-cover bg-center"
+        style="background-image: linear-gradient(180deg, rgba(19,45,65,0.15), rgba(19,45,65,0.45)), url('http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/down-net_http20260221-116-ew4z81.jpg');">
+        Seamless Gutters 
+      </div>
+
+      <!-- Storm Damage -->
+      <div class="ajs-hover-lift ajs-reveal flex min-h-[220px] items-end rounded-[24px] border border-[#d3d8db] p-6 font-black text-white bg-cover bg-center"
+        style="background-image: linear-gradient(180deg, rgba(19,45,65,0.15), rgba(19,45,65,0.45)), url('http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/IMG_1497-1-scaled.jpeg');">
+        Storm Damage Repair 
+      </div>
+
     </div>
-  </section>
 
+    <div class="ajs-reveal mt-6">
+      <a href="/projects"
+        class="ajs-btn-animate inline-flex items-center justify-center rounded-full border border-[#132d41]/12 bg-[#132d41]/5 px-6 py-4 text-sm font-black text-[#132d41] transition hover:bg-[#132d41] hover:text-white">
+        View Full Gallery
+      </a>
+    </div>
+  </div>
+</section>
   <!-- Reviews -->
   <section class="bg-[#d3d8db]/30 py-20">
     <div class="mx-auto max-w-7xl px-4">

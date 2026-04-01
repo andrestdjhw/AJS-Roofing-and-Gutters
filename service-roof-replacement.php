@@ -122,7 +122,7 @@ get_header(); ?>
     </div>
   </section>
 
-  <!-- GALLERY -->
+ <!-- GALLERY -->
 <section class="bg-[#d3d8db]/20 py-20">
   <div class="mx-auto max-w-7xl px-4">
     <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
@@ -144,28 +144,28 @@ get_header(); ?>
       <?php
       $gallery_items = [
         [
-          'label' => 'Full Replacement · 87114',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/archidea-x-CgGdE-BB9Jw-unsplash-scaled.jpg'
+          'label' => 'Full Roof Replacement',
+          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/DJI_20260130172742_0017_D-scaled.jpeg'
         ],
         [
-          'label' => 'Architectural Shingles · 87501',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/tanya-paquet-fXJZXzYVBUs-unsplash-scaled.jpg'
+          'label' => 'Residential Upgrade',
+          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/DJI_20260211154218_0080_D-scaled.jpeg'
         ],
         [
-          'label' => 'Storm Restoration · 87120',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/raze-solar-G8tyblQ4p04-unsplash-scaled.jpg'
+          'label' => 'Complete System Install',
+          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/dji_fly_20260228_113648_0028_1774306177730_photo-2-scaled.png'
         ],
         [
-          'label' => 'System Upgrade · 87124',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/immo-wegmann-sKiCvM6sPtU-unsplash-scaled.jpg'
+          'label' => 'Storm Replacement Project',
+          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/down-net_http20260221-276-cerz5n.jpeg'
         ],
         [
-          'label' => 'Insurance Claim Project · 87111',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/ruslan-shchegolikhin-5YUWvRoqf40-unsplash-scaled.jpg'
+          'label' => 'On-Site Installation',
+          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/down-net_http20260221-483-mgbta8.jpeg'
         ],
         [
-          'label' => 'Steep-Slope Replacement · 87506',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/raze-solar-Scaj0T40nFI-unsplash-scaled.jpg'
+          'label' => 'Flat Roof Replacement',
+          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/IMG_0862-scaled.jpg'
         ],
       ];
 

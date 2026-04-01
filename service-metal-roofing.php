@@ -143,27 +143,27 @@ get_header(); ?>
       $gallery_items = [
         [
           'label' => 'Standing Seam · Albuquerque',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/paragon-exterior-uvuU43FAwQ-unsplash-scaled.jpg'
+          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/Edited-WP-1-1-scaled.png'
         ],
         [
           'label' => 'Metal Panel System · Santa Fe',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/raze-solar-RGkNFjRPyO0-unsplash-scaled.jpg'
+          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/down-net_http20260221-256-d4vc77.jpeg'
         ],
         [
           'label' => 'Residential Upgrade · Rio Rancho',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/sergej-karpow-bquoYvs3KtQ-unsplash-scaled.jpg'
+          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/down-net_http20260223-122-k9uufd.jpg'
         ],
         [
-          'label' => 'Premium Metal Roof · 87111',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/raze-solar-umJz4M-iCOw-unsplash-scaled.jpg'
+          'label' => 'Premium Metal Roof ',
+          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/IMG_1319-scaled.jpeg'
         ],
         [
-          'label' => 'Weather-Ready Install · 87501',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/zohair-mirza-GXITWKvgm-k-unsplash-scaled.jpg'
+          'label' => 'Weather-Ready Install ',
+          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/edit-123-tbd-d-scaled.png'
         ],
         [
-          'label' => 'Long-Life System · 87506',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/chris-robert-ms07HdgOZow-unsplash-scaled.jpg'
+          'label' => 'Long-Life System ',
+          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/edit-tbd-2-1-scaled.png'
         ],
       ];
 
@@ -184,7 +184,6 @@ get_header(); ?>
     </div>
   </div>
 </section>
-
   <!-- VALUE CARDS -->
   <section class="py-20">
     <div class="mx-auto max-w-7xl px-4">

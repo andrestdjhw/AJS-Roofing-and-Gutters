@@ -123,38 +123,31 @@ get_header(); ?>
       </p>
     </div>
 
-    <div class="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-      <?php
-      $gallery_items = [
-        [
-          'label' => 'Leak Repair',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/ian-talmacs-ccJ_tLTYvpE-unsplash-scaled.jpg'
-        ],
-        [
-          'label' => 'Missing Shingles',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/raze-solar-Scaj0T40nFI-unsplash-scaled.jpg'
-        ],
-        [
-          'label' => 'Flashing Repair',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/raze-solar-G8tyblQ4p04-unsplash-scaled.jpg'
-        ],
-        [
-          'label' => 'Weather Wear Fix',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/zohair-mirza-GXITWKvgm-k-unsplash-scaled.jpg'
-        ],
-        [
-          'label' => 'Targeted Roof Section',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/sergej-karpow-bquoYvs3KtQ-unsplash-scaled.jpg'
-        ],
-        [
-          'label' => 'Documented Repair Detail',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/raze-solar-RGkNFjRPyO0-unsplash-scaled.jpg'
-        ],
-      ];
+    <?php
+    $gallery_items = [
+      [
+        'label' => 'Leak Repair',
+        'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/IMG_1073-scaled.jpg'
+      ],
+      [
+        'label' => 'Targeted Repair',
+        'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/dji_fly_20260224_140454_0009_1774306181306_photo-2-scaled.png'
+      ],
+      [
+        'label' => 'Flat Roof Repair',
+        'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/PSRoof2-scaled.jpeg'
+      ],
+      [
+        'label' => 'On-Site Service',
+        'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/AJs-truck-photo-edidted.png'
+      ],
+    ];
+    ?>
 
-      foreach ($gallery_items as $item) : ?>
+    <div class="mt-10 grid gap-6 grid-cols-1 md:grid-cols-2 max-w-5xl mx-auto">
+      <?php foreach ($gallery_items as $item) : ?>
         <div
-          class="ajs-reveal ajs-gallery-card group relative min-h-[240px] overflow-hidden rounded-[24px] border border-[#d3d8db] p-6 shadow-[0_14px_32px_rgba(19,45,65,0.07)] bg-cover bg-center"
+          class="ajs-reveal ajs-gallery-card group relative w-full min-h-[260px] overflow-hidden rounded-[24px] border border-[#d3d8db] p-6 shadow-[0_14px_32px_rgba(19,45,65,0.07)] bg-cover bg-center"
           style="background-image: linear-gradient(180deg, rgba(19,45,65,0.15), rgba(19,45,65,0.45)), url('<?php echo esc_url($item['image']); ?>');"
         >
           <div class="absolute inset-0 scale-100 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.18),transparent_35%)] transition duration-700 group-hover:scale-110"></div>
@@ -167,6 +160,7 @@ get_header(); ?>
         </div>
       <?php endforeach; ?>
     </div>
+
   </div>
 </section>
   <!-- OTHER SERVICES -->

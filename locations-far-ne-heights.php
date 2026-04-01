@@ -129,7 +129,7 @@ get_header(); ?>
     </div>
   </section>
 
- <!-- LOCAL PROJECTS -->
+<!-- LOCAL PROJECTS -->
 <section class="bg-[#f5f7f8] py-16 md:py-20">
   <div class="mx-auto max-w-7xl px-4">
 
@@ -145,24 +145,24 @@ get_header(); ?>
 
       <div class="ajs-img-card ajs-reveal">
         <img 
-          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/tanya-paquet-fXJZXzYVBUs-unsplash-scaled.jpg" 
-          alt="Roofing project Far NE Heights 87111"
+          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/IMG_0862-scaled.jpg" 
+          alt="Roof installation project Far NE Heights 87111"
           class="w-full h-full object-cover rounded-[20px]"
         >
       </div>
 
       <div class="ajs-img-card ajs-reveal">
         <img 
-          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/immo-wegmann-sKiCvM6sPtU-unsplash-scaled.jpg" 
-          alt="Roof replacement Far NE Heights Albuquerque"
+          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/down-net_http20260223-317-60x0uj.jpeg" 
+          alt="Roof inspection and maintenance Far NE Heights Albuquerque"
           class="w-full h-full object-cover rounded-[20px]"
         >
       </div>
 
       <div class="ajs-img-card ajs-reveal">
         <img 
-          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/ruslan-shchegolikhin-5YUWvRoqf40-unsplash-scaled.jpg" 
-          alt="Seamless gutter installation 87111"
+          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/down-net_http20260221-256-d4vc77.jpeg" 
+          alt="Metal roofing system Far NE Heights 87111"
           class="w-full h-full object-cover rounded-[20px]"
         >
       </div>
