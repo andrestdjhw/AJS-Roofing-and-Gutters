@@ -21,7 +21,7 @@ get_header(); ?>
 
       <div class="ajs-reveal mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
         <a href="/estimate" class="ajs-btn-primary">Get Your Free Inspection</a>
-        <a href="tel:+15050000000" class="ajs-btn-secondary">Call (505) 000-0000</a>
+        <a href="tel:+15054535626" class="ajs-btn-secondary">Call (505) 453-5626</a>
       </div>
 
     </div>

@@ -1,7 +1,10 @@
 import React, { useEffect, useRef, useState } from "react"
 
-const PHONE_DISPLAY = "(505) 000-0000"
-const PHONE_LINK = "tel:+15050000000"
+const PHONE_DISPLAY = "(505) 453-5626"
+const PHONE_LINK = "tel:+15054535626"
+const EMAIL_DISPLAY = "ajsprofessional@gmail.com"
+const EMAIL_LINK = "mailto:ajsprofessional@gmail.com"
+const BBB_LINK = "https://www.bbb.org/us/nm/veguita/profile/roofing-contractors/ajs-professional-contracting-llc-0806-99137264/customer-reviews"
 const LOCATION_LABEL = "Albuquerque, NM"
 const LOCATION_LINK = "https://maps.google.com/?q=Albuquerque,+NM"
 
@@ -40,30 +43,28 @@ const LOCATIONS_MENU = [
 			{ label: "Albuquerque NE / High Desert", href: "/locations/albuquerque-ne-high-desert-87122" },
 			{ label: "Far NE Heights", href: "/locations/far-ne-heights-87111" },
 			{ label: "Albuquerque West", href: "/locations/albuquerque-west-87120" },
-			{ label: "NW ABQ / Rio Rancho", href: "/locations/nw-abq-87114" },
+			{ label: "NW ABQ / Rio Rancho", href: "/locations/nw-abq-87114" }
 		]
 	},
 	{
 		tier: "Santa Fe",
 		links: [
 			{ label: "Santa Fe Historic Core", href: "/locations/santa-fe-historic-core-87501" },
-			{ label: "Northern Santa Fe", href: "/locations/northern-santa-fe-87506" },
+			{ label: "Northern Santa Fe", href: "/locations/northern-santa-fe-87506" }
 		]
 	},
 	{
 		tier: "Rio Rancho",
-		links: [
-			{ label: "Rio Rancho", href: "/locations/rio-rancho-87124" },
-		]
+		links: [{ label: "Rio Rancho", href: "/locations/rio-rancho-87124" }]
 	},
 	{
-	tier: "South of Albuquerque",
-	links: [
-		{ label: "Los Lunas", href: "/locations/los-lunas" },
-		{ label: "Belen", href: "/locations/belen" },
-		{ label: "Socorro", href: "/locations/socorro" },
-	]
-}
+		tier: "South of Albuquerque",
+		links: [
+			{ label: "Los Lunas", href: "/locations/los-lunas" },
+			{ label: "Belen", href: "/locations/belen" },
+			{ label: "Socorro", href: "/locations/socorro" }
+		]
+	}
 ]
 
 const MAIN_NAV = [
@@ -100,6 +101,25 @@ function MapPinIcon({ className = "" }) {
 	)
 }
 
+function MailIcon({ className = "" }) {
+	return (
+		<svg className={className} viewBox="0 0 24 24" fill="none" aria-hidden="true">
+			<path
+				d="M4 6.5H20C20.8284 6.5 21.5 7.17157 21.5 8V16C21.5 16.8284 20.8284 17.5 20 17.5H4C3.17157 17.5 2.5 16.8284 2.5 16V8C2.5 7.17157 3.17157 6.5 4 6.5Z"
+				stroke="currentColor"
+				strokeWidth="1.7"
+			/>
+			<path
+				d="M3.5 8L11.1056 13.0704C11.6098 13.4065 12.3902 13.4065 12.8944 13.0704L20.5 8"
+				stroke="currentColor"
+				strokeWidth="1.7"
+				strokeLinecap="round"
+				strokeLinejoin="round"
+			/>
+		</svg>
+	)
+}
+
 function MenuIcon({ className = "" }) {
 	return (
 		<svg className={className} viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -115,32 +135,6 @@ function CloseIcon({ className = "" }) {
 		<svg className={className} viewBox="0 0 24 24" fill="none" aria-hidden="true">
 			<path d="M6 6L18 18" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" />
 			<path d="M18 6L6 18" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" />
-		</svg>
-	)
-}
-
-function InstagramIcon({ className = "" }) {
-	return (
-		<svg className={className} viewBox="0 0 24 24" fill="none" aria-hidden="true">
-			<rect x="3.5" y="3.5" width="17" height="17" rx="4" stroke="currentColor" strokeWidth="1.7" />
-			<circle cx="12" cy="12" r="4" stroke="currentColor" strokeWidth="1.7" />
-			<circle cx="17.2" cy="6.8" r="1" fill="currentColor" />
-		</svg>
-	)
-}
-
-function FacebookIcon({ className = "" }) {
-	return (
-		<svg className={className} viewBox="0 0 24 24" fill="none" aria-hidden="true">
-			<path d="M14 8H16V5H14C11.8 5 10 6.8 10 9V11H8V14H10V19H13V14H15.5L16 11H13V9C13 8.45 13.45 8 14 8Z" fill="currentColor" />
-		</svg>
-	)
-}
-
-function TiktokIcon({ className = "" }) {
-	return (
-		<svg className={className} viewBox="0 0 24 24" fill="none" aria-hidden="true">
-			<path d="M14 4C14.3 5.8 15.5 7.2 17.2 7.8C18 8.1 18.8 8.2 19.5 8.2V11C18.2 11 16.9 10.6 15.8 9.9V14.8C15.8 17.7 13.5 20 10.6 20C7.7 20 5.4 17.7 5.4 14.8C5.4 11.9 7.7 9.6 10.6 9.6C10.9 9.6 11.2 9.6 11.5 9.7V12.5C11.2 12.4 10.9 12.3 10.6 12.3C9.2 12.3 8.1 13.4 8.1 14.8C8.1 16.2 9.2 17.3 10.6 17.3C12 17.3 13.1 16.2 13.1 14.8V4H14Z" fill="currentColor" />
 		</svg>
 	)
 }
@@ -184,7 +178,6 @@ function NavbarExample() {
 
 	return (
 		<>
-			{/* ── TOPBAR — desktop ── */}
 			<div className="ajs-topbar">
 				<div className="ajs-topbar-inner">
 					<div className="ajs-topbar-left" />
@@ -210,16 +203,21 @@ function NavbarExample() {
 					</div>
 
 					<div className="ajs-topbar-right">
-						<a href="https://www.instagram.com/" className="ajs-topbar-social" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
-							<InstagramIcon className="ajs-topbar-social-icon" />
+						<a
+							href={EMAIL_LINK}
+							className="ajs-topbar-social"
+							aria-label={`Email ${EMAIL_DISPLAY}`}
+						>
+							<MailIcon className="ajs-topbar-social-icon" />
 						</a>
-						<a href="https://www.facebook.com/" className="ajs-topbar-social" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
-							<FacebookIcon className="ajs-topbar-social-icon" />
-						</a>
-						<a href="https://www.tiktok.com/" className="ajs-topbar-social" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
-							<TiktokIcon className="ajs-topbar-social-icon" />
-						</a>
-						<a href="/bbb" className="ajs-topbar-bbb">
+
+						<a
+							href={BBB_LINK}
+							className="ajs-topbar-bbb"
+							aria-label="Better Business Bureau Reviews"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
 							BBB
 						</a>
 					</div>
@@ -425,19 +423,31 @@ function NavbarExample() {
 							<a href="/estimate" className="ajs-mobile-cta" onClick={closeEverything}>
 								Get Your Free Inspection
 							</a>
+
 							<a href={PHONE_LINK} className="ajs-mobile-call" onClick={closeEverything}>
 								<PhoneIcon className="ajs-mobile-call-icon" />
 								<span>Call {PHONE_DISPLAY}</span>
 							</a>
+
 							<div className="ajs-mobile-socials">
-								<a href="https://www.instagram.com/" className="ajs-nav-social" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
-									<InstagramIcon className="ajs-nav-social-icon" />
+								<a
+									href={EMAIL_LINK}
+									className="ajs-nav-social"
+									aria-label={`Email ${EMAIL_DISPLAY}`}
+									onClick={closeEverything}
+								>
+									<MailIcon className="ajs-nav-social-icon" />
 								</a>
-								<a href="https://www.facebook.com/" className="ajs-nav-social" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
-									<FacebookIcon className="ajs-nav-social-icon" />
-								</a>
-								<a href="https://www.tiktok.com/" className="ajs-nav-social" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
-									<TiktokIcon className="ajs-nav-social-icon" />
+
+								<a
+									href={BBB_LINK}
+									className="ajs-topbar-bbb"
+									aria-label="Better Business Bureau Reviews"
+									target="_blank"
+									rel="noopener noreferrer"
+									onClick={closeEverything}
+								>
+									BBB
 								</a>
 							</div>
 						</div>

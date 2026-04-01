@@ -57,10 +57,10 @@ get_header(); ?>
             </a>
           </div>
 
-          <a href="tel:+15050000000"
+          <a href="tel:+15054535626"
              class="mt-6 inline-flex items-center gap-2 text-base font-extrabold text-white">
             <span class="text-white/65">Call Now:</span>
-            <span>(505) 000-0000</span>
+            <span>(505) 453-5626</span>
           </a>
         </div>
 

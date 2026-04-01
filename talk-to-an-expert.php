@@ -227,7 +227,7 @@ get_header(); ?>
 
     if (window.emailjs) {
       emailjs.init({
-        publicKey: "CDikedp0ZSxxiBeLb"
+        publicKey: "fO4Vd7UFZCyOrU5J6"
       });
     }
 
@@ -266,8 +266,8 @@ get_header(); ?>
         };
 
         emailjs.send(
-          "service_a03f0zf",
-          "template_5o4w9bj",
+          "service_siv1hxi",
+          "template_kcyfw3g",
           formData
         ).then(function () {
           form.reset();

@@ -29,10 +29,10 @@ get_header(); ?>
           Schedule a comprehensive, photo-documented inspection. We’ll show you exactly what your roof needs and exactly what it doesn’t. No pressure. No obligation. Just clarity.
         </p>
 
-        <a href="tel:+15050000000"
+        <a href="tel:+15054535626"
            class="mt-6 inline-flex items-center gap-2 text-base font-extrabold text-[#132d41]">
           <span class="text-[#42474b]/70">Call Now:</span>
-          <span>(505) 000-0000</span>
+          <span>(505) 453-5626</span>
         </a>
       </div>
 
@@ -235,7 +235,7 @@ get_header(); ?>
 
     if (window.emailjs) {
       emailjs.init({
-        publicKey: "CDikedp0ZSxxiBeLb"
+        publicKey: "fO4Vd7UFZCyOrU5J6"
       });
     }
 
@@ -266,8 +266,8 @@ get_header(); ?>
         };
 
         emailjs.send(
-          "service_a03f0zf",
-          "template_5o4w9bj",
+          "service_siv1hxi",
+          "template_kcyfw3g",
           formData
         ).then(function () {
           form.reset();

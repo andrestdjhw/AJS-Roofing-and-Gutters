@@ -36,9 +36,9 @@ get_header(); ?>
         </p>
 
         <div class="mt-8 flex flex-wrap gap-4">
-          <a href="tel:+15050000000"
+          <a href="tel:+15054535626"
              class="ajs-btn-animate inline-flex items-center justify-center rounded-full bg-[#d04418] px-6 py-4 text-sm font-black text-white shadow-[0_16px_32px_rgba(208,68,24,0.25)]">
-            Call (505) 000-0000
+            Call (505) 453-5626
           </a>
 
           <a href="/estimate"
@@ -59,12 +59,12 @@ get_header(); ?>
 
           <div class="flex items-start gap-3">
             <span class="font-black text-[#132d41]">Phone</span>
-            <span>(505) 000-0000</span>
+            <span>(505) 453-5626</span>
           </div>
 
           <div class="flex items-start gap-3">
             <span class="font-black text-[#132d41]">Email</span>
-            <span>info@ajsroofing.com</span>
+            <span>ajsprofessional@gmail.com</span>
           </div>
 
           <div class="flex items-start gap-3">
@@ -249,7 +249,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (window.emailjs) {
     emailjs.init({
-      publicKey: "CDikedp0ZSxxiBeLb"
+      publicKey: "fO4Vd7UFZCyOrU5J6"
     });
   }
 
@@ -277,8 +277,8 @@ document.addEventListener("DOMContentLoaded", function () {
       };
 
       emailjs.send(
-        "service_a03f0zf",
-        "template_5o4w9bj",
+        "service_siv1hxi",
+        "template_kcyfw3g",
         formData
       ).then(function () {
         form.reset();

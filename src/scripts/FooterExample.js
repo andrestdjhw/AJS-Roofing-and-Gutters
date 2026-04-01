@@ -1,8 +1,8 @@
 import React from "react"
 
 const PHONE_DISPLAY = "(505) 000-0000"
-const PHONE_LINK = "tel:+15050000000"
-const EMAIL = "hello@ajsroofing.com"
+const PHONE_LINK = "tel:+15054535626"
+const EMAIL = "ajsprofessional@gmail.com"
 
 const QUICK_LINKS = [
 	{ label: "Home", href: "/" },
@@ -152,14 +152,6 @@ function FooterExample() {
 							</a>
 						</div>
 
-						<div className="ajs-footer-socials" aria-label="Social media">
-							<a href="#" aria-label="Facebook" className="ajs-footer-social-link">
-								<FacebookIcon className="ajs-footer-social-icon" />
-							</a>
-							<a href="#" aria-label="Instagram" className="ajs-footer-social-link">
-								<InstagramIcon className="ajs-footer-social-icon" />
-							</a>
-						</div>
 					</div>
 
 					<div className="ajs-footer-col">

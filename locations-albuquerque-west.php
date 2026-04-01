@@ -595,7 +595,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (window.emailjs) {
     emailjs.init({
-      publicKey: "CDikedp0ZSxxiBeLb"
+      publicKey: "fO4Vd7UFZCyOrU5J6"
     });
   }
 
@@ -626,8 +626,8 @@ document.addEventListener("DOMContentLoaded", () => {
       };
 
       emailjs.send(
-        "service_a03f0zf",
-        "template_5o4w9bj",
+        "service_siv1hxi",
+        "template_kcyfw3g",
         formData
       ).then(function () {
         form.reset();

@@ -342,9 +342,9 @@ get_header(); ?>
           Get Your Free Inspection
         </a>
 
-        <a href="tel:+15050000000"
+        <a href="tel:+15054535626"
            class="ajs-btn-animate inline-flex items-center justify-center rounded-full border border-[#d3d8db] bg-white px-6 py-4 text-sm font-black text-[#132d41] shadow-sm">
-          Call (505) 000-0000
+          Call (505) 453-5626
         </a>
       </div>
     </div>
@@ -830,7 +830,7 @@ get_header(); ?>
 
     if (window.emailjs) {
       emailjs.init({
-        publicKey: "CDikedp0ZSxxiBeLb"
+        publicKey: "fO4Vd7UFZCyOrU5J6"
       });
     }
 
@@ -858,8 +858,8 @@ get_header(); ?>
         };
 
         emailjs.send(
-          "service_a03f0zf",
-          "template_17g32zt",
+          "service_siv1hxi",
+          "template_kcyfw3g",
           formData
         ).then(function () {
           form.reset();
