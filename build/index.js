@@ -55,7 +55,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__);
 
 
-const PHONE_DISPLAY = "(505) 000-0000";
+const PHONE_DISPLAY = "(505) 453-5626";
 const PHONE_LINK = "tel:+15054535626";
 const EMAIL = "ajsprofessional@gmail.com";
 const QUICK_LINKS = [{

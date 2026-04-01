@@ -1,6 +1,6 @@
 import React from "react"
 
-const PHONE_DISPLAY = "(505) 000-0000"
+const PHONE_DISPLAY = "(505) 453-5626"
 const PHONE_LINK = "tel:+15054535626"
 const EMAIL = "ajsprofessional@gmail.com"
 

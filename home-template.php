@@ -50,10 +50,10 @@ get_header(); ?>
       </div>
 
       <div class="mt-8 flex flex-wrap items-center gap-6">
-        <a href="tel:+15050000000"
+        <a href="tel:+15054535626"
            class="inline-flex items-center gap-2 text-base font-extrabold text-[#132d41]">
           <span class="text-[#42474b]/70">Call Now:</span>
-          <span>(505) 000-0000</span>
+          <span>(505) 453-5626</span>
         </a>
 
         <div class="flex flex-wrap items-center gap-2">
@@ -680,10 +680,10 @@ get_header(); ?>
         </span>
       </div>
 
-      <a href="tel:+15050000000"
+      <a href="tel:+15054535626"
          class="mt-6 inline-flex items-center gap-2 text-base font-extrabold text-[#132d41]">
         <span class="text-[#42474b]/65">Call Now:</span>
-        <span>(505) 000-0000</span>
+        <span>(505) 453-5626</span>
       </a>
 
       <p class="mt-4 text-sm text-[#42474b]/70">
