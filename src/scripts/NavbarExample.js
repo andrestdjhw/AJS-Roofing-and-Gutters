@@ -72,7 +72,7 @@ const MAIN_NAV = [
 	{ label: "About", href: "/about" },
 	{ label: "Services", type: "mega" },
 	{ label: "Projects", href: "/projects" },
-	{ label: "Locations", type: "dropdown" },
+	{ label: "Locations", href: "/locations" },
 	{ label: "Contact", href: "/contact" }
 ]
 
@@ -143,7 +143,6 @@ function NavbarExample() {
 	const [activeMenu, setActiveMenu] = useState(null)
 	const [mobileOpen, setMobileOpen] = useState(false)
 	const [mobileServicesOpen, setMobileServicesOpen] = useState(false)
-	const [mobileLocationsOpen, setMobileLocationsOpen] = useState(false)
 	const closeTimeoutRef = useRef(null)
 
 	useEffect(() => {
@@ -173,7 +172,6 @@ function NavbarExample() {
 		closeMenuNow()
 		setMobileOpen(false)
 		setMobileServicesOpen(false)
-		setMobileLocationsOpen(false)
 	}
 
 	return (
@@ -257,22 +255,6 @@ function NavbarExample() {
 									)
 								}
 
-								if (item.type === "dropdown") {
-									return (
-										<div key={item.label} className="ajs-nav-item" onMouseEnter={() => openMenu("locations")}>
-											<button
-												type="button"
-												className={`ajs-nav-trigger ${activeMenu === "locations" ? "is-active" : ""}`}
-												onFocus={() => openMenu("locations")}
-												aria-expanded={activeMenu === "locations"}
-											>
-												{item.label}
-												<ChevronDownIcon className="ajs-nav-caret" />
-											</button>
-										</div>
-									)
-								}
-
 								return (
 									<a key={item.label} className="ajs-nav-link" href={item.href}>
 										{item.label}
@@ -332,33 +314,6 @@ function NavbarExample() {
 						</div>
 					</div>
 
-					<div
-						className={`ajs-nav-dropdown ajs-nav-mega ${activeMenu === "locations" ? "is-open" : ""}`}
-						onMouseEnter={() => openMenu("locations")}
-						onMouseLeave={closeMenuWithDelay}
-					>
-						<div className="ajs-nav-dropdown-inner">
-							<div className="ajs-nav-mega-header">
-								<p className="ajs-nav-eyebrow">Proudly Serving New Mexico</p>
-								<h2>Roofing and gutters across Albuquerque, Santa Fe & Rio Rancho.</h2>
-							</div>
-							<div className="ajs-nav-mega-grid">
-								{LOCATIONS_MENU.map(group => (
-									<div key={group.tier} className="ajs-nav-section">
-										<h3>{group.tier}</h3>
-										<ul>
-											{group.links.map(link => (
-												<li key={link.label}>
-													<a href={link.href}>{link.label}</a>
-												</li>
-											))}
-										</ul>
-									</div>
-								))}
-							</div>
-						</div>
-					</div>
-
 					<div id="ajs-mobile-menu" className={`ajs-mobile-panel ${mobileOpen ? "is-open" : ""}`}>
 						<a href="/" className="ajs-mobile-link" onClick={closeEverything}>Home</a>
 						<a href="/about" className="ajs-mobile-link" onClick={closeEverything}>About</a>
@@ -390,33 +345,7 @@ function NavbarExample() {
 						</div>
 
 						<a href="/projects" className="ajs-mobile-link" onClick={closeEverything}>Projects</a>
-
-						<div className="ajs-mobile-group">
-							<button
-								type="button"
-								className="ajs-mobile-group-trigger"
-								onClick={() => setMobileLocationsOpen(prev => !prev)}
-								aria-expanded={mobileLocationsOpen}
-							>
-								<span>Locations</span>
-								<ChevronDownIcon className={`ajs-mobile-caret ${mobileLocationsOpen ? "is-open" : ""}`} />
-							</button>
-							{mobileLocationsOpen && (
-								<div className="ajs-mobile-group-panel">
-									{LOCATIONS_MENU.map(group => (
-										<div key={group.tier} className="ajs-mobile-section">
-											<h3>{group.tier}</h3>
-											{group.links.map(link => (
-												<a key={link.label} href={link.href} onClick={closeEverything}>
-													{link.label}
-												</a>
-											))}
-										</div>
-									))}
-								</div>
-							)}
-						</div>
-
+						<a href="/locations" className="ajs-mobile-link" onClick={closeEverything}>Locations</a>
 						<a href="/contact" className="ajs-mobile-link" onClick={closeEverything}>Contact</a>
 
 						<div className="ajs-mobile-cta-wrap">
