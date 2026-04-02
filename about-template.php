@@ -83,34 +83,34 @@ get_header(); ?>
     </div>
   </section>
 
-  <!-- Story / Manifesto -->
-  <section class="py-20">
+   <!-- Story / Manifesto -->
+  <section class="py-20 bg-[#132d41]">
     <div class="mx-auto max-w-7xl px-4">
       <div class="grid gap-8 lg:grid-cols-[0.75fr_1.25fr]">
         <div class="ajs-reveal-left">
-          <p class="mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
+          <p class="mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#6eaace]">
             Our Story
           </p>
-          <h2 class="max-w-[12ch] text-3xl font-black leading-tight tracking-[-0.03em] text-[#132d41] md:text-5xl">
+          <h2 class="max-w-[12ch] text-3xl font-black leading-tight tracking-[-0.03em] text-white md:text-5xl">
             From roofing chaos to homeowner confidence.
           </h2>
         </div>
 
-        <div class="ajs-reveal-right rounded-[32px] border border-[#d3d8db] bg-[linear-gradient(180deg,#ffffff_0%,#f7f9fa_100%)] p-8 shadow-[0_18px_36px_rgba(19,45,65,0.08)]">
-          <div class="grid gap-6 md:grid-cols-2">
-            <p class="text-base leading-8 text-[#42474b]">
+        <div class="ajs-reveal-right rounded-[32px] border border-white/10 bg-white/5 p-8 shadow-[0_18px_36px_rgba(0,0,0,0.18)] backdrop-blur-sm">
+          <div class="space-y-6">
+            <p class="text-base leading-8 text-white/88">
               When a roof problem appears, it's not just physical damage  it's uncertainty.
               Too many options, too little clarity, and the fear of making a bad decision.
               The chaos isn't just on the roof. It's in your mind.
             </p>
 
-            <p class="text-base leading-8 text-[#42474b]">
+            <p class="text-base leading-8 text-white/88">
               AJS Roofing &amp; Gutters was built to change that experience. Through clear
               communication, documented process, and work done right from the start,
               we help homeowners move from uncertainty to confidence.
             </p>
 
-            <p class="text-base leading-8 text-[#42474b] md:col-span-2">
+            <p class="text-base leading-8 text-white/88">
               We don't believe roofing should feel confusing, rushed, or high-pressure.
               We believe it should feel understandable, professional, and secure. That's
               what “From Chaos to Calm” means in practice.
@@ -120,7 +120,6 @@ get_header(); ?>
       </div>
     </div>
   </section>
-
   <!-- Mission + Vision Split -->
   <section class="py-20 bg-[#f5f7f8] overflow-hidden">
     <div class="mx-auto max-w-7xl px-4">

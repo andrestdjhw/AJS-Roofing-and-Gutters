@@ -250,12 +250,6 @@ get_header(); ?>
           start, we turn a moment of uncertainty into lasting protection and confidence.
         </p>
 
-        <p>
-          With [X]+ completed projects, manufacturer certifications, and our own on-site
-          gutter fabrication machine, AJS is the roofing partner that brings order to
-          a process that usually feels chaotic.
-        </p>
-
         <a href="/about"
            class="inline-flex font-black text-[#d04418] transition hover:translate-x-[2px]">
           Learn more about AJS
@@ -263,7 +257,6 @@ get_header(); ?>
       </div>
     </div>
   </section>
-
 <!-- Services -->
 <section id="services" class="ajs-home-sticky-offset bg-[#d3d8db]/20 py-20">
   <div class="mx-auto max-w-7xl px-4">

@@ -134,11 +134,7 @@ function FooterExample() {
 		className="ajs-footer-brand-logo"
 	/>
 </a>
-						<p className="ajs-footer-description">
-							AJS Roofing & Gutters brings order, clarity, and professional execution
-							to roofing and gutter projects across Albuquerque, Santa Fe, Rio Rancho,
-							and surrounding New Mexico communities.
-						</p>
+
 
 						<div className="ajs-footer-contact-list">
 							<a href={PHONE_LINK} className="ajs-footer-contact-item">

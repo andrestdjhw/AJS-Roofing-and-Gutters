@@ -246,9 +246,6 @@ function FooterExample() {
               alt: "AJS Roofing & Gutters",
               className: "ajs-footer-brand-logo"
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
-            className: "ajs-footer-description",
-            children: "AJS Roofing & Gutters brings order, clarity, and professional execution to roofing and gutter projects across Albuquerque, Santa Fe, Rio Rancho, and surrounding New Mexico communities."
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
             className: "ajs-footer-contact-list",
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("a", {
