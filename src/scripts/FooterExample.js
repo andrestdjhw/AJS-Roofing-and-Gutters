@@ -198,9 +198,9 @@ function FooterExample() {
 					<p>© {currentYear} AJS Roofing & Gutters. All rights reserved.</p>
 
 					<div className="ajs-footer-legal">
-						<a>Privacy Policy</a>
-						<a>Terms</a>
-					</div>
+	<a href="/privacy-policy">Privacy Policy</a>
+	<a href="/terms-conditions">Terms &amp; Conditions</a>
+</div>
 				</div>
 			</div>
 		</footer>
