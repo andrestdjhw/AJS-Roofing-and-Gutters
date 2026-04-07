@@ -54,39 +54,14 @@ get_header(); ?>
         </div>
 
         <form id="ajsEstimateForm" class="mt-5 grid gap-3">
-          <input
-            id="ajs_estimate_name"
-            name="name"
-            type="text"
-            placeholder="Full Name *"
-            required
-            class="w-full rounded-2xl border border-[#d3d8db] bg-white px-4 py-4 text-sm text-[#132d41] placeholder:text-[#42474b]/65 outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
-          >
 
-          <input
-            id="ajs_estimate_phone"
-            name="phone"
-            type="tel"
-            placeholder="Phone Number *"
-            required
-            class="w-full rounded-2xl border border-[#d3d8db] bg-white px-4 py-4 text-sm text-[#132d41] placeholder:text-[#42474b]/65 outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
-          >
+          <input id="ajs_estimate_name" name="name" type="text" placeholder="Full Name *" required class="w-full rounded-2xl border border-[#d3d8db] bg-white px-4 py-4 text-sm text-[#132d41] placeholder:text-[#42474b]/65 outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20">
 
-          <input
-            id="ajs_estimate_email"
-            name="email"
-            type="email"
-            placeholder="Email *"
-            required
-            class="w-full rounded-2xl border border-[#d3d8db] bg-white px-4 py-4 text-sm text-[#132d41] placeholder:text-[#42474b]/65 outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
-          >
+          <input id="ajs_estimate_phone" name="phone" type="tel" placeholder="Phone Number *" required class="w-full rounded-2xl border border-[#d3d8db] bg-white px-4 py-4 text-sm text-[#132d41] placeholder:text-[#42474b]/65 outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20">
 
-          <select
-            id="ajs_estimate_service"
-            name="service"
-            required
-            class="w-full rounded-2xl border border-[#d3d8db] bg-white px-4 py-4 text-sm text-[#42474b] outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
-          >
+          <input id="ajs_estimate_email" name="email" type="email" placeholder="Email *" required class="w-full rounded-2xl border border-[#d3d8db] bg-white px-4 py-4 text-sm text-[#132d41] placeholder:text-[#42474b]/65 outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20">
+
+          <select id="ajs_estimate_service" name="service" required class="w-full rounded-2xl border border-[#d3d8db] bg-white px-4 py-4 text-sm text-[#42474b] outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20">
             <option value="" selected disabled>What do you need? *</option>
             <option value="Roof Replacement">Roof Replacement</option>
             <option value="Metal Roofing">Metal Roofing</option>
@@ -97,39 +72,19 @@ get_header(); ?>
             <option value="Not Sure">Not Sure</option>
           </select>
 
-          <input
-            id="ajs_estimate_address"
-            name="address"
-            type="text"
-            placeholder="Address or ZIP Code *"
-            required
-            class="w-full rounded-2xl border border-[#d3d8db] bg-white px-4 py-4 text-sm text-[#132d41] placeholder:text-[#42474b]/65 outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
-          >
+          <input id="ajs_estimate_address" name="address" type="text" placeholder="Address or ZIP Code *" required class="w-full rounded-2xl border border-[#d3d8db] bg-white px-4 py-4 text-sm text-[#132d41] placeholder:text-[#42474b]/65 outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20">
 
-          <textarea
-            id="ajs_estimate_message"
-            name="message"
-            rows="4"
-            placeholder="Anything else we should know? (optional)"
-            class="w-full resize-y rounded-2xl border border-[#d3d8db] bg-white px-4 py-4 text-sm text-[#132d41] placeholder:text-[#42474b]/65 outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
-          ></textarea>
+          <textarea id="ajs_estimate_message" name="message" rows="4" placeholder="Anything else we should know? (optional)" class="w-full resize-y rounded-2xl border border-[#d3d8db] bg-white px-4 py-4 text-sm text-[#132d41] placeholder:text-[#42474b]/65 outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"></textarea>
 
           <label class="flex items-start gap-3 text-sm leading-6 text-[#42474b]/80">
-            <input
-              id="ajs_estimate_consent"
-              name="consent"
-              type="checkbox"
-              required
-              class="mt-1 h-4 w-4 rounded border-[#d3d8db] text-[#d04418] focus:ring-[#6eaace]/20"
-            >
+            <input id="ajs_estimate_consent" name="consent" type="checkbox" required class="mt-1 h-4 w-4 rounded border-[#d3d8db] text-[#d04418] focus:ring-[#6eaace]/20">
             <span>I agree to be contacted about my inspection request.</span>
           </label>
 
-          <button
-            id="ajsEstimateSubmitBtn"
-            type="submit"
-            class="ajs-btn-animate inline-flex items-center justify-center rounded-full bg-[#d04418] px-6 py-4 text-sm font-black text-white shadow-[0_16px_32px_rgba(208,68,24,0.28)]"
-          >
+          <!-- ✅ RECAPTCHA (AÑADIDO) -->
+          <div class="g-recaptcha" data-sitekey="6LfHjassAAAAAAkbtC73TJdkAzPv2my9-RYF5Q4j"></div>
+
+          <button id="ajsEstimateSubmitBtn" type="submit" class="ajs-btn-animate inline-flex items-center justify-center rounded-full bg-[#d04418] px-6 py-4 text-sm font-black text-white shadow-[0_16px_32px_rgba(208,68,24,0.28)]">
             Get Your Free Inspection
           </button>
 
@@ -143,6 +98,8 @@ get_header(); ?>
 
 </main>
 
+<!-- ✅ SCRIPT RECAPTCHA (AÑADIDO) -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <style>
   .hidden {
     display: none !important;

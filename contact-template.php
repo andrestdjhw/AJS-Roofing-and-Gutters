@@ -85,74 +85,81 @@ get_header(); ?>
 
     <div class="grid gap-10 lg:grid-cols-[1fr_1fr]">
 
-      <!-- Form -->
-      <div class="ajs-reveal-left rounded-[28px] border border-[#d3d8db] bg-white p-7 shadow-[0_18px_40px_rgba(19,45,65,0.08)]">
+<!-- Form -->
+<div class="ajs-reveal-left rounded-[28px] border border-[#d3d8db] bg-white p-7 shadow-[0_18px_40px_rgba(19,45,65,0.08)]">
 
-        <p class="mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
-          Send Us A Message
-        </p>
+  <p class="mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
+    Send Us A Message
+  </p>
 
-        <h2 class="text-3xl font-black tracking-[-0.03em] text-[#132d41]">
-          Tell us what you need.
-        </h2>
+  <h2 class="text-3xl font-black tracking-[-0.03em] text-[#132d41]">
+    Tell us what you need.
+  </h2>
 
-        <div id="ajsContactFormSuccess" class="hidden mt-6 rounded-2xl border border-green-200 bg-green-50 px-4 py-4 text-sm text-green-700">
-          Thanks for reaching out. Your message was sent successfully.
-        </div>
+  <div id="ajsContactFormSuccess" class="hidden mt-6 rounded-2xl border border-green-200 bg-green-50 px-4 py-4 text-sm text-green-700">
+    Thanks for reaching out. Your message was sent successfully.
+  </div>
 
-        <div id="ajsContactFormError" class="hidden mt-6 rounded-2xl border border-red-200 bg-red-50 px-4 py-4 text-sm text-red-700">
-          Something went wrong. Please try again.
-        </div>
+  <div id="ajsContactFormError" class="hidden mt-6 rounded-2xl border border-red-200 bg-red-50 px-4 py-4 text-sm text-red-700">
+    Something went wrong. Please try again.
+  </div>
 
-        <form id="ajsContactForm" class="mt-6 grid gap-4">
+  <form id="ajsContactForm" class="mt-6 grid gap-4">
 
-          <input
-            id="ajs_contact_name"
-            name="name"
-            type="text"
-            placeholder="Full Name *"
-            required
-            class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
-          >
+    <input
+      id="ajs_contact_name"
+      name="name"
+      type="text"
+      placeholder="Full Name *"
+      required
+      class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+    >
 
-          <input
-            id="ajs_contact_phone"
-            name="phone"
-            type="tel"
-            placeholder="Phone Number *"
-            required
-            class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
-          >
+    <input
+      id="ajs_contact_phone"
+      name="phone"
+      type="tel"
+      placeholder="Phone Number *"
+      required
+      class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+    >
 
-          <input
-            id="ajs_contact_email"
-            name="email"
-            type="email"
-            placeholder="Email Address *"
-            required
-            class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
-          >
+    <input
+      id="ajs_contact_email"
+      name="email"
+      type="email"
+      placeholder="Email Address *"
+      required
+      class="w-full rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+    >
 
-          <textarea
-            id="ajs_contact_message"
-            name="message"
-            rows="4"
-            placeholder="How can we help?"
-            required
-            class="w-full resize-y rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
-          ></textarea>
+    <textarea
+      id="ajs_contact_message"
+      name="message"
+      rows="4"
+      placeholder="How can we help?"
+      required
+      class="w-full resize-y rounded-2xl border border-[#d3d8db] px-4 py-4 text-sm outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
+    ></textarea>
 
-          <button
-            id="ajsContactSubmitBtn"
-            type="submit"
-            class="ajs-btn-animate inline-flex items-center justify-center rounded-full bg-[#d04418] px-6 py-4 text-sm font-black text-white shadow-[0_16px_32px_rgba(208,68,24,0.24)]"
-          >
-            Send Message
-          </button>
+    <!-- ✅ RECAPTCHA AÑADIDO -->
+    <div class="g-recaptcha mt-2"
+         data-sitekey="6LfHjassAAAAAAkbtC73TJdkAzPv2my9-RYF5Q4j">
+    </div>
 
-        </form>
+    <button
+      id="ajsContactSubmitBtn"
+      type="submit"
+      class="ajs-btn-animate inline-flex items-center justify-center rounded-full bg-[#d04418] px-6 py-4 text-sm font-black text-white shadow-[0_16px_32px_rgba(208,68,24,0.24)]"
+    >
+      Send Message
+    </button>
 
-      </div>
+  </form>
+
+</div>
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
       <!-- Address / Map -->
       <div class="ajs-reveal-right space-y-6">

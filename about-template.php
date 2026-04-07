@@ -401,6 +401,11 @@ get_header(); ?>
           class="w-full resize-y rounded-2xl border border-[#d3d8db] bg-white px-4 py-4 text-sm text-[#132d41] placeholder:text-[#42474b]/65 outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20"
         ></textarea>
 
+        <!-- ✅ RECAPTCHA (AÑADIDO) -->
+        <div class="g-recaptcha mt-2"
+             data-sitekey="6LfHjassAAAAAAkbtC73TJdkAzPv2my9-RYF5Q4j">
+        </div>
+
         <button
           id="ajsAboutSubmitBtn"
           type="submit"
@@ -412,6 +417,9 @@ get_header(); ?>
     </div>
   </div>
 </section>
+
+<!-- ✅ SCRIPT RECAPTCHA (AÑADIDO) -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </main>
 
 <style>

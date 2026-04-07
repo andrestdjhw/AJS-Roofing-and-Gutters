@@ -38,10 +38,10 @@ get_header(); ?>
       </p>
 
       <div class="mt-7 flex flex-wrap gap-3">
-<a href="/estimate"
-   class="ajs-btn-animate inline-flex items-center justify-center rounded-full bg-[#d04418] px-6 py-4 text-sm font-black text-white shadow-[0_18px_36px_rgba(208,68,24,0.28)] transition">
-  Get Your Free Inspection
-</a>
+        <a href="/estimate"
+           class="ajs-btn-animate inline-flex items-center justify-center rounded-full bg-[#d04418] px-6 py-4 text-sm font-black text-white shadow-[0_18px_36px_rgba(208,68,24,0.28)] transition">
+          Get Your Free Inspection
+        </a>
 
         <a href="#services"
            class="ajs-btn-animate inline-flex items-center justify-center rounded-full border border-[#d3d8db] bg-white px-6 py-4 text-sm font-black text-[#132d41] shadow-sm transition hover:border-[#6eaace]/40 hover:bg-[#f8fbfd]">
@@ -186,12 +186,24 @@ get_header(); ?>
             <span>I agree to be contacted by AJS Roofing &amp; Gutters regarding my request.</span>
           </label>
 
-<button
-  id="ajsHomeHeroSubmitBtn"
-  type="submit"
-  class="ajs-btn-animate inline-flex items-center justify-center rounded-full bg-[#d04418] px-6 py-4 text-sm font-black text-white shadow-[0_18px_36px_rgba(208,68,24,0.28)] transition">
-  Get Your Free Inspection
-</button>
+          <div>
+            <div
+              class="g-recaptcha"
+              data-sitekey="6LfHjassAAAAAAkbtC73TJdkAzPv2my9-RYF5Q4j"
+              data-theme="light"
+              data-size="normal">
+            </div>
+            <p id="ajsHomeHeroCaptchaError" class="hidden mt-2 text-[0.78rem] font-bold text-red-600">
+              Please complete the captcha before submitting.
+            </p>
+          </div>
+
+          <button
+            id="ajsHomeHeroSubmitBtn"
+            type="submit"
+            class="ajs-btn-animate inline-flex items-center justify-center rounded-full bg-[#d04418] px-6 py-4 text-sm font-black text-white shadow-[0_18px_36px_rgba(208,68,24,0.28)] transition">
+            Get Your Free Inspection
+          </button>
           <p class="text-sm text-[#42474b]/70">
             Response within 24 hours. Detailed photo report included.
           </p>
@@ -257,6 +269,7 @@ get_header(); ?>
       </div>
     </div>
   </section>
+
 <!-- Services -->
 <section id="services" class="ajs-home-sticky-offset bg-[#d3d8db]/20 py-20">
   <div class="mx-auto max-w-7xl px-4">
@@ -292,13 +305,13 @@ get_header(); ?>
           'title' => 'Storm Damage & Insurance',
           'copy'  => 'Hail or wind damage? We inspect, document everything with photos, and work with your insurance to streamline the process. Here\'s what we found and here\'s how we fix it.',
           'link'  => '/service/storm-damage-insurance',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/down-net_http20260306-151-4fjhqw.jpg' // ← era roof repair
+          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/down-net_http20260306-151-4fjhqw.jpg'
         ],
         [
           'title' => 'Roof Repair',
           'copy'  => 'Targeted repairs for leaks, missing shingles, and weather wear. Honest assessment first, we\'ll tell you if a repair is enough or if replacement makes more sense.',
           'link'  => '/service/roof-repair',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/AJs-truck-photo-edidted.png' // ← era storm damage
+          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/AJs-truck-photo-edidted.png'
         ],
         [
           'title' => 'Roof Inspection & Maintenance',
@@ -483,6 +496,7 @@ get_header(); ?>
     </div>
   </div>
 </section>
+
   <!-- Reviews -->
   <section class="bg-[#d3d8db]/30 py-20">
     <div class="mx-auto max-w-7xl px-4">
@@ -650,6 +664,7 @@ get_header(); ?>
       </div>
     </div>
   </section>
+
 <!-- Closing CTA -->
 <section id="closing-cta" class="ajs-home-sticky-offset border-t border-[#d3d8db] bg-[#f1f3f5] py-20">
   
@@ -779,6 +794,18 @@ get_header(); ?>
           <span>I agree to be contacted by AJS Roofing &amp; Gutters regarding my request.</span>
         </label>
 
+        <div>
+          <div
+            class="g-recaptcha"
+            data-sitekey="6LfHjassAAAAAAkbtC73TJdkAzPv2my9-RYF5Q4j"
+            data-theme="light"
+            data-size="normal">
+          </div>
+          <p id="ajsHomeClosingCaptchaError" class="hidden mt-2 text-[0.78rem] font-bold text-red-600">
+            Please complete the captcha before submitting.
+          </p>
+        </div>
+
         <button
           id="ajsHomeClosingSubmitBtn"
           type="submit"
@@ -795,6 +822,10 @@ get_header(); ?>
 <style>
   .hidden {
     display: none !important;
+  }
+
+  .g-recaptcha {
+    margin-top: 0.25rem;
   }
 
   .ajs-ticker {
@@ -906,6 +937,7 @@ get_header(); ?>
   }
 </style>
 
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
 <script>
@@ -928,19 +960,38 @@ get_header(); ?>
       });
     }
 
+    function getRecaptchaWidgetIndex(element) {
+      const widgets = Array.from(document.querySelectorAll(".g-recaptcha"));
+      return widgets.indexOf(element);
+    }
+
     function setupHomeForm(config) {
       const form = document.getElementById(config.formId);
       const submitBtn = document.getElementById(config.submitBtnId);
       const successBox = document.getElementById(config.successBoxId);
       const errorBox = document.getElementById(config.errorBoxId);
+      const captchaError = document.getElementById(config.captchaErrorId);
 
-      if (!form || !submitBtn || !successBox || !errorBox) return;
+      if (!form || !submitBtn || !successBox || !errorBox || !captchaError) return;
 
       form.addEventListener("submit", function (e) {
         e.preventDefault();
 
         successBox.classList.add("hidden");
         errorBox.classList.add("hidden");
+        captchaError.classList.add("hidden");
+
+        const captchaElement = form.querySelector(".g-recaptcha");
+        const widgetIndex = getRecaptchaWidgetIndex(captchaElement);
+        const recaptchaResponse = typeof grecaptcha !== "undefined"
+          ? grecaptcha.getResponse(widgetIndex)
+          : "";
+
+        if (!recaptchaResponse) {
+          captchaError.classList.remove("hidden");
+          captchaError.scrollIntoView({ behavior: "smooth", block: "center" });
+          return;
+        }
 
         const originalButtonText = submitBtn.textContent;
         submitBtn.disabled = true;
@@ -962,11 +1013,21 @@ get_header(); ?>
           formData
         ).then(function () {
           form.reset();
+
+          if (typeof grecaptcha !== "undefined") {
+            grecaptcha.reset(widgetIndex);
+          }
+
           successBox.classList.remove("hidden");
           submitBtn.disabled = false;
           submitBtn.textContent = originalButtonText;
         }).catch(function (error) {
           console.error("EmailJS error:", error);
+
+          if (typeof grecaptcha !== "undefined") {
+            grecaptcha.reset(widgetIndex);
+          }
+
           errorBox.classList.remove("hidden");
           submitBtn.disabled = false;
           submitBtn.textContent = originalButtonText;
@@ -979,6 +1040,7 @@ get_header(); ?>
       submitBtnId: "ajsHomeHeroSubmitBtn",
       successBoxId: "ajsHomeHeroFormSuccess",
       errorBoxId: "ajsHomeHeroFormError",
+      captchaErrorId: "ajsHomeHeroCaptchaError",
       nameId: "ajs_home_hero_name",
       phoneId: "ajs_home_hero_phone",
       emailId: "ajs_home_hero_email",
@@ -993,6 +1055,7 @@ get_header(); ?>
       submitBtnId: "ajsHomeClosingSubmitBtn",
       successBoxId: "ajsHomeClosingFormSuccess",
       errorBoxId: "ajsHomeClosingFormError",
+      captchaErrorId: "ajsHomeClosingCaptchaError",
       nameId: "ajs_home_closing_name",
       phoneId: "ajs_home_closing_phone",
       emailId: "ajs_home_closing_email",

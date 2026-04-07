@@ -133,6 +133,8 @@ get_header(); ?>
             <span>I agree to be contacted by AJS Roofing &amp; Gutters regarding my call request.</span>
           </label>
 
+          <div class="g-recaptcha" data-sitekey="6LfHjassAAAAAAkbtC73TJdkAzPv2my9-RYF5Q4j"></div>
+
           <button
             id="ajsCallSubmitBtn"
             type="submit"
@@ -208,6 +210,7 @@ get_header(); ?>
   }
 </style>
 
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
 <script>
@@ -243,6 +246,13 @@ get_header(); ?>
         successBox.classList.add("hidden");
         errorBox.classList.add("hidden");
 
+        const captchaResponse = typeof grecaptcha !== "undefined" ? grecaptcha.getResponse() : "";
+        if (!captchaResponse) {
+          errorBox.textContent = "Please complete the reCAPTCHA before submitting.";
+          errorBox.classList.remove("hidden");
+          return;
+        }
+
         const originalButtonText = submitBtn.textContent;
         submitBtn.disabled = true;
         submitBtn.textContent = "Sending...";
@@ -271,11 +281,18 @@ get_header(); ?>
           formData
         ).then(function () {
           form.reset();
+          if (typeof grecaptcha !== "undefined") {
+            grecaptcha.reset();
+          }
           successBox.classList.remove("hidden");
           submitBtn.disabled = false;
           submitBtn.textContent = originalButtonText;
         }).catch(function (error) {
           console.error("EmailJS error:", error);
+          if (typeof grecaptcha !== "undefined") {
+            grecaptcha.reset();
+          }
+          errorBox.textContent = "Something went wrong. Please try again.";
           errorBox.classList.remove("hidden");
           submitBtn.disabled = false;
           submitBtn.textContent = originalButtonText;
