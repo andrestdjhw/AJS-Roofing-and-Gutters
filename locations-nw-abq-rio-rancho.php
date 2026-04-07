@@ -274,7 +274,7 @@ get_header(); ?>
     </div>
   </section>
 
- <!-- CTA WITH FORM -->
+<!-- CTA WITH FORM -->
 <section class="overflow-hidden bg-[#f5f7f8] py-20">
   <div class="mx-auto grid max-w-7xl gap-10 px-4 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
 
@@ -349,6 +349,9 @@ get_header(); ?>
           </label>
         </div>
 
+        <!-- ✅ RECAPTCHA (AÑADIDO) -->
+        <div class="g-recaptcha mt-2" data-sitekey="6LfHjassAAAAAAkbtC73TJdkAzPv2my9-RYF5Q4j"></div>
+
         <button
           id="ajsLocationSubmitBtn"
           type="submit"
@@ -365,6 +368,9 @@ get_header(); ?>
 
   </div>
 </section>
+
+<!-- ✅ SCRIPT RECAPTCHA (AÑADIDO) -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 </main>
 

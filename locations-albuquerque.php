@@ -347,6 +347,9 @@ get_header(); ?>
           </label>
         </div>
 
+        <!-- ✅ RECAPTCHA (AÑADIDO) -->
+        <div class="g-recaptcha mt-2" data-sitekey="6LfHjassAAAAAAkbtC73TJdkAzPv2my9-RYF5Q4j"></div>
+
         <!-- BOTÓN NARANJA (COMO PEDISTE) -->
         <button
           id="ajsLocationSubmitBtn"
@@ -364,6 +367,9 @@ get_header(); ?>
 
   </div>
 </section>
+
+<!-- ✅ SCRIPT RECAPTCHA (AÑADIDO) -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </main>
 
 <style>

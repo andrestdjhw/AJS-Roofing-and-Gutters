@@ -349,10 +349,12 @@ get_header(); ?>
           </label>
         </div>
 
+        <div class="g-recaptcha mt-2" data-sitekey="6LfHjassAAAAAAkbtC73TJdkAzPv2my9-RYF5Q4j"></div>
+
         <button
           id="ajsLocationSubmitBtn"
           type="submit"
-  class="ajs-btn-animate inline-flex items-center justify-center rounded-full bg-[#d04418] px-6 py-4 text-sm font-black text-white shadow-[0_16px_32px_rgba(208,68,24,0.24)] mt-4">
+          class="ajs-btn-animate inline-flex items-center justify-center rounded-full bg-[#d04418] px-6 py-4 text-sm font-black text-white shadow-[0_16px_32px_rgba(208,68,24,0.24)] mt-4">
           Get Your Free Inspection
         </button>
 
@@ -365,6 +367,8 @@ get_header(); ?>
 
   </div>
 </section>
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 </main>
 
