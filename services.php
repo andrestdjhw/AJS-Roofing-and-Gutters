@@ -50,15 +50,14 @@ get_header(); ?>
           <span class="ajs-service-link">Explore service</span>
         </a>
 
-        <a href="/service/metal-roofing" class="ajs-service-card ajs-reveal">
-          <span class="ajs-service-tag">Core Service</span>
-          <h2 class="ajs-service-title">Metal Roofing</h2>
-          <p class="ajs-service-copy">
-            High-performance roofing systems built for New Mexico’s UV, hail, and wind conditions.
-          </p>
-          <span class="ajs-service-link">Explore service</span>
-        </a>
-
+<a href="/service/commercial-residential-roofing" class="ajs-service-card ajs-reveal">
+  <span class="ajs-service-tag">Core Service</span>
+  <h2 class="ajs-service-title">Commercial & Residential Roofing</h2>
+  <p class="ajs-service-copy">
+    TPO/PVC, metal, tile, and shingle systems for homes and businesses with in-house crews and a documented process built for long-term performance.
+  </p>
+  <span class="ajs-service-link">Explore service</span>
+</a>
         <a href="/service/gutters" class="ajs-service-card ajs-reveal">
           <span class="ajs-service-tag">Core Service</span>
           <h2 class="ajs-service-title">Seamless Gutters</h2>

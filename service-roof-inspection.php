@@ -195,8 +195,7 @@ get_header(); ?>
           ['Seamless Gutters', '/service/gutters', 'Precise drainage protection fabricated on-site for clean performance and fit.'],
           ['Storm Damage & Insurance', '/service/storm-damage-insurance', 'Documentation and claim support when weather turns uncertainty into urgency.'],
           ['Roof Repair', '/service/roof-repair', 'Targeted fixes when replacement is not yet necessary.'],
-          ['Metal Roofing', '/service/metal-roofing', 'Durable, long-lasting roofing solutions for residential and commercial properties.'],
-        ];
+['Commercial & Residential Roofing', '/service/commercial-residential-roofing', 'TPO/PVC, metal, tile, and shingle systems for homes and businesses with in-house crews, documented process, and long-term performance.'],        ];
 
         foreach ($services as $service) : ?>
           <a href="<?php echo esc_url($service[1]); ?>"

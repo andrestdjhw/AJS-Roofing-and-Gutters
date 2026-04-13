@@ -150,7 +150,7 @@ get_header(); ?>
             class="w-full rounded-2xl border border-[#d3d8db] bg-white px-4 py-4 text-sm text-[#42474b] outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20">
             <option value="" selected disabled>What do you need? *</option>
             <option value="Roof Replacement">Roof Replacement</option>
-            <option value="Metal Roofing">Metal Roofing</option>
+            <option value="Commercial & Residential Roofing">Commercial & Residential Roofing</option>
             <option value="Gutters">Gutters</option>
             <option value="Roof Repair">Roof Repair</option>
             <option value="Storm Damage / Insurance">Storm Damage / Insurance</option>
@@ -218,7 +218,8 @@ get_header(); ?>
     <div class="ajs-ticker">
       <div class="ajs-ticker-track">
         <span>Roof Replacement</span>
-        <span>Metal Roofing</span>
+        <span>Commercial & Residential Roofing</span>
+        <span>TPO/PVC Systems</span>
         <span>Seamless Gutters</span>
         <span>Storm Damage Repair</span>
         <span>Roof Inspection</span>
@@ -227,7 +228,8 @@ get_header(); ?>
         <span>Roof Maintenance</span>
 
         <span>Roof Replacement</span>
-        <span>Metal Roofing</span>
+        <span>Commercial & Residential Roofing</span>
+        <span>TPO/PVC Systems</span>
         <span>Seamless Gutters</span>
         <span>Storm Damage Repair</span>
         <span>Roof Inspection</span>
@@ -290,14 +292,14 @@ get_header(); ?>
           'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/down-net_http20260223-218-kolndq.png'
         ],
         [
-          'title' => 'Metal Roofing',
-          'copy'  => 'Standing seam and metal panel systems built for New Mexico\'s extreme UV, hail, and wind. 40-70 year lifespan. The last roof your home will need.',
-          'link'  => '/service/metal-roofing',
+          'title' => 'Commercial & Residential Roofing',
+          'copy'  => 'TPO/PVC, metal, tile, and shingle systems for homes and businesses across New Mexico. 100% in-house crews, 5/8/10-year warranty with free annual inspections, and solar-ready installations. Same documented process at every scale.',
+          'link'  => '/service/commercial-residential-roofing',
           'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/edit-123-tbd-d-scaled.png'
         ],
         [
           'title' => 'Seamless Gutters',
-          'copy'  => 'Custom-fabricated on-site with our own machine. No seams, no leaks, no subcontractors. Precision drainage that protects your foundation.',
+          'copy'  => 'Custom-fabricated on-site with our own machine brought directly to your property so the material is formed on location, eliminating damage from pre-cutting and transporting. No seams, no leaks, no subcontractors. Precision drainage that protects your foundation.',
           'link'  => '/service/gutters',
           'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/DJI_20260130170840_0014_D-scaled.jpg'
         ],
@@ -359,6 +361,41 @@ get_header(); ?>
   </div>
 </section>
 
+<!-- Material Ribbon -->
+<section class="relative overflow-hidden border-y border-[#d3d8db] bg-white">
+  
+  <!-- Glow effects -->
+  <div class="absolute inset-0 bg-[radial-gradient(circle_at_left,rgba(110,170,206,0.18),transparent_40%)]"></div>
+  <div class="absolute inset-0 bg-[radial-gradient(circle_at_right,rgba(208,68,24,0.14),transparent_35%)]"></div>
+
+  <div class="relative mx-auto max-w-7xl px-4 py-10">
+    
+    <p class="ajs-reveal mb-3 text-center text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
+      Built With Proven Systems
+    </p>
+
+    <div class="ajs-reveal flex flex-wrap items-center justify-center gap-3 md:gap-4">
+      
+      <span class="ajs-chip">
+        Shingles
+      </span>
+
+      <span class="ajs-chip">
+        TPO / PVC
+      </span>
+
+      <span class="ajs-chip">
+        Metal
+      </span>
+
+      <span class="ajs-chip">
+        Tile
+      </span>
+
+    </div>
+  </div>
+</section>
+
   <!-- Why Choose AJS -->
   <section class="py-20">
     <div class="mx-auto max-w-7xl px-4">
@@ -386,9 +423,9 @@ get_header(); ?>
         </article>
 
         <article class="ajs-hover-lift ajs-reveal rounded-[24px] border border-[#132d41] bg-[linear-gradient(135deg,rgba(19,45,65,1),rgba(110,170,206,0.95))] p-6 text-white shadow-[0_14px_32px_rgba(19,45,65,0.12)]">
-          <h3 class="text-xl font-black">Built for New Mexico Conditions</h3>
+          <h3 class="text-xl font-black">On-Site Gutter Fabrication</h3>
           <p class="mt-4 text-[15px] leading-8 text-white/88">
-            Materials and installation choices made for UV, hail, wind, and long-term durability.
+            We bring our gutter machine directly to your property. Seamless gutters are measured, formed, and installed on location so the material is never pre-cut, bent, or damaged during transport. Structure you can trust.
           </p>
         </article>
 
@@ -468,10 +505,10 @@ get_header(); ?>
         Roof Replacement 
       </div>
 
-      <!-- Metal Roofing -->
+      <!-- Commercial & Residential Roofing -->
       <div class="ajs-hover-lift ajs-reveal flex min-h-[220px] items-end rounded-[24px] border border-[#d3d8db] p-6 font-black text-white bg-cover bg-center"
         style="background-image: linear-gradient(180deg, rgba(19,45,65,0.15), rgba(19,45,65,0.45)), url('http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/Edited-WP-1-1-scaled.png');">
-        Metal Roofing 
+        Commercial & Residential Roofing 
       </div>
 
       <!-- Seamless Gutters -->
@@ -555,6 +592,95 @@ get_header(); ?>
         </a>
       </div>
 
+    </div>
+  </section>
+
+  <!-- Referral Program -->
+  <section class="py-20">
+    <div class="mx-auto max-w-7xl px-4">
+      <div class="ajs-reveal relative overflow-hidden rounded-[30px] border border-[#d3d8db] bg-[linear-gradient(135deg,#132d41_0%,#1b405c_55%,#244f70_100%)] px-6 py-8 text-white shadow-[0_24px_54px_rgba(19,45,65,0.16)] md:px-8 md:py-10 lg:px-10 lg:py-12">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(110,170,206,0.18),transparent_30%)]"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(208,68,24,0.12),transparent_30%)]"></div>
+        <div class="absolute right-[-70px] top-[-70px] h-[180px] w-[180px] rounded-full bg-[#6eaace]/12 blur-3xl"></div>
+        <div class="absolute bottom-[-80px] left-[-60px] h-[180px] w-[180px] rounded-full bg-[#d04418]/10 blur-3xl"></div>
+
+        <div class="relative grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
+          <div class="ajs-reveal-left">
+            <div class="inline-flex items-center gap-3 rounded-full border border-white/12 bg-white/10 px-4 py-2 text-[11px] font-black uppercase tracking-[0.18em] text-white/88 backdrop-blur-sm">
+              <span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-white/12 text-[#6eaace]">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M7 10a3 3 0 1 0-3-3 3 3 0 0 0 3 3Zm10 0a3 3 0 1 0-3-3 3 3 0 0 0 3 3ZM7 12c-2.761 0-5 1.79-5 4v1h10v-1c0-2.21-2.239-4-5-4Zm10 0c-.339 0-.669.028-.989.08A5.991 5.991 0 0 1 18 16v1h4v-1c0-2.21-2.239-4-5-4Zm-5.5-1a3.5 3.5 0 1 0-3.5-3.5A3.5 3.5 0 0 0 11.5 11Zm0 2C8.462 13 6 15.015 6 17.5V19h11v-1.5C17 15.015 14.538 13 11.5 13Z"/>
+                </svg>
+              </span>
+              Referral Program
+            </div>
+
+            <h2 class="mt-6 max-w-3xl text-3xl font-black leading-tight tracking-[-0.03em] text-white md:text-5xl">
+              Know Someone Who Needs a Roof? We'll Take Care of Them.
+            </h2>
+
+            <p class="mt-5 max-w-3xl text-base leading-8 text-white/82 md:text-lg">
+              Refer a friend, neighbor, or family member to AJS and you both benefit. They get the same documented process, transparent communication, and warranty-backed protection you experienced and you earn a referral reward for trusting us with someone you care about.
+            </p>
+
+            <div class="mt-7">
+              <a href="tel:+15054535626"
+                 class="ajs-btn-animate inline-flex items-center justify-center rounded-full bg-[#d04418] px-6 py-4 text-sm font-black text-white shadow-[0_18px_36px_rgba(208,68,24,0.28)] transition">
+                Refer Someone Now
+              </a>
+              <p class="mt-3 text-sm text-white/70">
+                No limit on referrals. The more people you send our way, the more you earn.
+              </p>
+            </div>
+          </div>
+
+          <div class="ajs-reveal-right">
+            <div class="grid gap-4 md:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3">
+              <article class="rounded-[24px] border border-white/12 bg-white/10 p-5 backdrop-blur-sm shadow-[0_12px_28px_rgba(19,45,65,0.14)]">
+                <div class="flex h-11 w-11 items-center justify-center rounded-2xl bg-white/12 text-[#6eaace]">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M19 3H5a2 2 0 0 0-2 2v14l4-3h12a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2Zm-1 9H8v-2h10Zm0-3H8V7h10Z"/>
+                  </svg>
+                </div>
+                <h3 class="mt-4 text-lg font-black text-white">
+                  Send Us Their Info
+                </h3>
+                <p class="mt-3 text-sm leading-7 text-white/78">
+                  Fill out the short referral form or call us with their name and number. That's it.
+                </p>
+              </article>
+
+              <article class="rounded-[24px] border border-white/12 bg-white/10 p-5 backdrop-blur-sm shadow-[0_12px_28px_rgba(19,45,65,0.14)]">
+                <div class="flex h-11 w-11 items-center justify-center rounded-2xl bg-white/12 text-[#6eaace]">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 2a7 7 0 0 0-7 7c0 4.418 7 13 7 13s7-8.582 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 14.5 9 2.5 2.5 0 0 1 12 11.5Z"/>
+                  </svg>
+                </div>
+                <h3 class="mt-4 text-lg font-black text-white">
+                  We Reach Out &amp; Take Care of Them
+                </h3>
+                <p class="mt-3 text-sm leading-7 text-white/78">
+                  We contact your referral, schedule their free inspection, and give them the full AJS experience.
+                </p>
+              </article>
+
+              <article class="rounded-[24px] border border-white/12 bg-white/10 p-5 backdrop-blur-sm shadow-[0_12px_28px_rgba(19,45,65,0.14)]">
+                <div class="flex h-11 w-11 items-center justify-center rounded-2xl bg-white/12 text-[#6eaace]">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 1 3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5Zm-1 15-4-4 1.41-1.41L11 13.17l4.59-4.58L17 10Z"/>
+                  </svg>
+                </div>
+                <h3 class="mt-4 text-lg font-black text-white">
+                  You Get Rewarded
+                </h3>
+                <p class="mt-3 text-sm leading-7 text-white/78">
+                  Once their project is completed, you receive your referral reward. No hoops. No waiting.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -758,7 +884,7 @@ get_header(); ?>
           class="w-full rounded-2xl border border-[#d3d8db] bg-white px-4 py-4 text-sm text-[#42474b] outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20">
           <option value="" selected disabled>What do you need? *</option>
           <option value="Roof Replacement">Roof Replacement</option>
-          <option value="Metal Roofing">Metal Roofing</option>
+          <option value="Commercial & Residential Roofing">Commercial & Residential Roofing</option>
           <option value="Gutters">Gutters</option>
           <option value="Roof Repair">Roof Repair</option>
           <option value="Storm Damage / Insurance">Storm Damage / Insurance</option>
@@ -895,6 +1021,33 @@ get_header(); ?>
     opacity: 1;
     transform: translateX(0);
   }
+
+
+.ajs-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.55rem 1.1rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #132d41;
+  background: linear-gradient(180deg,#ffffff 0%,#f5f7f8 100%);
+  border: 1px solid #d3d8db;
+  box-shadow: 0 8px 20px rgba(19,45,65,0.06);
+  transition: all .25s ease;
+}
+
+.ajs-chip:hover {
+  transform: translateY(-2px);
+  border-color: rgba(110,170,206,0.4);
+  color: #132d41;
+}
+
+
+
 
   .ajs-hover-lift {
     transition: transform .25s ease, box-shadow .25s ease;

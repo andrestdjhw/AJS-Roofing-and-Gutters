@@ -29,7 +29,7 @@ get_header(); ?>
           </h1>
 
           <p class="ajs-slogan mt-5" aria-label="Structure You Can Trust.">
-            <span class="ajs-slogan-word" style="--i:0">—</span>
+            <span class="ajs-slogan-word" style="--i:0"></span>
             <span class="ajs-slogan-word" style="--i:1"> Structure</span>
             <span class="ajs-slogan-word" style="--i:2"> You</span>
             <span class="ajs-slogan-word" style="--i:3"> Can</span>
@@ -37,11 +37,11 @@ get_header(); ?>
           </p>
 
           <p class="mt-8 max-w-2xl text-base leading-8 text-white/85 md:text-lg">
-            AJS fabricates and installs seamless aluminum gutters on-site using our own machine. Unlike contractors who subcontract or use pre-cut pieces, we control the entire process: measurement, fabrication, installation, and downspout routing.
+            AJS fabricates and installs seamless aluminum gutters on-site using our own machine  brought directly to your property so every section is measured, formed, and installed on location. Unlike contractors who pre-cut gutters at a shop and transport them to the job site, our process eliminates the bending, warping, and surface damage that happens when material is loaded, hauled, and unloaded before it ever reaches your home.
           </p>
 
           <p class="mt-4 max-w-2xl text-base leading-8 text-white/78">
-            The result is a custom-fit drainage system with no seams to leak and no middlemen. In New Mexico, monsoon season dumps massive water in short, violent bursts. Proper drainage isn’t optional it’s protection your foundation depends on.
+            The result is a custom-fit drainage system with factory-fresh material, no seams to leak, and no middlemen. In New Mexico, monsoon season dumps massive water in short, violent bursts. Proper drainage isn’t optional  it’s protection your foundation depends on.
           </p>
 
           <div class="mt-8 flex flex-wrap gap-3">
@@ -162,6 +162,47 @@ get_header(); ?>
     </div>
   </div>
 </section>
+
+  <!-- VALUE CARDS -->
+  <section class="py-20">
+    <div class="mx-auto max-w-7xl px-4">
+      <div class="mb-10 max-w-3xl">
+        <p class="ajs-reveal mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
+          Why Seamless Gutters
+        </p>
+        <h2 class="ajs-reveal text-3xl font-black tracking-[-0.03em] text-[#132d41] md:text-5xl">
+          On-site fabrication and drainage precision built for New Mexico conditions.
+        </h2>
+      </div>
+
+      <div class="grid gap-6 md:grid-cols-3">
+        <article class="ajs-reveal ajs-hover-lift group rounded-[24px] border border-[#d3d8db] bg-white p-6 shadow-[0_14px_32px_rgba(19,45,65,0.06)]">
+          <div class="mb-5 h-1.5 w-14 rounded-full bg-[#d04418] transition-all duration-500 group-hover:w-24"></div>
+          <h3 class="text-xl font-black text-[#132d41]">On-Site Fabrication, Zero Transport Damage</h3>
+          <p class="mt-4 text-[15px] leading-8 text-[#42474b]">
+            Our gutter machine travels to your property. Material is formed on location from factory-fresh coil stock  never pre-cut, loaded on a truck, and bent in transit. Precision you can see.
+          </p>
+        </article>
+
+        <article class="ajs-reveal ajs-hover-lift group rounded-[24px] border border-[#d3d8db] bg-white p-6 shadow-[0_14px_32px_rgba(19,45,65,0.06)]">
+          <div class="mb-5 h-1.5 w-14 rounded-full bg-[#6eaace] transition-all duration-500 group-hover:w-24"></div>
+          <h3 class="text-xl font-black text-[#132d41]">Custom-Fit to Your Home</h3>
+          <p class="mt-4 text-[15px] leading-8 text-[#42474b]">
+            Every section measured and fabricated to your roofline’s exact dimensions. No generic pieces. No seams. No leaks. Structure you can trust.
+          </p>
+        </article>
+
+        <article class="ajs-reveal ajs-hover-lift group rounded-[24px] border border-[#d3d8db] bg-white p-6 shadow-[0_14px_32px_rgba(19,45,65,0.06)]">
+          <div class="mb-5 h-1.5 w-14 rounded-full bg-[#132d41] transition-all duration-500 group-hover:w-24"></div>
+          <h3 class="text-xl font-black text-[#132d41]">Complete Drainage System</h3>
+          <p class="mt-4 text-[15px] leading-8 text-[#42474b]">
+            Gutters, downspouts, and routing designed for New Mexico’s monsoon volume. We protect your foundation, not just your fascia.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
   <!-- OTHER SERVICES -->
   <section class="py-20">
     <div class="mx-auto max-w-7xl px-4">
@@ -184,8 +225,7 @@ get_header(); ?>
         <?php
         $services = [
           ['Roof Replacement', '/service/roof-replacement', 'Complete tear-off and rebuild with documented process and manufacturer-backed protection.'],
-          ['Metal Roofing', '/service/metal-roofing', 'Durable, long-lasting roofing solutions for residential and commercial properties.'],
-          ['Storm Damage & Insurance', '/service/storm-damage-insurance', 'Documentation and claim support when weather turns uncertainty into urgency.'],
+['Commercial & Residential Roofing', '/service/commercial-residential-roofing', 'TPO/PVC, metal, tile, and shingle systems for homes and businesses with in-house crews, documented process, and long-term performance.'],          ['Storm Damage & Insurance', '/service/storm-damage-insurance', 'Documentation and claim support when weather turns uncertainty into urgency.'],
           ['Roof Repair', '/service/roof-repair', 'Targeted fixes when replacement is not yet necessary.'],
           ['Roof Inspection & Maintenance', '/service/roof-inspection', 'Photo-documented assessments that help prevent bigger problems later.'],
         ];
@@ -208,6 +248,7 @@ get_header(); ?>
       </div>
     </div>
   </section>
+
   <!-- FAQ -->
 <section id="seamless-gutters-faq" class="bg-[#d3d8db]/20 py-20">
   <div class="mx-auto max-w-4xl px-4">
@@ -265,6 +306,7 @@ get_header(); ?>
     </div>
   </div>
 </section>
+
   <!-- LOCATION -->
   <section class="py-20">
     <div class="mx-auto grid max-w-7xl gap-8 px-4 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
@@ -417,12 +459,12 @@ get_header(); ?>
     transition: transform .35s ease, box-shadow .35s ease;
   }
   .ajs-faq-item[open] > div {
-  grid-template-rows: 1fr !important;
-}
+    grid-template-rows: 1fr !important;
+  }
 
-.ajs-faq-item[open] .ajs-faq-plus {
-  transform: rotate(45deg);
-}
+  .ajs-faq-item[open] .ajs-faq-plus {
+    transform: rotate(45deg);
+  }
   .ajs-gallery-card:hover {
     transform: translateY(-8px) scale(1.01);
     box-shadow: 0 24px 44px rgba(19, 45, 65, 0.14);

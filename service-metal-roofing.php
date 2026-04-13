@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Metal Roofing Template
+ * Template Name: Commercial & Residential Roofing Template
  */
 
 get_header(); ?>
@@ -19,16 +19,16 @@ get_header(); ?>
       <div class="grid gap-12 lg:grid-cols-[1.18fr_0.82fr] lg:items-center">
         <div class="ajs-reveal-left">
           <p class="mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#6eaace]">
-            Metal Roofing
+            Commercial &amp; Residential Roofing
           </p>
 
           <h1 class="font-black tracking-[-0.04em] leading-[1.05] text-4xl md:text-5xl lg:text-[4.25rem] text-white">
-            <span class="ajs-title-line" style="--i:0">Metal Roofing</span><br>
+            <span class="ajs-title-line" style="--i:0">Commercial &amp; Residential Roofing</span><br>
             <span class="ajs-title-line" style="--i:1">in New Mexico</span>
           </h1>
 
           <p class="ajs-slogan mt-5" aria-label="Precision Overhead. Peace Inside.">
-            <span class="ajs-slogan-word" style="--i:0">—</span>
+            <span class="ajs-slogan-word" style="--i:0"></span>
             <span class="ajs-slogan-word" style="--i:1"> Precision</span>
             <span class="ajs-slogan-word" style="--i:2"> Overhead.</span>
             <span class="ajs-slogan-word" style="--i:3">&nbsp;&nbsp;Peace</span>
@@ -36,11 +36,11 @@ get_header(); ?>
           </p>
 
           <p class="mt-8 max-w-2xl text-base leading-8 text-white/85 md:text-lg">
-            AJS Roofing &amp; Gutters installs standing seam and metal panel systems across Albuquerque, Santa Fe, and throughout New Mexico. Metal roofing is the highest-performance option for the state’s extreme conditions with a 40–70 year lifespan, superior energy efficiency, and virtually zero maintenance.
+            AJS Roofing &amp; Gutters installs, repairs, and maintains roofing systems for both residential and commercial properties across Albuquerque, Santa Fe, Rio Rancho, and surrounding New Mexico communities. Whether your property needs shingle, tile, metal, or a TPO/PVC membrane system  every project follows the same documented 5-step process. No shortcuts at any scale.
           </p>
 
           <p class="mt-4 max-w-2xl text-base leading-8 text-white/78">
-            For homeowners tired of replacing shingles every 20 years, metal is protection you can feel for decades. It’s a system built for long-term confidence, cleaner performance, and peace of mind in a climate that demands more from every roof.
+            New Mexico’s climate doesn’t distinguish between a home and a warehouse. UV index 8–10, monsoon downpours, and 3–8 hail events per year hit everything. Your roofing system should be built for what this state actually does  and so should the team installing it.
           </p>
 
           <div class="mt-8 flex flex-wrap gap-3">
@@ -49,7 +49,7 @@ get_header(); ?>
               Get Your Free Inspection
             </a>
 
-            <a href="#metal-roofing-faq"
+            <a href="#commercial-residential-roofing-faq"
                class="ajs-btn-animate inline-flex items-center justify-center rounded-full border border-white/15 bg-white/10 px-6 py-4 text-sm font-black text-white backdrop-blur-sm transition hover:bg-white/15">
               Explore FAQs
             </a>
@@ -70,28 +70,28 @@ get_header(); ?>
               <div class="ajs-stagger-item rounded-[24px] border border-white/10 bg-white/10 p-5">
                 <span class="text-xs font-black uppercase tracking-[0.18em] text-[#6eaace]">Entity statement</span>
                 <h3 class="mt-2 text-xl font-black text-white">
-                  High-performance metal roofing built for New Mexico’s UV, hail, wind, and long-term durability.
+                  Roofing services for homes and businesses across New Mexico  including TPO/PVC, metal, tile, and shingle systems.
                 </h3>
                 <p class="mt-3 text-sm leading-7 text-white/75">
-                  This page is built to help homeowners understand why metal roofing lasts longer, performs better, and reduces long-term replacement cycles.
+                  This page is built to help property owners understand the systems AJS installs, the documented process behind every project, and the long-term protection available across residential and commercial roofing.
                 </p>
               </div>
 
               <div class="grid gap-4 md:grid-cols-2">
                 <div class="ajs-stagger-item rounded-[24px] border border-white/10 bg-white/10 p-5">
-                  <p class="text-3xl font-black text-white">40–70</p>
-                  <p class="mt-2 text-sm font-bold uppercase tracking-[0.14em] text-[#6eaace]">Year Lifespan</p>
+                  <p class="text-3xl font-black text-white">5 / 8 / 10</p>
+                  <p class="mt-2 text-sm font-bold uppercase tracking-[0.14em] text-[#6eaace]">Year Warranty Terms</p>
                 </div>
                 <div class="ajs-stagger-item rounded-[24px] border border-white/10 bg-white/10 p-5">
-                  <p class="text-3xl font-black text-white">140+</p>
-                  <p class="mt-2 text-sm font-bold uppercase tracking-[0.14em] text-[#6eaace]">MPH Wind Rating</p>
+                  <p class="text-3xl font-black text-white">100%</p>
+                  <p class="mt-2 text-sm font-bold uppercase tracking-[0.14em] text-[#6eaace]">In-House Crews</p>
                 </div>
               </div>
 
               <div class="ajs-stagger-item overflow-hidden rounded-[24px] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.06),rgba(255,255,255,0.02))] p-0">
                 <div class="flex min-h-[180px] items-end bg-[linear-gradient(180deg,rgba(19,45,65,0.1),rgba(19,45,65,0.36)),linear-gradient(180deg,#7998ad_0%,#516f86_100%)] p-5">
                   <span class="text-sm font-black uppercase tracking-[0.16em] text-white/88">
-                    Metal roofing project image area
+                    Commercial &amp; residential roofing project image area
                   </span>
                 </div>
               </div>
@@ -107,15 +107,15 @@ get_header(); ?>
   <section class="py-20">
     <div class="mx-auto max-w-5xl px-4 text-center">
       <p class="ajs-reveal inline-block rounded-full bg-[#d04418]/8 px-4 py-2 text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
-        Built to stand between you and the storm
+        One process. Every scale.
       </p>
 
       <h2 class="ajs-reveal mt-5 text-3xl font-black tracking-[-0.03em] text-[#132d41] md:text-5xl">
-        A longer-lasting roof changes how a home feels.
+        Roofing systems for homes and businesses built around clarity and control.
       </h2>
 
       <p class="ajs-reveal mt-6 text-lg leading-8 text-[#42474b]">
-        Metal roofing is not just an upgrade in materials. It is an upgrade in lifespan, efficiency, and long-term certainty for homeowners who want a roof that performs for decades.
+        From single-family homes to commercial facilities, AJS installs the right roofing system for the property type, roof slope, exposure, and New Mexico conditions  all through the same documented 5-step process.
       </p>
     </div>
   </section>
@@ -129,12 +129,12 @@ get_header(); ?>
           Recent Work
         </p>
         <h2 class="ajs-reveal text-3xl font-black tracking-[-0.03em] text-[#132d41] md:text-5xl">
-          Recent Metal Roofing Projects
+          Recent Commercial &amp; Residential Roofing Projects
         </h2>
       </div>
 
       <p class="ajs-reveal max-w-xl text-base leading-8 text-[#42474b]">
-        A selection of recent metal roofing projects completed with durable materials and careful installation.
+        A selection of recent roofing projects completed across residential and commercial properties with the same documented process at every scale.
       </p>
     </div>
 
@@ -142,27 +142,27 @@ get_header(); ?>
       <?php
       $gallery_items = [
         [
-          'label' => 'Standing Seam · Albuquerque',
+          'label' => 'Metal Roofing · Albuquerque',
           'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/Edited-WP-1-1-scaled.png'
         ],
         [
-          'label' => 'Metal Panel System · Santa Fe',
+          'label' => 'Low-Slope / Membrane System',
           'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/down-net_http20260221-256-d4vc77.jpeg'
         ],
         [
-          'label' => 'Residential Upgrade · Rio Rancho',
+          'label' => 'Residential Roofing Upgrade · Rio Rancho',
           'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/down-net_http20260223-122-k9uufd.jpg'
         ],
         [
-          'label' => 'Premium Metal Roof ',
+          'label' => 'Tile / Shingle / Metal Project',
           'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/IMG_1319-scaled.jpeg'
         ],
         [
-          'label' => 'Weather-Ready Install ',
+          'label' => 'Solar-Ready Installation',
           'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/edit-123-tbd-d-scaled.png'
         ],
         [
-          'label' => 'Long-Life System ',
+          'label' => 'Commercial &amp; Residential Roofing System',
           'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/edit-tbd-2-1-scaled.png'
         ],
       ];
@@ -184,40 +184,65 @@ get_header(); ?>
     </div>
   </div>
 </section>
+
   <!-- VALUE CARDS -->
   <section class="py-20">
     <div class="mx-auto max-w-7xl px-4">
       <div class="mb-10 max-w-3xl">
         <p class="ajs-reveal mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
-          Why Choose Metal Roofing
+          Why Choose AJS
         </p>
         <h2 class="ajs-reveal text-3xl font-black tracking-[-0.03em] text-[#132d41] md:text-5xl">
-          The value of metal roofing is performance you can feel for decades.
+          The value is not just the system. It’s the process, documentation, and accountability behind it.
         </h2>
       </div>
 
       <div class="grid gap-6 md:grid-cols-3">
         <article class="ajs-reveal ajs-hover-lift group rounded-[24px] border border-[#d3d8db] bg-white p-6 shadow-[0_14px_32px_rgba(19,45,65,0.06)]">
           <div class="mb-5 h-1.5 w-14 rounded-full bg-[#d04418] transition-all duration-500 group-hover:w-24"></div>
-          <h3 class="text-xl font-black text-[#132d41]">40–70 Year Lifespan</h3>
+          <h3 class="text-xl font-black text-[#132d41]">One Process. Every Scale.</h3>
           <p class="mt-4 text-[15px] leading-8 text-[#42474b]">
-            Outlasts 2–3 shingle roofs. Durability that eliminates the replacement cycle.
+            Whether it’s a 1,200 sq ft home or a 30,000 sq ft commercial building, our 5-step system doesn’t change. Inspect, Plan, Protect, Build, Verify. Control at every step.
           </p>
         </article>
 
         <article class="ajs-reveal ajs-hover-lift group rounded-[24px] border border-[#d3d8db] bg-white p-6 shadow-[0_14px_32px_rgba(19,45,65,0.06)]">
           <div class="mb-5 h-1.5 w-14 rounded-full bg-[#6eaace] transition-all duration-500 group-hover:w-24"></div>
-          <h3 class="text-xl font-black text-[#132d41]">Extreme Weather Performance</h3>
+          <h3 class="text-xl font-black text-[#132d41]">Climate-Matched Recommendations</h3>
           <p class="mt-4 text-[15px] leading-8 text-[#42474b]">
-            Class 4 hail resistance, 140+ mph wind rating, UV reflectivity. Built to stand between you and the storm.
+            We don’t sell you a system. We recommend the right one based on your property type, roof slope, sun exposure, and New Mexico’s specific conditions. Confidence in the decision.
           </p>
         </article>
 
         <article class="ajs-reveal ajs-hover-lift group rounded-[24px] border border-[#d3d8db] bg-white p-6 shadow-[0_14px_32px_rgba(19,45,65,0.06)]">
           <div class="mb-5 h-1.5 w-14 rounded-full bg-[#132d41] transition-all duration-500 group-hover:w-24"></div>
-          <h3 class="text-xl font-black text-[#132d41]">Solar-Ready</h3>
+          <h3 class="text-xl font-black text-[#132d41]">5/8/10-Year Warranty + Free Annual Inspections</h3>
           <p class="mt-4 text-[15px] leading-8 text-[#42474b]">
-            NM is a top solar state. Metal is the ideal mounting surface for future energy upgrades.
+            Workmanship warranty with a free inspection every year. Stay covered by keeping your roof maintained. Protection that’s documented, not just promised.
+          </p>
+        </article>
+
+        <article class="ajs-reveal ajs-hover-lift group rounded-[24px] border border-[#d3d8db] bg-white p-6 shadow-[0_14px_32px_rgba(19,45,65,0.06)]">
+          <div class="mb-5 h-1.5 w-14 rounded-full bg-[#d04418] transition-all duration-500 group-hover:w-24"></div>
+          <h3 class="text-xl font-black text-[#132d41]">Solar-Ready Installation</h3>
+          <p class="mt-4 text-[15px] leading-8 text-[#42474b]">
+            Roofing systems built to support solar panels now or in the future. Structural reinforcement and flashing planned from day one.
+          </p>
+        </article>
+
+        <article class="ajs-reveal ajs-hover-lift group rounded-[24px] border border-[#d3d8db] bg-white p-6 shadow-[0_14px_32px_rgba(19,45,65,0.06)]">
+          <div class="mb-5 h-1.5 w-14 rounded-full bg-[#6eaace] transition-all duration-500 group-hover:w-24"></div>
+          <h3 class="text-xl font-black text-[#132d41]">Insurance Inspector Partnership</h3>
+          <p class="mt-4 text-[15px] leading-8 text-[#42474b]">
+            We meet with your insurance inspector on-site to walk through damage documentation and help ensure your claim qualifies. We don’t leave you alone in the process.
+          </p>
+        </article>
+
+        <article class="ajs-reveal ajs-hover-lift group rounded-[24px] border border-[#d3d8db] bg-white p-6 shadow-[0_14px_32px_rgba(19,45,65,0.06)]">
+          <div class="mb-5 h-1.5 w-14 rounded-full bg-[#132d41] transition-all duration-500 group-hover:w-24"></div>
+          <h3 class="text-xl font-black text-[#132d41]">100% In-House Crews</h3>
+          <p class="mt-4 text-[15px] leading-8 text-[#42474b]">
+            No subcontractors. Every project completed by our own trained team. Direct accountability from inspection to final walkthrough.
           </p>
         </article>
       </div>
@@ -234,17 +259,17 @@ get_header(); ?>
         Our Process
       </p>
       <h2 class="ajs-reveal max-w-4xl text-3xl font-black tracking-[-0.03em] md:text-5xl">
-        A clear metal roofing process from evaluation to final verification.
+        A clear roofing process from inspection through final verification.
       </h2>
 
       <div class="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-5">
         <?php
         $steps = [
-          ['01', 'Inspect', 'We evaluate the existing roof, slope, ventilation, and structure to confirm the right metal system for the property.'],
-          ['02', 'Plan', 'We explain panel options, finish selections, system type, timeline, and expected long-term performance.'],
-          ['03', 'Protect', 'We prepare the property carefully, stage materials, and protect surrounding areas before installation begins.'],
-          ['04', 'Build', 'Your metal roof is installed to spec with disciplined execution, weather-ready detailing, and documented progress.'],
-          ['05', 'Verify', 'We complete a final walkthrough, confirm details, and deliver a system built for decades of confidence.'],
+          ['01', 'Inspect', 'We evaluate the property, system type, roof slope, and existing conditions to determine the right roofing solution for the building.'],
+          ['02', 'Plan', 'We explain system options, project scope, timeline, warranty coverage, and what the property needs based on New Mexico conditions.'],
+          ['03', 'Protect', 'We prepare the site carefully, stage materials, follow safety protocols, and protect the property before installation begins.'],
+          ['04', 'Build', 'Your roofing system is installed to spec with disciplined execution, documented progress, and the same process at every scale.'],
+          ['05', 'Verify', 'We complete a final walkthrough, confirm details, and deliver documentation built around long-term performance and peace of mind.'],
         ];
 
         foreach ($steps as $step) : ?>
@@ -278,7 +303,7 @@ get_header(); ?>
         </div>
 
         <p class="ajs-reveal max-w-xl text-base leading-8 text-[#42474b]">
-          Cross-link this page to the rest of the service stack so visitors can compare systems and choose the right fit for their home.
+          Cross-link this page to the rest of the service stack so visitors can compare roofing and drainage solutions and choose the right fit for their property.
         </p>
       </div>
 
@@ -312,41 +337,57 @@ get_header(); ?>
   </section>
 
   <!-- FAQ -->
-  <section id="metal-roofing-faq" class="bg-[#d3d8db]/20 py-20">
+  <section id="commercial-residential-roofing-faq" class="bg-[#d3d8db]/20 py-20">
     <div class="mx-auto max-w-4xl px-4">
       <p class="ajs-reveal mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
-        Metal Roofing FAQ
+        Commercial &amp; Residential Roofing FAQ
       </p>
       <h2 class="ajs-reveal text-3xl font-black tracking-[-0.03em] text-[#132d41] md:text-5xl">
-        Answers that make metal roofing easier to understand.
+        Answers that make commercial and residential roofing easier to understand.
       </h2>
 
       <div class="mt-10 grid gap-4">
         <?php
         $faqs = [
           [
-            'q' => 'How long does a metal roof last?',
-            'a' => 'A properly installed metal roofing system can last 40–70 years, which means it can outlast two or three traditional shingle replacement cycles.'
+            'q' => 'Does AJS work on both residential and commercial roofs?',
+            'a' => 'Yes. AJS Roofing & Gutters provides roofing services for single-family homes, multi-family properties, and commercial buildings across New Mexico. Every project follows the same documented 5-step process.'
           ],
           [
-            'q' => 'Is metal roofing a good choice for New Mexico weather?',
-            'a' => 'Yes. Metal roofing performs exceptionally well in New Mexico because it offers strong resistance to UV exposure, hail, and high winds while maintaining long-term durability.'
+            'q' => 'What types of roofing systems does AJS install?',
+            'a' => 'AJS installs shingle, tile, standing seam metal, and TPO/PVC membrane systems. We recommend the best option based on your property type, roof structure, and New Mexico’s climate conditions.'
           ],
           [
-            'q' => 'Is a metal roof louder when it rains or hails?',
-            'a' => 'When installed correctly as part of a full roofing system, metal roofing is not the loud, exposed-panel setup many people imagine. Proper underlayment and assembly matter.'
+            'q' => 'What is TPO roofing and is it right for my commercial building?',
+            'a' => 'TPO is a single-ply membrane system designed for flat and low-slope roofs. It’s energy-efficient, UV-reflective, and cost-effective for commercial properties. AJS can evaluate your building and recommend whether TPO, PVC, or another system is the best fit.'
           ],
           [
-            'q' => 'Can I add solar panels later if I choose metal roofing now?',
-            'a' => 'Yes. Metal roofing is one of the best long-term surfaces for future solar integration, which is especially relevant in a strong solar market like New Mexico.'
+            'q' => 'What warranty does AJS offer?',
+            'a' => 'AJS offers workmanship warranties of 5, 8, or 10 years depending on the roofing system and project scope. Every warranty includes a free annual inspection. Coverage remains active as long as the annual inspection is completed and recommended repairs are addressed.'
           ],
           [
-            'q' => 'Is metal roofing more expensive than shingles?',
-            'a' => 'Initial cost is usually higher, but metal often delivers better long-term value because of lifespan, lower maintenance, and reduced replacement frequency.'
+            'q' => 'What does the free annual inspection include?',
+            'a' => 'Each year, an AJS crew inspects your roof, documents its condition with photos, and provides a report with any recommended maintenance or repairs. Completing this inspection keeps your workmanship warranty active.'
           ],
           [
-            'q' => 'How do I know if metal is the right fit for my home?',
-            'a' => 'That starts with an inspection and conversation. We look at your roof design, goals, budget, and long-term plans, then explain clearly whether metal is the right move.'
+            'q' => 'Does AJS work with insurance inspectors?',
+            'a' => 'Yes. AJS meets directly with your insurance inspector on-site to walk through documented damage and help ensure your property qualifies for coverage. We advocate for our clients throughout the claims process.'
+          ],
+          [
+            'q' => 'Does AJS subcontract any of the work?',
+            'a' => 'No. Every AJS project is completed by our own trained, in-house crews. We do not subcontract labor. This ensures consistent quality and direct accountability on every job.'
+          ],
+          [
+            'q' => 'Can AJS install a roof that supports solar panels?',
+            'a' => 'Yes. AJS installs solar-ready roofing systems with proper structural reinforcement and flashing details. Whether you’re adding solar now or planning for the future, your roof will be prepared.'
+          ],
+          [
+            'q' => 'Does AJS provide free estimates for commercial roofing projects?',
+            'a' => 'Yes. AJS provides free, no-obligation inspections and detailed written estimates for both residential and commercial roofing projects.'
+          ],
+          [
+            'q' => 'How long does a commercial roof installation take?',
+            'a' => 'Timeline depends on the size and complexity of the project. After inspection and planning, AJS provides a projected start and completion date. A dedicated supervisor oversees quality control throughout the project.'
           ],
         ];
 
@@ -377,13 +418,13 @@ get_header(); ?>
           Office Location
         </p>
         <h2 class="max-w-[14ch] text-3xl font-black tracking-[-0.03em] text-[#132d41] md:text-5xl">
-          Local roof replacement service with clear communication and reliable execution.
+          Local roofing service with clear communication and reliable execution.
         </h2>
 
         <p class="mt-5 max-w-xl text-base leading-8 text-[#42474b]">
-          AJS Roofing &amp; Gutters serves homeowners across Albuquerque, Santa Fe,
-          Rio Rancho, and surrounding New Mexico communities with roof replacement
-          solutions built for long-term protection and peace of mind.
+          AJS Roofing &amp; Gutters serves homes and businesses across Albuquerque, Santa Fe,
+          Rio Rancho, and surrounding New Mexico communities with roofing systems built
+          for long-term protection, documentation, and peace of mind.
         </p>
 
         <div class="mt-6 rounded-[20px] border border-[#d3d8db] bg-white p-5 shadow-[0_10px_24px_rgba(19,45,65,0.04)]">
@@ -416,7 +457,6 @@ get_header(); ?>
     </div>
   </section>
 
- 
 </main>
 
 <style>

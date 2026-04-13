@@ -187,8 +187,7 @@ get_header(); ?>
           ['Roof Replacement', '/service/roof-replacement', 'Complete tear-off and rebuild with documented process and manufacturer-backed protection.'],
           ['Seamless Gutters', '/service/gutters', 'Precise drainage protection fabricated on-site for clean performance and fit.'],
           ['Storm Damage & Insurance', '/service/storm-damage-insurance', 'Documentation and claim support when weather turns uncertainty into urgency.'],
-          ['Metal Roofing', '/service/metal-roofing', 'Durable, long-lasting roofing solutions for residential and commercial properties.'],
-          ['Roof Inspection & Maintenance', '/service/roof-inspection', 'Photo-documented assessments that help prevent bigger problems later.'],
+['Commercial & Residential Roofing', '/service/commercial-residential-roofing', 'TPO/PVC, metal, tile, and shingle systems for homes and businesses with in-house crews, documented process, and long-term performance.'],          ['Roof Inspection & Maintenance', '/service/roof-inspection', 'Photo-documented assessments that help prevent bigger problems later.'],
         ];
 
         foreach ($services as $service) : ?>

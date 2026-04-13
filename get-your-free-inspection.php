@@ -64,7 +64,7 @@ get_header(); ?>
           <select id="ajs_estimate_service" name="service" required class="w-full rounded-2xl border border-[#d3d8db] bg-white px-4 py-4 text-sm text-[#42474b] outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20">
             <option value="" selected disabled>What do you need? *</option>
             <option value="Roof Replacement">Roof Replacement</option>
-            <option value="Metal Roofing">Metal Roofing</option>
+            <option value="Commercial & Residential Roofing">Commercial & Residential Roofing</option>
             <option value="Gutters">Gutters</option>
             <option value="Roof Repair">Roof Repair</option>
             <option value="Storm Damage / Insurance">Storm Damage / Insurance</option>

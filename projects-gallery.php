@@ -30,18 +30,24 @@ get_header(); ?>
     <div class="ajs-projects-strip">
       <div class="ajs-projects-strip-track">
         <span>Roof Replacement</span>
-        <span>Metal Roofing</span>
+        <span>Commercial & Residential Roofing</span>
+        <span>TPO/PVC Systems</span>
         <span>Seamless Gutters</span>
         <span>Storm Damage Repair</span>
-        <span>Roof Replacement</span>
-        <span>Metal Roofing</span>
+        <span>Roof Inspection</span>
+        <span>Insurance Claims</span>
+        <span>Emergency Repairs</span>
+        <span>Roof Maintenance</span>
 
         <span>Roof Replacement</span>
-        <span>Metal Roofing</span>
+        <span>Commercial & Residential Roofing</span>
+        <span>TPO/PVC Systems</span>
         <span>Seamless Gutters</span>
         <span>Storm Damage Repair</span>
-        <span>Roof Replacement</span>
-        <span>Metal Roofing</span>
+        <span>Roof Inspection</span>
+        <span>Insurance Claims</span>
+        <span>Emergency Repairs</span>
+        <span>Roof Maintenance</span>
       </div>
     </div>
   </section>
@@ -59,7 +65,7 @@ get_header(); ?>
           'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/DJI_20260211154218_0080_D-scaled.jpeg'
         ],
         [
-          'title' => 'Metal Roofing',
+          'title' => 'Commercial & Residential Roofing',
           'zip' => '87111',
           'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/Edited-WP-1-1-scaled.png'
         ],
@@ -89,7 +95,7 @@ get_header(); ?>
           'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/IMG_0862-scaled.jpg'
         ],
         [
-          'title' => 'Metal Roofing',
+          'title' => 'Commercial & Residential Roofing',
           'zip' => '87124',
           'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/edit-tbd-2-1-scaled.png'
         ],

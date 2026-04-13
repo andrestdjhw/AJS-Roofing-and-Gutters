@@ -2,9 +2,10 @@ import React, { useEffect, useRef, useState } from "react"
 
 const PHONE_DISPLAY = "(505) 453-5626"
 const PHONE_LINK = "tel:+15054535626"
-const EMAIL_DISPLAY = "ajsprofessional@gmail.com"
-const EMAIL_LINK = "mailto:ajsprofessional@gmail.com"
+const EMAIL_DISPLAY = "info@ajspro.com"
+const EMAIL_LINK = "mailto:info@ajspro.com"
 const BBB_LINK = "https://www.bbb.org/us/nm/veguita/profile/roofing-contractors/ajs-professional-contracting-llc-0806-99137264/customer-reviews"
+const YELP_LINK = "https://www.yelp.com/biz/ajs-professional-contracting-veguita?utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)"
 const LOCATION_LABEL = "Albuquerque, NM"
 const LOCATION_LINK = "https://maps.google.com/?q=Albuquerque,+NM"
 
@@ -13,7 +14,7 @@ const SERVICES_MENU = [
 		title: "Core Services",
 		links: [
 			{ label: "Roof Replacement", href: "/service/service-roof-replacement/" },
-			{ label: "Metal Roofing", href: "/service/metal-roofing" },
+			{ label: "Commercial & Residential Roofing ", href: "/service/commercial-residential-roofing" },
 			{ label: "Seamless Gutters", href: "/service/gutters" }
 		]
 	},
@@ -32,37 +33,6 @@ const SERVICES_MENU = [
 			{ label: "Projects Gallery", href: "/projects" },
 			{ label: "Talk to an Expert", href: "/schedule-a-call" },
 			{ label: "Get Your Free Inspection", href: "/estimate", isHighlight: true }
-		]
-	}
-]
-
-const LOCATIONS_MENU = [
-	{
-		tier: "Albuquerque",
-		links: [
-			{ label: "Albuquerque NE / High Desert", href: "/locations/albuquerque-ne-high-desert-87122" },
-			{ label: "Far NE Heights", href: "/locations/far-ne-heights-87111" },
-			{ label: "Albuquerque West", href: "/locations/albuquerque-west-87120" },
-			{ label: "NW ABQ / Rio Rancho", href: "/locations/nw-abq-87114" }
-		]
-	},
-	{
-		tier: "Santa Fe",
-		links: [
-			{ label: "Santa Fe Historic Core", href: "/locations/santa-fe-historic-core-87501" },
-			{ label: "Northern Santa Fe", href: "/locations/northern-santa-fe-87506" }
-		]
-	},
-	{
-		tier: "Rio Rancho",
-		links: [{ label: "Rio Rancho", href: "/locations/rio-rancho-87124" }]
-	},
-	{
-		tier: "South of Albuquerque",
-		links: [
-			{ label: "Los Lunas", href: "/locations/los-lunas" },
-			{ label: "Belen", href: "/locations/belen" },
-			{ label: "Socorro", href: "/locations/socorro" }
 		]
 	}
 ]
@@ -116,6 +86,14 @@ function MailIcon({ className = "" }) {
 				strokeLinecap="round"
 				strokeLinejoin="round"
 			/>
+		</svg>
+	)
+}
+
+function YelpIcon({ className = "" }) {
+	return (
+		<svg className={className} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+			<path d="M12.18 2.01c.48.07.84.45.89.94l.53 5.18c.06.56-.39 1.04-.96 1.01l-2.56-.12c-.48-.02-.86-.42-.84-.9l.18-5.18c.02-.59.54-1.03 1.13-.93l1.63.3Zm-4.34 8.7c.35-.41.97-.47 1.4-.13l1.93 1.54c.43.34.41.99-.05 1.29l-4.2 2.75c-.48.31-1.12.14-1.38-.38l-.7-1.43c-.25-.5-.11-1.1.33-1.46l2.67-2.18Zm8.91-.18c.44-.35 1.07-.29 1.43.13l2.65 3.09c.35.41.37 1 .05 1.43l-.91 1.21c-.33.44-.94.56-1.4.28l-4.09-2.49c-.49-.3-.52-.98-.06-1.33l2.33-1.82Zm-4.5 5.89c.54-.18 1.09.18 1.15.75l.51 4.94c.06.56-.35 1.06-.91 1.12l-1.66.16c-.54.05-1.03-.28-1.18-.8l-1.33-4.65c-.15-.54.16-1.11.7-1.29l2.72-.23Zm-5.41-1.32c.52.22.75.82.53 1.34l-1.95 4.41c-.22.51-.8.75-1.32.55l-1.52-.59c-.53-.21-.8-.81-.61-1.35l1.65-4.63c.19-.53.77-.82 1.3-.65l1.92.92Zm11.55.42c.53-.17 1.1.11 1.31.64l1.82 4.55c.21.53-.05 1.13-.58 1.35l-1.49.62c-.51.21-1.1-.01-1.33-.51l-2.06-4.34c-.24-.51-.03-1.12.48-1.35l1.85-.96Z" />
 		</svg>
 	)
 }
@@ -178,9 +156,35 @@ function NavbarExample() {
 		<>
 			<div className="ajs-topbar">
 				<div className="ajs-topbar-inner">
-					<div className="ajs-topbar-left" />
+					<div className="ajs-topbar-left">
+						<a
+							href={PHONE_LINK}
+							className="ajs-topbar-phone"
+							aria-label={`Call ${PHONE_DISPLAY}`}
+						>
+							<PhoneIcon className="ajs-topbar-phone-icon" />
+							<span>{PHONE_DISPLAY}</span>
+						</a>
+
+						<span className="ajs-topbar-divider" aria-hidden="true" />
+
+						<a
+							href={EMAIL_LINK}
+							className="ajs-topbar-email"
+							aria-label={`Email ${EMAIL_DISPLAY}`}
+						>
+							<MailIcon className="ajs-topbar-email-icon" />
+							<span>{EMAIL_DISPLAY}</span>
+						</a>
+					</div>
 
 					<div className="ajs-topbar-center">
+						<span className="ajs-topbar-badge">Bonded &amp; Insured</span>
+						<span className="ajs-topbar-divider" aria-hidden="true" />
+						<span className="ajs-topbar-badge">Preferred Contractor</span>
+					</div>
+
+					<div className="ajs-topbar-right">
 						<a
 							href={LOCATION_LINK}
 							className="ajs-topbar-location"
@@ -192,21 +196,14 @@ function NavbarExample() {
 							<span>{LOCATION_LABEL}</span>
 						</a>
 
-						<span className="ajs-topbar-divider" aria-hidden="true" />
-
-						<a href={PHONE_LINK} className="ajs-topbar-phone" aria-label={`Call ${PHONE_DISPLAY}`}>
-							<PhoneIcon className="ajs-topbar-phone-icon" />
-							<span>{PHONE_DISPLAY}</span>
-						</a>
-					</div>
-
-					<div className="ajs-topbar-right">
 						<a
-							href={EMAIL_LINK}
+							href={YELP_LINK}
 							className="ajs-topbar-social"
-							aria-label={`Email ${EMAIL_DISPLAY}`}
+							aria-label="Yelp Reviews"
+							target="_blank"
+							rel="noopener noreferrer"
 						>
-							<MailIcon className="ajs-topbar-social-icon" />
+							<YelpIcon className="ajs-topbar-social-icon" />
 						</a>
 
 						<a
@@ -358,14 +355,21 @@ function NavbarExample() {
 								<span>Call {PHONE_DISPLAY}</span>
 							</a>
 
+							<a href={EMAIL_LINK} className="ajs-mobile-call" onClick={closeEverything}>
+								<MailIcon className="ajs-mobile-call-icon" />
+								<span>{EMAIL_DISPLAY}</span>
+							</a>
+
 							<div className="ajs-mobile-socials">
 								<a
-									href={EMAIL_LINK}
+									href={YELP_LINK}
 									className="ajs-nav-social"
-									aria-label={`Email ${EMAIL_DISPLAY}`}
+									aria-label="Yelp Reviews"
+									target="_blank"
+									rel="noopener noreferrer"
 									onClick={closeEverything}
 								>
-									<MailIcon className="ajs-nav-social-icon" />
+									<YelpIcon className="ajs-nav-social-icon" />
 								</a>
 
 								<a

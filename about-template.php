@@ -299,7 +299,7 @@ get_header(); ?>
       <div class="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
         <div class="ajs-hover-lift ajs-reveal rounded-[26px] border border-[#d3d8db] bg-white p-6 shadow-[0_14px_32px_rgba(19,45,65,0.08)]">
           <p class="text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">License</p>
-          <p class="mt-4 text-xl font-black text-[#132d41]">NM License #[NUMBER]</p>
+          <p class="mt-4 text-xl font-black text-[#132d41]">NM License 383860</p>
         </div>
 
         <div class="ajs-hover-lift ajs-reveal rounded-[26px] border border-[#d3d8db] bg-white p-6 shadow-[0_14px_32px_rgba(19,45,65,0.08)]">

@@ -2,7 +2,7 @@ import React from "react"
 
 const PHONE_DISPLAY = "(505) 453-5626"
 const PHONE_LINK = "tel:+15054535626"
-const EMAIL = "ajsprofessional@gmail.com"
+const EMAIL = "info@ajspro.com"
 
 const QUICK_LINKS = [
 	{ label: "Home", href: "/" },
@@ -14,7 +14,7 @@ const QUICK_LINKS = [
 
 const SERVICES = [
 	{ label: "Roof Replacement", href: "/service/roof-replacement" },
-	{ label: "Metal Roofing", href: "/service/metal-roofing" },
+	{ label: "Commercial & Residential Roofing", href: "/service/commercial-residential-roofing" },
 	{ label: "Seamless Gutters", href: "/service/gutters" },
 	{ label: "Roof Repair", href: "/service/roof-repair" },
 	{ label: "Storm Damage & Insurance", href: "/service/storm-damage-insurance" },

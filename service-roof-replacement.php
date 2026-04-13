@@ -288,8 +288,7 @@ get_header(); ?>
       <div class="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
         <?php
         $services = [
-          ['Metal Roofing', '/service/metal-roofing', 'Long-term durability with systems built for New Mexico conditions.'],
-          ['Seamless Gutters', '/service/gutters', 'Precise drainage protection fabricated for clean performance and fit.'],
+['Commercial & Residential Roofing', '/service/commercial-residential-roofing', 'TPO/PVC, metal, tile, and shingle systems for homes and businesses with in-house crews, documented process, and long-term performance.'],          ['Seamless Gutters', '/service/gutters', 'Precise drainage protection fabricated for clean performance and fit.'],
           ['Storm Damage &amp; Insurance', '/service/storm-damage-insurance', 'Documentation and claim support when weather turns uncertainty into urgency.'],
           ['Roof Repair', '/service/roof-repair', 'Targeted fixes when replacement is not yet necessary.'],
           ['Roof Inspection &amp; Maintenance', '/service/roof-inspection', 'Photo-documented assessments that help prevent bigger problems later.'],

@@ -64,7 +64,7 @@ get_header(); ?>
 
           <div class="flex items-start gap-3">
             <span class="font-black text-[#132d41]">Email</span>
-            <span>ajsprofessional@gmail.com</span>
+            <span>info@ajspro.com</span>
           </div>
 
           <div class="flex items-start gap-3">
