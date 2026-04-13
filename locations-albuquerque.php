@@ -99,10 +99,12 @@ get_header(); ?>
           <span class="ajs-card-desc">Complete tear-off and rebuild. Premium materials, manufacturer warranties, and our documented process. Done right. Done once.</span>
         </a>
 
-        <a href="/service/metal-roofing" class="ajs-location-card ajs-reveal">
-          <span class="ajs-card-title">Metal Roofing</span>
-          <span class="ajs-card-desc">Standing seam and metal panel systems built for New Mexico's extreme UV, hail, and wind. 40–70 year lifespan. The last roof your home will need.</span>
-        </a>
+<a href="/service/commercial-residential-roofing" class="ajs-location-card ajs-reveal">
+  <span class="ajs-card-title">Commercial & Residential Roofing</span>
+  <span class="ajs-card-desc">
+    Roofing systems for homes and businesses TPO, PVC, metal, tile, and shingle. Installed with a documented 5-step process and backed by manufacturer warranties.
+  </span>
+</a>
 
         <a href="/service/gutters" class="ajs-location-card ajs-reveal">
           <span class="ajs-card-title">Seamless Gutters</span>
@@ -146,7 +148,7 @@ get_header(); ?>
       <div class="ajs-img-card ajs-reveal">
         <img 
           src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/Edited-WP-1-1-scaled.png" 
-          alt="Metal roofing installation Albuquerque NE 87122"
+          alt="Commercial & Residential Roofing installation Albuquerque NE 87122"
           class="w-full h-full object-cover rounded-[20px]"
         >
       </div>
@@ -239,12 +241,14 @@ get_header(); ?>
           </div>
         </details>
 
-        <details class="ajs-faq ajs-reveal" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-          <summary itemprop="name">Is metal roofing a good option for High Desert homes?</summary>
-          <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-            <p itemprop="text">Metal roofing is the highest-performance option for New Mexico's extreme conditions  with a 40 to 70 year lifespan, superior energy efficiency, and virtually zero maintenance. For homes in the $520K–$780K range, it's protection you can feel for decades. AJS installs standing seam and metal panel systems across the 87122 area.</p>
-          </div>
-        </details>
+<details class="ajs-faq ajs-reveal" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <summary itemprop="name">What types of roofing systems does AJS install?</summary>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">
+      AJS installs shingle, tile, standing seam metal, and TPO/PVC membrane systems for both residential and commercial properties. We recommend the best option based on your property type, roof structure, and New Mexico’s climate conditions.
+    </p>
+  </div>
+</details>
 
         <details class="ajs-faq ajs-reveal" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
           <summary itemprop="name">Do you help with storm damage insurance claims?</summary>
@@ -326,7 +330,7 @@ get_header(); ?>
           class="w-full rounded-2xl border border-[#d3d8db] bg-white px-4 py-4 text-sm text-[#132d41] outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20">
           <option value="" disabled selected>Select a service</option>
           <option value="Roof Replacement">Roof Replacement</option>
-          <option value="Metal Roofing">Metal Roofing</option>
+          <option value="Commercial & Residential Roofing">Commercial & Residential Roofing</option>
           <option value="Gutters">Gutters</option>
           <option value="Roof Repair">Roof Repair</option>
           <option value="Storm Damage / Insurance">Storm Damage / Insurance</option>

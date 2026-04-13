@@ -1000,13 +1000,14 @@ a {
 }
 
 .ajs-topbar-inner {
+	position: relative;
 	max-width: 1600px;
 	margin: 0 auto;
 	padding: 0.42rem 1.25rem;
 	min-height: 42px;
-	display: grid;
-	grid-template-columns: 1.25fr 1fr auto;
+	display: flex;
 	align-items: center;
+	justify-content: space-between;
 	gap: 1rem;
 }
 
@@ -1015,22 +1016,33 @@ a {
 	display: flex;
 	align-items: center;
 	gap: 0.8rem;
+	position: relative;
+	z-index: 2;
 }
 
 .ajs-topbar-center {
+	position: absolute;
+	right: 50%;
+	top: 50%;
+	transform: translate(50%, -50%);
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	gap: 0.8rem;
 	min-width: 0;
+	white-space: nowrap;
+	pointer-events: none;
 }
 
 .ajs-topbar-right {
+	min-width: 0;
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
 	gap: 0.45rem;
-	min-width: 0;
+	position: relative;
+	z-index: 2;
+	margin-right: auto;
 }
 
 .ajs-topbar-location,
@@ -1112,8 +1124,8 @@ a {
 }
 
 .ajs-topbar-social-icon {
-	width: 15px;
-	height: 15px;
+	width: 18px;
+	height: 18px;
 	display: block;
 }
 
@@ -1693,6 +1705,12 @@ a {
 		overflow: hidden;
 		text-overflow: ellipsis;
 	}
+
+	@media (max-width: 1180px) {
+	.ajs-topbar-center {
+		display: none;
+	}
+}
 
 	.ajs-nav-brand-copy span {
 		display: none;

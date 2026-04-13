@@ -36,7 +36,7 @@ get_header(); ?>
       </h2>
 
       <p class="ajs-reveal mt-6 text-[#42474b] text-lg leading-8">
-        AJS Roofing &amp; Gutters is a licensed roofing contractor serving Northern Santa Fe and the 87506 area  New Mexico's highest-value residential market, with homes ranging from $800K to $1.5M where metal roofing and premium replacement are the standard, not the exception. We don't just install roofs  we restore peace of mind. Through clear processes, professional execution, and work done right from the start, we turn a moment of uncertainty into lasting protection and confidence.
+        AJS Roofing &amp; Gutters is a licensed roofing contractor serving Northern Santa Fe and the 87506 area  New Mexico's highest-value residential market, with homes ranging from $800K to $1.5M where Commercial & Residential Roofing and premium replacement are the standard, not the exception. We don't just install roofs  we restore peace of mind. Through clear processes, professional execution, and work done right from the start, we turn a moment of uncertainty into lasting protection and confidence.
       </p>
 
       <p class="ajs-reveal mt-5 text-[#42474b] text-lg leading-8">
@@ -99,10 +99,13 @@ get_header(); ?>
           <span class="ajs-card-desc">Complete tear-off and rebuild. Premium materials, manufacturer warranties, and our documented process. Done right. Done once.</span>
         </a>
 
-        <a href="/service/metal-roofing" class="ajs-location-card ajs-reveal">
-          <span class="ajs-card-title">Metal Roofing</span>
-          <span class="ajs-card-desc">Standing seam and metal panel systems built for New Mexico's extreme UV, hail, and wind. 40–70 year lifespan. The last roof your home will need.</span>
-        </a>
+<a href="/service/commercial-residential-roofing" class="ajs-location-card ajs-reveal">
+  <span class="ajs-card-title">Commercial & Residential Roofing</span>
+  <span class="ajs-card-desc">
+    Roofing systems for homes and businesses TPO, PVC, metal, tile, and shingle. Installed with a documented 5-step process and backed by manufacturer warranties.
+  </span>
+</a>
+
 
         <a href="/service/gutters" class="ajs-location-card ajs-reveal">
           <span class="ajs-card-title">Seamless Gutters</span>
@@ -232,13 +235,14 @@ get_header(); ?>
 
       <div class="mt-10 space-y-4" itemscope itemtype="https://schema.org/FAQPage">
 
-        <details class="ajs-faq ajs-reveal" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-          <summary itemprop="name">Why is metal roofing the right choice for Northern Santa Fe homes?</summary>
-          <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-            <p itemprop="text">Metal roofing is the highest-performance option for New Mexico's extreme conditions  with a 40–70 year lifespan, superior energy efficiency, and virtually zero maintenance. For homes valued at $800K–$1.5M, metal eliminates 2–3 future replacement cycles and delivers lasting protection you can feel for decades. AJS installs standing seam and metal panel systems specified for what Northern Santa Fe's elevation, UV, and weather actually demand.</p>
-          </div>
-        </details>
-
+<details class="ajs-faq ajs-reveal" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <summary itemprop="name">What types of roofing systems does AJS install?</summary>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">
+      AJS installs shingle, tile, standing seam metal, and TPO/PVC membrane systems for both residential and commercial properties. We recommend the best option based on your property type, roof structure, and New Mexico’s climate conditions.
+    </p>
+  </div>
+</details>
         <details class="ajs-faq ajs-reveal" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
           <summary itemprop="name">What does your documented process look like on a premium project?</summary>
           <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
@@ -324,7 +328,7 @@ get_header(); ?>
           class="w-full rounded-2xl border border-[#d3d8db] bg-white px-4 py-4 text-sm text-[#132d41] outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20">
           <option value="" disabled selected>Select a service</option>
           <option value="Roof Replacement">Roof Replacement</option>
-          <option value="Metal Roofing">Metal Roofing</option>
+          <option value="Commercial & Residential Roofing">Commercial & Residential Roofing</option>
           <option value="Gutters">Gutters</option>
           <option value="Roof Repair">Roof Repair</option>
           <option value="Storm Damage / Insurance">Storm Damage / Insurance</option>

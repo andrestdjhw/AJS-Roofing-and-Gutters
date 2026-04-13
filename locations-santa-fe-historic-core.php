@@ -99,10 +99,12 @@ get_header(); ?>
           <span class="ajs-card-desc">Complete tear-off and rebuild. Premium materials, manufacturer warranties, and our documented process. Done right. Done once.</span>
         </a>
 
-        <a href="/service/metal-roofing" class="ajs-location-card ajs-reveal">
-          <span class="ajs-card-title">Metal Roofing</span>
-          <span class="ajs-card-desc">Standing seam and metal panel systems built for New Mexico's extreme UV, hail, and wind. 40–70 year lifespan. The last roof your home will need.</span>
-        </a>
+<a href="/service/commercial-residential-roofing" class="ajs-location-card ajs-reveal">
+  <span class="ajs-card-title">Commercial & Residential Roofing</span>
+  <span class="ajs-card-desc">
+    Roofing systems for homes and businesses TPO, PVC, metal, tile, and shingle. Installed with a documented 5-step process and backed by manufacturer warranties.
+  </span>
+</a>
 
         <a href="/service/gutters" class="ajs-location-card ajs-reveal">
           <span class="ajs-card-title">Seamless Gutters</span>
@@ -154,7 +156,7 @@ get_header(); ?>
       <div class="ajs-img-card ajs-reveal">
         <img 
           src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/Edited-WP-1-1-scaled.png" 
-          alt="Metal roofing system Santa Fe 87501"
+          alt="Commercial & Residential Roofing system Santa Fe 87501"
           class="w-full h-full object-cover rounded-[20px]"
         >
       </div>
@@ -242,7 +244,7 @@ get_header(); ?>
         <details class="ajs-faq ajs-reveal" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
           <summary itemprop="name">What roofing materials do you recommend for Santa Fe homes?</summary>
           <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-            <p itemprop="text">For homes in the $600K–$1.1M+ range, we recommend solutions based on your home, its architecture, and your goals. Metal roofing offers a 40–70 year lifespan and is the highest-performance option for New Mexico's extreme UV, hail, and wind conditions. Premium shingle systems with manufacturer warranties are also an option. We'll walk you through both with clear data  no pressure, no manufactured urgency.</p>
+            <p itemprop="text">For homes in the $600K–$1.1M+ range, we recommend solutions based on your home, its architecture, and your goals. Commercial & Residential Roofing offers a 40–70 year lifespan and is the highest-performance option for New Mexico's extreme UV, hail, and wind conditions. Premium shingle systems with manufacturer warranties are also an option. We'll walk you through both with clear data  no pressure, no manufactured urgency.</p>
           </div>
         </details>
 
@@ -324,7 +326,7 @@ get_header(); ?>
           class="w-full rounded-2xl border border-[#d3d8db] bg-white px-4 py-4 text-sm text-[#132d41] outline-none focus:border-[#6eaace] focus:ring-4 focus:ring-[#6eaace]/20">
           <option value="" disabled selected>Select a service</option>
           <option value="Roof Replacement">Roof Replacement</option>
-          <option value="Metal Roofing">Metal Roofing</option>
+          <option value="Commercial & Residential Roofing">Commercial & Residential Roofing</option>
           <option value="Gutters">Gutters</option>
           <option value="Roof Repair">Roof Repair</option>
           <option value="Storm Damage / Insurance">Storm Damage / Insurance</option>
