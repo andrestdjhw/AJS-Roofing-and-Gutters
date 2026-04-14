@@ -242,7 +242,7 @@ function FooterExample() {
             href: "/",
             "aria-label": "AJS Roofing and Gutters Home",
             children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
-              src: "http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/image-2-scaled.png",
+              src: "http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/AJS_Imagotipo-2.png",
               alt: "AJS Roofing & Gutters",
               className: "ajs-footer-brand-logo"
             })
@@ -677,7 +677,7 @@ function NavbarExample() {
             href: "/",
             "aria-label": "AJS Roofing and Gutters Home",
             children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
-              src: "/wp-content/uploads/2026/03/AJS_Imagotipo_horizontal-scaled.png",
+              src: "http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/AJS_Imagotipo_tagline.png",
               alt: "AJS Roofing & Gutters",
               className: "ajs-nav-brand-logo"
             })

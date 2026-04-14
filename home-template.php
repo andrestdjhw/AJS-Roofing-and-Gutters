@@ -446,31 +446,37 @@ get_header(); ?>
     </div>
   </section>
 
-  <!-- Process -->
-  <section id="process" class="bg-[#132d41] py-20 text-white">
-    <div class="mx-auto max-w-7xl px-4">
-      <p class="ajs-reveal mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#6eaace]">
-        Our Process
-      </p>
-      <h2 class="ajs-reveal max-w-4xl text-3xl font-black leading-tight tracking-[-0.03em] md:text-5xl">
-        From Chaos to Calm. In 5 Steps.
-      </h2>
-      <p class="ajs-reveal mt-4 max-w-3xl text-base leading-8 text-white/78">
-        Every AJS project follows the same documented process. No shortcuts. No surprises. Just proper protection.
-      </p>
+<!-- Process -->
+<section id="process" class="ajs-process-section relative overflow-hidden bg-[#132d41] py-20 text-white">
+  <div class="ajs-process-pattern"></div>
+  <div class="ajs-process-overlay"></div>
 
-      <div class="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-5">
-        <?php
-        $steps = [
-          ['01', 'Inspect', 'We climb your roof and photograph every square foot. You get a detailed digital report with images, measurements, and our honest assessment. No pressure. Just facts.'],
-          ['02', 'Plan', 'We walk you through options, timelines, and pricing. If insurance is involved, we prepare the documentation. Nothing starts until you approve.'],
-          ['03', 'Protect', 'Our crew arrives on schedule. Materials staged, safety protocols followed, your property protected. We treat your home like it\'s ours.'],
-          ['04', 'Build', 'Installation follows manufacturer specs exactly. We photograph progress at key milestones and keep you updated. Precision overhead.'],
-          ['05', 'Verify', 'Final walkthrough with you present. Every detail shown, every question answered, complete cleanup, warranty packet with documentation. Peace inside.'],
-        ];
+  <div class="relative z-[1] mx-auto max-w-7xl px-4">
+    <p class="ajs-reveal mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#6eaace]">
+      Our Process
+    </p>
+    <h2 class="ajs-reveal max-w-4xl text-3xl font-black leading-tight tracking-[-0.03em] md:text-5xl">
+      From Chaos to Calm. In 5 Steps.
+    </h2>
+    <p class="ajs-reveal mt-4 max-w-3xl text-base leading-8 text-white/78">
+      Every AJS project follows the same documented process. No shortcuts. No surprises. Just proper protection.
+    </p>
 
-        foreach ($steps as $step) : ?>
-          <article class="ajs-hover-lift ajs-reveal rounded-[24px] border border-white/10 bg-white/8 p-6 backdrop-blur-sm">
+    <div class="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-5">
+      <?php
+      $steps = [
+        ['01', 'Inspect', 'We climb your roof and photograph every square foot. You get a detailed digital report with images, measurements, and our honest assessment. No pressure. Just facts.'],
+        ['02', 'Plan', 'We walk you through options, timelines, and pricing. If insurance is involved, we prepare the documentation. Nothing starts until you approve.'],
+        ['03', 'Protect', 'Our crew arrives on schedule. Materials staged, safety protocols followed, your property protected. We treat your home like it\'s ours.'],
+        ['04', 'Build', 'Installation follows manufacturer specs exactly. We photograph progress at key milestones and keep you updated. Precision overhead.'],
+        ['05', 'Verify', 'Final walkthrough with you present. Every detail shown, every question answered, complete cleanup, warranty packet with documentation. Peace inside.'],
+      ];
+
+      foreach ($steps as $step) : ?>
+        <article class="ajs-hover-lift ajs-reveal relative overflow-hidden rounded-[24px] border border-white/10 bg-white/8 p-6 backdrop-blur-sm">
+          <div class="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.04),rgba(255,255,255,0.01))]"></div>
+
+          <div class="relative z-[1]">
             <span class="text-xs font-black uppercase tracking-[0.18em] text-[#6eaace]">
               <?php echo esc_html($step[0]); ?>
             </span>
@@ -480,11 +486,12 @@ get_header(); ?>
             <p class="mt-4 text-[15px] leading-8 text-white/80">
               <?php echo esc_html($step[2]); ?>
             </p>
-          </article>
-        <?php endforeach; ?>
-      </div>
+          </div>
+        </article>
+      <?php endforeach; ?>
     </div>
-  </section>
+  </div>
+</section>
 
  <!-- Gallery -->
 <section class="py-20">
@@ -1021,6 +1028,52 @@ get_header(); ?>
     opacity: 1;
     transform: translateX(0);
   }
+
+
+.ajs-process-section {
+  position: relative;
+  background:
+    linear-gradient(180deg, rgba(19,45,65,0.96) 0%, rgba(15,36,52,0.98) 100%);
+}
+
+.ajs-process-pattern {
+  position: absolute;
+  inset: 0;
+  background-image: url("http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/Estampados-02.png");
+  background-repeat: repeat;
+  background-size: 380px auto;
+  background-position: center top;
+  background-attachment: fixed;
+  opacity: 0.38;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.ajs-process-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at top left, rgba(110,170,206,0.14), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(208,68,24,0.10), transparent 28%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+@media (max-width: 1024px) {
+  .ajs-process-pattern {
+    background-attachment: scroll;
+    background-size: 300px auto;
+    opacity: 0.07;
+  }
+}
+
+@media (max-width: 640px) {
+  .ajs-process-pattern {
+    background-size: 220px auto;
+    opacity: 0.06;
+  }
+}
+
 
 
 .ajs-chip {

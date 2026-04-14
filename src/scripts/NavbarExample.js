@@ -229,11 +229,11 @@ function NavbarExample() {
 				<div className="ajs-nav-shell">
 					<div className="ajs-nav-top">
 						<a className="ajs-nav-brand" href="/" aria-label="AJS Roofing and Gutters Home">
-							<img
-								src="/wp-content/uploads/2026/03/AJS_Imagotipo_horizontal-scaled.png"
-								alt="AJS Roofing & Gutters"
-								className="ajs-nav-brand-logo"
-							/>
+<img
+  src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/AJS_Imagotipo_tagline.png"
+  alt="AJS Roofing & Gutters"
+  className="ajs-nav-brand-logo"
+/>
 						</a>
 
 						<nav

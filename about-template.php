@@ -83,43 +83,46 @@ get_header(); ?>
     </div>
   </section>
 
-   <!-- Story / Manifesto -->
-  <section class="py-20 bg-[#132d41]">
-    <div class="mx-auto max-w-7xl px-4">
-      <div class="grid gap-8 lg:grid-cols-[0.75fr_1.25fr]">
-        <div class="ajs-reveal-left">
-          <p class="mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#6eaace]">
-            Our Story
+ <!-- Story / Manifesto -->
+<section class="ajs-about-story-section relative overflow-hidden py-20 bg-[#132d41]">
+  <div class="ajs-about-story-pattern"></div>
+  <div class="ajs-about-story-overlay"></div>
+
+  <div class="relative z-[1] mx-auto max-w-7xl px-4">
+    <div class="grid gap-8 lg:grid-cols-[0.75fr_1.25fr]">
+      <div class="ajs-reveal-left">
+        <p class="mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#6eaace]">
+          Our Story
+        </p>
+        <h2 class="max-w-[12ch] text-3xl font-black leading-tight tracking-[-0.03em] text-white md:text-5xl">
+          From roofing chaos to homeowner confidence.
+        </h2>
+      </div>
+
+      <div class="ajs-reveal-right rounded-[32px] border border-white/10 bg-white/5 p-8 shadow-[0_18px_36px_rgba(0,0,0,0.18)] backdrop-blur-sm">
+        <div class="space-y-6">
+          <p class="text-base leading-8 text-white/88">
+            When a roof problem appears, it's not just physical damage  it's uncertainty.
+            Too many options, too little clarity, and the fear of making a bad decision.
+            The chaos isn't just on the roof. It's in your mind.
           </p>
-          <h2 class="max-w-[12ch] text-3xl font-black leading-tight tracking-[-0.03em] text-white md:text-5xl">
-            From roofing chaos to homeowner confidence.
-          </h2>
-        </div>
 
-        <div class="ajs-reveal-right rounded-[32px] border border-white/10 bg-white/5 p-8 shadow-[0_18px_36px_rgba(0,0,0,0.18)] backdrop-blur-sm">
-          <div class="space-y-6">
-            <p class="text-base leading-8 text-white/88">
-              When a roof problem appears, it's not just physical damage  it's uncertainty.
-              Too many options, too little clarity, and the fear of making a bad decision.
-              The chaos isn't just on the roof. It's in your mind.
-            </p>
+          <p class="text-base leading-8 text-white/88">
+            AJS Roofing &amp; Gutters was built to change that experience. Through clear
+            communication, documented process, and work done right from the start,
+            we help homeowners move from uncertainty to confidence.
+          </p>
 
-            <p class="text-base leading-8 text-white/88">
-              AJS Roofing &amp; Gutters was built to change that experience. Through clear
-              communication, documented process, and work done right from the start,
-              we help homeowners move from uncertainty to confidence.
-            </p>
-
-            <p class="text-base leading-8 text-white/88">
-              We don't believe roofing should feel confusing, rushed, or high-pressure.
-              We believe it should feel understandable, professional, and secure. That's
-              what “From Chaos to Calm” means in practice.
-            </p>
-          </div>
+          <p class="text-base leading-8 text-white/88">
+            We don't believe roofing should feel confusing, rushed, or high-pressure.
+            We believe it should feel understandable, professional, and secure. That's
+            what “From Chaos to Calm” means in practice.
+          </p>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
   <!-- Mission + Vision Split -->
   <section class="py-20 bg-[#f5f7f8] overflow-hidden">
     <div class="mx-auto max-w-7xl px-4">
@@ -493,6 +496,53 @@ get_header(); ?>
     transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;
     isolation: isolate;
   }
+
+
+.ajs-about-story-section {
+  position: relative;
+  background:
+    linear-gradient(180deg, rgba(19,45,65,0.97) 0%, rgba(15,36,52,0.99) 100%);
+}
+
+.ajs-about-story-pattern {
+  position: absolute;
+  inset: 0;
+  background-image: url("http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/Estampados-02.png");
+  background-repeat: repeat;
+  background-size: 380px auto;
+  background-position: center top;
+  background-attachment: fixed;
+  opacity: 0.35;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.ajs-about-story-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at top left, rgba(110,170,206,0.14), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(208,68,24,0.10), transparent 28%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+@media (max-width: 1024px) {
+  .ajs-about-story-pattern {
+    background-attachment: scroll;
+    background-size: 300px auto;
+    opacity: 0.07;
+  }
+}
+
+@media (max-width: 640px) {
+  .ajs-about-story-pattern {
+    background-size: 220px auto;
+    opacity: 0.06;
+  }
+}
+
+
 
   .ajs-mv-card:hover {
     transform: translateY(-10px);
