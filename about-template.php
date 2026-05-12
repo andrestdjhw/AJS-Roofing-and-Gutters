@@ -235,7 +235,7 @@ get_header(); ?>
         <article class="ajs-hover-lift ajs-reveal overflow-hidden rounded-[28px] border border-[#d3d8db] bg-white shadow-[0_14px_32px_rgba(19,45,65,0.08)]">
           <div
             class="flex min-h-[260px] items-end bg-cover bg-center p-6"
-            style="background-image: linear-gradient(180deg, rgba(19,45,65,0.08), rgba(19,45,65,0.28)), url('http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg');"
+            style="background-image: linear-gradient(180deg, rgba(19,45,65,0.08), rgba(19,45,65,0.28)), url('/wp-content/uploads/2026/03/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg');"
           >
             <span class="rounded-full bg-white/75 px-4 py-2 text-xs font-black uppercase tracking-[0.18em] text-[#132d41]">
               12+ Years Experience
@@ -253,7 +253,7 @@ get_header(); ?>
         <article class="ajs-hover-lift ajs-reveal overflow-hidden rounded-[28px] border border-[#d3d8db] bg-white shadow-[0_14px_32px_rgba(19,45,65,0.08)]">
           <div
             class="flex min-h-[260px] items-end bg-cover bg-center p-6"
-            style="background-image: linear-gradient(180deg, rgba(19,45,65,0.08), rgba(19,45,65,0.28)), url('http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg');"
+            style="background-image: linear-gradient(180deg, rgba(19,45,65,0.08), rgba(19,45,65,0.28)), url('/wp-content/uploads/2026/03/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg');"
           >
             <span class="rounded-full bg-white/75 px-4 py-2 text-xs font-black uppercase tracking-[0.18em] text-[#132d41]">
               Field Operations
@@ -271,7 +271,7 @@ get_header(); ?>
         <article class="ajs-hover-lift ajs-reveal overflow-hidden rounded-[28px] border border-[#d3d8db] bg-white shadow-[0_14px_32px_rgba(19,45,65,0.08)]">
           <div
             class="flex min-h-[260px] items-end bg-cover bg-center p-6"
-            style="background-image: linear-gradient(180deg, rgba(19,45,65,0.08), rgba(19,45,65,0.28)), url('http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/03/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg');"
+            style="background-image: linear-gradient(180deg, rgba(19,45,65,0.08), rgba(19,45,65,0.28)), url('/wp-content/uploads/2026/03/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg');"
           >
             <span class="rounded-full bg-white/75 px-4 py-2 text-xs font-black uppercase tracking-[0.18em] text-[#132d41]">
               Client Support
@@ -507,7 +507,7 @@ get_header(); ?>
 .ajs-about-story-pattern {
   position: absolute;
   inset: 0;
-  background-image: url("http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/Estampados-02.png");
+  background-image: url("/wp-content/uploads/2026/04/Estampados-02.png");
   background-repeat: repeat;
   background-size: 380px auto;
   background-position: center top;

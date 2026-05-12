@@ -127,19 +127,19 @@ get_header(); ?>
     $gallery_items = [
       [
         'label' => 'Custom Gutter Installation',
-        'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/down-net_http20260221-116-ew4z81.jpg'
+        'image' => '/wp-content/uploads/2026/04/down-net_http20260221-116-ew4z81.jpg'
       ],
       [
         'label' => 'Seamless Fit Finish',
-        'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/edit-1234-tbd-scaled.jpg'
+        'image' => '/wp-content/uploads/2026/04/edit-1234-tbd-scaled.jpg'
       ],
       [
         'label' => 'Full Roofline System',
-        'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/DJI_20260130170840_0014_D-scaled.jpg'
+        'image' => '/wp-content/uploads/2026/04/DJI_20260130170840_0014_D-scaled.jpg'
       ],
       [
         'label' => 'Clean Drainage Setup',
-        'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/IMG_1319-scaled.jpeg'
+        'image' => '/wp-content/uploads/2026/04/IMG_1319-scaled.jpeg'
       ],
     ];
     ?>

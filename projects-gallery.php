@@ -62,42 +62,42 @@ get_header(); ?>
         [
           'title' => 'Roof Replacement',
           'zip' => '87122',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/DJI_20260211154218_0080_D-scaled.jpeg'
+          'image' => '/wp-content/uploads/2026/04/DJI_20260211154218_0080_D-scaled.jpeg'
         ],
         [
           'title' => 'Commercial & Residential Roofing',
           'zip' => '87111',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/Edited-WP-1-1-scaled.png'
+          'image' => '/wp-content/uploads/2026/04/Edited-WP-1-1-scaled.png'
         ],
         [
           'title' => 'Seamless Gutters',
           'zip' => '87124',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/down-net_http20260221-116-ew4z81.jpg'
+          'image' => '/wp-content/uploads/2026/04/down-net_http20260221-116-ew4z81.jpg'
         ],
         [
           'title' => 'Storm Damage Repair',
           'zip' => '87120',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/IMG_1497-1-scaled.jpeg'
+          'image' => '/wp-content/uploads/2026/04/IMG_1497-1-scaled.jpeg'
         ],
         [
           'title' => 'Roof Repair',
           'zip' => '87501',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/PSRoof2-scaled.jpeg'
+          'image' => '/wp-content/uploads/2026/04/PSRoof2-scaled.jpeg'
         ],
         [
           'title' => 'Inspection & Maintenance',
           'zip' => '87506',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/down-net_http20260223-317-60x0uj.jpeg'
+          'image' => '/wp-content/uploads/2026/04/down-net_http20260223-317-60x0uj.jpeg'
         ],
         [
           'title' => 'Roof Replacement',
           'zip' => '87114',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/IMG_0862-scaled.jpg'
+          'image' => '/wp-content/uploads/2026/04/IMG_0862-scaled.jpg'
         ],
         [
           'title' => 'Commercial & Residential Roofing',
           'zip' => '87124',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/edit-tbd-2-1-scaled.png'
+          'image' => '/wp-content/uploads/2026/04/edit-tbd-2-1-scaled.png'
         ],
       ];
 

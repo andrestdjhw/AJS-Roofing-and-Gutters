@@ -127,19 +127,19 @@ get_header(); ?>
     $gallery_items = [
       [
         'label' => 'Leak Repair',
-        'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/IMG_1073-scaled.jpg'
+        'image' => '/wp-content/uploads/2026/04/IMG_1073-scaled.jpg'
       ],
       [
         'label' => 'Targeted Repair',
-        'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/dji_fly_20260224_140454_0009_1774306181306_photo-2-scaled.png'
+        'image' => '/wp-content/uploads/2026/04/dji_fly_20260224_140454_0009_1774306181306_photo-2-scaled.png'
       ],
       [
         'label' => 'Flat Roof Repair',
-        'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/PSRoof2-scaled.jpeg'
+        'image' => '/wp-content/uploads/2026/04/PSRoof2-scaled.jpeg'
       ],
       [
         'label' => 'On-Site Service',
-        'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/AJs-truck-photo-edidted.png'
+        'image' => '/wp-content/uploads/2026/04/AJs-truck-photo-edidted.png'
       ],
     ];
     ?>

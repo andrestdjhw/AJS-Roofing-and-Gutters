@@ -149,7 +149,7 @@ get_header(); ?>
 
       <div class="ajs-img-card ajs-reveal">
         <img 
-          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/down-net_http20260223-122-k9uufd.jpg" 
+          src="/wp-content/uploads/2026/04/down-net_http20260223-122-k9uufd.jpg" 
           alt="Commercial & Residential Roofing installation NW Albuquerque 87114"
           class="w-full h-full object-cover rounded-[20px]"
         >
@@ -157,7 +157,7 @@ get_header(); ?>
 
       <div class="ajs-img-card ajs-reveal">
         <img 
-          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/down-net_http20260221-118-ega2hz.jpeg" 
+          src="/wp-content/uploads/2026/04/down-net_http20260221-118-ega2hz.jpeg" 
           alt="Roof inspection and maintenance Rio Rancho NW ABQ"
           class="w-full h-full object-cover rounded-[20px]"
         >
@@ -165,7 +165,7 @@ get_header(); ?>
 
       <div class="ajs-img-card ajs-reveal">
         <img 
-          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/AJs-truck-photo-edidted.png" 
+          src="/wp-content/uploads/2026/04/AJs-truck-photo-edidted.png" 
           alt="Roofing service truck NW Albuquerque 87114"
           class="w-full h-full object-cover rounded-[20px]"
         >

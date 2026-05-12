@@ -148,7 +148,7 @@ get_header(); ?>
 
       <div class="ajs-img-card ajs-reveal">
         <img 
-          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/dji_fly_20260319_155024_0138_1774306153207_photo-2-scaled.png" 
+          src="/wp-content/uploads/2026/04/dji_fly_20260319_155024_0138_1774306153207_photo-2-scaled.png" 
           alt="Roofing project Socorro"
           class="h-full w-full rounded-[20px] object-cover"
         >
@@ -156,7 +156,7 @@ get_header(); ?>
 
       <div class="ajs-img-card ajs-reveal">
         <img 
-          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/PSRoof2-scaled.jpeg" 
+          src="/wp-content/uploads/2026/04/PSRoof2-scaled.jpeg" 
           alt="Roof repair project Socorro"
           class="h-full w-full rounded-[20px] object-cover"
         >
@@ -164,7 +164,7 @@ get_header(); ?>
 
       <div class="ajs-img-card ajs-reveal">
         <img 
-          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/down-net_http20260221-116-ew4z81.jpg" 
+          src="/wp-content/uploads/2026/04/down-net_http20260221-116-ew4z81.jpg" 
           alt="Seamless gutter installation Socorro"
           class="h-full w-full rounded-[20px] object-cover"
         >

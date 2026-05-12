@@ -145,27 +145,27 @@ get_header(); ?>
       $gallery_items = [
         [
           'label' => 'Full Roof Replacement',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/DJI_20260130172742_0017_D-scaled.jpeg'
+          'image' => '/wp-content/uploads/2026/04/DJI_20260130172742_0017_D-scaled.jpeg'
         ],
         [
           'label' => 'Residential Upgrade',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/DJI_20260211154218_0080_D-scaled.jpeg'
+          'image' => '/wp-content/uploads/2026/04/DJI_20260211154218_0080_D-scaled.jpeg'
         ],
         [
           'label' => 'Complete System Install',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/dji_fly_20260228_113648_0028_1774306177730_photo-2-scaled.png'
+          'image' => '/wp-content/uploads/2026/04/dji_fly_20260228_113648_0028_1774306177730_photo-2-scaled.png'
         ],
         [
           'label' => 'Storm Replacement Project',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/down-net_http20260221-276-cerz5n.jpeg'
+          'image' => '/wp-content/uploads/2026/04/down-net_http20260221-276-cerz5n.jpeg'
         ],
         [
           'label' => 'On-Site Installation',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/down-net_http20260221-483-mgbta8.jpeg'
+          'image' => '/wp-content/uploads/2026/04/down-net_http20260221-483-mgbta8.jpeg'
         ],
         [
           'label' => 'Flat Roof Replacement',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/IMG_0862-scaled.jpg'
+          'image' => '/wp-content/uploads/2026/04/IMG_0862-scaled.jpg'
         ],
       ];
 

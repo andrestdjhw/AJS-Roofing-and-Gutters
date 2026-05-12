@@ -149,7 +149,7 @@ get_header(); ?>
 
       <div class="ajs-img-card ajs-reveal">
         <img 
-          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/DJI_20260130170840_0014_D-scaled.jpg" 
+          src="/wp-content/uploads/2026/04/DJI_20260130170840_0014_D-scaled.jpg" 
           alt="Seamless gutter installation Rio Rancho 87124"
           class="w-full h-full object-cover rounded-[20px]"
         >
@@ -157,7 +157,7 @@ get_header(); ?>
 
       <div class="ajs-img-card ajs-reveal">
         <img 
-          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/edit-123-tbd-d-scaled.png" 
+          src="/wp-content/uploads/2026/04/edit-123-tbd-d-scaled.png" 
           alt="Commercial & Residential Roofing system Rio Rancho NM"
           class="w-full h-full object-cover rounded-[20px]"
         >
@@ -165,7 +165,7 @@ get_header(); ?>
 
       <div class="ajs-img-card ajs-reveal">
         <img 
-          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/IMG_1497-1-scaled.jpeg" 
+          src="/wp-content/uploads/2026/04/IMG_1497-1-scaled.jpeg" 
           alt="Storm damage roof evaluation Rio Rancho 87124"
           class="w-full h-full object-cover rounded-[20px]"
         >

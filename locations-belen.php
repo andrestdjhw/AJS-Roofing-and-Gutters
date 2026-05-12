@@ -148,7 +148,7 @@ get_header(); ?>
 
       <div class="ajs-img-card ajs-reveal">
         <img 
-          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/DJI_20260211154218_0080_D-scaled.jpeg" 
+          src="/wp-content/uploads/2026/04/DJI_20260211154218_0080_D-scaled.jpeg" 
           alt="Roof replacement project Belen"
           class="h-full w-full rounded-[20px] object-cover"
         >
@@ -156,7 +156,7 @@ get_header(); ?>
 
       <div class="ajs-img-card ajs-reveal">
         <img 
-          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/down-net_http20260221-483-mgbta8.jpeg" 
+          src="/wp-content/uploads/2026/04/down-net_http20260221-483-mgbta8.jpeg" 
           alt="Flat roof installation Belen"
           class="h-full w-full rounded-[20px] object-cover"
         >
@@ -164,7 +164,7 @@ get_header(); ?>
 
       <div class="ajs-img-card ajs-reveal">
         <img 
-          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/tpo-_3_2_26-scaled.jpeg" 
+          src="/wp-content/uploads/2026/04/tpo-_3_2_26-scaled.jpeg" 
           alt="Roof inspection and maintenance Belen"
           class="h-full w-full rounded-[20px] object-cover"
         >

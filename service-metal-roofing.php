@@ -143,27 +143,27 @@ get_header(); ?>
       $gallery_items = [
         [
           'label' => 'Metal Roofing · Albuquerque',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/Edited-WP-1-1-scaled.png'
+          'image' => '/wp-content/uploads/2026/04/Edited-WP-1-1-scaled.png'
         ],
         [
           'label' => 'Low-Slope / Membrane System',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/down-net_http20260221-256-d4vc77.jpeg'
+          'image' => '/wp-content/uploads/2026/04/down-net_http20260221-256-d4vc77.jpeg'
         ],
         [
           'label' => 'Residential Roofing Upgrade · Rio Rancho',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/down-net_http20260223-122-k9uufd.jpg'
+          'image' => '/wp-content/uploads/2026/04/down-net_http20260223-122-k9uufd.jpg'
         ],
         [
           'label' => 'Tile / Shingle / Metal Project',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/IMG_1319-scaled.jpeg'
+          'image' => '/wp-content/uploads/2026/04/IMG_1319-scaled.jpeg'
         ],
         [
           'label' => 'Solar-Ready Installation',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/edit-123-tbd-d-scaled.png'
+          'image' => '/wp-content/uploads/2026/04/edit-123-tbd-d-scaled.png'
         ],
         [
           'label' => 'Commercial &amp; Residential Roofing System',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/edit-tbd-2-1-scaled.png'
+          'image' => '/wp-content/uploads/2026/04/edit-tbd-2-1-scaled.png'
         ],
       ];
 

@@ -147,7 +147,7 @@ get_header(); ?>
 
       <div class="ajs-img-card ajs-reveal">
         <img 
-          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/Edited-WP-1-1-scaled.png" 
+          src="/wp-content/uploads/2026/04/Edited-WP-1-1-scaled.png" 
           alt="Commercial & Residential Roofing installation Albuquerque NE 87122"
           class="w-full h-full object-cover rounded-[20px]"
         >
@@ -155,7 +155,7 @@ get_header(); ?>
 
       <div class="ajs-img-card ajs-reveal">
         <img 
-          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/down-net_http20260223-132-3ial8w.jpeg" 
+          src="/wp-content/uploads/2026/04/down-net_http20260223-132-3ial8w.jpeg" 
           alt="Roof inspection and maintenance High Desert Albuquerque"
           class="w-full h-full object-cover rounded-[20px]"
         >
@@ -163,7 +163,7 @@ get_header(); ?>
 
       <div class="ajs-img-card ajs-reveal">
         <img 
-          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/467ECB75-5075-4B67-86EA-677FE7A136E7_1_105_c.png" 
+          src="/wp-content/uploads/2026/04/467ECB75-5075-4B67-86EA-677FE7A136E7_1_105_c.png" 
           alt="Flat roof storm damage repair Albuquerque 87122"
           class="w-full h-full object-cover rounded-[20px]"
         >

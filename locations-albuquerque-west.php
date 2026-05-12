@@ -149,7 +149,7 @@ get_header(); ?>
 
       <div class="ajs-img-card ajs-reveal">
         <img 
-          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/DJI_20260130172742_0017_D-scaled.jpeg" 
+          src="/wp-content/uploads/2026/04/DJI_20260130172742_0017_D-scaled.jpeg" 
           alt="Full roof replacement aerial view Albuquerque West"
           class="h-full w-full rounded-[20px] object-cover"
         >
@@ -157,7 +157,7 @@ get_header(); ?>
 
       <div class="ajs-img-card ajs-reveal">
         <img 
-          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/IMG_1073-scaled.jpg" 
+          src="/wp-content/uploads/2026/04/IMG_1073-scaled.jpg" 
           alt="Roof repair work in progress Albuquerque West"
           class="h-full w-full rounded-[20px] object-cover"
         >
@@ -165,7 +165,7 @@ get_header(); ?>
 
       <div class="ajs-img-card ajs-reveal">
         <img 
-          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/edit-1234-tbd-scaled.jpg" 
+          src="/wp-content/uploads/2026/04/edit-1234-tbd-scaled.jpg" 
           alt="Seamless gutter installation Albuquerque West"
           class="h-full w-full rounded-[20px] object-cover"
         >

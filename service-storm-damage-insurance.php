@@ -127,23 +127,23 @@ get_header(); ?>
     $gallery_items = [
       [
         'label' => 'Storm Damage Inspection',
-        'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/TPO-edit-scaled.jpg'
+        'image' => '/wp-content/uploads/2026/04/TPO-edit-scaled.jpg'
       ],
       [
         'label' => 'Insurance Claim Documentation',
-        'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/down-net_http20260221-276-cerz5n.jpeg'
+        'image' => '/wp-content/uploads/2026/04/down-net_http20260221-276-cerz5n.jpeg'
       ],
       [
         'label' => 'Aerial Roof Assessment',
-        'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/dji_fly_20260228_113648_0028_1774306177730_photo-2-scaled.png'
+        'image' => '/wp-content/uploads/2026/04/dji_fly_20260228_113648_0028_1774306177730_photo-2-scaled.png'
       ],
       [
         'label' => 'Flat Roof Storm Repair Review',
-        'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/467ECB75-5075-4B67-86EA-677FE7A136E7_1_105_c.png'
+        'image' => '/wp-content/uploads/2026/04/467ECB75-5075-4B67-86EA-677FE7A136E7_1_105_c.png'
       ],
       [
         'label' => 'Weather Impact Evaluation',
-        'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/IMG_1497-1-scaled.jpeg'
+        'image' => '/wp-content/uploads/2026/04/IMG_1497-1-scaled.jpeg'
       ],
     ];
     ?>

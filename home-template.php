@@ -289,37 +289,37 @@ get_header(); ?>
           'title' => 'Roof Replacement',
           'copy'  => 'Complete tear-off and rebuild. Premium materials, manufacturer warranties, and our documented process. Done right. Done once.',
           'link'  => '/service/roof-replacement',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/down-net_http20260223-218-kolndq.png'
+          'image' => '/wp-content/uploads/2026/04/down-net_http20260223-218-kolndq.png'
         ],
         [
           'title' => 'Commercial & Residential Roofing',
           'copy'  => 'TPO/PVC, metal, tile, and shingle systems for homes and businesses across New Mexico. 100% in-house crews, 5/8/10-year warranty with free annual inspections, and solar-ready installations. Same documented process at every scale.',
           'link'  => '/service/commercial-residential-roofing',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/edit-123-tbd-d-scaled.png'
+          'image' => '/wp-content/uploads/2026/04/edit-123-tbd-d-scaled.png'
         ],
         [
           'title' => 'Seamless Gutters',
           'copy'  => 'Custom-fabricated on-site with our own machine brought directly to your property so the material is formed on location, eliminating damage from pre-cutting and transporting. No seams, no leaks, no subcontractors. Precision drainage that protects your foundation.',
           'link'  => '/service/gutters',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/DJI_20260130170840_0014_D-scaled.jpg'
+          'image' => '/wp-content/uploads/2026/04/DJI_20260130170840_0014_D-scaled.jpg'
         ],
         [
           'title' => 'Storm Damage & Insurance',
           'copy'  => 'Hail or wind damage? We inspect, document everything with photos, and work with your insurance to streamline the process. Here\'s what we found and here\'s how we fix it.',
           'link'  => '/service/storm-damage-insurance',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/down-net_http20260306-151-4fjhqw.jpg'
+          'image' => '/wp-content/uploads/2026/04/down-net_http20260306-151-4fjhqw.jpg'
         ],
         [
           'title' => 'Roof Repair',
           'copy'  => 'Targeted repairs for leaks, missing shingles, and weather wear. Honest assessment first, we\'ll tell you if a repair is enough or if replacement makes more sense.',
           'link'  => '/service/roof-repair',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/AJs-truck-photo-edidted.png'
+          'image' => '/wp-content/uploads/2026/04/AJs-truck-photo-edidted.png'
         ],
         [
           'title' => 'Roof Inspection & Maintenance',
           'copy'  => 'Photo-documented inspections and annual maintenance plans. Catch small problems before they become expensive ones. You don\'t need to understand roofing, that\'s our job.',
           'link'  => '/service/roof-inspection',
-          'image' => 'http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/467ECB75-5075-4B67-86EA-677FE7A136E7_1_105_c.png'
+          'image' => '/wp-content/uploads/2026/04/467ECB75-5075-4B67-86EA-677FE7A136E7_1_105_c.png'
         ],
       ];
 
@@ -508,25 +508,25 @@ get_header(); ?>
 
       <!-- Roof Replacement -->
       <div class="ajs-hover-lift ajs-reveal flex min-h-[220px] items-end rounded-[24px] border border-[#d3d8db] p-6 font-black text-white bg-cover bg-center"
-        style="background-image: linear-gradient(180deg, rgba(19,45,65,0.15), rgba(19,45,65,0.45)), url('http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/DJI_20260211154218_0080_D-scaled.jpeg');">
+        style="background-image: linear-gradient(180deg, rgba(19,45,65,0.15), rgba(19,45,65,0.45)), url('/wp-content/uploads/2026/04/DJI_20260211154218_0080_D-scaled.jpeg');">
         Roof Replacement 
       </div>
 
       <!-- Commercial & Residential Roofing -->
       <div class="ajs-hover-lift ajs-reveal flex min-h-[220px] items-end rounded-[24px] border border-[#d3d8db] p-6 font-black text-white bg-cover bg-center"
-        style="background-image: linear-gradient(180deg, rgba(19,45,65,0.15), rgba(19,45,65,0.45)), url('http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/Edited-WP-1-1-scaled.png');">
+        style="background-image: linear-gradient(180deg, rgba(19,45,65,0.15), rgba(19,45,65,0.45)), url('/wp-content/uploads/2026/04/Edited-WP-1-1-scaled.png');">
         Commercial & Residential Roofing 
       </div>
 
       <!-- Seamless Gutters -->
       <div class="ajs-hover-lift ajs-reveal flex min-h-[220px] items-end rounded-[24px] border border-[#d3d8db] p-6 font-black text-white bg-cover bg-center"
-        style="background-image: linear-gradient(180deg, rgba(19,45,65,0.15), rgba(19,45,65,0.45)), url('http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/down-net_http20260221-116-ew4z81.jpg');">
+        style="background-image: linear-gradient(180deg, rgba(19,45,65,0.15), rgba(19,45,65,0.45)), url('/wp-content/uploads/2026/04/down-net_http20260221-116-ew4z81.jpg');">
         Seamless Gutters 
       </div>
 
       <!-- Storm Damage -->
       <div class="ajs-hover-lift ajs-reveal flex min-h-[220px] items-end rounded-[24px] border border-[#d3d8db] p-6 font-black text-white bg-cover bg-center"
-        style="background-image: linear-gradient(180deg, rgba(19,45,65,0.15), rgba(19,45,65,0.45)), url('http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/IMG_1497-1-scaled.jpeg');">
+        style="background-image: linear-gradient(180deg, rgba(19,45,65,0.15), rgba(19,45,65,0.45)), url('/wp-content/uploads/2026/04/IMG_1497-1-scaled.jpeg');">
         Storm Damage Repair 
       </div>
 
@@ -1039,7 +1039,7 @@ get_header(); ?>
 .ajs-process-pattern {
   position: absolute;
   inset: 0;
-  background-image: url("http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/Estampados-02.png");
+  background-image: url("/wp-content/uploads/2026/04/Estampados-02.png");
   background-repeat: repeat;
   background-size: 380px auto;
   background-position: center top;

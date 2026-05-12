@@ -147,7 +147,7 @@ get_header(); ?>
 
       <div class="ajs-img-card ajs-reveal">
         <img 
-          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/down-net_http20260223-317-60x0uj.jpeg" 
+          src="/wp-content/uploads/2026/04/down-net_http20260223-317-60x0uj.jpeg" 
           alt="Roof inspection Santa Fe Historic Core 87501"
           class="w-full h-full object-cover rounded-[20px]"
         >
@@ -155,7 +155,7 @@ get_header(); ?>
 
       <div class="ajs-img-card ajs-reveal">
         <img 
-          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/Edited-WP-1-1-scaled.png" 
+          src="/wp-content/uploads/2026/04/Edited-WP-1-1-scaled.png" 
           alt="Commercial & Residential Roofing system Santa Fe 87501"
           class="w-full h-full object-cover rounded-[20px]"
         >
@@ -163,7 +163,7 @@ get_header(); ?>
 
       <div class="ajs-img-card ajs-reveal">
         <img 
-          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/down-net_http20260221-256-d4vc77.jpeg" 
+          src="/wp-content/uploads/2026/04/down-net_http20260221-256-d4vc77.jpeg" 
           alt="Roof installation detail Santa Fe Historic Core"
           class="w-full h-full object-cover rounded-[20px]"
         >

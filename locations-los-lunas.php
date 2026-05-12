@@ -148,7 +148,7 @@ get_header(); ?>
 
       <div class="ajs-img-card ajs-reveal">
         <img 
-          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/TPO-edit-scaled.jpg" 
+          src="/wp-content/uploads/2026/04/TPO-edit-scaled.jpg" 
           alt="Flat roof system Los Lunas"
           class="h-full w-full rounded-[20px] object-cover"
         >
@@ -156,7 +156,7 @@ get_header(); ?>
 
       <div class="ajs-img-card ajs-reveal">
         <img 
-          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/edit-tbd-2-1-scaled.png" 
+          src="/wp-content/uploads/2026/04/edit-tbd-2-1-scaled.png" 
           alt="Roof inspection and maintenance Los Lunas"
           class="h-full w-full rounded-[20px] object-cover"
         >
@@ -164,7 +164,7 @@ get_header(); ?>
 
       <div class="ajs-img-card ajs-reveal">
         <img 
-          src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/DJI_20260130170840_0014_D-scaled.jpg" 
+          src="/wp-content/uploads/2026/04/DJI_20260130170840_0014_D-scaled.jpg" 
           alt="Seamless gutter installation Los Lunas"
           class="h-full w-full rounded-[20px] object-cover"
         >

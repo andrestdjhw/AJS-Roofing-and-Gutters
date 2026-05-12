@@ -129,7 +129,7 @@ function FooterExample() {
 					<div className="ajs-footer-brand-col">
 <a className="ajs-footer-brand" href="/" aria-label="AJS Roofing and Gutters Home">
 	<img
-		src="http://ajs-roofing-and-gutters.local/wp-content/uploads/2026/04/AJS_Imagotipo-2.png"
+		src="/wp-content/uploads/2026/04/AJS_Imagotipo-2.png"
 		alt="AJS Roofing & Gutters"
 		className="ajs-footer-brand-logo"
 	/>
