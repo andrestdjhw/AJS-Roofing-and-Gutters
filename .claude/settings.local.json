@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell -Command \"Select-String -Path 'build\\\\index.css' -Pattern 'render-react-navbar|navbar|nav-' | Select-Object -First 30\")",
+      "Bash(npm run *)"
+    ]
+  }
+}

@@ -2,6 +2,7 @@ import Person from "./scripts/Person"
 import ExampleReactComponent from "./scripts/ExampleReactComponent"
 import NavbarExample from "./scripts/NavbarExample"
 import FooterExample from "./scripts/FooterExample"
+import CallUsFlotante from "./scripts/CallUsFlotante"
 import React from "react"
 import ReactDOM from "react-dom/client"
 import "./index.css"
@@ -21,4 +22,9 @@ if (document.querySelector("#render-react-navbar-here")) {
 if (document.querySelector("#footer-react")) {
 	const footerRoot = ReactDOM.createRoot(document.querySelector("#footer-react"))
 	footerRoot.render(<FooterExample />)
+}
+
+if (document.querySelector("#ajs-call-fab")) {
+	const fabRoot = ReactDOM.createRoot(document.querySelector("#ajs-call-fab"))
+	fabRoot.render(<CallUsFlotante />)
 }

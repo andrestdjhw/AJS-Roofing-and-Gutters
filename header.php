@@ -6,4 +6,6 @@
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>>
-    <div id="render-react-navbar-here"></div>
+    <div id="ajs-sticky-header">
+      <div id="render-react-navbar-here"></div>
+    </div>

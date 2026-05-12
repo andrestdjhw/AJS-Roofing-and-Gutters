@@ -82,7 +82,7 @@ get_header(); ?>
           </label>
 
           <!-- ✅ RECAPTCHA (AÑADIDO) -->
-          <div class="g-recaptcha" data-sitekey="6LfHjassAAAAAAkbtC73TJdkAzPv2my9-RYF5Q4j"></div>
+          <div class="g-recaptcha" data-sitekey="6LfaMucsAAAAAOmwSUATamF7X9_kN8TLfqZkifNv"></div>
 
           <button id="ajsEstimateSubmitBtn" type="submit" class="ajs-btn-animate inline-flex items-center justify-center rounded-full bg-[#d04418] px-6 py-4 text-sm font-black text-white shadow-[0_16px_32px_rgba(208,68,24,0.28)]">
             Get Your Free Inspection

@@ -10,7 +10,11 @@ get_header(); ?>
 
 <main class="bg-white text-[#42474b]">
  <!-- Hero -->
-<section class="relative overflow-hidden border-b border-[#d3d8db] bg-[linear-gradient(180deg,#ffffff_0%,#f4f7f9_100%)]">
+<section class="relative overflow-hidden border-b border-[#d3d8db]">
+  <video autoplay muted loop playsinline class="absolute inset-0 h-full w-full object-cover">
+    <source src="/wp-content/uploads/2026/05/VIDEO-ROOF.mp4" type="video/mp4">
+  </video>
+  <div class="absolute inset-0 bg-white/70"></div>
   <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(110,170,206,0.22),transparent_30%)]"></div>
   <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,rgba(208,68,24,0.12),transparent_24%)]"></div>
   <div class="absolute inset-x-0 top-0 h-px bg-[linear-gradient(90deg,transparent,rgba(110,170,206,0.55),transparent)]"></div>
@@ -189,7 +193,7 @@ get_header(); ?>
           <div>
             <div
               class="g-recaptcha"
-              data-sitekey="6LfHjassAAAAAAkbtC73TJdkAzPv2my9-RYF5Q4j"
+              data-sitekey="6LfaMucsAAAAAOmwSUATamF7X9_kN8TLfqZkifNv"
               data-theme="light"
               data-size="normal">
             </div>
@@ -374,24 +378,25 @@ get_header(); ?>
       Built With Proven Systems
     </p>
 
-    <div class="ajs-reveal flex flex-wrap items-center justify-center gap-3 md:gap-4">
-      
-      <span class="ajs-chip">
-        Shingles
-      </span>
-
-      <span class="ajs-chip">
-        TPO / PVC
-      </span>
-
-      <span class="ajs-chip">
-        Metal
-      </span>
-
-      <span class="ajs-chip">
-        Tile
-      </span>
-
+    <div class="ajs-materials-ticker mt-4 overflow-hidden">
+      <div class="ajs-materials-track">
+        <span class="ajs-chip">Shingles</span>
+        <span class="ajs-chip">TPO / PVC</span>
+        <span class="ajs-chip">Metal</span>
+        <span class="ajs-chip">Tile</span>
+        <span class="ajs-chip">EPDM</span>
+        <span class="ajs-chip">Standing Seam</span>
+        <span class="ajs-chip">Modified Bitumen</span>
+        <span class="ajs-chip">Asphalt</span>
+        <span class="ajs-chip">Shingles</span>
+        <span class="ajs-chip">TPO / PVC</span>
+        <span class="ajs-chip">Metal</span>
+        <span class="ajs-chip">Tile</span>
+        <span class="ajs-chip">EPDM</span>
+        <span class="ajs-chip">Standing Seam</span>
+        <span class="ajs-chip">Modified Bitumen</span>
+        <span class="ajs-chip">Asphalt</span>
+      </div>
     </div>
   </div>
 </section>
@@ -930,7 +935,7 @@ get_header(); ?>
         <div>
           <div
             class="g-recaptcha"
-            data-sitekey="6LfHjassAAAAAAkbtC73TJdkAzPv2my9-RYF5Q4j"
+            data-sitekey="6LfaMucsAAAAAOmwSUATamF7X9_kN8TLfqZkifNv"
             data-theme="light"
             data-size="normal">
           </div>
@@ -959,6 +964,24 @@ get_header(); ?>
 
   .g-recaptcha {
     margin-top: 0.25rem;
+  }
+
+  .ajs-materials-track {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    gap: 1rem;
+    padding: 0.35rem 0;
+    animation: ajsMaterialsMove 22s linear infinite;
+  }
+
+  .ajs-materials-ticker:hover .ajs-materials-track {
+    animation-play-state: paused;
+  }
+
+  @keyframes ajsMaterialsMove {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
   }
 
   .ajs-ticker {
@@ -1130,6 +1153,7 @@ get_header(); ?>
 
   @media (prefers-reduced-motion: reduce) {
     .ajs-ticker-track,
+    .ajs-materials-track,
     .ajs-reveal,
     .ajs-reveal-left,
     .ajs-reveal-right,

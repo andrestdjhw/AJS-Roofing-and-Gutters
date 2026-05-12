@@ -133,7 +133,7 @@ get_header(); ?>
             <span>I agree to be contacted by AJS Roofing &amp; Gutters regarding my call request.</span>
           </label>
 
-          <div class="g-recaptcha" data-sitekey="6LfHjassAAAAAAkbtC73TJdkAzPv2my9-RYF5Q4j"></div>
+          <div class="g-recaptcha" data-sitekey="6LfaMucsAAAAAOmwSUATamF7X9_kN8TLfqZkifNv"></div>
 
           <button
             id="ajsCallSubmitBtn"

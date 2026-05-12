@@ -192,6 +192,12 @@ a {
    NAV WRAP
 ───────────────────────────── */
 
+#ajs-sticky-header {
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+}
+
 .ajs-nav-wrap {
 	position: relative;
 	top: auto;
@@ -873,6 +879,106 @@ a {
 
 	.ajs-nav-brand-logo {
 		max-width: 185px;
+	}
+}
+
+/* ─────────────────────────────
+   FLOATING CALL BUTTON
+───────────────────────────── */
+
+.ajs-fab {
+	position: fixed;
+	bottom: 1.75rem;
+	right: 1.75rem;
+	z-index: 900;
+	display: inline-flex;
+	align-items: center;
+	text-decoration: none;
+	border-radius: 999px;
+	cursor: pointer;
+}
+
+.ajs-fab-ring {
+	position: absolute;
+	inset: -4px;
+	border-radius: 999px;
+	border: 2px solid rgba(208, 68, 24, 0.35);
+	animation: ajs-fab-pulse 2.4s ease-out infinite;
+	pointer-events: none;
+}
+
+@keyframes ajs-fab-pulse {
+	0%   { transform: scale(1);   opacity: 0.7; }
+	70%  { transform: scale(1.18); opacity: 0; }
+	100% { transform: scale(1.18); opacity: 0; }
+}
+
+.ajs-fab-inner {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	gap: 0.65rem;
+	padding: 0.82rem 1.3rem 0.82rem 1rem;
+	border-radius: 999px;
+	background: linear-gradient(135deg, #d04418 0%, #b63c15 100%);
+	color: #ffffff;
+	box-shadow: 0 8px 28px rgba(208, 68, 24, 0.38), 0 2px 8px rgba(0, 0, 0, 0.12);
+	transition: transform 200ms ease, box-shadow 200ms ease, filter 200ms ease;
+}
+
+.ajs-fab:hover .ajs-fab-inner {
+	transform: translateY(-2px);
+	box-shadow: 0 14px 36px rgba(208, 68, 24, 0.46), 0 4px 12px rgba(0, 0, 0, 0.14);
+	filter: saturate(1.06);
+}
+
+.ajs-fab:active .ajs-fab-inner {
+	transform: translateY(0);
+}
+
+.ajs-fab-icon {
+	width: 1.2rem;
+	height: 1.2rem;
+	flex-shrink: 0;
+}
+
+.ajs-fab-text {
+	display: flex;
+	flex-direction: column;
+	line-height: 1.2;
+}
+
+.ajs-fab-eyebrow {
+	font-size: 0.65rem;
+	font-weight: 900;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	opacity: 0.82;
+}
+
+.ajs-fab-number {
+	font-size: 0.9rem;
+	font-weight: 900;
+	letter-spacing: -0.01em;
+}
+
+@media (max-width: 640px) {
+	.ajs-fab {
+		bottom: 1.25rem;
+		right: 1.25rem;
+	}
+
+	.ajs-fab-inner {
+		padding: 1rem;
+	}
+
+	.ajs-fab-text {
+		display: none;
+	}
+
+	.ajs-fab-icon {
+		width: 1.35rem;
+		height: 1.35rem;
 	}
 }
 

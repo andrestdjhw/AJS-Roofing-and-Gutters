@@ -406,7 +406,7 @@ get_header(); ?>
 
         <!-- ✅ RECAPTCHA (AÑADIDO) -->
         <div class="g-recaptcha mt-2"
-             data-sitekey="6LfHjassAAAAAAkbtC73TJdkAzPv2my9-RYF5Q4j">
+             data-sitekey="6LfaMucsAAAAAOmwSUATamF7X9_kN8TLfqZkifNv">
         </div>
 
         <button
