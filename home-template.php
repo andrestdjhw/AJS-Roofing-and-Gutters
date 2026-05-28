@@ -12,7 +12,7 @@ get_header(); ?>
  <!-- Hero -->
 <section class="relative overflow-hidden border-b border-[#d3d8db]">
   <video autoplay muted loop playsinline class="absolute inset-0 h-full w-full object-cover">
-    <source src="/wp-content/uploads/2026/05/VIDEO-ROOF.mp4" type="video/mp4">
+    <source src="/wp-content/uploads/2026/05/roofhero.mp4" type="video/mp4">
   </video>
   <div class="absolute inset-0 bg-white/70"></div>
   <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(110,170,206,0.22),transparent_30%)]"></div>
