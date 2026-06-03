@@ -2,7 +2,7 @@ import React from "react"
 
 const PHONE_DISPLAY = "(505) 453-5626"
 const PHONE_LINK = "tel:+15054535626"
-const EMAIL = "info@ajspro.com"
+const EMAIL = "info@ajsroofing.com"
 
 const QUICK_LINKS = [
 	{ label: "Home", href: "/" },

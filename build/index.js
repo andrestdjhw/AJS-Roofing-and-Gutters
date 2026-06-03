@@ -121,7 +121,7 @@ __webpack_require__.r(__webpack_exports__);
 
 const PHONE_DISPLAY = "(505) 453-5626";
 const PHONE_LINK = "tel:+15054535626";
-const EMAIL = "info@ajspro.com";
+const EMAIL = "info@ajsroofing.com";
 const QUICK_LINKS = [{
   label: "Home",
   href: "/"
@@ -415,8 +415,8 @@ __webpack_require__.r(__webpack_exports__);
 
 const PHONE_DISPLAY = "(505) 453-5626";
 const PHONE_LINK = "tel:+15054535626";
-const EMAIL_DISPLAY = "info@ajspro.com";
-const EMAIL_LINK = "mailto:info@ajspro.com";
+const EMAIL_DISPLAY = "info@ajsroofing.com";
+const EMAIL_LINK = "mailto:info@ajsroofing.com";
 const BBB_LINK = "https://www.bbb.org/us/nm/veguita/profile/roofing-contractors/ajs-professional-contracting-llc-0806-99137264/customer-reviews";
 const YELP_LINK = "https://www.yelp.com/biz/ajs-professional-contracting-veguita?utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)";
 const LOCATION_LABEL = "Albuquerque, NM";
