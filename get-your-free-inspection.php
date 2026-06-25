@@ -208,6 +208,13 @@ get_header(); ?>
         successBox.classList.add("hidden");
         errorBox.classList.add("hidden");
 
+        const recaptchaToken = typeof grecaptcha !== "undefined" ? grecaptcha.getResponse() : "";
+        if (!recaptchaToken) {
+          errorBox.textContent = "Please complete the reCAPTCHA before submitting.";
+          errorBox.classList.remove("hidden");
+          return;
+        }
+
         const originalButtonText = submitBtn.textContent;
         submitBtn.disabled = true;
         submitBtn.textContent = "Sending...";
@@ -219,7 +226,8 @@ get_header(); ?>
           service: document.getElementById("ajs_estimate_service").value,
           address: document.getElementById("ajs_estimate_address").value,
           message: document.getElementById("ajs_estimate_message").value,
-          consent: document.getElementById("ajs_estimate_consent").checked ? "Yes" : "No"
+          consent: document.getElementById("ajs_estimate_consent").checked ? "Yes" : "No",
+          "g-recaptcha-response": recaptchaToken
         };
 
         emailjs.send(

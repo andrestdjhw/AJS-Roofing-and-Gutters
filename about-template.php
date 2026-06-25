@@ -903,6 +903,13 @@ get_header(); ?>
         successBox.classList.add("hidden");
         errorBox.classList.add("hidden");
 
+        const recaptchaToken = typeof grecaptcha !== "undefined" ? grecaptcha.getResponse() : "";
+        if (!recaptchaToken) {
+          errorBox.textContent = "Please complete the reCAPTCHA before submitting.";
+          errorBox.classList.remove("hidden");
+          return;
+        }
+
         const originalButtonText = submitBtn.textContent;
         submitBtn.disabled = true;
         submitBtn.textContent = "Sending...";
@@ -911,7 +918,8 @@ get_header(); ?>
           name: document.getElementById("ajs_name").value,
           phone: document.getElementById("ajs_phone").value,
           email: document.getElementById("ajs_email").value,
-          message: document.getElementById("ajs_message").value
+          message: document.getElementById("ajs_message").value,
+          "g-recaptcha-response": recaptchaToken
         };
 
         emailjs.send(

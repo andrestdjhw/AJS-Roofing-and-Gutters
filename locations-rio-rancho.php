@@ -622,6 +622,13 @@ document.addEventListener("DOMContentLoaded", () => {
       submitBtn.disabled = true;
       submitBtn.textContent = "Sending...";
 
+      const recaptchaToken = typeof grecaptcha !== "undefined" ? grecaptcha.getResponse() : "";
+      if (!recaptchaToken) {
+        errorBox.textContent = "Please complete the reCAPTCHA before submitting.";
+        errorBox.classList.remove("hidden");
+        return;
+      }
+
       const formData = {
         name: document.getElementById("ajs_location_name").value,
         phone: document.getElementById("ajs_location_phone").value,
@@ -629,7 +636,8 @@ document.addEventListener("DOMContentLoaded", () => {
         service: document.getElementById("ajs_location_service").value,
         address: document.getElementById("ajs_location_address").value,
         message: document.getElementById("ajs_location_message").value || "No additional details provided.",
-        consent: document.getElementById("ajs_location_consent").checked ? "Yes" : "No"
+        consent: document.getElementById("ajs_location_consent").checked ? "Yes" : "No",
+        "g-recaptcha-response": recaptchaToken
       };
 
       emailjs.send(

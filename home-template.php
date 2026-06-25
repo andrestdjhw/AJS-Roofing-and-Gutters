@@ -1234,7 +1234,8 @@ get_header(); ?>
           service: document.getElementById(config.serviceId).value,
           address: document.getElementById(config.addressId).value,
           message: document.getElementById(config.messageId).value,
-          consent: document.getElementById(config.consentId).checked ? "Yes" : "No"
+          consent: document.getElementById(config.consentId).checked ? "Yes" : "No",
+          "g-recaptcha-response": recaptchaResponse
         };
 
         emailjs.send(

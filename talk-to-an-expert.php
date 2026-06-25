@@ -272,7 +272,8 @@ get_header(); ?>
           service: document.getElementById("ajs_call_service").value,
           address: document.getElementById("ajs_call_address").value,
           message: combinedMessage || "No additional details provided.",
-          consent: document.getElementById("ajs_call_consent").checked ? "Yes" : "No"
+          consent: document.getElementById("ajs_call_consent").checked ? "Yes" : "No",
+          "g-recaptcha-response": captchaResponse
         };
 
         emailjs.send(
