@@ -292,7 +292,7 @@ get_header(); ?>
         [
           'title' => 'Roof Replacement',
           'copy'  => 'Complete tear-off and rebuild. Premium materials, manufacturer warranties, and our documented process. Done right. Done once.',
-          'link'  => '/service/roof-replacement',
+          'link'  => '/service/service-roof-replacement',
           'image' => '/wp-content/uploads/2026/04/down-net_http20260223-218-kolndq.png'
         ],
         [
