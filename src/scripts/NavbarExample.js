@@ -6,6 +6,9 @@ const EMAIL_DISPLAY = "info@ajsroofing.com"
 const EMAIL_LINK = "mailto:info@ajsroofing.com"
 const BBB_LINK = "https://www.bbb.org/us/nm/veguita/profile/roofing-contractors/ajs-professional-contracting-llc-0806-99137264/customer-reviews"
 const YELP_LINK = "https://www.yelp.com/biz/ajs-professional-contracting-veguita?utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)"
+const FACEBOOK_LINK = "https://www.facebook.com/profile.php?id=61591119726818"
+const INSTAGRAM_LINK = "https://www.instagram.com/ajsroofinggutters/?hl=en"
+const LINKEDIN_LINK = "https://www.linkedin.com/company/ajs-roofing-gutters/"
 const LOCATION_LABEL = "Albuquerque, NM"
 const LOCATION_LINK = "https://maps.google.com/?q=Albuquerque,+NM"
 
@@ -100,6 +103,45 @@ function YelpIcon({ className = "" }) {
 				<path d="M4.2 13.3c.2-.5.8-.7 1.3-.5l4.8 2c.5.2.7.8.5 1.3l-.7 1.6c-.2.5-.8.7-1.3.5l-4.8-2c-.5-.2-.7-.8-.5-1.3l.7-1.6z"/>
 				<path d="M19.8 13.3l.7 1.6c.2.5 0 1.1-.5 1.3l-4.8 2c-.5.2-1.1 0-1.3-.5l-.7-1.6c-.2-.5 0-1.1.5-1.3l4.8-2c.5-.2 1.1 0 1.3.5z"/>
 			</g>
+		</svg>
+	)
+}
+
+function FacebookIcon({ className = "" }) {
+	return (
+		<svg className={className} viewBox="0 0 24 24" fill="none" aria-hidden="true">
+			<path
+				d="M14.5 8.5H16.5V5.5H14.2C12.2 5.5 10.8 6.9 10.8 8.9V10.5H8.8V13.5H10.8V19.5H13.8V13.5H15.9L16.3 10.5H13.8V9.1C13.8 8.7 14.1 8.5 14.5 8.5Z"
+				fill="currentColor"
+			/>
+		</svg>
+	)
+}
+
+function InstagramIcon({ className = "" }) {
+	return (
+		<svg className={className} viewBox="0 0 24 24" fill="none" aria-hidden="true">
+			<rect x="4" y="4" width="16" height="16" rx="4.5" stroke="currentColor" strokeWidth="1.7" />
+			<circle cx="12" cy="12" r="3.4" stroke="currentColor" strokeWidth="1.7" />
+			<circle cx="16.6" cy="7.4" r="1.1" fill="currentColor" />
+		</svg>
+	)
+}
+
+function LinkedinIcon({ className = "" }) {
+	return (
+		<svg className={className} viewBox="0 0 24 24" fill="none" aria-hidden="true">
+			<rect x="4" y="4" width="16" height="16" rx="2.5" stroke="currentColor" strokeWidth="1.7" />
+			<circle cx="8.1" cy="8.2" r="1.15" fill="currentColor" />
+			<path d="M8.1 11V16.2" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
+			<path
+				d="M11.4 16.2V13.3C11.4 12.1 12.1 11.2 13.3 11.2C14.5 11.2 15 12 15 13.3V16.2"
+				stroke="currentColor"
+				strokeWidth="1.7"
+				strokeLinecap="round"
+				strokeLinejoin="round"
+			/>
+			<path d="M11.4 16.2V11.4" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
 		</svg>
 	)
 }
@@ -200,6 +242,38 @@ function NavbarExample() {
 						>
 							<MapPinIcon className="ajs-topbar-location-icon" />
 							<span>{LOCATION_LABEL}</span>
+						</a>
+
+						<span className="ajs-topbar-divider" aria-hidden="true" />
+
+						<a
+							href={FACEBOOK_LINK}
+							className="ajs-topbar-social"
+							aria-label="Facebook"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<FacebookIcon className="ajs-topbar-social-icon" />
+						</a>
+
+						<a
+							href={INSTAGRAM_LINK}
+							className="ajs-topbar-social"
+							aria-label="Instagram"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<InstagramIcon className="ajs-topbar-social-icon" />
+						</a>
+
+						<a
+							href={LINKEDIN_LINK}
+							className="ajs-topbar-social"
+							aria-label="LinkedIn"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<LinkedinIcon className="ajs-topbar-social-icon" />
 						</a>
 
 						<a
@@ -367,6 +441,39 @@ function NavbarExample() {
 							</a>
 
 							<div className="ajs-mobile-socials">
+								<a
+									href={FACEBOOK_LINK}
+									className="ajs-nav-social"
+									aria-label="Facebook"
+									target="_blank"
+									rel="noopener noreferrer"
+									onClick={closeEverything}
+								>
+									<FacebookIcon className="ajs-nav-social-icon" />
+								</a>
+
+								<a
+									href={INSTAGRAM_LINK}
+									className="ajs-nav-social"
+									aria-label="Instagram"
+									target="_blank"
+									rel="noopener noreferrer"
+									onClick={closeEverything}
+								>
+									<InstagramIcon className="ajs-nav-social-icon" />
+								</a>
+
+								<a
+									href={LINKEDIN_LINK}
+									className="ajs-nav-social"
+									aria-label="LinkedIn"
+									target="_blank"
+									rel="noopener noreferrer"
+									onClick={closeEverything}
+								>
+									<LinkedinIcon className="ajs-nav-social-icon" />
+								</a>
+
 								<a
 									href={YELP_LINK}
 									className="ajs-nav-social"

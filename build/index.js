@@ -122,6 +122,11 @@ __webpack_require__.r(__webpack_exports__);
 const PHONE_DISPLAY = "(505) 453-5626";
 const PHONE_LINK = "tel:+15054535626";
 const EMAIL = "info@ajsroofing.com";
+const BBB_LINK = "https://www.bbb.org/us/nm/veguita/profile/roofing-contractors/ajs-professional-contracting-llc-0806-99137264/customer-reviews";
+const YELP_LINK = "https://www.yelp.com/biz/ajs-professional-contracting-veguita?utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)";
+const FACEBOOK_LINK = "https://www.facebook.com/profile.php?id=61591119726818";
+const INSTAGRAM_LINK = "https://www.instagram.com/ajsroofinggutters/?hl=en";
+const LINKEDIN_LINK = "https://www.linkedin.com/company/ajs-roofing-gutters/";
 const QUICK_LINKS = [{
   label: "Home",
   href: "/"
@@ -290,6 +295,69 @@ function InstagramIcon({
     })]
   });
 }
+function LinkedinIcon({
+  className = ""
+}) {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("svg", {
+    className: className,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    "aria-hidden": "true",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("rect", {
+      x: "3",
+      y: "3",
+      width: "18",
+      height: "18",
+      rx: "5",
+      stroke: "currentColor",
+      strokeWidth: "1.6"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("circle", {
+      cx: "7.7",
+      cy: "7.8",
+      r: "1.15",
+      fill: "currentColor"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
+      d: "M7.7 10.6V16.6",
+      stroke: "currentColor",
+      strokeWidth: "1.6",
+      strokeLinecap: "round"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
+      d: "M11 16.6V13.4C11 12.1 11.7 11.2 13 11.2C14.3 11.2 14.8 12 14.8 13.4V16.6",
+      stroke: "currentColor",
+      strokeWidth: "1.6",
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
+      d: "M11 16.6V10.9",
+      stroke: "currentColor",
+      strokeWidth: "1.6",
+      strokeLinecap: "round"
+    })]
+  });
+}
+function YelpIcon({
+  className = ""
+}) {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("svg", {
+    viewBox: "0 0 24 24",
+    className: className,
+    "aria-hidden": "true",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("g", {
+      fill: "#E00707",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
+        d: "M12.1 2.2c.5 0 .9.4.9.9l.3 5.2c0 .5-.4.9-.9.9h-1.8c-.5 0-.9-.4-.9-.9l.3-5.2c0-.5.4-.9.9-.9h1.2z"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
+        d: "M6.6 6.5c.4-.4 1-.4 1.4 0l3.6 3.6c.4.4.4 1 0 1.4l-1.3 1.3c-.4.4-1 .4-1.4 0L5.3 9.2c-.4-.4-.4-1 0-1.4l1.3-1.3z"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
+        d: "M17.4 6.5l1.3 1.3c.4.4.4 1 0 1.4l-3.6 3.6c-.4.4-1 .4-1.4 0l-1.3-1.3c-.4-.4-.4-1 0-1.4l3.6-3.6c.4-.4 1-.4 1.4 0z"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
+        d: "M4.2 13.3c.2-.5.8-.7 1.3-.5l4.8 2c.5.2.7.8.5 1.3l-.7 1.6c-.2.5-.8.7-1.3.5l-4.8-2c-.5-.2-.7-.8-.5-1.3l.7-1.6z"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
+        d: "M19.8 13.3l.7 1.6c.2.5 0 1.1-.5 1.3l-4.8 2c-.5.2-1.1 0-1.3-.5l-.7-1.6c-.2-.5 0-1.1.5-1.3l4.8-2c.5-.2 1.1 0 1.3.5z"
+      })]
+    })
+  });
+}
 function FooterExample() {
   const currentYear = new Date().getFullYear();
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("footer", {
@@ -328,6 +396,52 @@ function FooterExample() {
               }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
                 children: EMAIL
               })]
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+            className: "ajs-footer-socials",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+              href: FACEBOOK_LINK,
+              className: "ajs-footer-social-item",
+              "aria-label": "Facebook",
+              target: "_blank",
+              rel: "noopener noreferrer",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(FacebookIcon, {
+                className: "ajs-footer-social-icon"
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+              href: INSTAGRAM_LINK,
+              className: "ajs-footer-social-item",
+              "aria-label": "Instagram",
+              target: "_blank",
+              rel: "noopener noreferrer",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(InstagramIcon, {
+                className: "ajs-footer-social-icon"
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+              href: LINKEDIN_LINK,
+              className: "ajs-footer-social-item",
+              "aria-label": "LinkedIn",
+              target: "_blank",
+              rel: "noopener noreferrer",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(LinkedinIcon, {
+                className: "ajs-footer-social-icon"
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+              href: YELP_LINK,
+              className: "ajs-footer-social-item",
+              "aria-label": "Yelp Reviews",
+              target: "_blank",
+              rel: "noopener noreferrer",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(YelpIcon, {
+                className: "ajs-footer-social-icon"
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+              href: BBB_LINK,
+              className: "ajs-footer-bbb",
+              "aria-label": "Better Business Bureau Reviews",
+              target: "_blank",
+              rel: "noopener noreferrer",
+              children: "BBB"
             })]
           })]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
@@ -419,6 +533,9 @@ const EMAIL_DISPLAY = "info@ajsroofing.com";
 const EMAIL_LINK = "mailto:info@ajsroofing.com";
 const BBB_LINK = "https://www.bbb.org/us/nm/veguita/profile/roofing-contractors/ajs-professional-contracting-llc-0806-99137264/customer-reviews";
 const YELP_LINK = "https://www.yelp.com/biz/ajs-professional-contracting-veguita?utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)";
+const FACEBOOK_LINK = "https://www.facebook.com/profile.php?id=61591119726818";
+const INSTAGRAM_LINK = "https://www.instagram.com/ajsroofinggutters/?hl=en";
+const LINKEDIN_LINK = "https://www.linkedin.com/company/ajs-roofing-gutters/";
 const LOCATION_LABEL = "Albuquerque, NM";
 const LOCATION_LINK = "https://maps.google.com/?q=Albuquerque,+NM";
 const SERVICES_MENU = [{
@@ -581,6 +698,90 @@ function YelpIcon({
     })
   });
 }
+function FacebookIcon({
+  className = ""
+}) {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("svg", {
+    className: className,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    "aria-hidden": "true",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
+      d: "M14.5 8.5H16.5V5.5H14.2C12.2 5.5 10.8 6.9 10.8 8.9V10.5H8.8V13.5H10.8V19.5H13.8V13.5H15.9L16.3 10.5H13.8V9.1C13.8 8.7 14.1 8.5 14.5 8.5Z",
+      fill: "currentColor"
+    })
+  });
+}
+function InstagramIcon({
+  className = ""
+}) {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("svg", {
+    className: className,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    "aria-hidden": "true",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("rect", {
+      x: "4",
+      y: "4",
+      width: "16",
+      height: "16",
+      rx: "4.5",
+      stroke: "currentColor",
+      strokeWidth: "1.7"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("circle", {
+      cx: "12",
+      cy: "12",
+      r: "3.4",
+      stroke: "currentColor",
+      strokeWidth: "1.7"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("circle", {
+      cx: "16.6",
+      cy: "7.4",
+      r: "1.1",
+      fill: "currentColor"
+    })]
+  });
+}
+function LinkedinIcon({
+  className = ""
+}) {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("svg", {
+    className: className,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    "aria-hidden": "true",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("rect", {
+      x: "4",
+      y: "4",
+      width: "16",
+      height: "16",
+      rx: "2.5",
+      stroke: "currentColor",
+      strokeWidth: "1.7"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("circle", {
+      cx: "8.1",
+      cy: "8.2",
+      r: "1.15",
+      fill: "currentColor"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
+      d: "M8.1 11V16.2",
+      stroke: "currentColor",
+      strokeWidth: "1.7",
+      strokeLinecap: "round"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
+      d: "M11.4 16.2V13.3C11.4 12.1 12.1 11.2 13.3 11.2C14.5 11.2 15 12 15 13.3V16.2",
+      stroke: "currentColor",
+      strokeWidth: "1.7",
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
+      d: "M11.4 16.2V11.4",
+      stroke: "currentColor",
+      strokeWidth: "1.7",
+      strokeLinecap: "round"
+    })]
+  });
+}
 function MenuIcon({
   className = ""
 }) {
@@ -711,6 +912,36 @@ function NavbarExample() {
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
               children: LOCATION_LABEL
             })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+            className: "ajs-topbar-divider",
+            "aria-hidden": "true"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+            href: FACEBOOK_LINK,
+            className: "ajs-topbar-social",
+            "aria-label": "Facebook",
+            target: "_blank",
+            rel: "noopener noreferrer",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(FacebookIcon, {
+              className: "ajs-topbar-social-icon"
+            })
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+            href: INSTAGRAM_LINK,
+            className: "ajs-topbar-social",
+            "aria-label": "Instagram",
+            target: "_blank",
+            rel: "noopener noreferrer",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(InstagramIcon, {
+              className: "ajs-topbar-social-icon"
+            })
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+            href: LINKEDIN_LINK,
+            className: "ajs-topbar-social",
+            "aria-label": "LinkedIn",
+            target: "_blank",
+            rel: "noopener noreferrer",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(LinkedinIcon, {
+              className: "ajs-topbar-social-icon"
+            })
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
             href: YELP_LINK,
             className: "ajs-topbar-social",
@@ -912,6 +1143,36 @@ function NavbarExample() {
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
               className: "ajs-mobile-socials",
               children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+                href: FACEBOOK_LINK,
+                className: "ajs-nav-social",
+                "aria-label": "Facebook",
+                target: "_blank",
+                rel: "noopener noreferrer",
+                onClick: closeEverything,
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(FacebookIcon, {
+                  className: "ajs-nav-social-icon"
+                })
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+                href: INSTAGRAM_LINK,
+                className: "ajs-nav-social",
+                "aria-label": "Instagram",
+                target: "_blank",
+                rel: "noopener noreferrer",
+                onClick: closeEverything,
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(InstagramIcon, {
+                  className: "ajs-nav-social-icon"
+                })
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+                href: LINKEDIN_LINK,
+                className: "ajs-nav-social",
+                "aria-label": "LinkedIn",
+                target: "_blank",
+                rel: "noopener noreferrer",
+                onClick: closeEverything,
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(LinkedinIcon, {
+                  className: "ajs-nav-social-icon"
+                })
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
                 href: YELP_LINK,
                 className: "ajs-nav-social",
                 "aria-label": "Yelp Reviews",
