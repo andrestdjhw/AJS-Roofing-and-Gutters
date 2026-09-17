@@ -11,8 +11,8 @@ get_header(); ?>
 <main class="bg-white text-[#42474b]">
  <!-- Hero -->
 <section class="relative overflow-hidden border-b border-[#d3d8db]">
-  <video autoplay muted loop playsinline class="absolute inset-0 h-full w-full object-cover">
-    <source src="/wp-content/uploads/2026/06/AJS_Hero_Roofing.mp4" type="video/mp4">
+  <video id="ajsHeroVideo" autoplay muted playsinline class="absolute inset-0 h-full w-full object-cover">
+    <source src="/wp-content/uploads/2026/09/VIDEO1.mp4" type="video/mp4">
   </video>
   <div class="absolute inset-0 bg-white/70"></div>
   <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(110,170,206,0.22),transparent_30%)]"></div>
@@ -1172,6 +1172,21 @@ get_header(); ?>
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
+    const heroVideo = document.getElementById("ajsHeroVideo");
+    if (heroVideo) {
+      const heroSources = [
+        "/wp-content/uploads/2026/09/VIDEO1.mp4",
+        "/wp-content/uploads/2026/09/VIDEO2.mp4",
+        "/wp-content/uploads/2026/09/VIDEO3.mp4"
+      ];
+      let heroIndex = 0;
+      heroVideo.addEventListener("ended", function () {
+        heroIndex = (heroIndex + 1) % heroSources.length;
+        heroVideo.src = heroSources[heroIndex];
+        heroVideo.play();
+      });
+    }
+
     const items = document.querySelectorAll(".ajs-reveal, .ajs-reveal-left, .ajs-reveal-right");
 
     const observer = new IntersectionObserver((entries) => {
