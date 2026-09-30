@@ -231,7 +231,7 @@ get_header(); ?>
         </div>
       </div>
 
-      <div class="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+      <div class="mt-8 grid gap-5 md:grid-cols-2">
         <article class="ajs-hover-lift ajs-reveal overflow-hidden rounded-[28px] border border-[#d3d8db] bg-white shadow-[0_14px_32px_rgba(19,45,65,0.08)]">
           <div
             class="flex min-h-[260px] items-end bg-cover bg-center p-6"
@@ -242,28 +242,10 @@ get_header(); ?>
             </span>
           </div>
           <div class="p-6">
-            <h3 class="text-xl font-black text-[#132d41]">Daniel Martinez</h3>
-            <p class="mt-1 text-sm font-bold text-[#6eaace]">Owner / Project Lead</p>
+            <h3 class="text-xl font-black text-[#132d41]">Alex Jacob</h3>
+            <p class="mt-1 text-sm font-bold text-[#6eaace]">Project Lead</p>
             <p class="mt-4 text-[15px] leading-8 text-[#42474b]">
-              Daniel oversees project planning, customer communication, and quality control from start to finish. With more than a decade of hands-on roofing experience, he helps ensure every project is completed with clear expectations and dependable workmanship.
-            </p>
-          </div>
-        </article>
-
-        <article class="ajs-hover-lift ajs-reveal overflow-hidden rounded-[28px] border border-[#d3d8db] bg-white shadow-[0_14px_32px_rgba(19,45,65,0.08)]">
-          <div
-            class="flex min-h-[260px] items-end bg-cover bg-center p-6"
-            style="background-image: linear-gradient(180deg, rgba(19,45,65,0.08), rgba(19,45,65,0.28)), url('/wp-content/uploads/2026/03/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg');"
-          >
-            <span class="rounded-full bg-white/75 px-4 py-2 text-xs font-black uppercase tracking-[0.18em] text-[#132d41]">
-              Field Operations
-            </span>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-black text-[#132d41]">Luis Herrera</h3>
-            <p class="mt-1 text-sm font-bold text-[#6eaace]">Operations / Field Lead</p>
-            <p class="mt-4 text-[15px] leading-8 text-[#42474b]">
-              Luis coordinates crews, materials, and on-site execution to keep projects moving efficiently. His background in installations and repairs helps maintain consistency across roofing, gutter, and storm restoration work in the field.
+              Alex oversees project planning, customer communication, and quality control from start to finish. With more than a decade of hands-on roofing experience, he helps ensure every project is completed with clear expectations and dependable workmanship.
             </p>
           </div>
         </article>
@@ -278,10 +260,10 @@ get_header(); ?>
             </span>
           </div>
           <div class="p-6">
-            <h3 class="text-xl font-black text-[#132d41]">Gerardo Ramirez</h3>
+            <h3 class="text-xl font-black text-[#132d41]">Atzsel (Axel) Jacob</h3>
             <p class="mt-1 text-sm font-bold text-[#6eaace]">Inspection / Client Experience</p>
             <p class="mt-4 text-[15px] leading-8 text-[#42474b]">
-              Gerardo supports inspections, documentation, and communication throughout the service process. He focuses on helping homeowners understand project details, scheduling, and next steps while making the experience as smooth and transparent as possible.
+              Atzsel supports inspections, documentation, and communication throughout the service process. He focuses on helping homeowners understand project details, scheduling, and next steps while making the experience as smooth and transparent as possible.
             </p>
           </div>
         </article>
