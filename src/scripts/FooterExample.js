@@ -1,4 +1,5 @@
 import React from "react"
+import { BbbIcon, FacebookIcon, InstagramIcon, LinkedinIcon, YelpIcon } from "./SocialIcons"
 
 const PHONE_DISPLAY = "(505) 453-5626"
 const PHONE_LINK = "tel:+15054535626"
@@ -92,70 +93,6 @@ function ArrowUpRightIcon({ className = "" }) {
 	)
 }
 
-function FacebookIcon({ className = "" }) {
-	return (
-		<svg className={className} viewBox="0 0 24 24" fill="none" aria-hidden="true">
-			<path
-				d="M14 8H16V4H13C10.8 4 9 5.8 9 8V10H7V14H9V20H13V14H16L17 10H13V8C13 7.45 13.45 7 14 7V8Z"
-				stroke="currentColor"
-				strokeWidth="1.6"
-				strokeLinecap="round"
-				strokeLinejoin="round"
-			/>
-		</svg>
-	)
-}
-
-function InstagramIcon({ className = "" }) {
-	return (
-		<svg className={className} viewBox="0 0 24 24" fill="none" aria-hidden="true">
-			<rect
-				x="3"
-				y="3"
-				width="18"
-				height="18"
-				rx="5"
-				stroke="currentColor"
-				strokeWidth="1.6"
-			/>
-			<circle cx="12" cy="12" r="4" stroke="currentColor" strokeWidth="1.6" />
-			<circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
-		</svg>
-	)
-}
-
-function LinkedinIcon({ className = "" }) {
-	return (
-		<svg className={className} viewBox="0 0 24 24" fill="none" aria-hidden="true">
-			<rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" strokeWidth="1.6" />
-			<circle cx="7.7" cy="7.8" r="1.15" fill="currentColor" />
-			<path d="M7.7 10.6V16.6" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
-			<path
-				d="M11 16.6V13.4C11 12.1 11.7 11.2 13 11.2C14.3 11.2 14.8 12 14.8 13.4V16.6"
-				stroke="currentColor"
-				strokeWidth="1.6"
-				strokeLinecap="round"
-				strokeLinejoin="round"
-			/>
-			<path d="M11 16.6V10.9" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
-		</svg>
-	)
-}
-
-function YelpIcon({ className = "" }) {
-	return (
-		<svg viewBox="0 0 24 24" className={className} aria-hidden="true">
-			<g fill="#E00707">
-				<path d="M12.1 2.2c.5 0 .9.4.9.9l.3 5.2c0 .5-.4.9-.9.9h-1.8c-.5 0-.9-.4-.9-.9l.3-5.2c0-.5.4-.9.9-.9h1.2z"/>
-				<path d="M6.6 6.5c.4-.4 1-.4 1.4 0l3.6 3.6c.4.4.4 1 0 1.4l-1.3 1.3c-.4.4-1 .4-1.4 0L5.3 9.2c-.4-.4-.4-1 0-1.4l1.3-1.3z"/>
-				<path d="M17.4 6.5l1.3 1.3c.4.4.4 1 0 1.4l-3.6 3.6c-.4.4-1 .4-1.4 0l-1.3-1.3c-.4-.4-.4-1 0-1.4l3.6-3.6c.4-.4 1-.4 1.4 0z"/>
-				<path d="M4.2 13.3c.2-.5.8-.7 1.3-.5l4.8 2c.5.2.7.8.5 1.3l-.7 1.6c-.2.5-.8.7-1.3.5l-4.8-2c-.5-.2-.7-.8-.5-1.3l.7-1.6z"/>
-				<path d="M19.8 13.3l.7 1.6c.2.5 0 1.1-.5 1.3l-4.8 2c-.5.2-1.1 0-1.3-.5l-.7-1.6c-.2-.5 0-1.1.5-1.3l4.8-2c.5-.2 1.1 0 1.3.5z"/>
-			</g>
-		</svg>
-	)
-}
-
 function FooterExample() {
 	const currentYear = new Date().getFullYear()
 
@@ -188,7 +125,7 @@ function FooterExample() {
 						<div className="ajs-footer-socials">
 							<a
 								href={FACEBOOK_LINK}
-								className="ajs-footer-social-item"
+								className="ajs-footer-social-link"
 								aria-label="Facebook"
 								target="_blank"
 								rel="noopener noreferrer"
@@ -198,7 +135,7 @@ function FooterExample() {
 
 							<a
 								href={INSTAGRAM_LINK}
-								className="ajs-footer-social-item"
+								className="ajs-footer-social-link"
 								aria-label="Instagram"
 								target="_blank"
 								rel="noopener noreferrer"
@@ -208,7 +145,7 @@ function FooterExample() {
 
 							<a
 								href={LINKEDIN_LINK}
-								className="ajs-footer-social-item"
+								className="ajs-footer-social-link"
 								aria-label="LinkedIn"
 								target="_blank"
 								rel="noopener noreferrer"
@@ -218,7 +155,7 @@ function FooterExample() {
 
 							<a
 								href={YELP_LINK}
-								className="ajs-footer-social-item"
+								className="ajs-footer-social-link"
 								aria-label="Yelp Reviews"
 								target="_blank"
 								rel="noopener noreferrer"
@@ -228,12 +165,12 @@ function FooterExample() {
 
 							<a
 								href={BBB_LINK}
-								className="ajs-footer-bbb"
+								className="ajs-footer-social-link"
 								aria-label="Better Business Bureau Reviews"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
-								BBB
+								<BbbIcon className="ajs-footer-social-icon" />
 							</a>
 						</div>
 

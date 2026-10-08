@@ -297,7 +297,8 @@ document.addEventListener("DOMContentLoaded", function () {
         formData
       ).then(function () {
         form.reset();
-        successBox.classList.remove("hidden");
+        window.location.href = "/contacts/thank-you/";
+        return;
         submitBtn.disabled = false;
         submitBtn.textContent = originalButtonText;
       }).catch(function (error) {

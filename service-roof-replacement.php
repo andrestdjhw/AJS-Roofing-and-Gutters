@@ -167,6 +167,18 @@ get_header(); ?>
           'label' => 'Flat Roof Replacement',
           'image' => '/wp-content/uploads/2026/04/IMG_0862-scaled.jpg'
         ],
+        [
+          'label' => 'Residential Shingle Replacement',
+          'image' => '/wp-content/uploads/2026/10/6.jpg'
+        ],
+        [
+          'label' => 'Shingle Roof Replacement',
+          'image' => '/wp-content/uploads/2026/10/14.jpg'
+        ],
+        [
+          'label' => 'Complete Home Re-Roof',
+          'image' => '/wp-content/uploads/2026/10/15.jpg'
+        ],
       ];
 
       foreach ($gallery_items as $item) : ?>

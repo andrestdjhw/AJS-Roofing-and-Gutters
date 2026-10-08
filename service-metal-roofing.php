@@ -165,6 +165,18 @@ get_header(); ?>
           'label' => 'Commercial &amp; Residential Roofing System',
           'image' => '/wp-content/uploads/2026/04/edit-tbd-2-1-scaled.png'
         ],
+        [
+          'label' => 'Stone-Coated Steel Roof',
+          'image' => '/wp-content/uploads/2026/10/9.jpg'
+        ],
+        [
+          'label' => 'Stone-Coated Steel Detail',
+          'image' => '/wp-content/uploads/2026/10/11.jpg'
+        ],
+        [
+          'label' => 'Custom Home Metal Roofing',
+          'image' => '/wp-content/uploads/2026/10/12.jpg'
+        ],
       ];
 
       foreach ($gallery_items as $item) : ?>

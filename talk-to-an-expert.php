@@ -285,7 +285,8 @@ get_header(); ?>
           if (typeof grecaptcha !== "undefined") {
             grecaptcha.reset();
           }
-          successBox.classList.remove("hidden");
+          window.location.href = "/schedule-a-call/thank-you/";
+          return;
           submitBtn.disabled = false;
           submitBtn.textContent = originalButtonText;
         }).catch(function (error) {

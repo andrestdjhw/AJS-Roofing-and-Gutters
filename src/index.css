@@ -160,34 +160,14 @@ a {
 }
 
 .ajs-topbar-social:hover {
-	color: #ffffff;
-	background: rgba(110, 170, 206, 0.12);
+	color: #d04418;
 }
 
 .ajs-topbar-social-icon {
-	width: 18px;
-	height: 18px;
+	width: 16px;
+	height: 16px;
 	display: block;
 }
-.ajs-topbar-bbb {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	margin-left: 0.2rem;
-	padding-left: 0.65rem;
-	border-left: 1px solid rgba(255, 255, 255, 0.15);
-	color: rgba(255, 255, 255, 0.78);
-	font-size: 0.75rem;
-	font-weight: 900;
-	letter-spacing: 0.08em;
-	text-transform: uppercase;
-	transition: color 180ms ease;
-}
-
-.ajs-topbar-bbb:hover {
-	color: #ffffff;
-}
-
 /* ─────────────────────────────
    NAV WRAP
 ───────────────────────────── */
@@ -1102,34 +1082,32 @@ a {
 
 .ajs-footer-socials {
 	margin-top: 1.3rem;
+	margin-left: -0.5rem;
 	display: flex;
 	align-items: center;
-	gap: 0.7rem;
+	gap: 0.35rem;
 }
 
 .ajs-footer-social-link {
-	width: 2.7rem;
-	height: 2.7rem;
+	width: 2.25rem;
+	height: 2.25rem;
 	border-radius: 999px;
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	background: rgba(255, 255, 255, 0.06);
-	border: 1px solid rgba(255, 255, 255, 0.08);
-	color: #ffffff;
-	transition: transform 180ms ease, background-color 180ms ease, border-color 180ms ease;
+	color: rgba(255, 255, 255, 0.72);
+	transition: color 180ms ease, transform 180ms ease;
 }
 
 .ajs-footer-social-link:hover {
+	color: #d04418;
 	transform: translateY(-1px);
-	background: rgba(110, 170, 206, 0.12);
-	border-color: rgba(110, 170, 206, 0.28);
-	color: #ffffff;
 }
 
 .ajs-footer-social-icon {
-	width: 1.12rem;
-	height: 1.12rem;
+	width: 18px;
+	height: 18px;
+	display: block;
 }
 
 .ajs-footer-col h3 {

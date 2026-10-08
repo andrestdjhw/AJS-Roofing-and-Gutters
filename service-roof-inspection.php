@@ -150,6 +150,18 @@ get_header(); ?>
           'label' => 'Preventive Maintenance',
           'image' => '/wp-content/uploads/2026/04/tpo-_3_2_26-scaled.jpeg'
         ],
+        [
+          'label' => 'Flat Roof Inspection',
+          'image' => '/wp-content/uploads/2026/10/4.jpg'
+        ],
+        [
+          'label' => 'Aerial Drone Survey',
+          'image' => '/wp-content/uploads/2026/10/7.jpg'
+        ],
+        [
+          'label' => 'Skylight &amp; Flashing Check',
+          'image' => '/wp-content/uploads/2026/10/8.jpg'
+        ],
       ];
 
       foreach ($gallery_items as $item) : ?>

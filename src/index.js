@@ -3,6 +3,7 @@ import ExampleReactComponent from "./scripts/ExampleReactComponent"
 import NavbarExample from "./scripts/NavbarExample"
 import FooterExample from "./scripts/FooterExample"
 import CallUsFlotante from "./scripts/CallUsFlotante"
+import initRevealOnScroll from "./scripts/RevealOnScroll"
 import React from "react"
 import ReactDOM from "react-dom/client"
 import "./index.css"
@@ -27,4 +28,10 @@ if (document.querySelector("#footer-react")) {
 if (document.querySelector("#ajs-call-fab")) {
 	const fabRoot = ReactDOM.createRoot(document.querySelector("#ajs-call-fab"))
 	fabRoot.render(<CallUsFlotante />)
+}
+
+if (document.readyState === "loading") {
+	document.addEventListener("DOMContentLoaded", initRevealOnScroll)
+} else {
+	initRevealOnScroll()
 }

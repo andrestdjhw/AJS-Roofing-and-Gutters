@@ -99,16 +99,92 @@ get_header(); ?>
           'zip' => '87124',
           'image' => '/wp-content/uploads/2026/04/edit-tbd-2-1-scaled.png'
         ],
+        [
+          'title' => 'Stone-Coated Steel Roofing',
+          'zip' => '',
+          'image' => '/wp-content/uploads/2026/10/9.jpg'
+        ],
+        [
+          'title' => 'Shingle Roof Replacement',
+          'zip' => '',
+          'image' => '/wp-content/uploads/2026/10/14.jpg'
+        ],
+        [
+          'title' => 'Commercial Shop Roofing',
+          'zip' => '',
+          'image' => '/wp-content/uploads/2026/10/5.jpg'
+        ],
+        [
+          'title' => 'Flat Roof Coating',
+          'zip' => '',
+          'image' => '/wp-content/uploads/2026/10/4.jpg'
+        ],
+        [
+          'title' => 'Stone-Coated Steel Roofing',
+          'zip' => '',
+          'image' => '/wp-content/uploads/2026/10/11.jpg'
+        ],
+        [
+          'title' => 'Residential Roof Replacement',
+          'zip' => '',
+          'image' => '/wp-content/uploads/2026/10/6.jpg'
+        ],
+        [
+          'title' => 'Custom Home Roofing',
+          'zip' => '',
+          'image' => '/wp-content/uploads/2026/10/1.jpg'
+        ],
+        [
+          'title' => 'Flat Roof Installation',
+          'zip' => '',
+          'image' => '/wp-content/uploads/2026/10/3.jpg'
+        ],
+        [
+          'title' => 'Shingle Roof Replacement',
+          'zip' => '',
+          'image' => '/wp-content/uploads/2026/10/15.jpg'
+        ],
+        [
+          'title' => 'Stone-Coated Steel Roofing',
+          'zip' => '',
+          'image' => '/wp-content/uploads/2026/10/12.jpg'
+        ],
+        [
+          'title' => 'Commercial & Residential Roofing',
+          'zip' => '',
+          'image' => '/wp-content/uploads/2026/10/7.jpg'
+        ],
+        [
+          'title' => 'Commercial Shop Roofing',
+          'zip' => '',
+          'image' => '/wp-content/uploads/2026/10/8.jpg'
+        ],
+        [
+          'title' => 'Residential Roofing',
+          'zip' => '',
+          'image' => '/wp-content/uploads/2026/10/13.jpg'
+        ],
+        [
+          'title' => 'Stone-Coated Steel Roofing',
+          'zip' => '',
+          'image' => '/wp-content/uploads/2026/10/10.jpg'
+        ],
+        [
+          'title' => 'Custom Home Roofing',
+          'zip' => '',
+          'image' => '/wp-content/uploads/2026/10/2.jpg'
+        ],
       ];
 
       $sizes = ['ajs-tall', 'ajs-medium', 'ajs-medium', 'ajs-tall', 'ajs-medium', 'ajs-medium', 'ajs-tall', 'ajs-medium'];
 
       foreach ($projects as $index => $project) : ?>
-        <article class="ajs-project-card ajs-reveal <?php echo esc_attr($sizes[$index] ?? 'ajs-medium'); ?>">
+        <article class="ajs-project-card ajs-reveal <?php echo esc_attr($sizes[$index % count($sizes)]); ?>">
           <div class="ajs-project-frame">
             <img
               src="<?php echo esc_url($project['image']); ?>"
-              alt="<?php echo esc_attr($project['title'] . ' ' . $project['zip']); ?>"
+              alt="<?php echo esc_attr(trim($project['title'] . ' ' . $project['zip'])); ?>"
+              loading="lazy"
               class="ajs-project-image"
             >
 

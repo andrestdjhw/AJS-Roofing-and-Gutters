@@ -141,6 +141,14 @@ get_header(); ?>
         'label' => 'On-Site Service',
         'image' => '/wp-content/uploads/2026/04/AJs-truck-photo-edidted.png'
       ],
+      [
+        'label' => 'Crew On the Roof',
+        'image' => '/wp-content/uploads/2026/10/3.jpg'
+      ],
+      [
+        'label' => 'Residential Service Call',
+        'image' => '/wp-content/uploads/2026/10/13.jpg'
+      ],
     ];
     ?>
 

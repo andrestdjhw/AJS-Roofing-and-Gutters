@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react"
+import { BbbIcon, FacebookIcon, InstagramIcon, LinkedinIcon, YelpIcon } from "./SocialIcons"
 
 const PHONE_DISPLAY = "(505) 453-5626"
 const PHONE_LINK = "tel:+15054535626"
@@ -89,59 +90,6 @@ function MailIcon({ className = "" }) {
 				strokeLinecap="round"
 				strokeLinejoin="round"
 			/>
-		</svg>
-	)
-}
-
-function YelpIcon({ className = "" }) {
-	return (
-		<svg viewBox="0 0 24 24" className={className} aria-hidden="true">
-			<g fill="#E00707">
-				<path d="M12.1 2.2c.5 0 .9.4.9.9l.3 5.2c0 .5-.4.9-.9.9h-1.8c-.5 0-.9-.4-.9-.9l.3-5.2c0-.5.4-.9.9-.9h1.2z"/>
-				<path d="M6.6 6.5c.4-.4 1-.4 1.4 0l3.6 3.6c.4.4.4 1 0 1.4l-1.3 1.3c-.4.4-1 .4-1.4 0L5.3 9.2c-.4-.4-.4-1 0-1.4l1.3-1.3z"/>
-				<path d="M17.4 6.5l1.3 1.3c.4.4.4 1 0 1.4l-3.6 3.6c-.4.4-1 .4-1.4 0l-1.3-1.3c-.4-.4-.4-1 0-1.4l3.6-3.6c.4-.4 1-.4 1.4 0z"/>
-				<path d="M4.2 13.3c.2-.5.8-.7 1.3-.5l4.8 2c.5.2.7.8.5 1.3l-.7 1.6c-.2.5-.8.7-1.3.5l-4.8-2c-.5-.2-.7-.8-.5-1.3l.7-1.6z"/>
-				<path d="M19.8 13.3l.7 1.6c.2.5 0 1.1-.5 1.3l-4.8 2c-.5.2-1.1 0-1.3-.5l-.7-1.6c-.2-.5 0-1.1.5-1.3l4.8-2c.5-.2 1.1 0 1.3.5z"/>
-			</g>
-		</svg>
-	)
-}
-
-function FacebookIcon({ className = "" }) {
-	return (
-		<svg className={className} viewBox="0 0 24 24" fill="none" aria-hidden="true">
-			<path
-				d="M14.5 8.5H16.5V5.5H14.2C12.2 5.5 10.8 6.9 10.8 8.9V10.5H8.8V13.5H10.8V19.5H13.8V13.5H15.9L16.3 10.5H13.8V9.1C13.8 8.7 14.1 8.5 14.5 8.5Z"
-				fill="currentColor"
-			/>
-		</svg>
-	)
-}
-
-function InstagramIcon({ className = "" }) {
-	return (
-		<svg className={className} viewBox="0 0 24 24" fill="none" aria-hidden="true">
-			<rect x="4" y="4" width="16" height="16" rx="4.5" stroke="currentColor" strokeWidth="1.7" />
-			<circle cx="12" cy="12" r="3.4" stroke="currentColor" strokeWidth="1.7" />
-			<circle cx="16.6" cy="7.4" r="1.1" fill="currentColor" />
-		</svg>
-	)
-}
-
-function LinkedinIcon({ className = "" }) {
-	return (
-		<svg className={className} viewBox="0 0 24 24" fill="none" aria-hidden="true">
-			<rect x="4" y="4" width="16" height="16" rx="2.5" stroke="currentColor" strokeWidth="1.7" />
-			<circle cx="8.1" cy="8.2" r="1.15" fill="currentColor" />
-			<path d="M8.1 11V16.2" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
-			<path
-				d="M11.4 16.2V13.3C11.4 12.1 12.1 11.2 13.3 11.2C14.5 11.2 15 12 15 13.3V16.2"
-				stroke="currentColor"
-				strokeWidth="1.7"
-				strokeLinecap="round"
-				strokeLinejoin="round"
-			/>
-			<path d="M11.4 16.2V11.4" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
 		</svg>
 	)
 }
@@ -288,12 +236,12 @@ function NavbarExample() {
 
 						<a
 							href={BBB_LINK}
-							className="ajs-topbar-bbb"
+							className="ajs-topbar-social"
 							aria-label="Better Business Bureau Reviews"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							BBB
+							<BbbIcon className="ajs-topbar-social-icon" />
 						</a>
 					</div>
 				</div>
@@ -487,13 +435,13 @@ function NavbarExample() {
 
 								<a
 									href={BBB_LINK}
-									className="ajs-topbar-bbb"
+									className="ajs-nav-social"
 									aria-label="Better Business Bureau Reviews"
 									target="_blank"
 									rel="noopener noreferrer"
 									onClick={closeEverything}
 								>
-									BBB
+									<BbbIcon className="ajs-nav-social-icon" />
 								</a>
 							</div>
 						</div>

@@ -236,7 +236,8 @@ get_header(); ?>
           formData
         ).then(function () {
           form.reset();
-          successBox.classList.remove("hidden");
+          window.location.href = "/estimate/thank-you/";
+          return;
           submitBtn.disabled = false;
           submitBtn.textContent = originalButtonText;
         }).catch(function (error) {

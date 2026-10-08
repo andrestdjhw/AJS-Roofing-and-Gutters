@@ -643,7 +643,8 @@ document.addEventListener("DOMContentLoaded", () => {
         formData
       ).then(function () {
         form.reset();
-        successBox.classList.remove("hidden");
+        window.location.href = "/locations/thank-you/";
+        return;
         submitBtn.disabled = false;
         submitBtn.textContent = originalButtonText;
       }).catch(function (error) {

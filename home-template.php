@@ -14,9 +14,10 @@ get_header(); ?>
   <video id="ajsHeroVideo" autoplay muted playsinline class="absolute inset-0 h-full w-full object-cover">
     <source src="/wp-content/uploads/2026/09/VIDEO1.mp4" type="video/mp4">
   </video>
-  <div class="absolute inset-0 bg-white/70"></div>
+  <div class="absolute inset-0 bg-[linear-gradient(90deg,rgba(9,22,33,0.88)_0%,rgba(19,45,65,0.72)_50%,rgba(19,45,65,0.5)_100%)]"></div>
+  <div class="absolute inset-0 bg-[linear-gradient(180deg,rgba(9,22,33,0.35)_0%,transparent_35%,rgba(9,22,33,0.45)_100%)]"></div>
   <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(110,170,206,0.22),transparent_30%)]"></div>
-  <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,rgba(208,68,24,0.12),transparent_24%)]"></div>
+  <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,rgba(208,68,24,0.18),transparent_24%)]"></div>
   <div class="absolute inset-x-0 top-0 h-px bg-[linear-gradient(90deg,transparent,rgba(110,170,206,0.55),transparent)]"></div>
 
   <div class="absolute right-[-120px] top-[-120px] h-[320px] w-[320px] rounded-full bg-[#6eaace]/12 blur-3xl"></div>
@@ -24,18 +25,18 @@ get_header(); ?>
 
   <div class="relative mx-auto grid max-w-7xl gap-10 px-4 py-16 md:py-20 lg:grid-cols-[1.08fr_0.92fr] lg:items-center">
     <div class="ajs-reveal-left">
-      <div class="inline-flex items-center gap-2 rounded-full border border-[#d3d8db] bg-white/85 px-4 py-2 shadow-sm backdrop-blur-sm">
+      <div class="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-2 shadow-sm backdrop-blur-sm">
         <span class="h-2.5 w-2.5 rounded-full bg-[#d04418]"></span>
-        <p class="text-[11px] font-black uppercase tracking-[0.18em] text-[#132d41]">
+        <p class="text-[11px] font-black uppercase tracking-[0.18em] text-white">
           Roofing Without Uncertainty
         </p>
       </div>
 
-      <h1 class="mt-6 max-w-[12ch] text-4xl font-black leading-[0.92] tracking-[-0.045em] text-[#132d41] md:text-5xl lg:text-7xl">
+      <h1 class="mt-6 max-w-[12ch] text-4xl font-black leading-[0.92] tracking-[-0.045em] text-white drop-shadow-[0_4px_18px_rgba(0,0,0,0.35)] md:text-5xl lg:text-7xl">
         Your Roof Shouldn't Be a Question Mark.
       </h1>
 
-      <p class="mt-5 max-w-2xl text-base leading-8 text-[#42474b] md:text-lg">
+      <p class="mt-5 max-w-2xl text-base leading-8 text-white/85 md:text-lg">
         We inspect, install, and protect with a system designed to eliminate uncertainty 
         so your home feels secure again. AJS Roofing &amp; Gutters brings order, clarity,
         and precision to every project across Albuquerque, Santa Fe, and Rio Rancho.
@@ -48,26 +49,26 @@ get_header(); ?>
         </a>
 
         <a href="#services"
-           class="ajs-btn-animate inline-flex items-center justify-center rounded-full border border-[#d3d8db] bg-white px-6 py-4 text-sm font-black text-[#132d41] shadow-sm transition hover:border-[#6eaace]/40 hover:bg-[#f8fbfd]">
+           class="ajs-btn-animate inline-flex items-center justify-center rounded-full border border-white/40 bg-white/10 px-6 py-4 text-sm font-black text-white shadow-sm backdrop-blur-sm transition hover:border-white hover:bg-white hover:text-[#132d41]">
           Explore Our Services
         </a>
       </div>
 
       <div class="mt-8 flex flex-wrap items-center gap-6">
         <a href="tel:+15054535626"
-           class="inline-flex items-center gap-2 text-base font-extrabold text-[#132d41]">
-          <span class="text-[#42474b]/70">Call Now:</span>
+           class="inline-flex items-center gap-2 text-base font-extrabold text-white">
+          <span class="text-white/65">Call Now:</span>
           <span>(505) 453-5626</span>
         </a>
 
         <div class="flex flex-wrap items-center gap-2">
-          <span class="rounded-full bg-[#132d41] px-3 py-1 text-[11px] font-black uppercase tracking-[0.16em] text-white">
+          <span class="rounded-full bg-white px-3 py-1 text-[11px] font-black uppercase tracking-[0.16em] text-[#132d41]">
             Clear Process
           </span>
-          <span class="rounded-full bg-[#6eaace]/15 px-3 py-1 text-[11px] font-black uppercase tracking-[0.16em] text-[#132d41]">
+          <span class="rounded-full bg-[#6eaace]/25 px-3 py-1 text-[11px] font-black uppercase tracking-[0.16em] text-white">
             No Pressure
           </span>
-          <span class="rounded-full bg-[#d04418]/12 px-3 py-1 text-[11px] font-black uppercase tracking-[0.16em] text-[#d04418]">
+          <span class="rounded-full bg-[#d04418] px-3 py-1 text-[11px] font-black uppercase tracking-[0.16em] text-white">
             Photo Documented
           </span>
         </div>
@@ -244,38 +245,6 @@ get_header(); ?>
     </div>
   </section>
 
-  <!-- About Intro -->
-  <section class="py-20">
-    <div class="mx-auto grid max-w-7xl gap-10 px-4 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
-      <div class="ajs-reveal-left">
-        <p class="mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
-          From Chaos to Calm
-        </p>
-        <h2 class="max-w-[12ch] text-3xl font-black leading-tight tracking-[-0.03em] text-[#132d41] md:text-5xl">
-          Where Chaos Ends. Home Begins.
-        </h2>
-      </div>
-
-      <div class="ajs-reveal-right space-y-5 text-base leading-8 text-[#42474b]">
-        <p>
-          AJS Roofing &amp; Gutters is a licensed roofing contractor serving Albuquerque,
-          Santa Fe, Rio Rancho, and surrounding New Mexico communities. We don't just
-          install roofs  we restore peace of mind.
-        </p>
-
-        <p>
-          Through clear processes, professional execution, and work done right from the
-          start, we turn a moment of uncertainty into lasting protection and confidence.
-        </p>
-
-        <a href="/about"
-           class="inline-flex font-black text-[#d04418] transition hover:translate-x-[2px]">
-          Learn more about AJS
-        </a>
-      </div>
-    </div>
-  </section>
-
 <!-- Services -->
 <section id="services" class="ajs-home-sticky-offset bg-[#d3d8db]/20 py-20">
   <div class="mx-auto max-w-7xl px-4">
@@ -286,7 +255,10 @@ get_header(); ?>
       Roofing and gutter solutions built on order, precision, and lasting craftsmanship.
     </h2>
 
-    <div class="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+  </div>
+
+  <div class="ajs-services-carousel ajs-reveal mt-8">
+    <div class="ajs-services-track">
       <?php
       $services = [
         [
@@ -327,8 +299,10 @@ get_header(); ?>
         ],
       ];
 
+      // Rendered twice so the -50% loop is seamless; the copy is hidden from assistive tech.
+      foreach ([false, true] as $is_copy) :
       foreach ($services as $service) : ?>
-        <article class="ajs-hover-lift ajs-reveal overflow-hidden rounded-[24px] border border-[#d3d8db] bg-[linear-gradient(180deg,#ffffff_0%,#f5f7f8_100%)] shadow-[0_14px_32px_rgba(19,45,65,0.07)]">
+        <article class="ajs-service-card ajs-hover-lift flex flex-col overflow-hidden rounded-[24px] border border-[#d3d8db] bg-[linear-gradient(180deg,#ffffff_0%,#f5f7f8_100%)] shadow-[0_14px_32px_rgba(19,45,65,0.07)]"<?php echo $is_copy ? ' aria-hidden="true"' : ''; ?>>
           <div class="relative h-[220px] overflow-hidden border-b border-[#d3d8db]">
             <img
               src="<?php echo esc_url($service['image']); ?>"
@@ -345,7 +319,7 @@ get_header(); ?>
             <div class="absolute inset-0 bg-[linear-gradient(180deg,rgba(19,45,65,0.06)_0%,rgba(19,45,65,0.18)_100%)]"></div>
           </div>
 
-          <div class="p-6">
+          <div class="flex flex-1 flex-col p-6">
             <h3 class="text-xl font-black tracking-[-0.02em] text-[#132d41]">
               <?php echo esc_html($service['title']); ?>
             </h3>
@@ -354,16 +328,77 @@ get_header(); ?>
               <?php echo esc_html($service['copy']); ?>
             </p>
 
-            <a href="<?php echo esc_url($service['link']); ?>"
-               class="mt-5 inline-flex font-black text-[#d04418] transition hover:translate-x-[2px]">
+            <a href="<?php echo esc_url($service['link']); ?>"<?php echo $is_copy ? ' tabindex="-1"' : ''; ?>
+               class="mt-auto inline-flex pt-5 font-black text-[#d04418] transition hover:translate-x-[2px]">
               Keep reading
             </a>
           </div>
         </article>
-      <?php endforeach; ?>
+      <?php endforeach; endforeach; ?>
     </div>
   </div>
 </section>
+
+  <!-- Reviews -->
+  <section class="bg-[#d3d8db]/30 py-20">
+    <div class="mx-auto max-w-7xl px-4">
+      <p class="ajs-reveal mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
+        The Calm Side of Construction
+      </p>
+      <h2 class="ajs-reveal max-w-4xl text-3xl font-black leading-tight tracking-[-0.03em] text-[#132d41] md:text-5xl">
+        What homeowners remember most is clarity, confidence, and follow-through.
+      </h2>
+
+      <div class="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+
+        <article class="ajs-hover-lift ajs-reveal rounded-[24px] border border-[#d3d8db] bg-white p-6 shadow-[0_14px_32px_rgba(19,45,65,0.07)]">
+          <div class="flex items-center justify-between">
+            <div class="text-base font-black tracking-[0.12em] text-[#d04418]">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <img src="https://m.bbb.org/brand/logos/BBB_PrimaryLogo_Blue_RGB.svg" alt="BBB Accredited" class="h-5 opacity-50">
+          </div>
+          <p class="mt-4 text-[15px] leading-8 text-[#42474b]">
+            "They not only replaced my roof, but also took the time to correct all the mistakes left behind by others. What really stood out was their communication  I was kept informed at every stage, which gave me total peace of mind throughout the project. They finished ahead of schedule."
+          </p>
+          <strong class="mt-4 inline-block text-[#132d41]"> Alberto R.</strong>
+          <p class="mt-1 text-xs text-[#42474b]/55">Verified BBB Review &middot; April 2025</p>
+        </article>
+
+        <article class="ajs-hover-lift ajs-reveal rounded-[24px] border border-[#d3d8db] bg-white p-6 shadow-[0_14px_32px_rgba(19,45,65,0.07)]">
+          <div class="flex items-center justify-between">
+            <div class="text-base font-black tracking-[0.12em] text-[#d04418]">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <img src="https://m.bbb.org/brand/logos/BBB_PrimaryLogo_Blue_RGB.svg" alt="BBB Accredited" class="h-5 opacity-50">
+          </div>
+          <p class="mt-4 text-[15px] leading-8 text-[#42474b]">
+            "When they came to look at the house, he took photographs of the roof, drew diagrams to explain, and showed me the issues. He found so many issues that none of the other contractors found. Through the whole process, I was educated about roofs and about my roof in particular. Solid people, solid work."
+          </p>
+          <strong class="mt-4 inline-block text-[#132d41]"> Cyndi-Marie M.</strong>
+          <p class="mt-1 text-xs text-[#42474b]/55">Verified BBB Review &middot; August 2023</p>
+        </article>
+
+        <article class="ajs-hover-lift ajs-reveal rounded-[24px] border border-[#d3d8db] bg-white p-6 shadow-[0_14px_32px_rgba(19,45,65,0.07)]">
+          <div class="flex items-center justify-between">
+            <div class="text-base font-black tracking-[0.12em] text-[#d04418]">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <img src="https://m.bbb.org/brand/logos/BBB_PrimaryLogo_Blue_RGB.svg" alt="BBB Accredited" class="h-5 opacity-50">
+          </div>
+          <p class="mt-4 text-[15px] leading-8 text-[#42474b]">
+            "I highly recommend AJ's Professional Roofing. Their work is consistently high-quality, communication is clear and timely, and they are dependable from start to finish. It's rare to find a roofing company you can trust both personally and professionally."
+          </p>
+          <strong class="mt-4 inline-block text-[#132d41]"> Christine L.</strong>
+          <p class="mt-1 text-xs text-[#42474b]/55">Verified BBB Review &middot; January 2026</p>
+        </article>
+
+      </div>
+
+      <div class="ajs-reveal mt-8 text-center">
+        <a href="https://www.bbb.org/us/nm/veguita/profile/roofing-contractors/ajs-professional-contracting-llc-0806-99137264/customer-reviews"
+           target="_blank" rel="noopener"
+           class="ajs-btn-animate inline-flex items-center justify-center gap-2 rounded-full border border-[#132d41]/12 bg-[#132d41]/5 px-6 py-4 text-sm font-black text-[#132d41] transition hover:bg-[#132d41] hover:text-white">
+          Read All Reviews on BBB
+        </a>
+      </div>
+
+    </div>
+  </section>
 
 <!-- Material Ribbon -->
 <section class="relative overflow-hidden border-y border-[#d3d8db] bg-white">
@@ -532,7 +567,31 @@ get_header(); ?>
       <!-- Storm Damage -->
       <div class="ajs-hover-lift ajs-reveal flex min-h-[220px] items-end rounded-[24px] border border-[#d3d8db] p-6 font-black text-white bg-cover bg-center"
         style="background-image: linear-gradient(180deg, rgba(19,45,65,0.15), rgba(19,45,65,0.45)), url('/wp-content/uploads/2026/04/IMG_1497-1-scaled.jpeg');">
-        Storm Damage Repair 
+        Storm Damage Repair
+      </div>
+
+      <!-- Stone-Coated Steel -->
+      <div class="ajs-hover-lift ajs-reveal flex min-h-[220px] items-end rounded-[24px] border border-[#d3d8db] p-6 font-black text-white bg-cover bg-center"
+        style="background-image: linear-gradient(180deg, rgba(19,45,65,0.15), rgba(19,45,65,0.45)), url('/wp-content/uploads/2026/10/12.jpg');">
+        Stone-Coated Steel Roofing
+      </div>
+
+      <!-- Commercial Shop -->
+      <div class="ajs-hover-lift ajs-reveal flex min-h-[220px] items-end rounded-[24px] border border-[#d3d8db] p-6 font-black text-white bg-cover bg-center"
+        style="background-image: linear-gradient(180deg, rgba(19,45,65,0.15), rgba(19,45,65,0.45)), url('/wp-content/uploads/2026/10/5.jpg');">
+        Commercial Shop Roofing
+      </div>
+
+      <!-- Custom Home -->
+      <div class="ajs-hover-lift ajs-reveal flex min-h-[220px] items-end rounded-[24px] border border-[#d3d8db] p-6 font-black text-white bg-cover bg-center"
+        style="background-image: linear-gradient(180deg, rgba(19,45,65,0.15), rgba(19,45,65,0.45)), url('/wp-content/uploads/2026/10/1.jpg');">
+        Custom Home Roofing
+      </div>
+
+      <!-- Shingle Replacement -->
+      <div class="ajs-hover-lift ajs-reveal flex min-h-[220px] items-end rounded-[24px] border border-[#d3d8db] p-6 font-black text-white bg-cover bg-center"
+        style="background-image: linear-gradient(180deg, rgba(19,45,65,0.15), rgba(19,45,65,0.45)), url('/wp-content/uploads/2026/10/15.jpg');">
+        Shingle Roof Replacement
       </div>
 
     </div>
@@ -545,67 +604,6 @@ get_header(); ?>
     </div>
   </div>
 </section>
-
-  <!-- Reviews -->
-  <section class="bg-[#d3d8db]/30 py-20">
-    <div class="mx-auto max-w-7xl px-4">
-      <p class="ajs-reveal mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#d04418]">
-        The Calm Side of Construction
-      </p>
-      <h2 class="ajs-reveal max-w-4xl text-3xl font-black leading-tight tracking-[-0.03em] text-[#132d41] md:text-5xl">
-        What homeowners remember most is clarity, confidence, and follow-through.
-      </h2>
-
-      <div class="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-
-        <article class="ajs-hover-lift ajs-reveal rounded-[24px] border border-[#d3d8db] bg-white p-6 shadow-[0_14px_32px_rgba(19,45,65,0.07)]">
-          <div class="flex items-center justify-between">
-            <div class="text-base font-black tracking-[0.12em] text-[#d04418]">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <img src="https://m.bbb.org/brand/logos/BBB_PrimaryLogo_Blue_RGB.svg" alt="BBB Accredited" class="h-5 opacity-50">
-          </div>
-          <p class="mt-4 text-[15px] leading-8 text-[#42474b]">
-            "They not only replaced my roof, but also took the time to correct all the mistakes left behind by others. What really stood out was their communication  I was kept informed at every stage, which gave me total peace of mind throughout the project. They finished ahead of schedule."
-          </p>
-          <strong class="mt-4 inline-block text-[#132d41]"> Alberto R.</strong>
-          <p class="mt-1 text-xs text-[#42474b]/55">Verified BBB Review &middot; April 2025</p>
-        </article>
-
-        <article class="ajs-hover-lift ajs-reveal rounded-[24px] border border-[#d3d8db] bg-white p-6 shadow-[0_14px_32px_rgba(19,45,65,0.07)]">
-          <div class="flex items-center justify-between">
-            <div class="text-base font-black tracking-[0.12em] text-[#d04418]">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <img src="https://m.bbb.org/brand/logos/BBB_PrimaryLogo_Blue_RGB.svg" alt="BBB Accredited" class="h-5 opacity-50">
-          </div>
-          <p class="mt-4 text-[15px] leading-8 text-[#42474b]">
-            "When they came to look at the house, he took photographs of the roof, drew diagrams to explain, and showed me the issues. He found so many issues that none of the other contractors found. Through the whole process, I was educated about roofs and about my roof in particular. Solid people, solid work."
-          </p>
-          <strong class="mt-4 inline-block text-[#132d41]"> Cyndi-Marie M.</strong>
-          <p class="mt-1 text-xs text-[#42474b]/55">Verified BBB Review &middot; August 2023</p>
-        </article>
-
-        <article class="ajs-hover-lift ajs-reveal rounded-[24px] border border-[#d3d8db] bg-white p-6 shadow-[0_14px_32px_rgba(19,45,65,0.07)]">
-          <div class="flex items-center justify-between">
-            <div class="text-base font-black tracking-[0.12em] text-[#d04418]">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <img src="https://m.bbb.org/brand/logos/BBB_PrimaryLogo_Blue_RGB.svg" alt="BBB Accredited" class="h-5 opacity-50">
-          </div>
-          <p class="mt-4 text-[15px] leading-8 text-[#42474b]">
-            "I highly recommend AJ's Professional Roofing. Their work is consistently high-quality, communication is clear and timely, and they are dependable from start to finish. It's rare to find a roofing company you can trust both personally and professionally."
-          </p>
-          <strong class="mt-4 inline-block text-[#132d41]"> Christine L.</strong>
-          <p class="mt-1 text-xs text-[#42474b]/55">Verified BBB Review &middot; January 2026</p>
-        </article>
-
-      </div>
-
-      <div class="ajs-reveal mt-8 text-center">
-        <a href="https://www.bbb.org/us/nm/veguita/profile/roofing-contractors/ajs-professional-contracting-llc-0806-99137264/customer-reviews"
-           target="_blank" rel="noopener"
-           class="ajs-btn-animate inline-flex items-center justify-center gap-2 rounded-full border border-[#132d41]/12 bg-[#132d41]/5 px-6 py-4 text-sm font-black text-[#132d41] transition hover:bg-[#132d41] hover:text-white">
-          Read All Reviews on BBB
-        </a>
-      </div>
-
-    </div>
-  </section>
 
   <!-- Referral Program -->
   <section class="py-20">
@@ -984,6 +982,54 @@ get_header(); ?>
     to   { transform: translateX(-50%); }
   }
 
+  .ajs-services-carousel {
+    overflow: hidden;
+    width: 100%;
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+            mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+  }
+
+  .ajs-services-track {
+    display: flex;
+    align-items: stretch;
+    width: max-content;
+    gap: 1.25rem;
+    padding: 0.75rem 0 2rem;
+    animation: ajsServicesMove 45s linear infinite;
+  }
+
+  .ajs-services-carousel:hover .ajs-services-track,
+  .ajs-services-carousel:focus-within .ajs-services-track {
+    animation-play-state: paused;
+  }
+
+  .ajs-service-card {
+    width: 360px;
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 640px) {
+    .ajs-service-card {
+      width: 290px;
+    }
+  }
+
+  @keyframes ajsServicesMove {
+    from { transform: translateX(0); }
+    /* -50% plus half the gap, so the copy lines up exactly with the original */
+    to   { transform: translateX(calc(-50% - 0.625rem)); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ajs-services-carousel {
+      overflow-x: auto;
+    }
+
+    .ajs-services-track {
+      animation: none;
+    }
+  }
+
   .ajs-ticker {
     overflow: hidden;
     width: 100%;
@@ -1264,7 +1310,9 @@ get_header(); ?>
             grecaptcha.reset(widgetIndex);
           }
 
-          successBox.classList.remove("hidden");
+          window.location.href = config.redirectUrl;
+
+          return;
           submitBtn.disabled = false;
           submitBtn.textContent = originalButtonText;
         }).catch(function (error) {
@@ -1283,6 +1331,7 @@ get_header(); ?>
 
     setupHomeForm({
       formId: "ajsHomeHeroForm",
+      redirectUrl: "/thank-you/1/",
       submitBtnId: "ajsHomeHeroSubmitBtn",
       successBoxId: "ajsHomeHeroFormSuccess",
       errorBoxId: "ajsHomeHeroFormError",
@@ -1298,6 +1347,7 @@ get_header(); ?>
 
     setupHomeForm({
       formId: "ajsHomeClosingForm",
+      redirectUrl: "/thank-you/2/",
       submitBtnId: "ajsHomeClosingSubmitBtn",
       successBoxId: "ajsHomeClosingFormSuccess",
       errorBoxId: "ajsHomeClosingFormError",
